@@ -23,5 +23,3 @@ Route::get('/table', function () {
 Route::get('/form', function () {
    return view('admin.template.form');
 });
-Route::get('users/create',[UserController::class,'create']);
-Route::post('users/create',[UserController::class,'store']);
