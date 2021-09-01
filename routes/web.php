@@ -22,3 +22,6 @@ Route::get('/table', function () {
 Route::get('/form', function () {
    return view('admin.template.form');
 });
+Route::get('/header', function () {
+   return view('clients.index');
+});

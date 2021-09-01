@@ -1,0 +1,44 @@
+.header-main {
+    top: 0;
+    width: 100%;
+    background-image: linear-gradient(180deg,rgba(0,0,0,.4),transparent);
+    transition: all .3s ease-in-out;
+    z-index: 999;
+}
+.header-height {
+    height: 88px;
+}
+.shopping-cart {
+    height: 40px;
+    width: 42px;
+    border: 1px solid #f0efef;
+    border-radius: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.wrap-log-in {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.color-cart {
+    color: #676767;
+}
+.color-cart:hover {
+    color: #676767;
+    text-decoration: none;
+}
+.wrap-log-in {
+    height: 40px;
+    border: 1px solid #f0efef;
+    border-radius: 4px;
+}
+.sticky {
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px rgb(28 28 28 / 10%);
+    background-image: none;
+    padding: 3px 0;
+}
+.banner {
+    position: relative;
+
+}
