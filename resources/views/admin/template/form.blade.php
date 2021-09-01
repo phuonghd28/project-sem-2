@@ -14,11 +14,14 @@
                         <label for="exampleCustomSelect" class="col-sm-2 col-form-label">Custom Select</label>
                         <select type="select" id="exampleCustomSelect" name="customSelect" class="custom-select col-sm-10">
                                 <option value="">Select</option>
-                                <option>Value 1</option>
-                                <option>Value 2</option>
-                                <option>Value 3</option>
-                                <option>Value 4</option>
-                                <option>Value 5</option>
+                                <option>firstname</option>
+                                <option>lastname</option>
+                                <option>phone</option>
+                                <option>email</option>
+                                <option>address</option>
+                                <option>username</option>
+                                <option>password</option>
+                                <option>re-password</option>
                             </select>
                     </div>
                     <div class="position-relative row form-group"><label for="exampleSelectMulti" class="col-sm-2 col-form-label">Select Multiple</label>
