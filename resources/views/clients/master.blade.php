@@ -12,7 +12,7 @@
     <title>@yield('title')</title>
 </head>
 <body>
-<div class="main" style="height: 2000px">
+<div class="main">
     <!-- Header -->
     <header class="header-main position-fixed">
         <div class="container">
@@ -49,7 +49,76 @@
     <div class="container">
         @yield('content')
     </div>
-    <footer></footer>
+    <style>
+
+    </style>
+    <footer>
+        <div class="footer">
+            <div class="container py-3">
+                <div class="logo-footer row">
+                    <a class="col-lg-2 mt-3 " href="#">
+                        <img class="img-footer" src="/assets/images/coollogo_com-1065994.png" alt="">
+                    </a>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="link-item">
+                            <a href="#">Về GrabFood</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="#">Về Grab</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="#">Blog</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="link-item">
+                            <a href="#">Mở quán trên GrabFood</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="#">Trở thành tài xế Grab</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="link-item">
+                            <a href="#">Trung tâm hỗ trợ</a>
+                        </div>
+                        <div class="link-item">
+                            <a href="#">Câu hỏi thường gặp</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="link-item">
+                            <a href="#"class="mr-2"><i class="icon-footer fab fa-facebook-square"></i></a>
+                            <a href="#"class="mx-2"><i class="icon-footer fab fa-instagram"></i></a>
+                            <a href="#"class="mx-2"><i class="icon-footer fab fa-twitter-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider my-4"></div>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="appstore">
+                            <a class="mr-3" href=""><img src="https://food.grab.com/static/images/logo-appstore.svg" alt=""></a>
+                            <a href=""><img src="https://food.grab.com/static/images/logo-playstore.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 align-self-center">
+                        <div class="and-copyright d-flex">
+                            <div class="copy-right mr-5">© 2021 Cơm Chay</div>
+                            <div class="copy-right-item">
+                                <a href="#">Câu hỏi thường gặp</a>
+                                <span class="mx-1">•</span>
+                                <a href="#">Chính sách bảo mật</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

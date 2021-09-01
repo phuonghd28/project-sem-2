@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-
+Home
 @endsection
 @section('custom_css')
     <style>
