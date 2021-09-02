@@ -26,3 +26,6 @@ Route::get('/form', function () {
 Route::get('/header', function () {
    return view('clients.index');
 });
+Route::get('/form-user', function () {
+    return view('admin.users.form');
+});
