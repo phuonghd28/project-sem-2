@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Foundation\Auth\User;
+use App\Models\User;
 use Illuminate\Http\Request;
-use phpDocumentor\Reflection\DocBlock\Tags\Uses;
+
 
 class UserController extends Controller
 {
@@ -12,10 +12,21 @@ class UserController extends Controller
         return view('admin/user/form',['data'=>null]);
     }
     public function store(Request $request){
-        $User = new user();
-        $User->fill($request->all());
-        $User->save();
+        $data = new User();
+        $data->fill($request->all());
+        $data->save();
         return redirect('admin/user/list');
     }
 
+    public function list() {
+        $data = User::all();
+        return view('admin.user.table', ['list'=>$data]);
+    }
+
+    public function edit($id) {
+        $data = User::find($id);
+        return view('admin.user.form', ['data'=>$data]);
+    }
+
+    public function save() {}
 }
