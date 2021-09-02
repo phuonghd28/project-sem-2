@@ -22,3 +22,9 @@ Route::get('/table', function () {
 Route::get('/form', function () {
    return view('admin.template.form');
 });
+Route::get('/index', function () {
+    return view('clients.index');
+});
+Route::get('/list', function () {
+    return view('clients.list');
+});
