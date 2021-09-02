@@ -451,5 +451,29 @@
 @endsection
 
 @section('custom_js')
+    <script>
+        var elements = document.querySelectorAll('.ant-btn-block .ant-divider-horizontal');
 
+        show(elements, 'inline-block'); // The second param allows you to specify a display value
+
+        show(document.getElementById('hidden-input'));
+
+        function show(elements, specifiedDisplay) {
+            elements = elements.length ? elements : [elements];
+            for (var index = 0; index < elements.length; index++) {
+                elements[index].style.display = specifiedDisplay || 'block';
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('sticky')
+                } else {
+                    $('header').removeClass('sticky')
+                }
+            })
+        });
+    </script>
 @endsection

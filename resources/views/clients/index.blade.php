@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-Home
+    Home
 @endsection
 @section('custom_css')
     <style>
@@ -684,24 +684,28 @@ Home
             box-shadow: 0 6px 12px 0 rgb(0 0 0 / 40%);
             background: white;
         }
+
         .btn-login {
             width: 100%;
             background-color: #00c6d7;
             color: #ffffff;
             border-radius: 0;
             height: 48px;
-            transition: all .2s cubic-bezier(.645,.045,.355,1);
+            transition: all .2s cubic-bezier(.645, .045, .355, 1);
         }
+
         .btn-login:hover {
             color: white;
             background-color: #00E5EE;
             box-shadow: none;
             outline: none;
         }
+
         .btn-login:active {
             box-shadow: none;
             outline: none;
         }
+
         .btn:active,
         .btn:focus,
         .btn.active {
@@ -710,16 +714,18 @@ Home
             -webkit-box-shadow: none;
             box-shadow: none;
         }
+
         .input-user-name, .input-pass {
             padding: 0;
             border: 0;
             vertical-align: baseline;
             width: 100%;
             outline: none;
-            transition: all .3s cubic-bezier(.645,.045,.355,1);
+            transition: all .3s cubic-bezier(.645, .045, .355, 1);
             position: relative;
         }
-        .user-name,.pass {
+
+        .user-name, .pass {
             background: none;
             padding: 15px 66px 15px 19px;
             text-align: left;
@@ -733,11 +739,13 @@ Home
             -moz-box-shadow: 0 6px 12px 0 rgb(37, 37, 37);
             box-shadow: 0 6px 12px 0 rgb(0 0 0 / 20%);
         }
+
         .heading {
             font-size: 1.5rem;
             line-height: 1.33333333;
             font-weight: 500;
         }
+
         .icon-w3 {
             right: 0;
             bottom: 0;
@@ -748,6 +756,7 @@ Home
             text-align: center;
             background: #00c6d7;
         }
+
         .icon-w3 i {
             color: #ffffff;
             font-size: 19px;
@@ -757,7 +766,7 @@ Home
 @endsection
 
 @section('banner')
-<div class="background-img"></div>
+    <div class="background-img"></div>
     <div class="form-login">
         <div class="heading text-center pb-4">Đăng nhập</div>
         <form action="#">
@@ -811,10 +820,10 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/Layer256-1.png"></a>
+                                                        src="assets/images/layer/Layer256-1.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
-                                                        <a href="https://marketplace.foodotawp.com/all-vendors/?cat_id=82">
+                                                        <a href="#">
                                                             <h3>Pizza</h3></a></div>
                                                     <div class="category-text-desc">
                                                         <span class="text-center">14 Restaurants</span>
@@ -826,10 +835,10 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/1qLayer-1.png"></a>
+                                                        src="assets/images/layer/02.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
-                                                        <a href="https://marketplace.foodotawp.com/all-vendors/?cat_id=116">
+                                                        <a href="#">
                                                             <h3>Broast</h3></a></div>
                                                     <div class="category-text-desc">
                                                         <span class="text-center">4 Restaurants</span>
@@ -841,10 +850,10 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/sa1.png"></a>
+                                                        src="assets/images/layer/03.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
-                                                        <a href="https://marketplace.foodotawp.com/all-vendors/?cat_id=100">
+                                                        <a href="#">
                                                             <h3>Chicken</h3></a></div>
                                                     <div class="category-text-desc">
                                                         <span class="text-center">5 Restaurants</span>
@@ -856,10 +865,10 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/pngwing.png"></a>
+                                                        src="assets/images/layer/04.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
-                                                        <a href="https://marketplace.foodotawp.com/all-vendors/?cat_id=85">
+                                                        <a href="#">
                                                             <h3>Burgers</h3></a></div>
                                                     <div class="category-text-desc">
                                                         <span class="text-center">19 Restaurants</span>
@@ -871,7 +880,7 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/qawLayer-1.png"></a>
+                                                        src="assets/images/layer/05.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
                                                         <a href="#">
@@ -886,7 +895,7 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/sssssa1.png"></a>
+                                                        src="assets/images/layer/06.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
                                                         <a href="#">
@@ -901,7 +910,7 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/Layezr-1.png"></a>
+                                                        src="assets/images/layer/07.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
                                                         <a href="#">
@@ -916,7 +925,7 @@ Home
                                             <div class="category-main">
                                                 <a href="#"> <img
                                                         loading="lazy" alt="" class="cate-images"
-                                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/asasLayer-1.png"></a>
+                                                        src="assets/images/layer/08.png"></a>
                                                 <div class="category-text-box">
                                                     <div class="category-text-inner">
                                                         <a href="#">
@@ -973,9 +982,9 @@ Home
                                                 <div class="eq-height col-xl-4 col-lg-6 col-md-6">
                                                     <div class="res-3-box ">
                                                         <div class="res-2-img parallex-new"><a
-                                                                href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                                                href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Arcadian.jpg"
+                                                                    src="assets/images/Restaurant/a1.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="29"></i>
@@ -1046,7 +1055,7 @@ Home
                                                         <div class="res-2-img parallex-new"><a
                                                                 href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/broadway.jpg"
+                                                                    src="assets/images/Restaurant/a2.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="28"></i>
@@ -1089,18 +1098,15 @@ Home
                                                             <div class="res-2-box">
                                                                 <ul>
                                                                     <li>
-{{--                                                                        <div class="res-3-logo-img-container">--}}
-{{--                                                                            <a href="#">--}}
-{{--                                                                                <img--}}
-{{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/066-50x50.jpg"--}}
-{{--                                                                                    alt="" class="img-fluid"></a></div>--}}
                                                                         <p><span class="wcfmfa fa-clock"></span><span
                                                                                 class="today-status"></span><span
                                                                                 class="today-timing">10p-15p</span>
                                                                         </p>
                                                                         <div class="res-2-map-product"><span
                                                                                 class="location-png">
-                                                                            <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg" alt="" class="img-fluid"></span>
+                                                                            <img
+                                                                                src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                alt="" class="img-fluid"></span>
                                                                             <span>10$-20$</span></div>
 
                                                                     </li>
@@ -1114,7 +1120,7 @@ Home
                                                         <div class="res-2-img parallex-new"><a
                                                                 href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/downtown.jpg"
+                                                                    src="assets/images/Restaurant/a03.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="30"></i>
@@ -1159,18 +1165,15 @@ Home
                                                             <div class="res-2-box">
                                                                 <ul>
                                                                     <li>
-{{--                                                                        <div class="res-3-logo-img-container">--}}
-{{--                                                                            <a href="#">--}}
-{{--                                                                                <img--}}
-{{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/downtown-50x50.jpg"--}}
-{{--                                                                                    alt="" class="img-fluid"></a></div>--}}
                                                                         <p><span class="wcfmfa fa-clock"></span><span
                                                                                 class="today-status"></span><span
                                                                                 class="today-timing">20p-23p</span>
                                                                         </p>
                                                                         <div class="res-2-map-product"><span
                                                                                 class="location-png">
-                                                                                <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg" alt="" class="img-fluid"></span>
+                                                                                <img
+                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                    alt="" class="img-fluid"></span>
                                                                             <span>25$-35$ </span></div>
 
                                                                     </li>
@@ -1184,7 +1187,7 @@ Home
                                                         <div class="res-2-img parallex-new"><a
                                                                 href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/hardees.jpg"
+                                                                    src="assets/images/Restaurant/a4.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="26"></i>
@@ -1231,7 +1234,9 @@ Home
                                                                         </p>
                                                                         <div class="res-2-map-product"><span
                                                                                 class="location-png">
-                       <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg" alt="" class="img-fluid"></span>
+                       <img
+                           src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                           alt="" class="img-fluid"></span>
                                                                             <span>50$-55$</span></div>
 
                                                                     </li>
@@ -1245,7 +1250,7 @@ Home
                                                         <div class="res-2-img parallex-new"><a
                                                                 href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Howdy.jpg"
+                                                                    src="assets/images/Restaurant/a5.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="35"></i>
@@ -1294,7 +1299,9 @@ Home
                                                                         </p>
                                                                         <div class="res-2-map-product"><span
                                                                                 class="location-png">
-                                                                                 <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg" alt="" class="img-fluid"></span>
+                                                                                 <img
+                                                                                     src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                     alt="" class="img-fluid"></span>
                                                                             <span>25$-35$</span></div>
 
                                                                     </li>
@@ -1308,7 +1315,7 @@ Home
                                                         <div class="res-2-img parallex-new"><a
                                                                 href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/mcdonalds.jpg"
+                                                                    src="assets/images/Restaurant/a6.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="33"></i>
@@ -1373,7 +1380,7 @@ Home
                                                         <div class="res-2-img parallex-new"><a
                                                                 href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/monal.jpg"
+                                                                    src="assets/images/Restaurant/a7.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="27"></i>
@@ -1424,7 +1431,9 @@ Home
                                                                         </p>
                                                                         <div class="res-2-map-product"><span
                                                                                 class="location-png">
-                                                                                <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg" alt="" class="img-fluid"></span>
+                                                                                <img
+                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                    alt="" class="img-fluid"></span>
                                                                             <span>25-35</span></div>
 
                                                                     </li>
@@ -1438,7 +1447,7 @@ Home
                                                         <div class="res-2-img parallex-new"><a
                                                                 href="#">
                                                                 <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/nandos.jpg"
+                                                                    src="assets/images/Restaurant/a8.jpg"
                                                                     alt="" class="img-fluid"> </a>
                                                             <div class="res-3-icons fav-check"><i class="fa fa-heart  "
                                                                                                   data-id="34"></i>
@@ -1487,7 +1496,9 @@ Home
                                                                         </p>
                                                                         <div class="res-2-map-product"><span
                                                                                 class="location-png">
-                                                                                <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg" alt="" class="img-fluid"></span>
+                                                                                <img
+                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                    alt="" class="img-fluid"></span>
                                                                             <span>30$-35~$</span></div>
 
                                                                     </li>
@@ -1547,11 +1558,11 @@ Home
                                                             <div class="res-2-box">
                                                                 <ul>
                                                                     <li>
-{{--                                                                        <div class="res-3-logo-img-container">--}}
-{{--                                                                            <a href="https://marketplace.foodotawp.com/store/normas/">--}}
-{{--                                                                                <img--}}
-{{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0112-50x50.jpg"--}}
-{{--                                                                                    alt="" class="img-fluid"></a></div>--}}
+                                                                        {{--                                                                        <div class="res-3-logo-img-container">--}}
+                                                                        {{--                                                                            <a href="https://marketplace.foodotawp.com/store/normas/">--}}
+                                                                        {{--                                                                                <img--}}
+                                                                        {{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0112-50x50.jpg"--}}
+                                                                        {{--                                                                                    alt="" class="img-fluid"></a></div>--}}
                                                                         <p><span class="wcfmfa fa-clock"></span><span
                                                                                 class="today-status"></span><span
                                                                                 class="today-timing">22p-25p</span>
@@ -1559,7 +1570,9 @@ Home
                                                                         <div class="res-2-map-product"><span
                                                                                 class="location-png">
 
-                                                                                <img src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg" alt="" class="img-fluid"></span>
+                                                                                <img
+                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                    alt="" class="img-fluid"></span>
                                                                             <span>65$-70$</span></div>
 
                                                                     </li>
@@ -1671,7 +1684,6 @@ Home
     @endsection
 
     @section('custom_js')
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
             var elements = document.querySelectorAll('.ant-btn-block .ant-divider-horizontal');
 
@@ -1685,16 +1697,16 @@ Home
                     elements[index].style.display = specifiedDisplay || 'block';
                 }
             }
-@section('custom_js')
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop()) {
-                    $('header').addClass('sticky')
-                } else {
-                    $('header').removeClass('sticky')
-                }
-            })
-        })
-    </script>
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop()) {
+                        $('header').addClass('sticky')
+                    } else {
+                        $('header').removeClass('sticky')
+                    }
+                })
+            });
+        </script>
 @endsection
