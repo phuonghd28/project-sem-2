@@ -28,6 +28,7 @@ Route::get('/index', function () {
 });
 Route::get('/list', function () {
     return view('clients.list');
+});
 Route::get('/form-user', function () {
     return view('admin.users.form');
 });
