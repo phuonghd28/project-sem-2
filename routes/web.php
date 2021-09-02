@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,4 +28,6 @@ Route::get('/index', function () {
 });
 Route::get('/list', function () {
     return view('clients.list');
+Route::get('/form-user', function () {
+    return view('admin.users.form');
 });
