@@ -21,6 +21,17 @@ Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function 
 
 Route::get('/', function () {
     return view('clients.index');
+});
+Route::get('/list', function () {
+    return view('clients.list');
+});
+Route::get('/form-user', function () {
+    return view('admin.users.form');
+});
+Route::get('/cart', function () {
+    return view('clients.shopcart');
+});
+=======
 })->name('index');
 
 Route::post('login',[EntryController::class,'login'])->name('login');
