@@ -35,7 +35,11 @@
                         </div>
                         <div class="wrap-log-in d-flex ml-3">
                             <div class="log-in px-3 align-self-center">
-                                <a class="color-cart" href="#"><b style="font-size: 14px">Đăng kí</b></a>
+                                @if(\Illuminate\Support\Facades\Auth::check())
+                                    <a class="color-cart" href="#"><b style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b></a>
+                                @else
+                                    <a class="color-cart" href="#"><b style="font-size: 14px">Đăng kí</b></a>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -77,9 +81,9 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="link-item">
-                            <a href="#"class="mr-2"><i class="icon-footer fab fa-facebook-square"></i></a>
-                            <a href="#"class="mx-2"><i class="icon-footer fab fa-instagram"></i></a>
-                            <a href="#"class="mx-2"><i class="icon-footer fab fa-twitter-square"></i></a>
+                            <a href="#" class="mr-2"><i class="icon-footer fab fa-facebook-square"></i></a>
+                            <a href="#" class="mx-2"><i class="icon-footer fab fa-instagram"></i></a>
+                            <a href="#" class="mx-2"><i class="icon-footer fab fa-twitter-square"></i></a>
                         </div>
                     </div>
                 </div>
@@ -98,10 +102,17 @@
         </div>
     </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 @yield('custom_js')
 </body>
 </html>
