@@ -767,29 +767,35 @@
 
 @section('banner')
     <div class="background-img"></div>
-    <div class="form-login">
-        <div class="heading text-center pb-4">Đăng nhập</div>
-        <form action="#">
-            <div class="input-user-name mb-4">
-                <input class="user-name" type="text" placeholder="Tên người dùng">
-                <div class="icon-w3">
-                    <i class="fa fa-user" aria-hidden="true"></i>
+    @if(\Illuminate\Support\Facades\Auth::check())
+    @else
+        <div class="form-login">
+            @if(session('error-login'))
+                <div class="text-danger" style="font-weight: bold; margin-bottom: 10px;">
+                    {{session('error-login')}}
                 </div>
-            </div>
-            <div class="input-pass mb-4">
-                <input class="pass" type="password" placeholder="Mật khẩu">
-                <div class="icon-w3">
-                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+            @endif
+            <div class="heading text-center pb-4">Đăng nhập</div>
+            <form action="{{route('login')}}" method="post">
+                @csrf
+                <div class="input-user-name mb-4">
+                    <input class="user-name" type="text" placeholder="Tên người dùng" name="username">
+                    <div class="icon-w3">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
                 </div>
-            </div>
-        </form>
-        <button class="btn btn-login mt-2 pb-2"><b>Đăng nhập</b></button>
-    </div>
+                <div class="input-pass mb-4">
+                    <input class="pass" type="password" placeholder="Mật khẩu" name="password">
+                    <div class="icon-w3">
+                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <button class="btn btn-login mt-2 pb-2"><b>Đăng nhập</b></button>
+            </form>
+        </div>
+    @endif
 @endsection
 
-@section('banner')
-
-@endsection
 
 @section('content')
     <body>
@@ -1686,6 +1692,8 @@
     </section>
 
     @endsection
+
+
 
     @section('custom_js')
         <script>

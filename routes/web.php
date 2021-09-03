@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\EntryController;
 use App\Http\Controllers\UserController;
+use App\Http\Middleware\CheckAdmin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,23 +15,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
+    require_once __DIR__ . '/admin.php';
+});
 
 Route::get('/', function () {
-    return view('admin.master');
-});
+    return view('clients.index');
+})->name('index');
 
-Route::get('/users/table', function () {
-   return view('admin.users.table');
-});
-Route::get('/form', function () {
-    return view('admin.users.form');
-});
+Route::post('login',[EntryController::class,'login'])->name('login');
+Route::get('logout',[EntryController::class,'logout'])->name('logout');
 
 
-Route::get('/users/create',[UserController::class,'create']);
-Route::post('/users/create',[UserController::class,'store']);
-Route::get('/users',[UserController::class,'list']);
-Route::get('/users/edit/{id}', [UserController::class, 'edit']);
-Route::post('/users/edit/{id}', [UserController::class, 'save']);
-Route::get('/users/delete/{id}', [UserController::class, 'delete']);
+
 
