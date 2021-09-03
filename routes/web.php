@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,9 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('admin.master');
 });
-Route::get('/table', function () {
-   return view('admin.template.table');
+
+Route::get('/users/table', function () {
+   return view('admin.users.table');
 });
 Route::get('/form', function () {
-   return view('admin.template.form');
+    return view('admin.users.form');
 });
+
+
+Route::get('/users/create',[UserController::class,'create']);
+Route::post('/users/create',[UserController::class,'store']);
+Route::get('/users',[UserController::class,'list']);
+Route::get('/users/edit/{id}', [UserController::class, 'edit']);
+Route::post('/users/edit/{id}', [UserController::class, 'save']);
+Route::get('/users/delete/{id}', [UserController::class, 'delete']);
+

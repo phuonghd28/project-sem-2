@@ -6,10 +6,10 @@
                 <table class="mb-0 table table-bordered">
                     <thead>
                     <tr>
-                        <th>#</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
+                        <th>Id</th>
+                        <th>Email</th>
                         <th>Username</th>
+                        <th>Actions</th>
                     </tr>
                     </thead>
                     <tbody>
