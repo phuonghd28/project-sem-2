@@ -17,18 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('admin.master');
 });
-Route::get('/table', function () {
-   return view('admin.template.table');
+
+Route::get('/users/table', function () {
+   return view('admin.users.table');
 });
 Route::get('/form', function () {
-   return view('admin.template.form');
-});
-Route::get('/index', function () {
-    return view('clients.index');
-});
-Route::get('/list', function () {
-    return view('clients.list');
-});
-Route::get('/form-user', function () {
     return view('admin.users.form');
 });
+
+
+Route::get('/users/create',[UserController::class,'create']);
+Route::post('/users/create',[UserController::class,'store']);
+Route::get('/users',[UserController::class,'list']);
+Route::get('/users/edit/{id}', [UserController::class, 'edit']);
+Route::post('/users/edit/{id}', [UserController::class, 'save']);
+Route::get('/users/delete/{id}', [UserController::class, 'delete']);
+
