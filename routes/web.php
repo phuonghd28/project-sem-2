@@ -32,3 +32,6 @@ Route::get('/list', function () {
 Route::get('/form-user', function () {
     return view('admin.users.form');
 });
+Route::get('/cart', function () {
+    return view('clients.shopcart');
+});
