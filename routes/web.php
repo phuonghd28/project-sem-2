@@ -25,6 +25,7 @@ Route::get('/form', function () {
     return view('admin.users.form');
 });
 
+
 Route::get('/users/create',[UserController::class,'create']);
 Route::post('/users/create',[UserController::class,'store']);
 Route::get('/users',[UserController::class,'list']);

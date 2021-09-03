@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -21,6 +22,7 @@ class UserController extends Controller
         $user->save();
         return redirect('/users');
     }
+
 
     public function list()
     {
@@ -51,4 +53,6 @@ class UserController extends Controller
         $delete->delete();
         return redirect('/users');
     }
+
+   
 }
