@@ -5,6 +5,10 @@
 @section('custom_css')
 @endsection
 
+@section('banner')
+
+@endsection
+
 @section('content')
 
 @endsection

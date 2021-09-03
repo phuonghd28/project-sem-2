@@ -13,7 +13,9 @@
 <body>
 <div class="main">
     <header></header>
-    <div class="banner"></div>
+    <div class="banner">
+        @yield('banner')
+    </div>
     <div class="container">
         @yield('content')
     </div>
