@@ -787,6 +787,10 @@
     </div>
 @endsection
 
+@section('banner')
+
+@endsection
+
 @section('content')
     <body>
     <section
