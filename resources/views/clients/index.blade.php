@@ -92,6 +92,50 @@ Home
             font-size: 19px;
             line-height: 49px;
         }
+
+
+        /***********************************Form Categories************************************/
+        .button_outer {
+            background: #00c6d7;
+            text-align: center;
+            height: 40px;
+            width: 140px;
+            border-radius: 4px;
+            display: inline-block;
+            transition: .2s;
+            position: relative;
+            overflow: hidden;
+        }
+        .button_outer:hover {
+            background-color: #17a2b8;
+        }
+        .btn_upload {
+            width: 100%;
+            padding: 9px;
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            z-index: 3;
+            white-space: nowrap;
+        }
+        .btn_upload input {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            height: 100%;
+            cursor: pointer;
+        }
+        .uploaded_file_view {
+            transition: .2s;
+            display: none;
+        }
+        .uploaded_file_view.show {
+            display: block;!important;
+        }
     </style>
 @endsection
 
@@ -132,5 +176,28 @@ Home
                 }
             })
         })
+    </script>
+    <script>
+        var btnUpload = $("#upload_file"),
+            btnOuter = $(".button_outer");
+        btnUpload.on("change", function (e) {
+            $("#uploaded_view").removeClass("show");
+            $("#uploaded_view").find("img").remove();
+            $("#img-edit").remove();
+            var ext = btnUpload.val().split('.').pop().toLowerCase();
+            if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
+                $(".error_msg").text("Not an Image...");
+            } else {
+                $(".error_msg").text("");
+                btnOuter.addClass("file_uploading");
+                setTimeout(function () {
+                    btnOuter.addClass("file_uploaded");
+                }, 0);
+                var uploadedFile = URL.createObjectURL(e.target.files[0]);
+                setTimeout(function () {
+                    $("#uploaded_view").append('<img style="height: 150px; width: 150px" src="' + uploadedFile + '" />').addClass("show");
+                }, 0);
+            }
+        });
     </script>
 @endsection

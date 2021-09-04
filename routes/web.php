@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +26,16 @@ Route::get('/form', function () {
 Route::get('/header', function () {
    return view('clients.index');
 });
+Route::get('/test', function () {
+   return view('/testhtml');
+});
+
+Route::prefix('/categories')->group(function () {
+    Route::get('/create', [CategoryController::class, 'create']);
+    Route::post('/create', [CategoryController::class, 'store']);
+    Route::get('', [CategoryController::class, 'list']);
+    Route::get('/edit/{id}', [CategoryController::class, 'edit']);
+    Route::put('/edit/{id}', [CategoryController::class, 'save']);
+    Route::get('/delete/{id}', [CategoryController::class, 'delete']);
+});
+
