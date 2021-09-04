@@ -3,8 +3,17 @@
 use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/categories/create', [CategoryController::class, 'create']);
-Route::post('/categories/create', [CategoryController::class, 'store']);
-Route::get('/categories', [CategoryController::class, 'list']);
-Route::get('/categories/edit/{id}', [CategoryController::class, 'edit']);
-Route::post('/categories/edit{id}/', [CategoryController::class, 'save']);
+
+Route::get('/', function(){
+    return redirect()->route('listUser');
+});
+
+Route::prefix('users')->group(function(){
+    Route::get('create',[UserController::class,'create'])->name('createUser');
+    Route::post('create',[UserController::class,'store'])->name('storeUser');
+    Route::get('',[UserController::class,'list'])->name('listUser');
+    Route::get('edit/{id}', [UserController::class, 'edit'])->name('editUser');
+    Route::put('edit/{id}', [UserController::class, 'save'])->name('saveUser');
+    Route::get('delete/{id}', [UserController::class, 'delete'])->name('deleteUser');
+});
+

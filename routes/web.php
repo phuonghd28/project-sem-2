@@ -1,6 +1,10 @@
 <?php
 
+
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\EntryController;
+use App\Http\Controllers\UserController;
+use App\Http\Middleware\CheckAdmin;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,22 +17,23 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
+    require_once __DIR__ . '/admin.php';
+});
 
 Route::get('/', function () {
-    return view('admin.master');
+    return view('clients.index');
 });
-Route::get('/table', function () {
-   return view('admin.template.table');
+Route::get('/list', function () {
+    return view('clients.list');
 });
-Route::get('/form', function () {
-   return view('admin.template.form');
+Route::get('/form-user', function () {
+    return view('admin.users.form');
 });
-Route::get('/header', function () {
-   return view('clients.index');
+Route::get('/cart', function () {
+    return view('clients.shopcart');
 });
-Route::get('/test', function () {
-   return view('/testhtml');
-});
+
 
 Route::prefix('/categories')->group(function () {
     Route::get('/create', [CategoryController::class, 'create']);
@@ -38,4 +43,9 @@ Route::prefix('/categories')->group(function () {
     Route::put('/edit/{id}', [CategoryController::class, 'save']);
     Route::get('/delete/{id}', [CategoryController::class, 'delete']);
 });
+
+Route::post('login',[EntryController::class,'login'])->name('login');
+Route::get('logout',[EntryController::class,'logout'])->name('logout');
+
+
 
