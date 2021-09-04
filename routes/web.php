@@ -23,7 +23,7 @@ Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function 
 
 Route::get('/', function () {
     return view('clients.index');
-});
+})->name('index');
 Route::get('/list', function () {
     return view('clients.list');
 });
@@ -32,16 +32,6 @@ Route::get('/form-user', function () {
 });
 Route::get('/cart', function () {
     return view('clients.shopcart');
-});
-
-
-Route::prefix('/categories')->group(function () {
-    Route::get('/create', [CategoryController::class, 'create']);
-    Route::post('/create', [CategoryController::class, 'store']);
-    Route::get('', [CategoryController::class, 'list']);
-    Route::get('/edit/{id}', [CategoryController::class, 'edit']);
-    Route::put('/edit/{id}', [CategoryController::class, 'save']);
-    Route::get('/delete/{id}', [CategoryController::class, 'delete']);
 });
 
 Route::post('login',[EntryController::class,'login'])->name('login');

@@ -22,7 +22,7 @@ class CategoryController extends Controller
         $category->image = $path;
         $category->save();
 
-        return redirect('/categories')
+        return redirect()->route('listCategory')
             ->with('success', 'Thêm mới thành công.');
     }
 
@@ -50,7 +50,7 @@ class CategoryController extends Controller
         $category->name = $request->name;
         $category->save();
 
-        return redirect('/categories')
+        return redirect()->route('listCategory')
             ->with('success', 'Update thành công.');
     }
 
@@ -58,7 +58,7 @@ class CategoryController extends Controller
     {
         $delete = Category::find($id);
         $delete->delete();
-        return redirect('/categories')
+        return redirect()->route('listCategory')
             ->with('success', 'Delete thành công.');
     }
 }
