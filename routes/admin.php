@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
+
 
 Route::get('/', function(){
     return redirect()->route('listUser');
@@ -15,3 +16,4 @@ Route::prefix('users')->group(function(){
     Route::put('edit/{id}', [UserController::class, 'save'])->name('saveUser');
     Route::get('delete/{id}', [UserController::class, 'delete'])->name('deleteUser');
 });
+

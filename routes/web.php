@@ -1,5 +1,7 @@
 <?php
 
+
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\EntryController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\CheckAdmin;
@@ -31,12 +33,19 @@ Route::get('/form-user', function () {
 Route::get('/cart', function () {
     return view('clients.shopcart');
 });
-=======
-})->name('index');
+
+
+Route::prefix('/categories')->group(function () {
+    Route::get('/create', [CategoryController::class, 'create']);
+    Route::post('/create', [CategoryController::class, 'store']);
+    Route::get('', [CategoryController::class, 'list']);
+    Route::get('/edit/{id}', [CategoryController::class, 'edit']);
+    Route::put('/edit/{id}', [CategoryController::class, 'save']);
+    Route::get('/delete/{id}', [CategoryController::class, 'delete']);
+});
 
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
-
 
 
 
