@@ -59,13 +59,13 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="{{route('createCategory')}}">
                                 <i class="metismenu-icon">
                                 </i>Create
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{route('listCategory')}}">
                                 <i class="metismenu-icon">
                                 </i>List
                             </a>
@@ -74,21 +74,20 @@
                 </li>
                 <li class="mb-2">
                     <a href="#">
-                        <i class="metismenu-icon fas fa-gem"></i>
-                        Category
-                        <i class="metismenu-state-icon fas fa-caret-up"></i>
+                        <i class="fas fa-list"></i>
+                        Products
                     </a>
                     <ul>
                         <li>
-                            <a href="/categories/form">
+                            <a href="{{route('createProduct')}}">
                                 <i class="metismenu-icon">
-                                </i>Form
+                                </i>Create
                             </a>
                         </li>
                         <li>
-                            <a href="/categories/table">
+                            <a href="{{ route('listProduct') }}">
                                 <i class="metismenu-icon">
-                                </i>Table
+                                </i>List
                             </a>
                         </li>
                     </ul>

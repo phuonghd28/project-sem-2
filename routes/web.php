@@ -1,9 +1,8 @@
 <?php
 
 
-use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
-use App\Http\Controllers\UserController;
 use App\Http\Middleware\CheckAdmin;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +16,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
+//->middleware(['auth', CheckAdmin::class])
+Route::prefix('admin')->group(function (){
     require_once __DIR__ . '/admin.php';
 });
 
@@ -36,6 +36,5 @@ Route::get('/cart', function () {
 
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
-
 
 

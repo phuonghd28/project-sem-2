@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CategoriesValidator extends FormRequest
+class ProductRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,20 +23,23 @@ class CategoriesValidator extends FormRequest
      */
     public function rules()
     {
-        $rules = [
-            'name' => 'required',
-            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048'
+        $rules =  [
+            'name'=>'required',
+            'price'=>'required',
+            'description'=>'required',
+            'image'=>'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048'
         ];
         if (request()->isMethod('PUT')) {
             $rules['image'] = 'image|mimes:jpg,png,jpeg,gif,svg|max:2048';
         }
         return $rules;
     }
-
     public function messages()
     {
         return [
             'name.required'=>'Vui lòng nhập tên.',
+            'price.required'=>'Vui lòng nhập giá.',
+            'description.required'=>'Vui lòng nhập mô tả.',
             'image.required'=>'Vui lòng chọn ảnh.',
             'image.image'=>'Vui lòng chọn đúng file ảnh.',
             'image.jpg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',

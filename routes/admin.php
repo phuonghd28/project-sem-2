@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,6 +9,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function(){
     return redirect()->route('listUser');
 });
+
+
+
 
 Route::prefix('users')->group(function(){
     Route::get('create',[UserController::class,'create'])->name('createUser');
@@ -27,3 +31,11 @@ Route::prefix('categories')->group(function () {
     Route::get('delete/{id}', [CategoryController::class, 'delete'])->name('deleteCategory');
 });
 
+Route::prefix('products')->group(function () {
+    Route::get('create', [ProductController::class, 'create'])->name('createProduct');
+    Route::post('create', [ProductController::class, 'store'])->name('storeProduct');
+    Route::get('',[ProductController::class, 'list'])->name('listProduct');
+    Route::get('edit/{id}',[ProductController::class, 'edit'])->name('editProduct');
+    Route::put('edit/{id}',[ProductController::class, 'save'])->name('saveProduct');
+    Route::get('delete/{id}',[ProductController::class, 'delete'])->name('deleteProduct');
+});
