@@ -15,8 +15,44 @@ class UserController extends Controller
         return view('admin/users/form', ['data' => null]);
     }
 
-    public function store(UserRequest $request)
+    public function store(Request $request)
     {
+        $validate= $request->validate([
+            'username'=>'required|min:5|max:10',
+            'phone'=>'required|min:9|max:10',
+            'password'=>'required|confirmed',
+            'password_confirmation'=>'required',
+            'email'=>'required',
+            'address'=>'required',
+            'last_name'=>'required|min:7|max:12',
+            'first_name'=>'required|min:8|max:12'
+        ],[
+            'username.required'=>'vui lòng nhập tên đăng nhập ',
+            'username.min'=>'ten dang nhap toi thieu 5 ki tu',
+            'username.max'=>'ten dang nhap toi da 10 ki tu',
+
+            'phone.required'=>'vui lòng nhập số điện thoại ',
+            'phone.min'=>'ten dang nhap toi thieu 5 ki tu',
+            'phone.max'=>'ten dang nhap toi da 10 ki tu',
+
+            'password.required'=>'vui long nhap ten dang nhap',
+            'password.confirmed'=>'mật khẩu không giống',
+
+            'password_confirmation.required'=>'vui lòng xác nhận mật khẩu ',
+
+            'email.required'=>'vui long nhập đúng định dạng @gmail.com',
+
+            'address.required'=>'vui long nhập địa chỉ của bạn ',
+
+            'last_name.required'=>'vui long nhập họ của bạn ',
+            'last_name.min'=>'họ đăng nhập tối thiểu 7 kí tự ',
+            'last_name.max'=>'họ đăng nhập tối đa 12 kí tự ',
+
+            'first_name.required'=>'vui lòng nhập họ và tên của bạn ',
+            'first_name.min'=>'họ đăng nhập tối thiểu 8 kí tự ',
+            'first_name.max'=>'họ đăng nhập tối thiểu 12 kí tự ',
+
+        ]);
         $user = new User();
         $user->fill($request->validated());
         $user->password = Hash::make($request['password']);
@@ -56,7 +92,6 @@ class UserController extends Controller
         ]);
 
     }
-
     public function edit($id)
     {
         $user = User::find($id);

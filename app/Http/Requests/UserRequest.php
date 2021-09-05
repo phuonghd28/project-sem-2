@@ -43,4 +43,20 @@ class UserRequest extends FormRequest
         }
         return $rules;
     }
+    public function messages()
+    {
+        $messages = [
+        'first_name.required' => 'vui lòng nhập tên ',
+            'Last_name.required'=>'vui lòng nhập họ ',
+            'Address.required'=>'vui lòng nhập địa chỉ',
+             'Email.required'=>'vui lòng nhập email',
+             'Phone.required'=>'vui lòng nhập số điện thoại',
+             'Username .required'=>'vui lòng nhập username',
+             'Password.required'=>'vui lòng nhập password',
+             'Re-password.required'=>'vui lòng nhập lại password',
+    ];
+        return $messages;
+
+    }
+
 }
