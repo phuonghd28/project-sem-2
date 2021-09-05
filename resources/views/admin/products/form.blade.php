@@ -1,7 +1,7 @@
 @extends('admin.master')
 @section('title')
-    Create Category
-@endsection
+    Create Product
+    @endsection
 @section('custom_css')
     <style>
         .button_outer {
@@ -62,12 +62,37 @@
                     @endif
                     @csrf
                     <div class="position-relative row form-group">
-                        <label for="exampleEmail" class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-10">
-                            <input name="name" value="{{$data ? $data->name : ''}}" type="text" class="form-control" placeholder="Enter name">
+                        <label class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-4">
+                            <input name="name" value="{{$data ? $data->name : ''}}" type="text" class="form-control form-control" placeholder="Enter name">
                             @error('name')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
+                        </div>
+                        <label class="col-sm-2 col-form-label">Price</label>
+                        <div class="col-sm-4">
+                            <input name="price" value="{{$data ? $data->price : ''}}" type="text" class="form-control" placeholder="Enter price">
+                            @error('price')
+                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="position-relative row form-group">
+                        <label class="col-sm-2 col-form-label">Description</label>
+                        <div class="col-sm-4">
+                            <input name="description" value="{{$data ? $data->description : ''}}" type="text" class="form-control" placeholder="Enter description">
+                            @error('description')
+                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                            @enderror
+                        </div>
+                        <label class="col-sm-2 col-form-label">Category</label>
+                        <div class="col-sm-4">
+                            <select class="form-control" name="category_id">
+                                <option selected disabled hidden>Category</option>
+                                @foreach($category as $item)
+                                    <option {{$data && $data->category_id === $item->id ? 'selected' : ''}} value="{{$item->id}}">{{$item->name}}</option>
+                                @endforeach
+                            </select>
                         </div>
                     </div>
                     <div class="position-relative row form-group">
@@ -91,12 +116,12 @@
                             @enderror
                         </div>
                     </div>
-                    <div class="position-relative row form-check">
-                        <div class="col-sm-10 offset-sm-2 p-0">
+                    <div class="position-relative row form-group">
+                        <label class="col-sm-2 col-form-label"></label>
+                        <div class="col-sm-10">
                             <button class="btn btn-primary">Submit</button>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>

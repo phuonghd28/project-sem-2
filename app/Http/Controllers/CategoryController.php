@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\CategoriesValidator;
+use App\Http\Requests\CategoriesRequest;
 use App\Models\Category;
-use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
@@ -13,7 +12,7 @@ class CategoryController extends Controller
         return view('admin.categories.form', ['data' => null]);
     }
 
-    public function store(CategoriesValidator $request)
+    public function store(CategoriesRequest $request)
     {
         $request->validated();
         $path = $request->file('image')->store('public/images');
@@ -38,7 +37,7 @@ class CategoryController extends Controller
         return view('admin.categories.form', ['data' => $categories]);
     }
 
-    public function save(CategoriesValidator $request, $id)
+    public function save(CategoriesRequest $request, $id)
     {
         $request->validated();
         $category = Category::find($id);
