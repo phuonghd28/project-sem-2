@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\UserRequest;
+use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class EntryController extends Controller
 {
-    public function register(Request $request){
+    public function register(UserRequest $request){
+        $request->validated();
     }
     public function login(Request $request){
         $credentials = $request->only('username', 'password');

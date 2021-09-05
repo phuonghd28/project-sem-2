@@ -15,10 +15,10 @@
                     Create User
                 @endif
             </h2>
-            <form action="" method="post">
-                @if($data)
-                    @method('put')
-                @endif
+            <form action="/form" method="post" id="form-user">
+{{--                @if($data)--}}
+{{--                    @method('put')--}}
+{{--                @endif--}}
                 @csrf
                 <div class="row">
                     <div class="col-md-6">
@@ -26,15 +26,20 @@
                             <label>Firstname:</label>
 
                             <input value="{{$data ? $data->first_name : ''}}" type="text" class="form-control"
-                                   placeholder="Firstname" name="first_name">
+                                   placeholder="Firstname" name="first_name" >
+                            @error('first_name')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Lastname:</label>
-
                             <input value="{{$data ? $data->last_name : ''}}" type="text" class="form-control"
                                    placeholder="Lastname" name="last_name">
+                            @error('last_name')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -42,9 +47,11 @@
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Address:</label>
-
                             <input value="{{$data ? $data->address : ''}}" type="text" class="form-control"
                                    placeholder="Address" name="address">
+                            @error('address')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -52,9 +59,11 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Email:</label>
-
                             <input value="{{$data ? $data->email : ''}}" type="text" class="form-control"
                                    placeholder="Email" name="email">
+                            @error('email')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -63,6 +72,9 @@
 
                             <input value="{{$data ? $data->phone : ''}}" type="text" class="form-control"
                                    placeholder="Phone" name="phone">
+                            @error('phone')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>
@@ -71,8 +83,11 @@
                         <div class="form-group">
                             <label>Username:</label>
 
-                            <input value="{{$data ? $data->username : ''}}" type="text" class="form-control"
+                            <input value="{{$data ? $data->Username : ''}}" type="text" class="form-control"
                                    placeholder="Username" name="username">
+                            @error('username')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -91,8 +106,11 @@
                         <div class="form-group">
                             <label> Password:</label>
 
-                            <input value="{{$data ? $data->password : ''}}" type="password" class="form-control"
+                            <input value="{{$data ? $data->Password : ''}}" type="password" class="form-control"
                                    placeholder="Password" name="password">
+                            @error('password')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -100,17 +118,23 @@
                             <label>Re-password:</label>
 
                             <input value="{{$data ? $data->password : ''}}" type="password" class="form-control"
-                                   placeholder="Re-password" name="password">
+                                   placeholder="Re-password" name="password_confirmation" >
+                            @error('password_confirmation')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
                     </div>
                 </div>
                 <div class="row justify-content-end mt-3">
                     <div class="col-1">
                         <button type="submit" class="btn btn-primary">Send</button>
+
                     </div>
                 </div>
             </form>
         </div>
     </div>
 @endsection
+@section('custom_js')
 
+@endsection
