@@ -50,7 +50,13 @@
 @section('content')
     <div class="row main-card mb-3 card">
         <div class="container">
-            <div class="card-body mb-2"><h5 class="card-title">Grid</h5>
+            <div class="card-body mb-2"><h2 class="mb-2">
+                    @if($data)
+                        Update Product
+                    @else
+                        Create Product
+                    @endif
+                </h2>
                 @if(session('status'))
                     <div class="alert alert-success mb-1 mt-1">
                         {{ session('status') }}
@@ -62,31 +68,22 @@
                     @endif
                     @csrf
                     <div class="position-relative row form-group">
-                        <label class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-4">
+                        <label class="col-sm-1 col-form-label">Name</label>
+                        <div class="col-sm-3">
                             <input name="name" value="{{$data ? $data->name : ''}}" type="text" class="form-control form-control" placeholder="Enter name">
                             @error('name')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
                         </div>
-                        <label class="col-sm-2 col-form-label">Price</label>
-                        <div class="col-sm-4">
+                        <label class="col-sm-1 col-form-label">Price</label>
+                        <div class="col-sm-3">
                             <input name="price" value="{{$data ? $data->price : ''}}" type="text" class="form-control" placeholder="Enter price">
                             @error('price')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
                         </div>
-                    </div>
-                    <div class="position-relative row form-group">
-                        <label class="col-sm-2 col-form-label">Description</label>
-                        <div class="col-sm-4">
-                            <input name="description" value="{{$data ? $data->description : ''}}" type="text" class="form-control" placeholder="Enter description">
-                            @error('description')
-                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
-                            @enderror
-                        </div>
-                        <label class="col-sm-2 col-form-label">Category</label>
-                        <div class="col-sm-4">
+                        <label class="col-sm-1 col-form-label">Category</label>
+                        <div class="col-sm-3">
                             <select class="form-control" name="category_id">
                                 <option selected disabled hidden>Category</option>
                                 @foreach($category as $item)
@@ -96,7 +93,16 @@
                         </div>
                     </div>
                     <div class="position-relative row form-group">
-                        <label for="exampleFile" class="col-sm-2 col-form-label">Image</label>
+                        <label class="col-sm-1 col-form-label">Description</label>
+                        <div class="col-sm-11">
+                            <textarea  name="description" type="text" class="form-control" placeholder="Enter description" rows="3">{{$data ? $data->description : ''}}</textarea>
+                            @error('description')
+                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div class="position-relative row form-group">
+                        <label for="exampleFile" class="col-sm-1 col-form-label">Image</label>
                         <div class="col-sm-10">
                             <div class="button_outer">
                                 <div class="btn_upload">
@@ -117,9 +123,9 @@
                         </div>
                     </div>
                     <div class="position-relative row form-group">
-                        <label class="col-sm-2 col-form-label"></label>
-                        <div class="col-sm-10">
-                            <button class="btn btn-primary">Submit</button>
+                        <label class="col-sm-1 col-form-label"></label>
+                        <div class="col-sm-11 d-flex justify-content-end">
+                            <button class="btn btn-primary">Send</button>
                         </div>
                     </div>
                 </form>

@@ -5,7 +5,7 @@
 @section('content')
     <div class="row main-card mb-3 card">
         <div class="container">
-            <div class="card-body"><h5 class="card-title">Table bordered</h5>
+            <div class="card-body"><h2 class="">List Category</h2>
                 <div class="row">
                     <div class="col-lg-12 margin-tb">
                         <div class="pull-left mb-2">
