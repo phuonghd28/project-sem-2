@@ -50,7 +50,13 @@
 @section('content')
     <div class="row main-card mb-3 card">
         <div class="container">
-            <div class="card-body mb-2"><h5 class="card-title">Grid</h5>
+            <div class="card-body mb-2"><h2 class="mb-3">
+                    @if($data)
+                        Update Category
+                    @else
+                        Create Category
+                    @endif
+                </h2>
                 @if(session('status'))
                     <div class="alert alert-success mb-1 mt-1">
                         {{ session('status') }}
