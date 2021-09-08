@@ -104,7 +104,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label> Password:</label>
+                            <label>Password:</label>
 
                             <input value="{{$data ? $data->Password : ''}}" type="password" class="form-control"
                                    placeholder="Password" name="password">
@@ -128,7 +128,6 @@
                 <div class="row justify-content-end mt-3">
                     <div class="col-1">
                         <button type="submit" class="btn btn-primary">Send</button>
-
                     </div>
                 </div>
             </form>

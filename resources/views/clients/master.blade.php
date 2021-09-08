@@ -38,7 +38,9 @@
                                 @if(\Illuminate\Support\Facades\Auth::check())
                                     <a class="color-cart" href="#"><b style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b></a>
                                 @else
-                                    <a class="color-cart" href="#"><b style="font-size: 14px">Đăng kí</b></a>
+                                    <button style="background: none;border: none" type="button" class="btn-account" data-toggle="modal" data-target="#myModal">
+                                        <a class="color-cart" href="#"><b style="font-size: 14px">Đăng ký</b></a>
+                                    </button>
                                 @endif
                             </div>
                         </div>
@@ -50,6 +52,7 @@
     <div class="banner">
         @yield('banner')
     </div>
+    @yield('form-account')
     <div class="container">
         @yield('content')
     </div>
