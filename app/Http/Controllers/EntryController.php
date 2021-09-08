@@ -2,15 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\Role;
 use App\Http\Requests\UserRequest;
-use http\Client\Curl\User;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class EntryController extends Controller
 {
     public function register(UserRequest $request){
-        $request->validated();
+        $user = new User();
+        $user->fill($request->validated());
+        $user->role = Role::USER;
+        $user->password = Hash::make($request['password']);
+        $user->save();
+        return redirect()->route('index')
+            ->with('success', 'Đăng kí thành công');
     }
     public function login(Request $request){
         $credentials = $request->only('username', 'password');

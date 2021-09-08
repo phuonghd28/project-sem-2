@@ -4,102 +4,6 @@
 @endsection
 @section('custom_css')
     <style>
-        .background-img {
-            background-image: url("https://afamilycdn.com/2019/10/12/8-15708979312971424397195.jpg");
-            width: 100%;
-            height: 100vh;
-            background-size: cover;
-            position: relative;
-            background-repeat: no-repeat;
-            background-position: 50%;
-        }
-
-        .form-login {
-            width: 360px;
-            position: absolute;
-            bottom: 40px;
-            padding: 35px 24px 35px;
-            margin-left: 118px;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            background: white;
-        }
-
-        .btn-login {
-            width: 100%;
-            background-color: #00c6d7;
-            color: #ffffff;
-            border-radius: 0;
-            height: 48px;
-            transition: all .2s cubic-bezier(.645, .045, .355, 1);
-        }
-
-        .btn-login:hover {
-            color: white;
-            background-color: #00E5EE;
-            box-shadow: none;
-            outline: none;
-        }
-
-        .btn-login:active {
-            box-shadow: none;
-            outline: none;
-        }
-
-        .btn:active,
-        .btn:focus,
-        .btn.active {
-            background-image: none;
-            outline: 0;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-        }
-
-        .input-user-name, .input-pass {
-            padding: 0;
-            border: 0;
-            vertical-align: baseline;
-            width: 100%;
-            outline: none;
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            position: relative;
-        }
-
-        .user-name, .pass {
-            background: none;
-            padding: 15px 66px 15px 19px;
-            text-align: left;
-            border: 0;
-            border-left: 2px solid #00c6d7;
-            font-size: 15px;
-            letter-spacing: 1.5px;
-            outline: 0;
-            width: 75%;
-            box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
-        }
-
-        .heading {
-            font-size: 1.5rem;
-            line-height: 1.33333333;
-            font-weight: 500;
-        }
-
-        .icon-w3 {
-            right: 0;
-            bottom: 0;
-            width: 53px;
-            height: 52px;
-            display: inline-block;
-            position: absolute;
-            text-align: center;
-            background: #00c6d7;
-        }
-
-        .icon-w3 i {
-            color: #ffffff;
-            font-size: 19px;
-            line-height: 49px;
-        }
-
         body {
             background: #FFF;
             font-family: 'Nunito', sans-serif;
@@ -125,7 +29,6 @@
         }
 
         a {
-            color: #0d6efd;
             text-decoration: none
         }
 
@@ -754,52 +657,45 @@
             display: block
         }
 
+        /***********************************Form Login, Register***********************/
         .background-img {
-            background-image: url(https://afamilycdn.com/2019/10/12/8-15708979312971424397195.jpg);
+            background-image: url("https://afamilycdn.com/2019/10/12/8-15708979312971424397195.jpg");
             width: 100%;
             height: 100vh;
             background-size: cover;
             position: relative;
             background-repeat: no-repeat;
-            background-position: 50%
-        }
-
-        .form-login {
-            width: 360px;
-            position: absolute;
-            bottom: 40px;
-            padding: 35px 24px;
-            margin-left: 118px;
-            box-shadow: 0 6px 12px 0 #000;
-            background: #fff
+            background-position: 50%;
         }
 
         .btn-login {
             width: 100%;
             background-color: #00c6d7;
-            color: #fff;
+            color: #ffffff;
             border-radius: 0;
             height: 48px;
-            transition: all .2s cubic-bezier(.645, .045, .355, 1)
+            transition: all .2s cubic-bezier(.645, .045, .355, 1);
         }
 
         .btn-login:hover {
-            color: #fff;
+            color: white;
             background-color: #00E5EE;
             box-shadow: none;
-            outline: none
+            outline: none;
         }
 
         .btn-login:active {
             box-shadow: none;
-            outline: none
+            outline: none;
         }
 
-        .btn:active, .btn:focus, .btn.active {
+        .btn:active,
+        .btn:focus,
+        .btn.active {
             background-image: none;
             outline: 0;
             -webkit-box-shadow: none;
-            box-shadow: none
+            box-shadow: none;
         }
 
         .input-user-name, .input-pass {
@@ -809,7 +705,7 @@
             width: 100%;
             outline: none;
             transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            position: relative
+            position: relative;
         }
 
         .user-name, .pass {
@@ -821,66 +717,183 @@
             font-size: 15px;
             letter-spacing: 1.5px;
             outline: 0;
-            width: 75%;
+            width: 78%;
+            box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
         }
 
-        .heading {
+        .heading span {
             font-size: 1.5rem;
             line-height: 1.33333333;
-            font-weight: 500
+            font-weight: 500;
+            color: #676767;
+            cursor: pointer;
+            display: inline-block;
+            width: 150px;
         }
 
         .icon-w3 {
             right: 0;
             bottom: 0;
             width: 53px;
-            height: 52px;
+            height: 51px;
             display: inline-block;
             position: absolute;
             text-align: center;
-            background: #00c6d7
+            background: #00c6d7;
         }
 
         .icon-w3 i {
-            color: #fff;
+            color: #ffffff;
             font-size: 19px;
-            line-height: 49px
+            line-height: 49px;
         }
 
+
+        .modal-content button.close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 0;
+            margin: 0;
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+        }
+
+        button:focus {
+            outline: none;
+        }
+
+        .form-login {
+            width: 100%;
+            padding: 35px 24px 35px;
+            height: 590px;
+            background: white;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .form-login form {
+            top: 130px;
+            position: absolute;
+            width: 450px;
+            height: 100%;
+            margin: 0 24px;
+            transition: transform 0.4s;
+        }
+
+        #form-account {
+            transition: height .4s;
+        }
+
+        #log-form {
+            left: -500px;
+        }
+
+        #reg-form {
+            left: 0;
+        }
+
+        #reg-form input {
+            width: 100%;
+            padding: 15px 18px;
+        }
+
+        .input-form-reg {
+            width: 48%;
+        }
+
+        #indicator {
+            width: 130px;
+            border: none;
+            background-color: #00c6d7;
+            height: 3px;
+            margin: 0;
+            transform: translateX(237px);
+            transition: transform .4s;
+        }
     </style>
 @endsection
 
 @section('banner')
     <div class="background-img"></div>
+@endsection
+@section('form-account')
     @if(\Illuminate\Support\Facades\Auth::check())
     @else
-        <div class="form-login">
-            @if(session('error-login'))
-                <div class="text-danger" style="font-weight: bold; margin-bottom: 10px;">
-                    {{session('error-login')}}
-                </div>
-            @endif
-            <div class="heading text-center pb-4">Đăng nhập</div>
-            <form action="{{route('login')}}" method="post">
-                @csrf
-                <div class="input-user-name mb-4">
-                    <input class="user-name" type="text" placeholder="Tên người dùng" name="username">
-                    <div class="icon-w3">
-                        <i class="fa fa-user" aria-hidden="true"></i>
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: none;padding: 0;position: relative">
+                        <button style="background: none;border: none; color: #8c8c8c" type="button"
+                                class="close d-flex align-items-center justify-content-center" data-dismiss="modal">
+                            &times;
+                        </button>
+                    </div>
+                    <div class="form-login" id="form-account">
+                        @if(session('error-login'))
+                            <div class="text-danger" style="font-weight: bold; margin-bottom: 10px;">
+                                {{session('error-login')}}
+                            </div>
+                        @endif
+                        <div class="heading text-center pb-3">
+                            <span onclick="login()" class="mb-2">Đăng nhập</span>
+                            <span onclick="register()" class="mb-2">Đăng kí</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="log-form" action="{{route('login')}}" method="post">
+                            @csrf
+                            <div class="input-user-name mb-4">
+                                <input class="user-name" type="text" placeholder="Tên người dùng" name="username">
+                                <div class="icon-w3">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="input-pass mb-4">
+                                <input class="pass" type="password" placeholder="Mật khẩu" name="password">
+                                <div class="icon-w3">
+                                    <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-login mt-2 pb-2"><b>Đăng nhập</b></button>
+                        </form>
+                        <form id="reg-form" action="{{ route('register') }}" method="post">
+                            @csrf
+                            <div class="input-user-name d-flex m-0 mb-4">
+                                <input style="margin-right: 18px" class="user-name input-form-reg d-inline-block"
+                                       type="text"
+                                       placeholder="First Name" name="first_name">
+                                <input type="text" class="justify-content-end pass d-inline-block input-form-reg"
+                                       placeholder="Last Name" name="last_name">
+                            </div>
+                            <div class="input-pass mb-4">
+                                <input class="pass" type="text" placeholder="Address" name="address">
+                            </div>
+                            <div class="input-user-name d-flex m-0 mb-4">
+                                <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
+                                       type="text"
+                                       placeholder="User name" name="username">
+                                <input type="text" class="input-form-reg justify-content-end pass d-inline-block"
+                                       placeholder="Phone" name="phone">
+                            </div>
+                            <div class="input-pass mb-4">
+                                <input class="pass" type="text" placeholder="Email" name="email">
+                            </div>
+                            <div class="input-user-name d-flex m-0 mb-4">
+                                <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
+                                       type="password" placeholder="Password" name="password">
+                                <input class="input-form-reg justify-content-end pass d-inline-block" type="password"
+                                       placeholder="Re-password" name="password_confirmation">
+                            </div>
+                            <button class="btn btn-login mt-2 pb-2"><b>Đăng ký</b></button>
+                        </form>
                     </div>
                 </div>
-                <div class="input-pass mb-4">
-                    <input class="pass" type="password" placeholder="Mật khẩu" name="password">
-                    <div class="icon-w3">
-                        <i class="fa fa-unlock-alt" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <button class="btn btn-login mt-2 pb-2"><b>Đăng nhập</b></button>
-            </form>
+            </div>
         </div>
     @endif
 @endsection
-
 
 @section('content')
     <body>
@@ -1805,5 +1818,30 @@
                     }
                 })
             });
+        </script>
+        <script>
+            var LoginForm = document.getElementById("log-form");
+            var RegForm = document.getElementById("reg-form");
+            var Indicator = document.getElementById("indicator");
+            var FormAccount = document.getElementById("form-account");
+
+            function register() {
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
+                Indicator.style.transform = "translateX(236px)";
+                FormAccount.style.height = "590px";
+                LoginForm.style.opacity = "0";
+                RegForm.style.opacity = "1";
+            }
+
+            function login() {
+                RegForm.style.transform = "translateX(500px)";
+                LoginForm.style.transform = "translateX(500px)";
+                Indicator.style.transform = "translateX(83px)";
+                FormAccount.style.height = "365px"
+                RegForm.style.opacity = "0";
+                LoginForm.style.opacity = "1";
+            }
+
         </script>
 @endsection
