@@ -28,6 +28,24 @@ Route::get('/', function () {
 Route::get('/list', function () {
     return view('clients.list');
 });
+Route::get('/404', function () {
+    return view('clients.404');
+});
+Route::get('/blog', function () {
+    return view('clients.blog');
+});
+Route::get('/contact', function () {
+    return view('clients.contact');
+});
+Route::get('/about', function () {
+    return view('clients.abouts');
+});
+Route::get('/cart', function () {
+    return view('clients.shopcart');
+});
+Route::get('/shop-details', function () {
+    return view('clients.shop-details');
+});
 
 
 Route::post('login',[EntryController::class,'login'])->name('login');
