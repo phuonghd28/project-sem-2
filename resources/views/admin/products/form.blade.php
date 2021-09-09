@@ -95,7 +95,7 @@
                     <div class="position-relative row form-group">
                         <label class="col-sm-1 col-form-label">Description</label>
                         <div class="col-sm-11">
-                            <textarea  name="description" type="text" class="form-control" placeholder="Enter description" rows="3">{{$data ? $data->description : ''}}</textarea>
+                            <textarea id="description"  name="description" type="text" class="form-control" placeholder="Enter description" rows="3">{{$data ? $data->description : ''}}</textarea>
                             @error('description')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
@@ -134,7 +134,9 @@
     </div>
 @endsection
 @section('custom_js')
+    <script src="{{url('https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js')}}"></script>
     <script>
+        CKEDITOR.replace('description');
         var btnUpload = $("#upload_file"),
             btnOuter = $(".button_outer");
         btnUpload.on("change", function (e) {
