@@ -4,6 +4,7 @@
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
+use App\Http\Controllers\UserController;
 use App\Http\Middleware\CheckAdmin;
 use Illuminate\Support\Facades\Route;
 
@@ -33,6 +34,7 @@ Route::get('/list', function () {
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
 
-Route::post('register', [EntryController::class, 'register'])->name('register');
+Route::get('/form',[UserController::class,'create']);
+Route::post('/form',[UserController::class,'store']);
 
 
