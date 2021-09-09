@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
+use App\Http\Controllers\UserController;
 use App\Http\Middleware\CheckAdmin;
 use Illuminate\Support\Facades\Route;
 
@@ -36,7 +37,7 @@ Route::get('/cart', function () {
 
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
-Route::get('/form',[\App\Http\Controllers\UserController::class,'create']);
-Route::post('/form',[\App\Http\Controllers\UserController::class,'store']);
+Route::get('/form',[UserController::class,'create']);
+Route::post('/form',[UserController::class,'store']);
 
 
