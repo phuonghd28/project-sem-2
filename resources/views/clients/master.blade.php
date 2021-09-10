@@ -33,7 +33,7 @@
                                 <a class="color-cart" href="#"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
-                        <div class="wrap-log-in d-flex ml-3">
+                        <div class="wrap-log-in d-flex">
                             <div class="log-in px-3 align-self-center">
                                 @if(\Illuminate\Support\Facades\Auth::check())
                                     <a class="color-cart"><b style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b></a>
@@ -56,8 +56,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" style="border: none;padding: 0;position: relative">
-                    <button style="background: none;border: none; color: #8c8c8c" type="button"
-                            class="close d-flex align-items-center justify-content-center" data-dismiss="modal">
+                    <button style="font-size:30px; background: none;border: none; color: #8c8c8c" type="button"
+                            class="close d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
                         &times;
                     </button>
                 </div>

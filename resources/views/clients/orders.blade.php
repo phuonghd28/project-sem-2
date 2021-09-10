@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Shoping-Cart
+    Orders
 @endsection
 @section('custom_css')
     <style>
@@ -265,10 +265,6 @@
             outline: none;
         }
 
-        .btn-update-qty {
-            background-color: #cecaca;
-            border: none;
-        }
 
 
     </style>
@@ -276,6 +272,15 @@
 @section('content')
     <section class="shop-cart spad">
         <div class="container">
+            <div class="row">
+                <div>Tên người nhận : {{$orders->shipName}}</div>
+                <div>Số điện thoại : {{$orders->shipPhone}}</div>
+                <div>Địa chỉ : {{$orders->shipAddress}}</div>
+                <div>Ghi chú : {{$orders->note}}</div>
+            </div>
+            <?php
+            $totalPrice = 0
+            ?>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shop__cart__table">
@@ -285,93 +290,49 @@
                                 <th>Product</th>
                                 <th>Price</th>
                                 <th>Quantity</th>
-                                <th></th>
+                                <th>SubTotal</th>
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach(\Gloudemans\Shoppingcart\Facades\Cart::content() as $data)
-                                <form action="/update" method="get">
-                                    <tr>
-                                        <input type="hidden" name="rowId" value="{{$data->rowId}}">
-                                        <td class="cart__product__item">
-                                            <img
-                                                src="{{ \Illuminate\Support\Facades\Storage::url($data->options->image) }}"
-                                                alt="">
-                                            <div class="cart__product__item__title">
-                                                <h6>{{$data->name}}</h6>
-                                                <div class="rating">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
+                            @foreach($orders->orderDetails as $orderDetail)
+                                <?php
+                                if (!empty($orderDetail)) {
+                                    $totalPrice += $orderDetail->unitPrice * $orderDetail->quantity;
+                                }
+                                ?>
+                                <tr>
+                                    <td class="cart__product__item">
+                                        <img
+                                            src="{{ \Illuminate\Support\Facades\Storage::url($orderDetail->product->image) }}"
+                                            alt="">
+                                        <div class="cart__product__item__title">
+                                            <h6>{{$orderDetail->product->name}}</h6>
+                                            <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
-                                        </td>
-                                        <td class="cart__price">{{$data->subtotal()}}</td>
-                                        <td class="cart__quantity">
-                                            <div class="pro-qty">
-                                                <input class="form-control" type="number" min="1" name="quantity"
-                                                       value="{{$data->qty}}">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-update-qty">Update</button>
-                                        </td>
-                                        <td class="cart__close">
-                                                <span>
-                                                    <a onclick="return confirm('Bạn có chắc muốn xoá sản phẩm khỏi giỏ hàng ?')"
-                                                       href="/remove/{{$data->rowId}}">
-                                                        <i class="fa fa-times"></i>
-                                                    </a>
-                                                </span>
-                                        </td>
-                                    </tr>
-                                </form>
-                            @endforeach
+                                        </div>
+                                    </td>
+                                    <td class="cart__price">{{$orderDetail->product->price}}</td>
+                                    <td class="cart__quantity">
+                                        <div class="pro-qty">
+                                            {{$orderDetail->quantity}}
+                                        </div>
+                                    </td>
+                                    <td>{{$orderDetail->unitPrice*$orderDetail->quantity}}</td>
+                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="cart__btn">
-                        <a href="{{route('products')}}">Continue Shopping</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="cart__btn update__btn">
-                        <a onclick="return confirm('Bạn có chắc muốn xóa tất cả giỏ hàng ?')" href="/destroy">
-                            <span class="fa fa-spinner">
-                            </span> Remove All
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="discount__content">
-                        <form name="orderForm" action="{{ route('saveOrder') }}" method="post">
-                            @csrf
-                            <h4 class="mb-3">Ship Information</h4>
-                            <input name="shipName" type="text" class="mb-3" placeholder="Enter ship name">
-                            <input name="shipPhone" type="text" class="mb-3" placeholder="Enter ship phone">
-                            <input name="shipAddress" type="text" class="mb-3" placeholder="Enter ship address">
-                            <input name="note" type="text" placeholder="Enter note">
-                            <button class="site-btn">Send</button>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4 offset-lg-2">
-                    <div class="cart__total__procced">
-                        <h6>Cart total</h6>
-                        <ul>
-                            <li>Subtotal <span>$ 260.0</span></li>
-                            <li>Total <span>$ 260.0</span></li>
-                        </ul>
-                        <a href="#" class="primary-btn">Proceed to checkout</a>
-                    </div>
+            <div class="row justify-content-around">
+                <div class="col-6">
+                    <strong>Total Price : {{$totalPrice}}$</strong>
                 </div>
             </div>
         </div>

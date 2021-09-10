@@ -27,7 +27,7 @@
                         <th style="width: 350px">Description</th>
                         <th style="width: 100px;">Category</th>
                         <th>Price</th>
-                        <th style="width: 100px;">Actions</th>
+                        <th style="width: 110px;">Actions</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -38,7 +38,7 @@
                             <td><img src="{{ \Illuminate\Support\Facades\Storage::url($data->image) }}" height="75" width="75" alt="" /></td>
                             <td>{{$data->description}}</td>
                             <td>{{$data->category_id}}</td>
-                            <td>{{$data->price}} vnd</td>
+                            <td>{{$data->price}}</td>
                             <td>
                                 <a class="btn btn-primary mr-2" href="{{route('editProduct', $data->id)}}"><i class="fas fa-edit"></i></a>
                                 <a type="submit" href="{{route('deleteProduct', $data->id)}}"
