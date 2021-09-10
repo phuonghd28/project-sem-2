@@ -127,16 +127,16 @@
 
         .cart__btn a {
             font-size: 14px;
-            color: #111111;
+            color: #f8f9fa;
             font-weight: 600;
             text-transform: uppercase;
             display: inline-block;
             padding: 14px 30px 12px;
-            background: #f5f5f5;
+            background: #212529;
         }
 
         .cart__btn a span {
-            color: #212529FF;
+            color: #cad3dc;
             font-size: 14px;
             margin-right: 5px;
         }

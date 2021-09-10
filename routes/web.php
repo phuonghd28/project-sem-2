@@ -4,7 +4,9 @@
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
+
 use App\Http\Controllers\ShoppingCartController;
+
 use App\Http\Middleware\CheckAdmin;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
@@ -19,23 +21,26 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//->middleware(['auth', CheckAdmin::class])
-Route::prefix('admin')->group(function (){
+
+Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
     require_once __DIR__ . '/admin.php';
 });
 
 Route::get('/', function () {
     return view('clients.index');
 })->name('index');
+
 Route::get('/products', function () {
     $data = Product::all();
     return view('clients.list', ['products' => $data]);
 })->name('products');
 
+
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
 
-Route::post('register', [EntryController::class, 'register'])->name('register');
+Route::get('/form',[UserController::class,'create']);
+Route::post('/form',[UserController::class,'store']);
 
 Route::get('add/{id}', [ShoppingCartController::class, 'add']);
 Route::get('listCart', [ShoppingCartController::class, 'show'])->name('listCart');
