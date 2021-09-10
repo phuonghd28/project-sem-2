@@ -15,10 +15,10 @@
                     Create User
                 @endif
             </h2>
-            <form action="/form" method="post" id="form-user">
-{{--                @if($data)--}}
-{{--                    @method('put')--}}
-{{--                @endif--}}
+            <form action="" method="post" id="form-user">
+                @if($data)
+                    @method('put')
+                @endif
                 @csrf
                 <div class="row">
                     <div class="col-md-6">

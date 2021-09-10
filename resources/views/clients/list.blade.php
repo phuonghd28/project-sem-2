@@ -46,10 +46,11 @@
                         </div>
                     </div>
                     <div class="row product-card-parent">
+                        @foreach($products as $data)
                         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card card-gape">
                                 <div class="product-img"><img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Normas.jpg"
+                                        src="{{ \Illuminate\Support\Facades\Storage::url($data->image) }}"
                                         alt="product">
                                     <ul class="product-widget">
                                         <li>
@@ -64,19 +65,20 @@
                                     </ul>
                                 </div>
                                 <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">Pizza</a></h6></div>
+                                    <div class="product-name"><h6>{{$data->name}}</h6></div>
                                     <div class="product-price">
                                         <h6>
                                             <del>$80</del>
-                                            $150
+                                            {{$data->price}}
                                         </h6>
                                         <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
                                     </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
+                                    <div class="product-btn"><a href="/add/{{$data->id}}"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        @endforeach
                         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card card-gape">
                                 <div class="product-img"><img
