@@ -14,7 +14,7 @@
 <body>
 <div class="main">
     <!-- Header -->
-    <header class="header-main position-fixed">
+    <header class="header-main">
         <div class="container">
             <div class="row header-height">
                 <!-- Logo -->

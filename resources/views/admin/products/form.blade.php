@@ -82,7 +82,7 @@
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
                         </div>
-                        <label class="col-sm-1 col-form-label">Category</label>
+                        <label class="col-sm-1 px-1 col-form-label">Category</label>
                         <div class="col-sm-3">
                             <select class="form-control" name="category_id">
                                 <option selected disabled hidden>Category</option>

@@ -23,9 +23,9 @@
                     <tr>
                         <th style="width: 50px">Id</th>
                         <th>Name</th>
-                        <th style="width: 90px">Image</th>
-                        <th style="width: 350px">Description</th>
-                        <th style="width: 100px;">Category</th>
+                        <th >Image</th>
+                        <th>Description</th>
+                        <th>Category</th>
                         <th>Price</th>
                         <th style="width: 110px;">Actions</th>
                     </tr>
@@ -35,19 +35,21 @@
                         <tr>
                             <td class="text-center">{{$data->id}}</td>
                             <td>{{$data->name}}</td>
-                            <td><img src="{{ \Illuminate\Support\Facades\Storage::url($data->image) }}" height="75" width="75" alt="" /></td>
+                            <td><img src="{{ \Illuminate\Support\Facades\Storage::url($data->image) }}" height="75"
+                                     width="75" alt=""/></td>
                             <td>{{$data->description}}</td>
                             <td>{{$data->category_id}}</td>
                             <td>{{$data->price}}</td>
                             <td>
-                                <a class="btn btn-primary mr-2" href="{{route('editProduct', $data->id)}}"><i class="fas fa-edit"></i></a>
+                                <a class="btn btn-primary mr-2" href="{{route('editProduct', $data->id)}}"><i
+                                        class="fas fa-edit"></i></a>
                                 <a type="submit" href="{{route('deleteProduct', $data->id)}}"
                                    class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá ?')">
                                     <i class="fas fa-trash-alt"></i></a>
                             </td>
                         </tr>
-                    @endforeach
                     </tbody>
+                @endforeach
                 </table>
             </div>
         </div>

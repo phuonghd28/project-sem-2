@@ -61,7 +61,7 @@ class ProductController extends Controller
         $product->save();
 
         return redirect()->route('listProduct')
-            ->with('success', 'Update thành công.');
+            ->flash('success', 'Update thành công.');
     }
 
     public function delete($id)

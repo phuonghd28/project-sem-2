@@ -1,7 +1,7 @@
 .header-main {
     top: 0;
     width: 100%;
-    background-image: linear-gradient(180deg,rgba(0,0,0,.4),transparent);
+    background-color: #FFFFFF;
     transition: all .3s ease-in-out;
     z-index: 999;
 }
@@ -33,8 +33,12 @@
 }
 .sticky {
     background-color: #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
     background-image: none;
+    position: fixed;
+    top: 0;
+    padding: 0;
+    width: 100%;
 }
 
 body {
