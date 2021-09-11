@@ -2,6 +2,7 @@
 
 
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PaypalController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
 
@@ -21,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
+//->middleware(['auth', CheckAdmin::class])
+Route::prefix('admin')->group(function (){
     require_once __DIR__ . '/admin.php';
 });
 
@@ -36,11 +37,10 @@ Route::get('/products', function () {
 })->name('products');
 
 
+
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
-
-Route::get('/form',[UserController::class,'create']);
-Route::post('/form',[UserController::class,'store']);
+Route::get('register',[EntryController::class,'register'])->name('register');
 
 Route::get('add/{id}', [ShoppingCartController::class, 'add']);
 Route::get('listCart', [ShoppingCartController::class, 'show'])->name('listCart');
@@ -49,3 +49,7 @@ Route::get('update', [ShoppingCartController::class, 'update']);
 Route::get('destroy', [ShoppingCartController::class, 'destroy']);
 Route::post('orders/save', [OrderController::class, 'save'])->name('saveOrder');
 Route::get('orders/{id}', [OrderController::class, 'detail'])->name('detailOrder');
+
+Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']);
+Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
+

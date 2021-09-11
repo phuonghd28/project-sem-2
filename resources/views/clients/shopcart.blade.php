@@ -275,6 +275,30 @@
 @endsection
 @section('content')
     <section class="shop-cart spad">
+        @if(session('add'))
+            <div class="alert alert-success alert-dismissible">
+                <strong>Success!</strong>{{session('add')}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        @endif
+        @if(session('update'))
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong>{{session('update')}}
+            </div>
+        @endif
+        @if(session('remove'))
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong>{{session('remove')}}
+            </div>
+        @endif
+        @if(session('destroy'))
+            <div class="alert alert-success alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Success!</strong>{{session('destroy')}}
+            </div>
+        @endif
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
