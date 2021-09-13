@@ -282,7 +282,7 @@
                 <div>Trạng thái : {{$orders->isCheckout ? 'Đã thanh toán' : 'Chờ thanh toán'}}</div>
                 <div>Tên người nhận : {{$orders->shipName}}</div>
                 <div>Số điện thoại : {{$orders->shipPhone}}</div>
-                <div>Địa chỉ : {{$orders->shipAddress}}</div>
+                <div>Địa chỉ : {{$orders->district->name. '-' .$orders->ward->name. '-'. $orders->shipAddress}}</div>
                 <div>Ghi chú : {{$orders->note}}</div>
             </div>
             <?php

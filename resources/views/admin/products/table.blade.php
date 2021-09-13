@@ -37,7 +37,7 @@
                             <td>{{$data->name}}</td>
                             <td><img src="{{ \Illuminate\Support\Facades\Storage::url($data->image) }}" height="75"
                                      width="75" alt=""/></td>
-                            <td>{{$data->description}}</td>
+                            <td>{!! html_entity_decode($data->description) !!}</td>
                             <td>{{$data->category_id}}</td>
                             <td>{{$data->price}}</td>
                             <td>

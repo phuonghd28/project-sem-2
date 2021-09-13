@@ -19,6 +19,8 @@ class OrderController extends Controller
         $order = new Order();
         $order->totalPrice = 0;
         $order->userId = 1;
+        $order->districtId = $request->district_id;
+        $order->wardId = $request->ward_id;
         $order->shipName = $request->shipName;
         $order->shipPhone = $request->shipPhone;
         $order->shipAddress = $request->shipAddress;
@@ -62,10 +64,10 @@ class OrderController extends Controller
     }
 
     public function detail($id){
-        $order = Order::find($id);
+
+        $order = Order::where('id', $id)->with(['district', 'ward'])->first();
         return view('clients.orders',[
             'orders' => $order,
         ]);
-
     }
 }
