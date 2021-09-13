@@ -764,7 +764,7 @@
         .form-login {
             width: 100%;
             padding: 35px 24px 35px;
-            height: 590px;
+            height: 365px;
             box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
             background: white;
             position: relative;

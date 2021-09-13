@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//->middleware(['auth', CheckAdmin::class])
-Route::prefix('admin')->group(function (){
+
+Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
     require_once __DIR__ . '/admin.php';
 });
 
