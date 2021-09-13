@@ -786,11 +786,13 @@
         }
 
         #log-form {
-            left: -500px;
+            left: 0;
+
         }
 
         #reg-form {
-            left: 0;
+
+            left: 500px;
         }
 
         #reg-form input {
@@ -809,9 +811,10 @@
             height: 3px;
             margin: 0;
             opacity: 1;
-            transform: translateX(237px);
+            transform: translateX(83px);
             transition: transform .4s;
         }
+
         .heading span {
             font-size: 1.5rem;
             line-height: 1.33333333;
@@ -1760,20 +1763,20 @@
             var FormAccount = document.getElementById("form-account");
 
             function register() {
-                RegForm.style.transform = "translateX(0px)";
-                LoginForm.style.transform = "translateX(0px)";
+                RegForm.style.transform = "translateX(-500px)";
+                LoginForm.style.transform = "translateX(-500px)";
                 Indicator.style.transform = "translateX(236px)";
                 FormAccount.style.height = "590px";
-                LoginForm.style.opacity = "0";
+                RegForm.style.opacity = "0";
                 RegForm.style.opacity = "1";
             }
 
             function login() {
-                RegForm.style.transform = "translateX(500px)";
-                LoginForm.style.transform = "translateX(500px)";
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
                 Indicator.style.transform = "translateX(83px)";
                 FormAccount.style.height = "365px"
-                RegForm.style.opacity = "0";
+                LoginForm.style.opacity = "0";
                 LoginForm.style.opacity = "1";
             }
         </script>

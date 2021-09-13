@@ -176,7 +176,19 @@
             font-size: 14px;
             color: #444444;
         }
+
+        .discount__content form select {
+            height: 53px;
+            width: 100%;
+            padding: 10px 25px;
+            border: 1px solid #444444;
+            font-size: 14px;
+            color: #444444;
+        }
         .discount__content form input:focus {
+            outline: none;
+        }
+        .discount__content form select:focus {
             outline: none;
         }
 
@@ -376,12 +388,23 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="discount__content">
+
                         <form name="orderForm" action="{{ route('saveOrder') }}" method="post">
                             @csrf
                             <h4 class="mb-3">Ship Information</h4>
+                            <select class="mb-3" id="sel1" name="district_id">
+                                <option selected disabled hidden>Quận(Huyện)</option>
+                                @foreach($districts as $district )
+                                    <option
+                                        value="{{$district->maqh}}">{{$district->name}}</option>
+                                @endforeach
+                            </select>
+                            <select class="mb-3" id="Ward" name="ward_id">
+                                <option selected disabled hidden>Phường(Xã)</option>
+                            </select>
+                            <input name="shipAddress" type="text" class="mb-3" placeholder="Enter ship address">
                             <input name="shipName" type="text" class="mb-3" placeholder="Enter ship name">
                             <input name="shipPhone" type="text" class="mb-3" placeholder="Enter ship phone">
-                            <input name="shipAddress" type="text" class="mb-3" placeholder="Enter ship address">
                             <input name="note" type="text" placeholder="Enter note">
                             <button class="site-btn">Send</button>
                         </form>
@@ -402,5 +425,24 @@
     </section>
 @endsection
 @section('custom_js')
-
+    <script>
+        const selectDistrict = $('select[name="district_id"]');
+        const selectWard = $('select[name="ward_id"]');
+        selectDistrict.change(function () {
+            $.ajax({
+                type: 'GET',
+                url: '/api/ward/' + selectDistrict.val(),
+                beforeSend: function () {
+                    selectWard.html('<option value hidden disabled selected></option>').prop('disabled', false);
+                },
+                success: function (data) {
+                    data.forEach(item => selectWard.append(new Option(item.name, item.xaid)));
+                },
+                error: function (xhr) {
+                    let errors = JSON.parse(xhr.responseText).errors;
+                    alert(errors.map(a => a.msg).join(';'));
+                }
+            });
+        })
+    </script>
 @endsection

@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\District;
 use App\Models\Product;
+use App\Models\Ward;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,8 @@ class ShoppingCartController extends Controller
         return redirect()->route('listCart')->with('add', 'Đã thêm sản phẩm vào giỏ hàng.');
     }
     public function show() {
-        return view('clients.shopcart');
+        $district = District::all();
+        return view('clients.shopcart', ['districts'=>$district]);
     }
     public function update(Request $request) {
         $id =$request->get('rowId');
@@ -29,5 +32,10 @@ class ShoppingCartController extends Controller
     public function destroy() {
         Cart::destroy();
         return redirect('listCart')->with('destroy', 'Đã xoá tất cả sản phẩm khỏi giỏ hàng.');
+    }
+    public function api($id)
+    {
+        $ward = Ward::query()->where('maqh',$id)->get();
+        return $ward;
     }
 }
