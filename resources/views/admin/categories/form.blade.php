@@ -7,8 +7,8 @@
         .button_outer {
             background: #00c6d7;
             text-align: center;
-            height: 40px;
-            width: 140px;
+            height: 43px;
+            width: 150px;
             border-radius: 4px;
             display: inline-block;
             transition: .2s;
@@ -38,12 +38,10 @@
             height: 100%;
             cursor: pointer;
         }
-        .uploaded_file_view {
-            transition: .2s;
-            display: none;
-        }
-        .uploaded_file_view.show {
-            display: block;!important;
+        #image-preview {
+            height: 150px;
+            width: 150px;
+            object-fit: cover;
         }
     </style>
 @endsection
@@ -81,17 +79,14 @@
                         <div class="col-sm-10">
                             <div class="button_outer">
                                 <div class="btn_upload">
-                                    <input style="opacity: 0" name="image" type="file" id="upload_file" class="">
+                                    <input style="opacity: 0" type="file" name="imageChooser" class="custom-file-input">
+                                    <input name="image" type="hidden">
                                     Upload Image
                                 </div>
                             </div>
                             <div class="uploaded_file_view my-2" id="uploaded_view">
                             </div>
-                            @if($data)
-                                <div class="my-2">
-                                    <img id="img-edit" src="{{ \Illuminate\Support\Facades\Storage::url($data ? $data ->image : '') }}" height="150" width="150" alt="" />
-                                </div>
-                            @endif
+                            <img src="{{$data ? $data->image : ''}}" id="image-preview" alt=""/>
                             @error('image')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
@@ -102,7 +97,6 @@
                             <button class="btn btn-primary">Submit</button>
                         </div>
                     </div>
-
                 </form>
             </div>
         </div>
@@ -110,27 +104,32 @@
 @endsection
 @section('custom_js')
     <script>
-        var btnUpload = $("#upload_file"),
-            btnOuter = $(".button_outer");
-        btnUpload.on("change", function (e) {
-            $("#uploaded_view").removeClass("show");
-            $("#uploaded_view").find("img").remove();
-            $("#img-edit").remove();
-            var ext = btnUpload.val().split('.').pop().toLowerCase();
-            if ($.inArray(ext, ['gif', 'png', 'jpg', 'jpeg']) == -1) {
-                $(".error_msg").text("Not an Image...");
-            } else {
-                $(".error_msg").text("");
-                btnOuter.addClass("file_uploading");
-                setTimeout(function () {
-                    btnOuter.addClass("file_uploaded");
-                }, 0);
-                var uploadedFile = URL.createObjectURL(e.target.files[0]);
-                setTimeout(function () {
-                    $("#uploaded_view").append('<img style="height: 150px; width: 150px" src="' + uploadedFile + '" />').addClass("show");
-                }, 0);
+        const cloudName = 'dn3bmj5ex';
+        const unsignedUploadPreset = 'm9kz74zz';
+
+        var img = document.querySelector('[name="imageChooser"]');
+        let thumbnails = [];
+
+        img.onchange = function () {
+            var file = this.files[0];
+            var url = `https://api.cloudinary.com/v1_1/${cloudName}/upload`;
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var responseDataJson = JSON.parse(this.responseText);
+                    console.log(responseDataJson.url);
+                    var imageUrl = document.querySelector('input[name="image"]');
+                    imageUrl.value = responseDataJson.url;
+                    let imagePreview = document.getElementById('image-preview');
+                    imagePreview.src = responseDataJson.url;
+                }
             }
-        });
+            xhr.open('POST', url, true);
+            var fd = new FormData();
+            fd.append('upload_preset', unsignedUploadPreset);
+            fd.append('tags', 'browser_upload');
+            fd.append('file', file);
+            xhr.send(fd);
+        }
     </script>
 @endsection
-

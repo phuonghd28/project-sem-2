@@ -27,11 +27,8 @@ class ProductRequest extends FormRequest
             'name'=>'required',
             'price'=>'required',
             'description'=>'required',
-            'image'=>'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048'
+            'image'=>'required'
         ];
-        if (request()->isMethod('PUT')) {
-            $rules['image'] = 'image|mimes:jpg,png,jpeg,gif,svg|max:2048';
-        }
         return $rules;
     }
     public function messages()
@@ -41,7 +38,6 @@ class ProductRequest extends FormRequest
             'price.required'=>'Vui lòng nhập giá.',
             'description.required'=>'Vui lòng nhập mô tả.',
             'image.required'=>'Vui lòng chọn ảnh.',
-            'image.image'=>'Vui lòng chọn đúng file ảnh.',
             'image.jpg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
             'image.jpeg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
             'image.gif'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',

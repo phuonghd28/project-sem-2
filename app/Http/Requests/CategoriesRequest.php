@@ -25,11 +25,8 @@ class CategoriesRequest extends FormRequest
     {
         $rules = [
             'name' => 'required',
-            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048'
+            'image' => 'required'
         ];
-        if (request()->isMethod('PUT')) {
-            $rules['image'] = 'image|mimes:jpg,png,jpeg,gif,svg|max:2048';
-        }
         return $rules;
     }
 
@@ -38,12 +35,6 @@ class CategoriesRequest extends FormRequest
         return [
             'name.required'=>'Vui lòng nhập tên.',
             'image.required'=>'Vui lòng chọn ảnh.',
-            'image.image'=>'Vui lòng chọn đúng file ảnh.',
-            'image.jpg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
-            'image.jpeg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
-            'image.gif'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
-            'image.svg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
-            'image.max'=>'Vui lòng chọn ảnh kích thước nhỏ hơn.'
         ];
     }
 }

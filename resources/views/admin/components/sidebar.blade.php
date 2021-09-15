@@ -92,20 +92,6 @@
                         </li>
                     </ul>
                 </li>
-                <li class="mb-2">
-                    <a href="#">
-                        <i class="fas fa-list"></i>
-                        Order
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="{{route('listOrder')}}">
-                                <i class="metismenu-icon">
-                                </i>List Order
-                            </a>
-                        </li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </div>

@@ -14,7 +14,7 @@
 <body>
 <div class="main">
     <!-- Header -->
-    <header class="header-main">
+    <header id="myHeader" class="header-main">
         <div class="container">
             <div class="row header-height">
                 <!-- Logo -->
@@ -49,6 +49,7 @@
             </div>
         </div>
     </header>
+    @yield('upload')
     <div class="banner">
         @yield('banner')
     </div>
