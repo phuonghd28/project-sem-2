@@ -29,70 +29,113 @@
             </button>
         </span>
     </div>
-    <div class="scrollbar-sidebar">
-        <div class="app-sidebar__inner">
-            <ul class="vertical-nav-menu mt-5">
-                <li class="mb-2">
-                    <a href="#">
-                        <i class=" fas fa-user"></i>
-                        Users
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="{{route('createUser')}}">
-                                <i class="metismenu-icon"></i>
-                                Create
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{route('listUser')}}">
-                                <i class="metismenu-icon">
-                                </i>List
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="mb-2">
-                    <a href="#">
-                        <i class="fas fa-list"></i>
-                        Categories
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="{{route('createCategory')}}">
-                                <i class="metismenu-icon">
-                                </i>Create
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{route('listCategory')}}">
-                                <i class="metismenu-icon">
-                                </i>List
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="mb-2">
-                    <a href="#">
-                        <i class="fas fa-list"></i>
-                        Products
-                    </a>
-                    <ul>
-                        <li>
-                            <a href="{{route('createProduct')}}">
-                                <i class="metismenu-icon">
-                                </i>Create
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ route('listProduct') }}">
-                                <i class="metismenu-icon">
-                                </i>List
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+    <div class="app-sidebar__inner" style="margin: 20px">
+        <ul class="vertical-nav-menu metismenu">
+            <li class="sidebar_item" style="border: none!important;">
+                <a href="#" class="mm-active sidebar_item">
+                    <i class="metismenu-icon fas fa-chart-bar"></i>
+                    Dashboard Example 1
+                </a>
+            </li>
+            <li class="sidebar_item" style="border: none!important;">
+                <a href="#" class="sidebar_item">
+                    <i class="metismenu-icon fas fa-user"></i>
+                    User
+                    <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
+                </a>
+                <ul class="mm-collapse">
+                    <li>
+                        <a href="{{route('listUser')}}">
+                            <i class="metismenu-icon">
+                            </i>List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('createUser')}}">
+                            <i class="metismenu-icon"></i>
+                            Create
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar_item" style="border: none!important;">
+                <a href="#" class="sidebar_item">
+                    <i class="metismenu-icon fas fa-th-list"></i>
+                    Categories
+                    <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
+                </a>
+                <ul class="mm-collapse">
+                    <li>
+                        <a href="{{route('listCategory')}}">
+                            <i class="metismenu-icon">
+                            </i>List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('createCategory')}}">
+                            <i class="metismenu-icon"></i>
+                            Create
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar_item" style="border: none!important;">
+                <a href="#" class="sidebar_item">
+                    <i class="metismenu-icon fas fa-hamburger"></i>
+                    Products
+                    <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
+                </a>
+                <ul class="mm-collapse">
+                    <li>
+                        <a href="{{route('listProduct')}}">
+                            <i class="metismenu-icon">
+                            </i>List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('createProduct')}}">
+                            <i class="metismenu-icon"></i>
+                            Create
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar_item" style="border: none!important;">
+                <a href="#" class="sidebar_item">
+                    <i class="metismenu-icon fas fa-list-alt"></i>
+                    Orders
+                    <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
+                </a>
+                <ul class="mm-collapse">
+                    <li>
+                        <a href="{{route('listOrder')}}">
+                            <i class="metismenu-icon"></i>
+                            List
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar_item" style="border: none!important;">
+                <a href="#" class="sidebar_item">
+                    <i class="metismenu-icon fas fa-envelope"></i>
+                    FeedBack
+                    <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
+                </a>
+                <ul class="mm-collapse">
+                    <li>
+                        <a href="{{route('listProduct')}}">
+                            <i class="metismenu-icon">
+                            </i>List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{route('createProduct')}}">
+                            <i class="metismenu-icon"></i>
+                            Create
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
