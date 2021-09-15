@@ -764,7 +764,7 @@
         .form-login {
             width: 100%;
             padding: 35px 24px 35px;
-            height: 590px;
+            height: 365px;
             box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
             background: white;
             position: relative;
@@ -786,11 +786,13 @@
         }
 
         #log-form {
-            left: -500px;
+            left: 0;
+
         }
 
         #reg-form {
-            left: 0;
+
+            left: 500px;
         }
 
         #reg-form input {
@@ -809,9 +811,10 @@
             height: 3px;
             margin: 0;
             opacity: 1;
-            transform: translateX(237px);
+            transform: translateX(83px);
             transition: transform .4s;
         }
+
         .heading span {
             font-size: 1.5rem;
             line-height: 1.33333333;
@@ -1743,15 +1746,20 @@
             }
         </script>
         <script>
-            $(document).ready(function () {
-                $(window).scroll(function () {
-                    if ($(this).scrollTop()) {
-                        $('header').addClass('sticky')
-                    } else {
-                        $('header').removeClass('sticky')
-                    }
-                })
-            });
+            // Khi người dùng quận trang thì gọi đến hàm myFunction
+            window.onscroll = function() {myFunction()};
+            // Get the header
+            var header = document.getElementById("myHeader");
+            // Get the offset position of the navbar
+            var sticky = header.offsetTop;
+            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
         </script>
         <script>
             var LoginForm = document.getElementById("log-form");
@@ -1760,20 +1768,20 @@
             var FormAccount = document.getElementById("form-account");
 
             function register() {
-                RegForm.style.transform = "translateX(0px)";
-                LoginForm.style.transform = "translateX(0px)";
+                RegForm.style.transform = "translateX(-500px)";
+                LoginForm.style.transform = "translateX(-500px)";
                 Indicator.style.transform = "translateX(236px)";
                 FormAccount.style.height = "590px";
-                LoginForm.style.opacity = "0";
+                RegForm.style.opacity = "0";
                 RegForm.style.opacity = "1";
             }
 
             function login() {
-                RegForm.style.transform = "translateX(500px)";
-                LoginForm.style.transform = "translateX(500px)";
+                RegForm.style.transform = "translateX(0px)";
+                LoginForm.style.transform = "translateX(0px)";
                 Indicator.style.transform = "translateX(83px)";
                 FormAccount.style.height = "365px"
-                RegForm.style.opacity = "0";
+                LoginForm.style.opacity = "0";
                 LoginForm.style.opacity = "1";
             }
         </script>

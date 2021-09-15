@@ -15,6 +15,8 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('districtId');
+            $table->string('wardId');
             $table->integer('userId');
             $table->double('totalPrice');
             $table->string('shipName');
@@ -22,7 +24,7 @@ class CreateOrdersTable extends Migration
             $table->string('shipAddress');
             $table->string('note');
             $table->boolean('isCheckout');
-            $table->integer('status')->default(0);
+            $table->integer('status')->default(\App\Enums\Status::WAITING);
             $table->timestamps();
         });
     }

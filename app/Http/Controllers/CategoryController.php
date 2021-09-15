@@ -15,10 +15,9 @@ class CategoryController extends Controller
     public function store(CategoriesRequest $request)
     {
         $request->validated();
-        $path = $request->file('image')->store('public/images');
         $category = new Category();
         $category->name = $request->name;
-        $category->image = $path;
+        $category->image = $request->image;
         $category->save();
 
         return redirect()->route('listCategory')
@@ -41,11 +40,7 @@ class CategoryController extends Controller
     {
         $request->validated();
         $category = Category::find($id);
-        if ($request->hasFile('image')) {
-            $request->validated();
-            $path = $request->file('image')->store('public/images');
-            $category->image = $path;
-        }
+        $category->image = $request->image;
         $category->name = $request->name;
         $category->save();
 

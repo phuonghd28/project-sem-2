@@ -14,7 +14,7 @@
 <body>
 <div class="main">
     <!-- Header -->
-    <header class="header-main">
+    <header id="myHeader" class="header-main">
         <div class="container">
             <div class="row header-height">
                 <!-- Logo -->
@@ -39,7 +39,7 @@
                                     <a class="color-cart"><b style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b></a>
                                 @else
                                     <button style="background: none;border: none" type="button" class="btn-account" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <a class="color-cart"><b style="font-size: 14px">Đăng ký</b></a>
+                                        <a class="color-cart"><b style="font-size: 14px">Đăng nhập</b></a>
                                     </button>
                                 @endif
                             </div>
@@ -49,6 +49,7 @@
             </div>
         </div>
     </header>
+    @yield('upload')
     <div class="banner">
         @yield('banner')
     </div>

@@ -32,7 +32,7 @@
                         <tr>
                             <td class="text-center">{{ $category->id }}</td>
                             <td>{{ $category->name }}</td>
-                            <td><img src="{{ \Illuminate\Support\Facades\Storage::url($category->image) }}" height="75" width="75" alt="" /></td>
+                            <td><img src="{{ $category->image}}" height="75" width="75" alt="" /></td>
                             <td>
                                 <a class="btn btn-primary mr-2" href="{{route('editCategory', $category->id)}}"><i class="fas fa-edit"></i></a>
                                 <a type="submit" href="{{route('deleteCategory', $category->id)}}"

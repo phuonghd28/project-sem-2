@@ -83,7 +83,7 @@
                         <div class="form-group">
                             <label>Username:</label>
 
-                            <input value="{{$data ? $data->Username : ''}}" type="text" class="form-control"
+                            <input value="{{$data ? $data->username : ''}}" type="text" class="form-control"
                                    placeholder="Username" name="username">
                             @error('username')
                             <div class="text-danger"> * {{$message}}</div>
@@ -95,8 +95,8 @@
                             <label>Role:</label>
                             <select name="role" class="custom-select">
                                 <option hidden selected disabled>Role</option>
-                                <option value="{{\App\Enums\Role::ADMIN}}" {{$data && $data->role === 2 ? 'selected' : ''}}>Admin</option>
-                                <option value="{{\App\Enums\Role::USER}}" {{$data && $data->role === 1 ? 'selected' : ''}}>User</option>
+                                <option value="{{\App\Enums\Role::ADMIN}}" {{$data && $data->role == \App\Enums\Role::ADMIN ? 'selected' : ''}}>Admin</option>
+                                <option value="{{\App\Enums\Role::USER}}" {{$data && $data->role == \App\Enums\Role::USER ? 'selected' : ''}}>User</option>
                             </select>
                         </div>
                     </div>
@@ -106,7 +106,7 @@
                         <div class="form-group">
                             <label>Password:</label>
 
-                            <input value="{{$data ? $data->Password : ''}}" type="password" class="form-control"
+                            <input value="{{$data ? $data->password : ''}}" type="password" class="form-control"
                                    placeholder="Password" name="password">
                             @error('password')
                             <div class="text-danger"> * {{$message}}</div>

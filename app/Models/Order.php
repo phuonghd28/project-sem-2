@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     use HasFactory;
+
     protected $fillable = [
         'userId',
+        'districtId',
+        'wardId',
         'totalPrice',
         'shipName',
         'shipPhone',
@@ -18,7 +21,19 @@ class Order extends Model
         'isCheckout',
         'status'
     ];
-    public function orderDetails() {
+
+    public function orderDetails()
+    {
         return $this->hasMany(OrderDetail::class, 'orderId', 'id');
+    }
+
+    public function district()
+    {
+        return $this->belongsTo(District::class, 'districtId');
+    }
+
+    public function ward()
+    {
+        return $this->belongsTo(Ward::class, 'wardId');
     }
 }
