@@ -18,13 +18,13 @@ class ProductController extends Controller
     public function store(ProductRequest $request)
     {
         $request->validated();
-        $path = $request->file('image')->store('public/images');
+
         $product = new Product();
         $product->name = $request->name;
         $product->description = $request->description;
         $product->price = $request->price;
         $product->category_id = $request->category_id;
-        $product->image = $path;
+        $product->image = $request->image;
         $product->save();
 
         return redirect()->route('listProduct')
@@ -49,11 +49,7 @@ class ProductController extends Controller
     {
         $request->validated();
         $product = Product::find($id);
-        if ($request->hasFile('image')) {
-            $request->validated();
-            $path = $request->file('image')->store('public/images');
-            $product->image = $path;
-        }
+        $product->image = $request->image;
         $product->name = $request->name;
         $product->price = $request->price;
         $product->description = $request->description;
