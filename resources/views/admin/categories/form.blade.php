@@ -69,7 +69,7 @@
                     @csrf
                     <div class="position-relative row form-group">
                         <label for="exampleEmail" class="col-sm-2 col-form-label">Name</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-4">
                             <input name="name" value="{{$data ? $data->name : ''}}" type="text" class="form-control" placeholder="Enter name">
                             @error('name')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>

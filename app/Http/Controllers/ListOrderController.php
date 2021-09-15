@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\UserRequest;
 use App\Models\Order;
 use App\Models\User;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -16,7 +17,7 @@ class ListOrderController extends Controller
         $queryBuilder = Order::query();
         $search = $request->get('search');
         $sort = $request->get('sort');
-        $status = $request->get('isCheckout');
+        $status = $request->get('status');
 
         if ($search || strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('shipName', 'like', '%' . $search . '%');
@@ -28,7 +29,7 @@ class ListOrderController extends Controller
             $queryBuilder = $queryBuilder->orderBy('created_at', 'ASC');
         }
         if ($status) {
-            $queryBuilder = $queryBuilder->where('isCheckout', $status);
+            $queryBuilder = $queryBuilder->where('status', $status);
         }
         $order = $queryBuilder->paginate(5)->appends(['search' => $search, 'status' => $status]);
         return view('admin/orders/table', [

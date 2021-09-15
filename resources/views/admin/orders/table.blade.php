@@ -18,16 +18,14 @@
                                     </div>
                                 </div>
                                 <div class="col-4 form-group">
-                                    <select name="isCheckout" class="custom-select" id="role">
+                                    <select name="status" class="custom-select" id="role">
                                         <option hidden selected disabled>All</option>
-                                        <option
-                                            value="0">
-                                            Admin
-                                        </option>
-                                        <option
-                                            value="1">
-                                            User
-                                        </option>
+                                        @foreach(\App\Enums\Status::getValues() as $type)
+                                            <option
+                                                value="{{$type}}" {{$status && $status == $type ? 'selected' : ''}}>
+                                                {{\App\Enums\Status::getDescription($type)}}
+                                            </option>
+                                        @endforeach
                                     </select>
                                 </div>
                                 <div class="col-4 form-group">
@@ -47,6 +45,8 @@
                         <th>Id</th>
                         <th>Tên người nhận</th>
                         <th>Địa chỉ</th>
+                        <th>Giá đơn hàng</th>
+                        <th>Ngày đặt</th>
                         <th>Trạng thái</th>
                         <th>Actions</th>
                     </tr>
@@ -57,6 +57,8 @@
                             <td>{{$order->id}}</td>
                             <td>{{$order->shipName}}</td>
                             <td>{{$order->shipAddress}}</td>
+                            <td>{{$order->totalPrice}}</td>
+                            <td>{{date_format($order->created_at,'dd/MM/YYYY')}}</td>
                             <td>{{$order->isCheckout ? 'Đã thanh toán' : 'Chờ thanh toán'}}</td>
                             <td>
                                 <a onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này ?')"
