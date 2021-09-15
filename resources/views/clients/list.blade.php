@@ -50,7 +50,7 @@
                         <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                             <div class="product-card card-gape">
                                 <div class="product-img"><img
-                                        src="{{ \Illuminate\Support\Facades\Storage::url($data->image) }}"
+                                        src="{{ explode(',',$data->image)[0]  }}"
                                         alt="product">
                                     <ul class="product-widget">
                                         <li>

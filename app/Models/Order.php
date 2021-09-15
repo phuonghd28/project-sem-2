@@ -18,7 +18,6 @@ class Order extends Model
         'shipPhone',
         'shipAddress',
         'note',
-        'isCheckout',
         'status'
     ];
 
