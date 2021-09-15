@@ -32,7 +32,9 @@ Route::prefix('admin')->group(function (){
 Route::get('/', function () {
     return view('clients.index');
 })->name('index');
-
+Route::get('/contact', function (){
+    return view('clients.contact');
+});
 Route::get('/products', function () {
     $data = Product::all();
     return view('clients.list', ['products' => $data]);

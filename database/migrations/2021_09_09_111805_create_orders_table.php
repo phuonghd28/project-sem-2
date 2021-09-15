@@ -23,7 +23,6 @@ class CreateOrdersTable extends Migration
             $table->string('shipPhone');
             $table->string('shipAddress');
             $table->string('note');
-            $table->boolean('isCheckout');
             $table->integer('status')->default(\App\Enums\Status::WAITING);
             $table->timestamps();
         });

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\Status;
 use App\Models\Order;
 use Exception;
 use Illuminate\Http\Request;
@@ -107,7 +108,7 @@ class PaypalController extends Controller
                     $orderId = $payment->transactions[0]->invoice_number;
                     $order = Order::find($orderId);
                     if ($order != null) {
-                        $order->isCheckout = true;
+                        $order->status = Status::PAID;
                         $order->save();
                     }
                 }
