@@ -21,7 +21,7 @@ class CategorieSeeder extends Seeder
             [
                 'id' => 1,
                 'name' => 'Đồ chay hằng ngày',
-                'image' => 'https://cdn.hellobacsi.com/wp-content/uploads/2020/02/an-chay-giam-can.jpg',
+                'image' => 'https://nauco29.com/uploads/content/mam-co-chay-cung-nha-moi.jpg',
                 'created_at' => Carbon::now()
             ],
             [
@@ -51,7 +51,7 @@ class CategorieSeeder extends Seeder
             [
                 'id' => 6,
                 'name' => 'Cháo chay',
-                'image' => 'https://cdn.tgdd.vn/2020/09/CookRecipe/Avatar/chao-nam-chay-image.jpg',
+                'image' => 'https://chaosach.com/wp-content/uploads/2016/10/cach-lam-mon-chao-chay-thap-cam-ngon-bo-cho-me-bau.jpg',
                 'created_at' => Carbon::now()
             ],
             [
