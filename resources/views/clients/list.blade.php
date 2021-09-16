@@ -2496,8 +2496,12 @@
                 <ul class="left-widget">
                     <li><a class="icon icon-inline menu-bar" href="#"><i class="fas fa-align-left"></i></a></li>
                 </ul>
-                <form class="search-form navbar-src"><input type="text" placeholder="Search anything...">
-                    <button class="btn btn-inline"><i class="fas fa-search"></i><span>search</span></button>
+                <form class="search-form navbar-src">
+                    <input type="text" placeholder="Search anything..." name="search">
+                    <button class="btn btn-inline" id="search"><i class="fas fa-search"></i><span>search</span></button>
+                </form>
+                <form id="brand_filter">
+                    <input type="hidden" name="category" id="category">
                 </form>
             </div>
         </div>
@@ -2509,17 +2513,22 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="product-filter">
-                                <div class="product-page-number"><p>Showing 1–12 of 60 results</p></div>
+                                <div class="product-page-number"><p>Showing 1 – {{$products->perPage()}}
+                                        of {{$products->total()}} results</p></div>
                                 <select class="product-short-select custom-select">
                                     <option selected>Short by Best Sell</option>
                                     <option value="1">Short by New Item</option>
                                     <option value="2">Short by Popularity</option>
                                     <option value="3">Short by Average review</option>
                                 </select>
-                                <ul class="product-card-type">
-                                    <li class="grid-verti active"><i class="fas fa-grip-vertical"></i></li>
-                                    <li class="grid-hori"><i class="fas fa-grip-horizontal"></i></li>
-                                </ul>
+                            </div>
+                            <div class="row mb-3" style="background-color: #ffffff">
+                                @foreach(\App\Models\Category::all() as $item)
+                                    <div class="col-3 mt-3 mb-3">
+                                        <button slot="{{$item->id}}" class="btn btn-inline btn_category"
+                                                style="width: 100%;font-size: 10px">{{$item->name}}</button>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -2528,8 +2537,8 @@
                             <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                 <div class="product-card card-gape">
                                     <div class="product-img"><img
-                                            src="{{ \Illuminate\Support\Facades\Storage::url($data->image) }}"
-                                            alt="product">
+                                            src="{{ explode(',',$data->image)[0]  }}"
+                                            alt="product" width="100%" height="200px" style="object-fit: cover">
                                         <ul class="product-widget">
                                             <li>
                                                 <button><i class="fas fa-eye"></i></button>
@@ -2546,11 +2555,8 @@
                                         <div class="product-name"><h6>{{$data->name}}</h6></div>
                                         <div class="product-price">
                                             <h6>
-                                                <del>$80</del>
-                                                {{$data->price}}
+                                                {{$data->price}}$
                                             </h6>
-                                            <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span>
-                                            </div>
                                         </div>
                                         <div class="product-btn"><a href="/add/{{$data->id}}"><i
                                                     class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
@@ -2559,359 +2565,37 @@
                                 </div>
                             </div>
                         @endforeach
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://upload.wikimedia.org/wikipedia/commons/d/de/Korean_fried_chicken_2.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">fried chicken</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://chupanhmonan.com/wp-content/uploads/2016/11/blueberry-cake.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">avocado sandwich</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://cdn.pixabay.com/photo/2019/01/30/08/25/drink-3964022_1280.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">milk coffee</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://vietnamaviation.vn/hinh-anh-nhung-mon-an-ngon/imager_11_6675_700.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">fried shrimp</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/monal.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">burgers with ham</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/mcdonalds.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">salad sandwich</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Howdy.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">Sausage salad-soft drink</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://massageishealthy.com/wp-content/uploads/2019/06/hinh-anh-do-an-hinh-anh-mon-an-thuc-an-ngon-dep-viet-nam-the-gioi-2.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">egg sandwich</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/hardees.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">sandwich bread</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/downtown.jpg">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">Sausage bread</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                            <div class="product-card card-gape">
-                                <div class="product-img"><img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Arcadian.jpg"
-                                        alt="product">
-                                    <ul class="product-widget">
-                                        <li>
-                                            <button><i class="fas fa-eye"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-heart"></i></button>
-                                        </li>
-                                        <li>
-                                            <button><i class="fas fa-exchange-alt"></i></button>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="product-content">
-                                    <div class="product-name"><h6><a href="#">coffee milk cake</a></h6></div>
-                                    <div class="product-price">
-                                        <h6>
-                                            <del>$80</del>
-                                            $150
-                                        </h6>
-                                        <div class="product-rating"><i class="fas fa-star"></i><span>4.5/2</span></div>
-                                    </div>
-                                    <div class="product-btn"><a href="#"><i class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
+                            <?php
+                            // config
+                            $link_limit = 7; // maximum number of links (a little bit inaccurate, but will be ok for now)
+                            ?>
                             <ul class="pagination ">
-                                <li class="page-item"><a class="page-link" href="#"><i
-                                            class="fas fa-long-arrow-alt-left"></i></a></li>
-                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">...</li>
-                                <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                <li class="page-item"><a class="page-link" href="#"><i
-                                            class="fas fa-long-arrow-alt-right"></i></a></li>
+                                <li class="page-item"><a class="page-link" href="{{$products->url($products->url(1))}}">First</a>
+                                </li>
+                                @for ($i = 1; $i <= $products->lastPage(); $i++)
+                                    <?php
+                                    $half_total_links = floor($link_limit / 2);
+                                    $from = $products->currentPage() - $half_total_links;
+                                    $to = $products->currentPage() + $half_total_links;
+                                    if ($products->currentPage() < $half_total_links) {
+                                        $to += $half_total_links - $products->currentPage();
+                                    }
+                                    if ($products->lastPage() - $products->currentPage() < $half_total_links) {
+                                        $from -= $half_total_links - ($products->lastPage() - $products->currentPage()) - 1;
+                                    }
+                                    ?>
+                                    @if ($from < $i && $i < $to)
+                                        <li class="page-item">
+                                            <a class="page-link {{ ($products->currentPage() == $i) ? ' active' : '' }}"
+                                               href="{{ $products->url($i) }}">{{ $i }}</a>
+                                        </li>
+                                    @endif
+                                @endfor
+                                <li class="page-item"><a class="page-link"
+                                                         href="{{$products->url($products->lastPage())}}">Last</a></li>
                             </ul>
                         </div>
                     </div>
@@ -2926,19 +2610,37 @@
 @endsection
 
 @section('custom_js')
+{{--    <script>--}}
+{{--        var elements = document.querySelectorAll('.ant-btn-block .ant-divider-horizontal');--}}
+
+{{--        show(elements, 'inline-block'); // The second param allows you to specify a display value--}}
+
+{{--        show(document.getElementById('hidden-input'));--}}
+
+{{--        function show(elements, specifiedDisplay) {--}}
+{{--            elements = elements.length ? elements : [elements];--}}
+{{--            for (var index = 0; index < elements.length; index++) {--}}
+{{--                elements[index].style.display = specifiedDisplay || 'block';--}}
+{{--            }--}}
+{{--        }--}}
+
+
+{{--    </script>--}}
     <script>
-        var elements = document.querySelectorAll('.ant-btn-block .ant-divider-horizontal');
-
-        show(elements, 'inline-block'); // The second param allows you to specify a display value
-
-        show(document.getElementById('hidden-input'));
-
-        function show(elements, specifiedDisplay) {
-            elements = elements.length ? elements : [elements];
-            for (var index = 0; index < elements.length; index++) {
-                elements[index].style.display = specifiedDisplay || 'block';
-            }
-        }
+        $(document).ready(function () {
+            let submit = false
+            $('#search').click(function () {
+                if (submit) {
+                    $('#filterForm').submit()
+                } else {
+                    submit = true
+                }
+            })
+            $('.btn_category').click(function () {
+                $('#category').val(this.slot)
+                $('#brand_filter').submit()
+            })
+        });
     </script>
     <script>
         $(document).ready(function () {
@@ -2951,4 +2653,5 @@
             })
         });
     </script>
+
 @endsection

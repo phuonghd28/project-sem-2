@@ -13,6 +13,7 @@ Route::get('/', function(){
 Route::prefix('orders')->group(function (){
     Route::get('', [ListOrderController::class, 'list'])->name('listOrder');
     Route::post('delete/{id}',[ListOrderController::class,'delete'])->name('deleteOrder');
+    Route::post('update_status',[ListOrderController::class,'update_status'])->name('updateStatus');
 });
 
 Route::prefix('users')->group(function(){

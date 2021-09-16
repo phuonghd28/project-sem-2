@@ -18,6 +18,7 @@ class ListOrderController extends Controller
         $search = $request->get('search');
         $sort = $request->get('sort');
         $status = $request->get('status');
+        $date = $request->get('date');
 
         if ($search || strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('shipName', 'like', '%' . $search . '%');
@@ -31,11 +32,21 @@ class ListOrderController extends Controller
         if ($status) {
             $queryBuilder = $queryBuilder->where('status', $status);
         }
-        $order = $queryBuilder->paginate(5)->appends(['search' => $search, 'status' => $status]);
+        if($date == 1){
+            $queryBuilder = $queryBuilder->whereDate('created_at',date_format(Carbon::now(),'Y/m/d'));
+        }
+        if($date == 2){
+            $queryBuilder = $queryBuilder->whereMonth('created_at', Carbon::now()->month);
+        }
+        if($date == 3){
+            $queryBuilder = $queryBuilder->whereYear('created_at', Carbon::now()->year);
+        }
+        $order = $queryBuilder->paginate(5)->appends(['search' => $search, 'status' => $status, 'date' => $date]);
         return view('admin/orders/table', [
             'orders' => $order,
             'status' => $status,
-            'sort' => $sort
+            'sort' => $sort,
+            'date' => $date
         ]);
 
     }
@@ -44,5 +55,13 @@ class ListOrderController extends Controller
         $user = Order::find($id);
         $user->delete();
         return redirect()->route('listOrder')->with(['status' => 'Delete order success']);
+    }
+    public function update_status(Request $request){
+        foreach (json_decode($request->array_id) as $item){
+            $order = Order::find($item);
+            $order->status = $request->desire;
+            $order->save();
+        }
+        return back();
     }
 }

@@ -310,17 +310,10 @@
                                 <tr>
                                     <td class="cart__product__item">
                                         <img
-                                            src="{{ \Illuminate\Support\Facades\Storage::url($orderDetail->product->image) }}"
+                                            src="{{explode(',',$orderDetail->product->image)[0]}}"
                                             alt="">
                                         <div class="cart__product__item__title">
                                             <h6>{{$orderDetail->product->name}}</h6>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
                                         </div>
                                     </td>
                                     <td class="cart__price">{{$orderDetail->product->price}}</td>

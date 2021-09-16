@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaypalController;
+use App\Http\Controllers\ProductClientController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
 
@@ -33,13 +34,12 @@ Route::get('/', function () {
     return view('clients.index');
 })->name('index');
 
-Route::get('/products', function () {
-    $data = Product::all();
-    return view('clients.list', ['products' => $data]);
-})->name('products');
+
 Route::get('abouts', function () {return view('clients.abouts');})->name('abouts');
 Route::get('blog', function () {return view('clients.blog');})->name('blog');
 Route::get('contact', function () {return view('clients.contact');})->name('contact');
+
+Route::get('/products',[ProductClientController::class,'list'])->name('products');
 
 
 

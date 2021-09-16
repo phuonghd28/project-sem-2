@@ -331,7 +331,7 @@
                                         <input type="hidden" name="rowId" value="{{$data->rowId}}">
                                         <td class="cart__product__item">
                                             <img
-                                                src="{{ \Illuminate\Support\Facades\Storage::url($data->options->image) }}"
+                                                src="{{$data->options->image}}"
                                                 alt="">
                                             <div class="cart__product__item__title">
                                                 <h6>{{$data->name}}</h6>

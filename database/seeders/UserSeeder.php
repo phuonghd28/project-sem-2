@@ -25,7 +25,7 @@ class UserSeeder extends Seeder
                 'email' => 'quanthang@gmail.com',
                 'phone' => '0345686868',
                 'address' => 'Nghệ An',
-                'username' => 'Quân Thắng',
+                'username' => 'quanthang',
                 'password' => Hash::make('20020101'),
                 'role' => Role::ADMIN
             ],
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
                 'email' => 'phuonghoang@gmail.com',
                 'phone' => '098968696',
                 'address' => 'Hải Phòng',
-                'username' => 'Phương',
+                'username' => 'phương',
                 'password' => Hash::make('ahihi1'),
                 'role' => Role::ADMIN
             ],
@@ -45,7 +45,7 @@ class UserSeeder extends Seeder
                 'email' => 'Tiendang@gmail.com',
                 'phone' => '0686789999',
                 'address' => 'Hà Nội',
-                'username' => 'Tiến Đặng',
+                'username' => 'tiendang',
                 'password' => Hash::make('hanoixin'),
                 'role' => Role::USER
             ],
@@ -55,7 +55,7 @@ class UserSeeder extends Seeder
                 'email' => 'thangpham@gmail.com',
                 'phone' => '0568686800',
                 'address' => 'Phú Thọ',
-                'username' => 'Thắng Phạm',
+                'username' => 'thangpham',
                 'password' => Hash::make('thang123'),
                 'role' => Role::USER
             ],
@@ -65,7 +65,7 @@ class UserSeeder extends Seeder
                 'email' => 'hieuvuong@gmail.com',
                 'phone' => '034737389',
                 'address' => 'Hải Dương',
-                'username' => 'Hiếu Vương',
+                'username' => 'vuonghieu',
                 'password' => Hash::make('hieu2002'),
                 'role' => Role::USER
             ],
@@ -75,7 +75,7 @@ class UserSeeder extends Seeder
                 'email' => 'Sycanh2004@gmail.com',
                 'phone' => '0689999999',
                 'address' => 'Nghệ An',
-                'username' => 'Cảnh Thắng',
+                'username' => 'canhthang',
                 'password' => Hash::make('19052004'),
                 'role' => Role::ADMIN
             ],
@@ -85,7 +85,7 @@ class UserSeeder extends Seeder
                 'email' => 'phonglan03@gmail.com',
                 'phone' => '045678900',
                 'address' => 'Nghệ An',
-                'username' => 'Phong Lan',
+                'username' => 'phonglan',
                 'password' => Hash::make('20052003'),
                 'role' => Role::USER
             ],
@@ -95,7 +95,7 @@ class UserSeeder extends Seeder
                 'email' => 'duongbinh02@gmail.com',
                 'phone' => '0345898989',
                 'address' => 'Nghệ An',
-                'username' => 'Dương Công',
+                'username' => 'duong',
                 'password' => Hash::make('21032002'),
                 'role' => Role::USER
             ],
@@ -105,7 +105,7 @@ class UserSeeder extends Seeder
                 'email' => 'quanhosy@gmail.com',
                 'phone' => '0999999999',
                 'address' => 'Nghệ An',
-                'username' => 'Quân Kỷ',
+                'username' => 'quan',
                 'password' =>Hash::make('72740204'),
                 'role' => Role::ADMIN
             ],
@@ -115,7 +115,7 @@ class UserSeeder extends Seeder
                 'email' => 'Nguyênthanh@gmail.com',
                 'phone' => '034578999',
                 'address' => 'Nghệ An',
-                'username' => 'Nguyên Hồ',
+                'username' => 'nguyen',
                 'password' => Hash::make('19102005'),
                 'role' => Role::ADMIN
             ]
