@@ -4,35 +4,26 @@
 @endsection
 @section('custom_css')
     <style>
-
-
         body {
             background: #FFF;
-            font-family: 'Nunito', sans-serif;
-            font-size: 16px;
-            line-height: 1.8;
-            font-weight: 400;
-            -webkit-text-size-adjust: 100%;
-            -webkit-overflow-scrolling: touch;
-            color: #757575;
+            margin: 0;
+            font-family: "Noto Sans",sans-serif;
+            line-height: 1.6;
+
             -webkit-font-smoothing: antialiased;
-            overflow-x: hidden
+            color: #000;
         }
 
         h1, h2, h3, h4, h5, h6 {
-            position: relative;
-            margin: 0;
-            margin-bottom: 0;
             color: #231900;
             text-decoration: none;
             font-weight: 700;
             line-height: 1.5;
-            font-family: 'Montserrat', sans-serif;
+
             clear: both
         }
 
         a {
-            color: #0d6efd;
             text-decoration: none
         }
 
@@ -106,7 +97,6 @@
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 40px;
             display: block;
             margin: 0 auto;
             -webkit-box-pack: justify;
@@ -151,12 +141,15 @@
 
         .res-2-bg-white {
             overflow: hidden;
-            background-color: #fff
+            border: 1px solid #e9e9e9;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
         }
 
         .res-2-img {
             overflow: hidden;
-            position: relative
+            border-radius: 10px 10px 0 0;
+            position: relative;
         }
 
         .res-fl-deals .res-2-img {
@@ -189,13 +182,15 @@
         .res-2-text i.starts-on {
             color: #ffb413
         }
+        .res-2-inner {
+            padding: 10px 20px;
+        }
 
         .res-2-text .text-s1 {
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 20px;
             text-transform: capitalize;
             color: #071c1f;
-            font-weight: 700
+            font-weight: 600
         }
 
         .res-2-box ul li:last-child {
@@ -210,7 +205,7 @@
             overflow: hidden;
             width: 100%;
             border-top: 1px solid #e9e9e9;
-            padding: 15px 20px
+            padding: 10px;
         }
 
         .res-2-box .slider-btn {
@@ -273,12 +268,25 @@
         }
 
         .res-2-map-product span {
-            font-size: 16px;
-            color: #757575
+            font-size: 17px;
+            color: #757575;
+            font-weight: 300;
         }
 
         .res-2-map-product span.location-png {
-            margin-left: 10px
+            margin-left: 10px;
+        }
+        .location-png i {
+            text-align: center;
+            font-size: 10px;
+            width: 17px;
+            height: 17px;
+            border: 1px solid;
+            border-radius: 50%;
+            line-height: 15px;
+            vertical-align: top;
+            margin-top: 3px;
+            margin-right: 3px;
         }
 
         .res-2-box ul li p {
@@ -366,7 +374,9 @@
         .res-3-icons {
             position: absolute;
             top: 8%;
-            right: 6%
+            right: 6%;
+            height: 34px;
+            width: 34px;
         }
 
         .border-style-3::after {
@@ -378,30 +388,17 @@
             left: 25px
         }
 
-        .res-3-icons i {
-            background-color: #fff;
-            border-radius: 25px;
-            padding: 10px;
-            font-size: 14px;
-            color: #757575;
-            line-height: 13px
-        }
-
-        .res-3-icons i.fa-heart {
-            color: #757575;
-            cursor: pointer
-        }
-
-        .res-3-icons i.fa-heart:hover, .res-3-icons i.fa-heart.favorite {
-            color: #07c750
-        }
 
         .res-3-box {
             position: relative;
-            border: 1px solid #f3f5ff;
+            border-radius: 10px;
             width: 100%;
             margin-bottom: 30px;
-            background: #fff
+        }
+        .res-3-box:hover {
+            cursor: pointer;
+            transition: all .3s;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
 
         .res-2-img {
@@ -454,7 +451,7 @@
         }
 
         .wcfmfa, .fas {
-            font-family: 'Font Awesome 5 Free', serif;
+
             font-weight: 900
         }
 
@@ -471,7 +468,7 @@
             font-weight: 700;
             letter-spacing: 1px;
             margin-bottom: 0;
-            font-family: 'Montserrat', sans-serif
+
         }
 
         .heading-minimal .bottom-dots {
@@ -548,7 +545,7 @@
 
         button, input, optgroup, select, textarea {
             margin: 0;
-            font-family: inherit;
+
             font-size: inherit;
             line-height: inherit;
             color: inherit
@@ -596,15 +593,7 @@
             background: transparent
         }
 
-        body {
-            margin: 0;
-            font-family: SanomatGrabApp, -apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Helvetica Neue, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-            font-size: 14px;
-            font-variant: tabular-nums;
-            line-height: 1.42857143;
-            color: #1c1c1c;
-            background-color: #fff
-        }
+
 
         injected stylesheet:root {
             --simple-translate-main-text: #0c0c0d;
@@ -636,9 +625,6 @@
             box-sizing: border-box
         }
 
-        *, :after, :before {
-            box-sizing: border-box
-        }
 
         ::selection {
             background: #00b14f;
@@ -769,7 +755,6 @@
             background: white;
             position: relative;
             overflow: hidden;
-
         }
 
         .form-login form {
@@ -825,7 +810,7 @@
             width: 150px;
         }
 
-    </style>
+</style>
 @endsection
 
 @section('banner')
@@ -833,811 +818,699 @@
 @endsection
 
 @section('content')
-    <body>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-174d16b elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="174d16b" data-element_type="section">
-        <div class="elementor-container elementor-column-gap-no">
-            <div
-                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c04d29d"
-                data-id="c04d29d" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div
-                        class="elementor-element elementor-element-64a2156 elementor-widget elementor-widget-food-item-categories4"
-                        data-id="64a2156" data-element_type="widget" data-widget_type="food-item-categories4.default">
-                        <div class="elementor-widget-container">
-                            <section class="res-cat cat-new-design white-section">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xxl-12 col-xl-12 col-lg-12">
-                                            <div class="heading-minimal">
-                                                <div class="sub-title">Top Foods</div>
-                                                <h3 class="head-title">Our Categories</h3>
-                                                <div class="bottom-dots  clearfix">
-                                                    <span class="dot line-dot"></span>
-                                                    <span class="dot"></span>
-                                                    <span class="dot"></span>
-                                                    <span class="dot"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/Layer256-1.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Pizza</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">14 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/02.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Broast</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">4 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/03.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Chicken</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">5 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/04.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Burgers</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">19 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/05.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Shakes</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">22 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/06.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Sandwiches</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">6 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/07.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Pasta</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">10 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                                            <div class="category-main">
-                                                <a href="#"> <img
-                                                        loading="lazy" alt="" class="cate-images"
-                                                        src="assets/images/layer/08.png"></a>
-                                                <div class="category-text-box">
-                                                    <div class="category-text-inner">
-                                                        <a href="#">
-                                                            <h3>Desserts</h3></a></div>
-                                                    <div class="category-text-desc">
-                                                        <span class="text-center">15 Restaurants</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12">
+                <div class="heading-minimal">
+                    <div class="sub-title">Top Foods</div>
+                    <h3 class="head-title">Our Categories</h3>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/Layer256-1.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Pizza</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/02.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Broast</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/03.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Chicken</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/04.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Burgers</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/05.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Shakes</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/06.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Sandwiches</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/07.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Pasta</h3></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="category-main">
+                    <a href="#"> <img
+                            loading="lazy" alt="" class="cate-images"
+                            src="assets/images/layer/08.png"></a>
+                    <div class="category-text-box">
+                        <div class="category-text-inner">
+                            <a href="#">
+                                <h3>Desserts</h3></a></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-9b3df88 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-        data-id="9b3df88" data-element_type="section"
-        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-        <div class="elementor-container elementor-column-gap-no">
-            <div
-                class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-58c2229"
-                data-id="58c2229" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                    <div
-                        class="elementor-element elementor-element-3c43e9f elementor-widget elementor-widget-simple-grid-restaurants"
-                        data-id="3c43e9f" data-element_type="widget" data-widget_type="simple-grid-restaurants.default">
-                        <div class="elementor-widget-container">
-                            <section class="res-2-featured bg-color cols-padding white-section">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
-                                            <div class="heading-minimal">
-                                                <div class="sub-title">TOP Products</div>
-                                                <h3 class="head-title">Featured products</h3>
-                                                <div class="res-view-btn">
-
-                                                </div>
-                                                <div class="bottom-dots  clearfix">
-                                                    <span class="dot line-dot"></span>
-                                                    <span class="dot"></span>
-                                                    <span class="dot"></span>
-                                                    <span class="dot"></span>
-                                                </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
+                <div class="heading-minimal">
+                    <div class="sub-title">TOP Products</div>
+                    <h3 class="head-title">Featured products</h3>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
+                <div class="row">
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a1.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <div class="res-2-map-product">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign"></i>
+                                                    20.000 - 50.000
+                                                </span>
                                             </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="assets/images/Restaurant/a2.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="28"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Tasty Food Pizza</div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Pizza">Pizza</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Deals">Deals</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Sauces">Sauces</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Specialities">Specialities</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Calzone">Calzone</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="New Arrival">New Arrival</a></span>
                                         </div>
-
-                                        <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
-                                            <div class="row">
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a1.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="29"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                                                        <div class="text-s1">Organic Arcadian Food</div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Shakes">Shakes</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Steaks">Steaks</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Sea Food">Sea Food</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Chicken">Chicken</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Appetizers">Appetizers</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Rolls">Rolls</a></span></div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        {{--                                                                        <div class="res-3-logo-img-container">--}}
-                                                                        {{--                                                                            <a href="#">--}}
-                                                                        {{--                                                                                <img--}}
-                                                                        {{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/066-50x50.jpg"--}}
-                                                                        {{--                                                                                    alt="" class="img-fluid"></a></div>--}}
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">10p-15p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
-                       <img
-                           src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                           alt=""
-                           class="img-fluid"></span>
-                                                                            <span>10$-15$</span></div>
-
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a2.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="28"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Tasty Food Pizza</div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Pizza">Pizza</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Deals">Deals</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Sauces">Sauces</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Specialities">Specialities</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Calzone">Calzone</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="New Arrival">New Arrival</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">10p-15p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">10p-15p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
                                                                             <img
                                                                                 src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
                                                                                 alt="" class="img-fluid"></span>
-                                                                            <span>10$-20$</span></div>
+                                                <span>10$-20$</span></div>
 
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a03.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="30"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Food Chef Italian</div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Pasta">Pasta</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Beverages">Beverages</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Rice">Rice</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Vegetarian Dishes">Vegetarian Dishes</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Starters">Starters</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="New Arrival">New Arrival</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">20p-23p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="assets/images/Restaurant/a03.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="30"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Food Chef Italian</div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Pasta">Pasta</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Beverages">Beverages</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Rice">Rice</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Vegetarian Dishes">Vegetarian Dishes</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Starters">Starters</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="New Arrival">New Arrival</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">20p-23p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
                                                                                 <img
                                                                                     src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
                                                                                     alt="" class="img-fluid"></span>
-                                                                            <span>25$-35$ </span></div>
+                                                <span>25$-35$ </span></div>
 
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a4.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="26"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Toni Food Hub</div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Beverages">Beverages</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Desserts">Desserts</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Sauces">Sauces</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Wraps">Wraps</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Sandwiches">Sandwiches</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">20p-30p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="assets/images/Restaurant/a4.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="26"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Toni Food Hub</div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Beverages">Beverages</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Desserts">Desserts</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Sauces">Sauces</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Wraps">Wraps</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Sandwiches">Sandwiches</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">20p-30p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
                        <img
                            src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
                            alt="" class="img-fluid"></span>
-                                                                            <span>50$-55$</span></div>
+                                                <span>50$-55$</span></div>
 
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a5.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="35"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Masterchef Chinese Food
-                                                                        </div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Burgers">Burgers</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Beverages">Beverages</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Chicken">Chicken</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Steaks">Steaks</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="New Arrival">New Arrival</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">15p-20p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="assets/images/Restaurant/a5.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="35"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Masterchef Chinese Food
+                                            </div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Burgers">Burgers</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Beverages">Beverages</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Chicken">Chicken</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Steaks">Steaks</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="New Arrival">New Arrival</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">15p-20p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
                                                                                  <img
                                                                                      src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
                                                                                      alt="" class="img-fluid"></span>
-                                                                            <span>25$-35$</span></div>
+                                                <span>25$-35$</span></div>
 
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a6.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="33"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Fun Chicken Meals</div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Shakes">Shakes</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Hot Drinks">Hot Drinks</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Happy Meal">Happy Meal</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Burgers">Burgers</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Breakfast">Breakfast</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">23p-25p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="assets/images/Restaurant/a6.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="33"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Fun Chicken Meals</div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Shakes">Shakes</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Hot Drinks">Hot Drinks</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Happy Meal">Happy Meal</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Burgers">Burgers</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Breakfast">Breakfast</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">23p-25p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
                        <img
                            src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
                            alt=""
                            class="img-fluid"></span>
-                                                                            <span>60$-65$</span></div>
+                                                <span>60$-65$</span></div>
 
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a7.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="27"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Chef Ganteng Restaurant
-                                                                        </div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Desserts">Desserts</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Sunday Brunch">Sunday Brunch</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Hi Tea">Hi Tea</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Pizza">Pizza</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Continental">Continental</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Dinner Buffet">Dinner Buffet</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">15p-25p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
-                                                                                <img
-                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                    alt="" class="img-fluid"></span>
-                                                                            <span>25-35</span></div>
-
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="assets/images/Restaurant/a8.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="34"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Marshall Steak House</div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Appetizers">Appetizers</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Deals">Deals</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Casa Deals">Casa Deals</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Salads">Salads</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Shakes">Shakes</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Desserts">Desserts</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">25p-30p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
-                                                                                <img
-                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                    alt="" class="img-fluid"></span>
-                                                                            <span>30$-35~$</span></div>
-
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                                                    <div class="res-3-box ">
-                                                        <div class="res-2-img parallex-new"><a
-                                                                href="#">
-                                                                <img
-                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Normas.jpg"
-                                                                    alt="" class="img-fluid"> </a>
-                                                            <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                                                  data-id="25"></i>
-                                                            </div>
-                                                            <div class="new-stars-main">
-                                                                <div class="stars"><i class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i><i
-                                                                        class="fa fa-star "></i>
-                                                                </div>
-                                                                <div class="rating-number"></div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="res-2-bg-white">
-                                                            <div class="res-2-inner">
-                                                                <div class="res-2-text">
-                                                                    <a href="#">
-                                                                        <div class="text-s1">Chickenzilla Pizza Fusion
-                                                                        </div>
-                                                                    </a>
-                                                                    <div class="food_cats"><span class="cat_names"><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Paratha">Paratha</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Burgers">Burgers</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="BBQ">BBQ</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Continental">Continental</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light"
-                                                                                title="Rice">Rice</a><a
-                                                                                href="#"
-                                                                                class="badge bg-light" title="Karahi">Karahi</a></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="res-2-box">
-                                                                <ul>
-                                                                    <li>
-                                                                        {{--                                                                        <div class="res-3-logo-img-container">--}}
-                                                                        {{--                                                                            <a href="https://marketplace.foodotawp.com/store/normas/">--}}
-                                                                        {{--                                                                                <img--}}
-                                                                        {{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0112-50x50.jpg"--}}
-                                                                        {{--                                                                                    alt="" class="img-fluid"></a></div>--}}
-                                                                        <p><span class="wcfmfa fa-clock"></span><span
-                                                                                class="today-status"></span><span
-                                                                                class="today-timing">22p-25p</span>
-                                                                        </p>
-                                                                        <div class="res-2-map-product"><span
-                                                                                class="location-png">
-
-                                                                                <img
-                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                    alt="" class="img-fluid"></span>
-                                                                            <span>65$-70$</span></div>
-
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="assets/images/Restaurant/a7.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="27"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Chef Ganteng Restaurant
                                             </div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Desserts">Desserts</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Sunday Brunch">Sunday Brunch</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Hi Tea">Hi Tea</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Pizza">Pizza</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Continental">Continental</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Dinner Buffet">Dinner Buffet</a></span>
                                         </div>
-
                                     </div>
                                 </div>
-                            </section>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">15p-25p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
+                                                                                <img
+                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                    alt="" class="img-fluid"></span>
+                                                <span>25-35</span></div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="assets/images/Restaurant/a8.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="34"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Marshall Steak House</div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Appetizers">Appetizers</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Deals">Deals</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Casa Deals">Casa Deals</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Salads">Salads</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Shakes">Shakes</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Desserts">Desserts</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">25p-30p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
+                                                                                <img
+                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                    alt="" class="img-fluid"></span>
+                                                <span>30$-35~$</span></div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new"><a
+                                    href="#">
+                                    <img
+                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Normas.jpg"
+                                        alt="" class="img-fluid"> </a>
+                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
+                                                                      data-id="25"></i>
+                                </div>
+                                <div class="new-stars-main">
+                                    <div class="stars"><i class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i><i
+                                            class="fa fa-star "></i>
+                                    </div>
+                                    <div class="rating-number"></div>
+                                </div>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="#">
+                                            <div class="text-s1">Chickenzilla Pizza Fusion
+                                            </div>
+                                        </a>
+                                        <div class="food_cats"><span class="cat_names"><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Paratha">Paratha</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Burgers">Burgers</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="BBQ">BBQ</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Continental">Continental</a><a
+                                                    href="#"
+                                                    class="badge bg-light"
+                                                    title="Rice">Rice</a><a
+                                                    href="#"
+                                                    class="badge bg-light" title="Karahi">Karahi</a></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            {{--                                                                        <div class="res-3-logo-img-container">--}}
+                                            {{--                                                                            <a href="https://marketplace.foodotawp.com/store/normas/">--}}
+                                            {{--                                                                                <img--}}
+                                            {{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0112-50x50.jpg"--}}
+                                            {{--                                                                                    alt="" class="img-fluid"></a></div>--}}
+                                            <p><span class="wcfmfa fa-clock"></span><span
+                                                    class="today-status"></span><span
+                                                    class="today-timing">22p-25p</span>
+                                            </p>
+                                            <div class="res-2-map-product"><span
+                                                    class="location-png">
+
+                                                                                <img
+                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
+                                                                                    alt="" class="img-fluid"></span>
+                                                <span>65$-70$</span></div>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <section>
         <div class="sectionContainer___3GDBD seo___2UD4U ant-layout">
             <div class="sectionContent___2XGJB"><h3>Tại sao nên lựa chọn AptechFood?</h3>
@@ -1726,63 +1599,66 @@
         </div>
     </section>
 
-    @endsection
+@endsection
 
 
 
-    @section('custom_js')
-        <script>
-            var elements = document.querySelectorAll('.ant-btn-block .ant-divider-horizontal');
+@section('custom_js')
+    <script>
+        var elements = document.querySelectorAll('.ant-btn-block .ant-divider-horizontal');
 
-            show(elements, 'inline-block'); // The second param allows you to specify a display value
+        show(elements, 'inline-block'); // The second param allows you to specify a display value
 
-            show(document.getElementById('hidden-input'));
+        show(document.getElementById('hidden-input'));
 
-            function show(elements, specifiedDisplay) {
-                elements = elements.length ? elements : [elements];
-                for (var index = 0; index < elements.length; index++) {
-                    elements[index].style.display = specifiedDisplay || 'block';
-                }
+        function show(elements, specifiedDisplay) {
+            elements = elements.length ? elements : [elements];
+            for (var index = 0; index < elements.length; index++) {
+                elements[index].style.display = specifiedDisplay || 'block';
             }
-        </script>
-        <script>
-            // Khi người dùng quận trang thì gọi đến hàm myFunction
-            window.onscroll = function() {myFunction()};
-            // Get the header
-            var header = document.getElementById("myHeader");
-            // Get the offset position of the navbar
-            var sticky = header.offsetTop;
-            // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-                if (window.pageYOffset > sticky) {
-                    header.classList.add("sticky");
-                } else {
-                    header.classList.remove("sticky");
-                }
-            }
-        </script>
-        <script>
-            var LoginForm = document.getElementById("log-form");
-            var RegForm = document.getElementById("reg-form");
-            var Indicator = document.getElementById("indicator");
-            var FormAccount = document.getElementById("form-account");
+        }
+    </script>
+    <script>
+        // Khi người dùng quận trang thì gọi đến hàm myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
+        // Get the header
+        var header = document.getElementById("myHeader");
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
 
-            function register() {
-                RegForm.style.transform = "translateX(-500px)";
-                LoginForm.style.transform = "translateX(-500px)";
-                Indicator.style.transform = "translateX(236px)";
-                FormAccount.style.height = "590px";
-                RegForm.style.opacity = "0";
-                RegForm.style.opacity = "1";
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
             }
+        }
+    </script>
+    <script>
+        var LoginForm = document.getElementById("log-form");
+        var RegForm = document.getElementById("reg-form");
+        var Indicator = document.getElementById("indicator");
+        var FormAccount = document.getElementById("form-account");
 
-            function login() {
-                RegForm.style.transform = "translateX(0px)";
-                LoginForm.style.transform = "translateX(0px)";
-                Indicator.style.transform = "translateX(83px)";
-                FormAccount.style.height = "365px"
-                LoginForm.style.opacity = "0";
-                LoginForm.style.opacity = "1";
-            }
-        </script>
+        function register() {
+            RegForm.style.transform = "translateX(-500px)";
+            LoginForm.style.transform = "translateX(-500px)";
+            Indicator.style.transform = "translateX(236px)";
+            FormAccount.style.height = "590px";
+            RegForm.style.opacity = "0";
+            RegForm.style.opacity = "1";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(83px)";
+            FormAccount.style.height = "365px"
+            LoginForm.style.opacity = "0";
+            LoginForm.style.opacity = "1";
+        }
+    </script>
 @endsection

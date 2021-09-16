@@ -6,9 +6,12 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @yield('custom_css')
+
     <title>@yield('title')</title>
 </head>
 <body>
@@ -21,24 +24,41 @@
                 <div class="col-lg-2 col-sm-3 col-3 align-self-center">
                     <div class="logo">
                         <a href="#">
-                            <img style="width: 100%;" src="">
-                            LOGO
+                            <img style="width: 100%;" src="https://chaysach.com/wp-content/uploads/2017/02/logo.jpg">
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-10 col-9 order-lg-3 align-self-center">
                     <div class="d-flex justify-content-end">
+                        <div class="main-nav col d-lex align-self-center">
+                            <a class="nav-item active" href="{{ route('index') }}">Home</a>
+                            <a class="nav-item " href="{{route('products')}}">Product</a>
+                            <a class="nav-item " href="{{route('blog')}}">Blog</a>
+                            <a class="nav-item " href="{{route('abouts')}}">Abouts</a>
+                            <a class="nav-item " href="{{route('contact')}}">Contact</a>
+
+                        </div>
                         <div class="shopping-cart d-flex justify-content-center">
                             <div class="align-self-center">
-                                <a class="color-cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="color-cart" href="{{route('listCart')}}"><i class="fas fa-shopping-cart"></i></a>
                             </div>
                         </div>
                         <div class="wrap-log-in d-flex">
-                            <div class="log-in px-3 align-self-center">
+                            <div class="log-in align-self-center">
                                 @if(\Illuminate\Support\Facades\Auth::check())
-                                    <a class="color-cart"><b style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b></a>
+                                    <button class="dropdown-toggle" style="background: none;border: none; padding: 10px 14px;" type="button" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a class="color-cart"><b
+                                                style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b></a>
+                                    </button>
+
+
+                                    <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="/"><i class="far fa-user ic-user mr-2"></i>Tài khoản</a>
+                                        <a class="dropdown-item border-0" href="{{route('logout')}}"><i class="fas fa-power-off mr-2 ic-logout"></i>Đăng xuất</a>
+                                    </div>
                                 @else
-                                    <button style="background: none;border: none" type="button" class="btn-account" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button style="background: none;border: none; padding: 10px 14px;" type="button"
+                                            class="btn-account" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <a class="color-cart"><b style="font-size: 14px">Đăng nhập</b></a>
                                     </button>
                                 @endif
@@ -58,7 +78,8 @@
             <div class="modal-content">
                 <div class="modal-header" style="border: none;padding: 0;position: relative">
                     <button style="font-size:30px; background: none;border: none; color: #8c8c8c" type="button"
-                            class="close d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close">
+                            class="close d-flex align-items-center justify-content-center" data-bs-dismiss="modal"
+                            aria-label="Close">
                         &times;
                     </button>
                 </div>
@@ -179,9 +200,15 @@
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
 @yield('custom_js')
 </body>
 </html>

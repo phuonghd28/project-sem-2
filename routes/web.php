@@ -33,9 +33,12 @@ Route::prefix('admin')->group(function (){
 Route::get('/', function () {
     return view('clients.index');
 })->name('index');
-Route::get('/contact', function (){
-    return view('clients.contact');
-});
+
+
+Route::get('abouts', function () {return view('clients.abouts');})->name('abouts');
+Route::get('blog', function () {return view('clients.blog');})->name('blog');
+Route::get('contact', function () {return view('clients.contact');})->name('contact');
+
 Route::get('/products',[ProductClientController::class,'list'])->name('products');
 
 
@@ -55,5 +58,6 @@ Route::get('orders/{id}', [OrderController::class, 'detail'])->name('detailOrder
 Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']);
 Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
 Route::get('/api/ward/{id}', [ShoppingCartController::class, 'api']);
+
 
 
