@@ -83,7 +83,7 @@ Mỗi một v&ugrave;ng đất, thi&ecirc;n nhi&ecirc;n đều ban tặng cho co
 Miền T&acirc;y Nam Bộ l&agrave; một b&igrave;nh nguy&ecirc;n bao la b&aacute;t ng&aacute;t với kh&iacute; hậu đặc trưng của v&ugrave;ng nhiệt đới nắng d&atilde;i, mưa dầu. Tuy khắc nghiệt l&agrave; thế, nhưng những sản vật nơi đ&acirc;y lại rất đa dạng, dồi d&agrave;o. Ch&iacute;nh vậy m&agrave; về miền T&acirc;y, người ta thường nhắc đến một số m&oacute;n ăn kho&aacute;i khẩu rất đặc trưng, trong đ&oacute; c&oacute; m&oacute;n &quot;Lẩu chua cay hoa đồng nội&quot; với v&ocirc; số c&aacute;c loại hoa như b&ocirc;ng b&iacute;, so đũa, đi&ecirc;n điển, k&egrave;o n&egrave;o...
 V&agrave; giờ m&igrave;nh c&ugrave;ng l&agrave;m ngay th&ocirc;i nha!
 Nồi lẩu c&oacute; vị cay v&agrave; thơm đặc trưng của RIỀNG v&agrave; ớt, m&agrave;u sắc hấp dẫn, vị chua cay, mặn ngọt h&agrave;i h&ograve;a...tạo n&ecirc;n hương vị đặc sắc, khiến người d&ugrave;ng một lần rồi chẳng thể n&agrave;o qu&ecirc;n...
-Trời mưa lạnh lạnh, cả nh&agrave; qu&acirc;y quần b&ecirc;n nồi lẩu n&oacute;ng, cứ h&iacute;t h&agrave;, xu&yacute;t xoa rồi r&iacute;u r&iacute;t kể chuyện c&ugrave;ng nhau...cảm gi&aacute;c thật ấm &aacute;p v&agrave; hạnh ph&uacute;c! 😊
+Trời mưa lạnh lạnh, cả nh&agrave; qu&acirc;y quần b&ecirc;n nồi lẩu n&oacute;ng, cứ h&iacute;t h&agrave;, xu&yacute;t xoa rồi r&iacute;u r&iacute;t kể chuyện c&ugrave;ng nhau...cảm gi&aacute;c thật ấm &aacute;p v&agrave; hạnh ph&uacute;c!
 H&atilde;y l&agrave;m v&agrave; cảm nhận c&ugrave;ng m&igrave;nh nh&eacute; cả nh&agrave;!
 Ch&uacute;c mọi người th&agrave;nh c&ocirc;ng!</pre>',
                 'category_id' => '8',
@@ -490,9 +490,9 @@ B&aacute;nh đậu xanh l&agrave; một loại b&aacute;nh (b&aacute;nh ngọt) 
             ],
             [
                 'id' => 52,
-                'image' => 'bánh trung thu ',
+                'image' => 'https://cdn.huongnghiepaau.com/wp-content/uploads/2019/03/banh-trung-thu-dau-xanh.jpg,https://cdn.tgdd.vn/2020/08/CookProduct/75-1200x676.jpg,https://ytuongvietnam.com/wp-content/uploads/2019/07/banh-deo-trung-thu-nhan-dau-xanh.jpg,https://scontent.subi.vn/cmsmedia/banh-nuong-e41fe386a167a468797f315827d8f7de.jpg ',
                 'price' => 40.000,
-                'name' => 'https://cdn.huongnghiepaau.com/wp-content/uploads/2019/03/banh-trung-thu-dau-xanh.jpg,https://cdn.tgdd.vn/2020/08/CookProduct/75-1200x676.jpg,https://ytuongvietnam.com/wp-content/uploads/2019/07/banh-deo-trung-thu-nhan-dau-xanh.jpg,https://scontent.subi.vn/cmsmedia/banh-nuong-e41fe386a167a468797f315827d8f7de.jpg',
+                'name' => 'bánh trung thu',
                 'description' => '<p>Tết Trung thu c&ograve;n gọi l&agrave; Tết Đo&agrave;n vi&ecirc;n, đ&acirc;y l&agrave; dịp để mọi người trong gia đ&igrave;nh sum vầy b&ecirc;n nhau c&ugrave;ng thưởng thức chiếc b&aacute;nh trung thu nhỏ xinh trong ng&agrave;y Rằm th&aacute;ng 8 nhưng kh&ocirc;ng phải ai cũng hiểu được &yacute; nghĩa của chiếc b&aacute;nh n&agrave;y. B&aacute;nh Trung thu c&oacute; nguồn gốc xuất xứ từ Trung Quốc v&agrave; được truyền b&aacute; đến Việt Nam. Cứ đến ng&agrave;y Rằm th&aacute;ng 8, người d&acirc;n Việt kh&ocirc;ng ai qu&ecirc;n mua những chiếc b&aacute;nh Trung thu nhỏ xinh về để c&uacute;ng b&agrave;n thờ tổ ti&ecirc;n, sau đ&oacute; c&ugrave;ng nhau thưởng thức. Ng&agrave;y Tết Trung thu cũng được coi l&agrave; ng&agrave;y lễ lớn thứ 3 trong năm tại Việt Nam.</p>
 ',
                 'category_id' => '2',
@@ -832,7 +832,7 @@ B&aacute;nh đậu xanh l&agrave; một loại b&aacute;nh (b&aacute;nh ngọt) 
                 'created_at' => Carbon::now()
             ], [
                 'id' => 89,
-                'image' => 'http://bestslim.org/wp-content/uploads/2014/02/an-sang-voi-pho-chay-giup-giam-can-hieu-qua-p1.jpg,http://hanoimoi.com.vn/Uploads/anhthu/2011/11/7/pho.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS1kp8GdUWFvnpEFO39X_ytLks8LxZ4Joji5e9g3XxCaUQBOpPZgfcXTmvvdvOt5B4wvg&usqp=CAU,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rl3X7QidmnnZUW1pLT5Zv1RXHXlZ1BreNS8hEEpTxLY47mba-V8QQvXLP3d09gyc2Kw&usqp=CAU',
+                'image' => 'https://thegioihinhanh.com/uploads/images/news/1431617751_news_2475.png,http://hanoimoi.com.vn/Uploads/anhthu/2011/11/7/pho.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS1kp8GdUWFvnpEFO39X_ytLks8LxZ4Joji5e9g3XxCaUQBOpPZgfcXTmvvdvOt5B4wvg&usqp=CAU,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0rl3X7QidmnnZUW1pLT5Zv1RXHXlZ1BreNS8hEEpTxLY47mba-V8QQvXLP3d09gyc2Kw&usqp=CAU',
                 'price' => 40.000,
                 'name' => 'phở chay tái',
                 'description' => '<p>M&oacute;n phở chay từ l&acirc;u đ&atilde; được nhiều thực kh&aacute;ch y&ecirc;u th&iacute;ch bởi hương vị thơm ngon, thanh đạm từ c&aacute;c loại rau củ lại dinh dưỡng. Ch&iacute;nh v&igrave; thế d&ugrave; kh&ocirc;ng phải l&agrave; ng&agrave;y rằm hay mồng 1, nhiều người vẫn lựa chọn phở chay để chế biến v&agrave; chi&ecirc;u đ&atilde;i gia đ&igrave;nh. Hiểu được nhu cầu n&agrave;y, ch&uacute;ng t&ocirc;i xin được gửi đến bạn c&aacute;ch nấu phở chay ngon từ rau củ đơn giản</p>
