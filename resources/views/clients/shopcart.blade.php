@@ -287,12 +287,6 @@
 @endsection
 @section('content')
     <section class="shop-cart spad">
-        @if(session('add'))
-            <div class="alert alert-success alert-dismissible">
-                <strong>Success!</strong>{{session('add')}}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-        @endif
         @if(session('update'))
             <div class="alert alert-success alert-dismissible">
                 <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -331,20 +325,13 @@
                                         <input type="hidden" name="rowId" value="{{$data->rowId}}">
                                         <td class="cart__product__item">
                                             <img
-                                                src="{{ \Illuminate\Support\Facades\Storage::url($data->options->image) }}"
+                                                src="{{$data->options->image}}"
                                                 alt="">
                                             <div class="cart__product__item__title">
                                                 <h6>{{$data->name}}</h6>
-                                                <div class="rating">
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
                                             </div>
                                         </td>
-                                        <td class="cart__price">{{$data->subtotal()}}</td>
+                                        <td class="cart__price">{{number_format($data->price*$data->qty)}}</td>
                                         <td class="cart__quantity">
                                             <div class="pro-qty">
                                                 <input class="form-control" type="number" min="1" name="quantity"
@@ -402,9 +389,9 @@
                             <select class="mb-3" id="Ward" name="ward_id">
                                 <option selected disabled hidden>Phường(Xã)</option>
                             </select>
-                            <input name="shipAddress" type="text" class="mb-3" placeholder="Enter ship address">
-                            <input name="shipName" type="text" class="mb-3" placeholder="Enter ship name">
-                            <input name="shipPhone" type="text" class="mb-3" placeholder="Enter ship phone">
+                            <input name="shipAddress" type="text" class="mb-3" placeholder="Enter street">
+                            <input name="shipName" type="text" class="mb-3" placeholder="Enter name" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->first_name. ' ' . \Illuminate\Support\Facades\Auth::user()->last_name : ''}}">
+                            <input name="shipPhone" type="text" class="mb-3" placeholder="Enter phone" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->phone : ''}}">
                             <input name="note" type="text" placeholder="Enter note">
                             <button class="site-btn">Send</button>
                         </form>
@@ -414,8 +401,7 @@
                     <div class="cart__total__procced">
                         <h6>Cart total</h6>
                         <ul>
-                            <li>Subtotal <span>$ 260.0</span></li>
-                            <li>Total <span>$ 260.0</span></li>
+                            <li>Total<span>{{\Gloudemans\Shoppingcart\Facades\Cart::total()}}</span></li>
                         </ul>
                         <a href="#" class="primary-btn">Proceed to checkout</a>
                     </div>

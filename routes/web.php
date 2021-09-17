@@ -1,13 +1,15 @@
 <?php
 
 
+
 use App\Http\Controllers\FeedBackController;
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaypalController;
+use App\Http\Controllers\ProductClientController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
-
 use App\Http\Controllers\ShoppingCartController;
-
 use App\Http\Controllers\UploadImageController;
 use App\Http\Middleware\CheckAdmin;
 use App\Models\Product;
@@ -33,14 +35,13 @@ Route::get('/', function () {
     return view('clients.index');
 })->name('index');
 
-Route::get('/products', function () {
-    $data = Product::all();
-    return view('clients.list', ['products' => $data]);
-})->name('products');
+
 Route::get('abouts', function () {return view('clients.abouts');})->name('abouts');
 Route::get('blog', function () {return view('clients.blog');})->name('blog');
 Route::get('contact', function () {return view('clients.contact');})->name('contact');
 Route::post('contact', [FeedBackController::class, 'store'])->name('store');
+
+Route::get('/products',[ProductClientController::class,'list'])->name('products');
 
 
 
@@ -60,5 +61,10 @@ Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']
 Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
 Route::get('/api/ward/{id}', [ShoppingCartController::class, 'api']);
 
+Route::get('mail',[MailController::class,'send_mail']);
+
+Route::get('mail-design',function (){
+    return view('mails.mail');
+});
 
 

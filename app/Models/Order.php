@@ -18,13 +18,12 @@ class Order extends Model
         'shipPhone',
         'shipAddress',
         'note',
-        'isCheckout',
         'status'
     ];
 
     public function orderDetails()
     {
-        return $this->hasMany(OrderDetail::class, 'orderId', 'id');
+        return $this->hasMany(OrderDetail::class, 'orderId');
     }
 
     public function district()

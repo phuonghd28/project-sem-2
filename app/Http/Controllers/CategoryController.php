@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CategoriesRequest;
 use App\Models\Category;
+use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
@@ -24,10 +25,26 @@ class CategoryController extends Controller
             ->with('success', 'Thêm mới thành công.');
     }
 
-    public function list()
+    public function list(Request $request)
     {
-        $data = Category::all();
-        return view('admin.categories.table', ['categories' => $data]);
+        $queryBuilder = Category::query();
+        $search = $request->get('search');
+        $sort = $request->get('sort');
+        if ($search || strlen($search) > 0) {
+            $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%');
+        }
+        if ($sort === 1) {
+            $queryBuilder = $queryBuilder->orderBy('created_at', 'DESC');
+        }
+        if ($sort === 2) {
+            $queryBuilder = $queryBuilder->orderBy('created_at', 'ASC');
+        }
+        $data = $queryBuilder->orderBy('created_at','DESC')->paginate(10)->appends(['search' => $search]);
+
+        return view('admin.categories.table', [
+            'categories' => $data,
+            'sort' => $sort
+        ]);
     }
 
     public function edit($id)

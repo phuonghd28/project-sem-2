@@ -20,6 +20,7 @@ class CreateProductsTable extends Migration
             $table->text('name');
             $table->text('description');
             $table->integer('category_id');
+            $table->boolean('is_featured')->default(false);
             $table->timestamps();
             $table->softDeletes();
         });

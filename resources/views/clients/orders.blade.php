@@ -176,6 +176,7 @@
             font-size: 14px;
             color: #444444;
         }
+
         .discount__content form input:focus {
             outline: none;
         }
@@ -266,7 +267,6 @@
         }
 
 
-
     </style>
 @endsection
 @section('content')
@@ -279,7 +279,22 @@
                 </div>
             @endif
             <div class="row">
-                <div>Trạng thái : {{$orders->isCheckout ? 'Đã thanh toán' : 'Chờ thanh toán'}}</div>
+                <div>Trạng thái :
+                    @switch($orders->status)
+                        @case(1)
+                        Đang chờ
+                        @break
+                        @case(2)
+                        Đã thanh toán
+                        @break
+                        @case(3)
+                        Đang giao hàng
+                        @break
+                        @case(4)
+                        Hoàn thành
+                        @break
+                    @endswitch
+                </div>
                 <div>Tên người nhận : {{$orders->shipName}}</div>
                 <div>Số điện thoại : {{$orders->shipPhone}}</div>
                 <div>Địa chỉ : {{$orders->district->name. '-' .$orders->ward->name. '-'. $orders->shipAddress}}</div>
@@ -310,28 +325,21 @@
                                 <tr>
                                     <td class="cart__product__item">
                                         <img
-                                            src="{{ \Illuminate\Support\Facades\Storage::url($orderDetail->product->image) }}"
+                                            src="{{explode(',',$orderDetail->product->image)[0]}}"
                                             alt="">
                                         <div class="cart__product__item__title">
                                             <h6>{{$orderDetail->product->name}}</h6>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
                                         </div>
                                     </td>
-                                    <td class="cart__price">{{$orderDetail->product->price}}</td>
+                                    <td class="cart__price">{{number_format($orderDetail->product->price)}} đ</td>
                                     <td class="cart__quantity">
                                         <div class="pro-qty">
                                             {{$orderDetail->quantity}}
                                         </div>
                                     </td>
-                                    <td>{{$orderDetail->unitPrice*$orderDetail->quantity}}</td>
+                                    <td>{{number_format($orderDetail->unitPrice*$orderDetail->quantity)}} đ</td>
                                 </tr>
-                                @endforeach
+                            @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -339,7 +347,7 @@
             </div>
             <div class="row justify-content-around">
                 <div class="col-6">
-                    <strong>Total Price : {{$totalPrice}}$</strong>
+                    <strong>Total Price : {{number_format($totalPrice)}} đ</strong>
                 </div>
                 <div class="col-6">
                     @if(!$orders->isCheckout)

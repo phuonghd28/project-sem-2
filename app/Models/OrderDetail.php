@@ -16,6 +16,9 @@ class OrderDetail extends Model
         'unitPrice'
     ];
     public function product() {
-        return $this->hasOne(Product::class, 'id', 'productId');
+        return $this->belongsTo(Product::class, 'productId');
+    }
+    public function order() {
+        return $this->belongsTo(Order::class,'orderId');
     }
 }
