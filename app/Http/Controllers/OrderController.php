@@ -21,7 +21,7 @@ class OrderController extends Controller
         $cart = Cart::content();
         $order = new Order();
         $order->totalPrice = 0;
-        $order->userId = 1;
+        $order->userId = Auth::check() ? Auth::user()->id : '';
         $order->districtId = $request->district_id;
         $order->wardId = $request->ward_id;
         $order->shipName = $request->shipName;

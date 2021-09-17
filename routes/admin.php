@@ -9,7 +9,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function(){
-    return redirect()->route('listUser');
+    return redirect()->route('home');
+});
+Route::prefix('dashboard')->group(function() {
+    Route::get('', function (){
+        return view('admin.dashboard.index');
+    })->name('home');
 });
 Route::prefix('orders')->group(function (){
     Route::get('', [ListOrderController::class, 'list'])->name('listOrder');
