@@ -123,15 +123,9 @@
                 </a>
                 <ul class="mm-collapse">
                     <li>
-                        <a href="{{route('listProduct')}}">
+                        <a href="{{route('listFeedBack')}}">
                             <i class="metismenu-icon">
                             </i>List
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{route('createProduct')}}">
-                            <i class="metismenu-icon"></i>
-                            Create
                         </a>
                     </li>
                 </ul>

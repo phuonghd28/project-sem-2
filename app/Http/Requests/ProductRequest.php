@@ -27,7 +27,8 @@ class ProductRequest extends FormRequest
             'name'=>'required',
             'price'=>'required',
             'description'=>'required',
-            'image'=>'required'
+            'image'=>'required',
+            'category_id'=>'required'
         ];
         return $rules;
     }
@@ -42,7 +43,8 @@ class ProductRequest extends FormRequest
             'image.jpeg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
             'image.gif'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
             'image.svg'=>'Vui lòng chọn ảnh có đuôi jpg, jpeg, gif, svg.',
-            'image.max'=>'Vui lòng chọn ảnh kích thước nhỏ hơn.'
+            'image.max'=>'Vui lòng chọn ảnh kích thước nhỏ hơn.',
+            'category_id.required'=>'Vui lòng chọn category.'
         ];
     }
 }

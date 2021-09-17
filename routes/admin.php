@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\FeedBackController;
 use App\Http\Controllers\ListOrderController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
@@ -42,3 +43,7 @@ Route::prefix('products')->group(function () {
     Route::put('edit/{id}',[ProductController::class, 'save'])->name('saveProduct');
     Route::get('delete/{id}',[ProductController::class, 'delete'])->name('deleteProduct');
 });
+
+
+Route::get('list-fback', [FeedBackController::class, 'list'])->name('listFeedBack');
+Route::get('delete-fback/{id}', [FeedBackController::class, 'delete'])->name('deleteFBack');

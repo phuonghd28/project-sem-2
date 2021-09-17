@@ -95,7 +95,7 @@
                             <input name="name" value="{{$data ? $data->name : ''}}" type="text"
                                    class="form-control form-control" placeholder="Enter name">
                             @error('name')
-                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                            <div class="mt-1 mb-1 ml-1 text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <label class="col-sm-1 col-form-label">Price</label>
@@ -103,7 +103,7 @@
                             <input name="price" value="{{$data ? $data->price : ''}}" type="text" class="form-control"
                                    placeholder="Enter price">
                             @error('price')
-                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                            <div class="mt-1 mb-1 ml-1 text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                         <label class="col-sm-1 px-1 col-form-label">Category</label>
@@ -115,6 +115,9 @@
                                         {{$data && $data->category_id === $item->id ? 'selected' : ''}} value="{{$item->id}}">{{$item->name}}</option>
                                 @endforeach
                             </select>
+                            @error('category_id')
+                            <div class="mt-1 mb-1 ml-1 text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                     </div>
                     <div class="position-relative row form-group">
@@ -124,11 +127,11 @@
                                       placeholder="Enter description"
                                       rows="3">{{$data ? $data->description : ''}}</textarea>
                             @error('description')
-                            <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                            <div class="mt-1 mb-1 ml-1 text-danger">{{ $message }}</div>
                             @enderror
                         </div>
                     </div>
-                    <div class="position-relative row form-group">
+                    <div class="position-relative row form-group mb-0">
                         <label for="exampleFile" class="col-sm-1 col-form-label">Image</label>
                         <div class="col-sm-10">
                             <div class="button_outer">
@@ -140,7 +143,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="position-relative row form-group">
+                    <div class="position-relative row form-groupn">
                         <div class="col-sm-1"></div>
                         <div id="image-preview" class="col-sm-11">
                             @if($data)
@@ -153,10 +156,10 @@
                                     @endif
                                 @endforeach
                             @endif
+                            @error('image')
+                            <div class="mt-1 mb-1 ml-1 text-danger">{{ $message }}</div>
+                            @enderror
                         </div>
-                        @error('image')
-                        <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
-                        @enderror
                     </div>
                     <div class="position-relative row form-group">
                         <label class="col-sm-1 col-form-label"></label>

@@ -5,21 +5,11 @@
 @section('custom_css')
     <style>
         a {
-            color: #589442;
             text-decoration: none;
-            -moz-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            -webkit-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
             outline: none;
         }
 
-        a:-webkit-any-link {
-            color: -webkit-link;
-            cursor: pointer;
-            text-decoration: underline;
-        }
+
 
         .comments-list h3 a {
             color: #555;
@@ -31,12 +21,6 @@
             text-decoration: none
         }
 
-        a:-webkit-any-link {
-            color: -webkit-link;
-            cursor: pointer;
-            text-decoration: underline;
-            text-decoration: none;
-        }
 
         .pagination_fg a.active {
             background-color: #333;
@@ -689,7 +673,10 @@
             margin: 0;
             color: #fff;
         }
-
+        .main-nav .t-blog {
+            border-bottom: 4px solid #00c6d7;
+            color: #00c6d7;
+        }
     </style>
 @endsection
 

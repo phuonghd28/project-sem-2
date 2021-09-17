@@ -205,6 +205,10 @@
                 transform: rotate(360deg);
             }
         }
+        .main-nav .t-contact {
+            border-bottom: 4px solid #00c6d7;
+            color: #00c6d7;
+        }
     </style>
 @endsection
 
@@ -249,7 +253,8 @@
                 </div>
 
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form action="" method="post" role="form" class="php-email-form">
+                        @csrf
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="name">Your Name</label>
@@ -272,12 +277,15 @@
                             <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                             <div class="validate"></div>
                         </div>
-                        <div class="mb-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+{{--                        <div class="mb-3">--}}
+{{--                            @if ($message = \Illuminate\Support\Facades\Session::get('success'))--}}
+{{--                                <div class="alert alert-success">--}}
+{{--                                    <p class="m-0 sent-message">{{ $message }}</p>--}}
+{{--                                </div>--}}
+{{--                            @endif--}}
+
+{{--                        </div>--}}
+                        <div class="text-center"><button class="btn btn-block">Send Message</button></div>
                     </form>
                 </div>
 

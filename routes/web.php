@@ -1,15 +1,15 @@
 <?php
 
 
+
+use App\Http\Controllers\FeedBackController;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaypalController;
 use App\Http\Controllers\ProductClientController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
-
 use App\Http\Controllers\ShoppingCartController;
-
 use App\Http\Controllers\UploadImageController;
 use App\Http\Middleware\CheckAdmin;
 use App\Models\Product;
@@ -39,6 +39,7 @@ Route::get('/', function () {
 Route::get('abouts', function () {return view('clients.abouts');})->name('abouts');
 Route::get('blog', function () {return view('clients.blog');})->name('blog');
 Route::get('contact', function () {return view('clients.contact');})->name('contact');
+Route::post('contact', [FeedBackController::class, 'store'])->name('store');
 
 Route::get('/products',[ProductClientController::class,'list'])->name('products');
 

@@ -4,22 +4,10 @@
 @endsection
 @section('custom_css')
     <style>
-        body {
-            background: #FFF;
-            margin: 0;
-            font-family: "Noto Sans",sans-serif;
-            line-height: 1.6;
-
-            -webkit-font-smoothing: antialiased;
-            color: #000;
-        }
-
         h1, h2, h3, h4, h5, h6 {
             color: #231900;
             text-decoration: none;
-            font-weight: 700;
             line-height: 1.5;
-
             clear: both
         }
 
@@ -182,12 +170,13 @@
         .res-2-text i.starts-on {
             color: #ffb413
         }
+
         .res-2-inner {
-            padding: 10px 20px;
+            padding: 10px;
         }
 
         .res-2-text .text-s1 {
-            font-size: 20px;
+            font-size: 16px;
             text-transform: capitalize;
             color: #071c1f;
             font-weight: 600
@@ -221,12 +210,6 @@
         .res-2-box ul li {
             float: left;
             width: 100%
-        }
-
-        .res-3-box ul li a {
-            font-size: 18px;
-            color: #757575;
-            vertical-align: super
         }
 
         .res-3-box ul li .weight {
@@ -268,15 +251,12 @@
         }
 
         .res-2-map-product span {
-            font-size: 17px;
+            font-size: 15px;
             color: #757575;
             font-weight: 300;
         }
 
-        .res-2-map-product span.location-png {
-            margin-left: 10px;
-        }
-        .location-png i {
+        .location-png .dollar-icon {
             text-align: center;
             font-size: 10px;
             width: 17px;
@@ -288,6 +268,7 @@
             margin-top: 3px;
             margin-right: 3px;
         }
+
 
         .res-2-box ul li p {
             color: #c70909;
@@ -395,6 +376,7 @@
             width: 100%;
             margin-bottom: 30px;
         }
+
         .res-3-box:hover {
             cursor: pointer;
             transition: all .3s;
@@ -594,7 +576,6 @@
         }
 
 
-
         injected stylesheet:root {
             --simple-translate-main-text: #0c0c0d;
             --simple-translate-sub-text: #737373;
@@ -658,159 +639,41 @@
             background-position: 50%
         }
 
-        .btn-login {
-            width: 100%;
-            background-color: #00c6d7;
-            color: #fff;
-            border-radius: 0;
-            height: 48px;
-            transition: all .2s cubic-bezier(.645, .045, .355, 1)
+        .main-nav .t-home {
+            border-bottom: 4px solid #00c6d7;
+            color: #00c6d7;
         }
-
-        .btn-login:hover {
-            color: #fff;
-            background-color: #00E5EE;
-            box-shadow: none;
-            outline: none
-        }
-
-        .btn-login:active {
-            box-shadow: none;
-            outline: none
-        }
-
-        .btn:active, .btn:focus, .btn.active {
-            background-image: none;
-            outline: 0;
-            -webkit-box-shadow: none;
-            box-shadow: none
-        }
-
-        .input-user-name, .input-pass {
-            padding: 0;
-            border: 0;
-            vertical-align: baseline;
-            width: 100%;
-            outline: none;
-            transition: all .3s cubic-bezier(.645, .045, .355, 1);
-            position: relative
-        }
-
-        .user-name, .pass {
-            background: none;
-            padding: 15px 66px 15px 19px;
-            text-align: left;
-            border: 0;
-            border-left: 2px solid #00c6d7;
-            font-size: 15px;
-            outline: 0;
-            width: 75%;
-            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        }
-
-        .heading {
-            font-size: 1.5rem;
-            line-height: 1.33333333;
-            font-weight: 500
-        }
-
-        .icon-w3 {
-            right: 0;
-            bottom: 0;
-            width: 53px;
-            height: 52px;
-            display: inline-block;
-            position: absolute;
-            text-align: center;
-            background: #00c6d7
-        }
-
-        .icon-w3 i {
-            color: #fff;
-            font-size: 19px;
-            line-height: 49px
-        }
-
-
-        .modal-content button.close {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0;
-            margin: 0;
-            width: 40px;
-            height: 40px;
-            z-index: 1;
-        }
-
-        button:focus {
-            outline: none;
-        }
-
-        .form-login {
-            width: 100%;
-            padding: 35px 24px 35px;
-            height: 365px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
-            background: white;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .form-login form {
-            top: 130px;
-            position: absolute;
-            width: 450px;
-            height: 100%;
-            margin: 0 24px;
-            transition: transform 0.4s;
-        }
-
-        #form-account {
-            transition: height .4s;
-        }
-
-        #log-form {
-            left: 0;
-
-        }
-
-        #reg-form {
-
-            left: 500px;
-        }
-
-        #reg-form input {
-            width: 100%;
-            padding: 15px 18px;
-        }
-
-        .input-form-reg {
-            width: 48%;
-        }
-
-        #indicator {
-            width: 130px;
-            border: none;
-            background-color: #00c6d7;
-            height: 3px;
-            margin: 0;
-            opacity: 1;
-            transform: translateX(83px);
-            transition: transform .4s;
-        }
-
-        .heading span {
-            font-size: 1.5rem;
-            line-height: 1.33333333;
-            font-weight: 500;
-            color: #676767;
+        .btn-adding {
+            font-size: 20px;
             cursor: pointer;
+            font-weight: 700;
+            line-height: 17px;
+            width: 22px;
+            height: 22px;
+            background-color: #ee4d2d;
+            text-align: center;
+            color: #fff;
             display: inline-block;
-            width: 150px;
+            border-radius: 50%;
         }
-
-</style>
+        .btn-adding:hover {
+            background-color: #e37f68;
+        }
+        .wrap-adding {
+            width: 22px;
+            height: 22px;
+        }
+        .wrap-adding a {
+            display: inline-block;
+        }
+        .icon-box-text p {
+            line-height: 1.6;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+    </style>
 @endsection
 
 @section('banner')
@@ -946,7 +809,7 @@
             </div>
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
                 <div class="row">
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -964,10 +827,15 @@
                                 <div class="res-2-box">
                                     <ul>
                                         <li>
-                                            <div class="res-2-map-product">
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
                                                 <span class="location-png">
-                                                    <i class="fas fa-dollar-sign"></i>
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
                                                     20.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
                                                 </span>
                                             </div>
                                         </li>
@@ -976,531 +844,245 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
                         <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="assets/images/Restaurant/a2.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="28"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a2.jpg" alt="" class="img-fluid">
+                                </a>
                             </div>
                             <div class="res-2-bg-white">
                                 <div class="res-2-inner">
                                     <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Tasty Food Pizza</div>
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
                                         </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Pizza">Pizza</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Deals">Deals</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Sauces">Sauces</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Specialities">Specialities</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Calzone">Calzone</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="New Arrival">New Arrival</a></span>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="res-2-box">
                                     <ul>
                                         <li>
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">10p-15p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-                                                                            <img
-                                                                                src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                alt="" class="img-fluid"></span>
-                                                <span>10$-20$</span></div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="assets/images/Restaurant/a03.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="30"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Food Chef Italian</div>
-                                        </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Pasta">Pasta</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Beverages">Beverages</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Rice">Rice</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Vegetarian Dishes">Vegetarian Dishes</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Starters">Starters</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="New Arrival">New Arrival</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">20p-23p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-                                                                                <img
-                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                    alt="" class="img-fluid"></span>
-                                                <span>25$-35$ </span></div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="assets/images/Restaurant/a4.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="26"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Toni Food Hub</div>
-                                        </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Beverages">Beverages</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Desserts">Desserts</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Sauces">Sauces</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Wraps">Wraps</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Sandwiches">Sandwiches</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">20p-30p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-                       <img
-                           src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                           alt="" class="img-fluid"></span>
-                                                <span>50$-55$</span></div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="assets/images/Restaurant/a5.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="35"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Masterchef Chinese Food
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                    30.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
+                                                </span>
                                             </div>
-                                        </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Burgers">Burgers</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Beverages">Beverages</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Chicken">Chicken</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Steaks">Steaks</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="New Arrival">New Arrival</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">15p-20p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-                                                                                 <img
-                                                                                     src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                     alt="" class="img-fluid"></span>
-                                                <span>25$-35$</span></div>
-
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
                         <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="assets/images/Restaurant/a6.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="33"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a03.jpg" alt="" class="img-fluid">
+                                </a>
                             </div>
                             <div class="res-2-bg-white">
                                 <div class="res-2-inner">
                                     <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Fun Chicken Meals</div>
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
                                         </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Shakes">Shakes</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Hot Drinks">Hot Drinks</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Happy Meal">Happy Meal</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Burgers">Burgers</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Breakfast">Breakfast</a></span>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="res-2-box">
                                     <ul>
                                         <li>
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">23p-25p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-                       <img
-                           src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                           alt=""
-                           class="img-fluid"></span>
-                                                <span>60$-65$</span></div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="assets/images/Restaurant/a7.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="27"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Chef Ganteng Restaurant
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                    40.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
+                                                </span>
                                             </div>
-                                        </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Desserts">Desserts</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Sunday Brunch">Sunday Brunch</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Hi Tea">Hi Tea</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Pizza">Pizza</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Continental">Continental</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Dinner Buffet">Dinner Buffet</a></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">15p-25p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-                                                                                <img
-                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                    alt="" class="img-fluid"></span>
-                                                <span>25-35</span></div>
-
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
                         <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="assets/images/Restaurant/a8.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="34"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a4.jpg" alt="" class="img-fluid">
+                                </a>
                             </div>
                             <div class="res-2-bg-white">
                                 <div class="res-2-inner">
                                     <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Marshall Steak House</div>
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
                                         </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Appetizers">Appetizers</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Deals">Deals</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Casa Deals">Casa Deals</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Salads">Salads</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Shakes">Shakes</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Desserts">Desserts</a></span>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="res-2-box">
                                     <ul>
                                         <li>
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">25p-30p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-                                                                                <img
-                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                    alt="" class="img-fluid"></span>
-                                                <span>30$-35~$</span></div>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-4 col-lg-6 col-md-6">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new"><a
-                                    href="#">
-                                    <img
-                                        src="https://marketplace.foodotawp.com/wp-content/uploads/2021/04/Normas.jpg"
-                                        alt="" class="img-fluid"> </a>
-                                <div class="res-3-icons fav-check"><i class="fa fa-heart  "
-                                                                      data-id="25"></i>
-                                </div>
-                                <div class="new-stars-main">
-                                    <div class="stars"><i class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i><i
-                                            class="fa fa-star "></i>
-                                    </div>
-                                    <div class="rating-number"></div>
-                                </div>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="#">
-                                            <div class="text-s1">Chickenzilla Pizza Fusion
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                    40.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
+                                                </span>
                                             </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a5.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
                                         </a>
-                                        <div class="food_cats"><span class="cat_names"><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Paratha">Paratha</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Burgers">Burgers</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="BBQ">BBQ</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Continental">Continental</a><a
-                                                    href="#"
-                                                    class="badge bg-light"
-                                                    title="Rice">Rice</a><a
-                                                    href="#"
-                                                    class="badge bg-light" title="Karahi">Karahi</a></span>
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="res-2-box">
                                     <ul>
                                         <li>
-                                            {{--                                                                        <div class="res-3-logo-img-container">--}}
-                                            {{--                                                                            <a href="https://marketplace.foodotawp.com/store/normas/">--}}
-                                            {{--                                                                                <img--}}
-                                            {{--                                                                                    src="https://marketplace.foodotawp.com/wp-content/uploads/2021/05/0112-50x50.jpg"--}}
-                                            {{--                                                                                    alt="" class="img-fluid"></a></div>--}}
-                                            <p><span class="wcfmfa fa-clock"></span><span
-                                                    class="today-status"></span><span
-                                                    class="today-timing">22p-25p</span>
-                                            </p>
-                                            <div class="res-2-map-product"><span
-                                                    class="location-png">
-
-                                                                                <img
-                                                                                    src="https://png.pngtree.com/png-clipart/20191120/original/pngtree-coins-dollar-line-icon-vector-png-image_5073032.jpg"
-                                                                                    alt="" class="img-fluid"></span>
-                                                <span>65$-70$</span></div>
-
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                    40.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a6.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                    40.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a7.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                    40.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                        <div class="res-3-box ">
+                            <div class="res-2-img parallex-new">
+                                <a href="#">
+                                    <img src="assets/images/Restaurant/a8.jpg" alt="" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="res-2-bg-white">
+                                <div class="res-2-inner">
+                                    <div class="res-2-text">
+                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <div class="text-s1">Organic Arcadian Food</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="res-2-box">
+                                    <ul>
+                                        <li>
+                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                <span class="location-png">
+                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                    40.000 - 50.000
+                                                </span>
+                                                <span class="location-png wrap-adding">
+                                                    <a href="#">
+                                                        <div class="btn-adding">+</div>
+                                                    </a>
+                                                </span>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -1512,89 +1094,38 @@
         </div>
     </div>
     <section>
-        <div class="sectionContainer___3GDBD seo___2UD4U ant-layout">
-            <div class="sectionContent___2XGJB"><h3>Tại sao nên lựa chọn AptechFood?</h3>
-                <ul class="whyGrabfoodList___2Fjpg">
-                    <li><span class="bold___2_Blq">Nhanh nhất</span><span> - GrabFood cung cấp dịch vụ giao đồ ăn nhanh nhất thị trường.</span>
-                    </li>
-                    <li><span class="bold___2_Blq">Dễ dàng nhất</span><span> - Giờ đây, bạn chỉ cần thực hiện vài cú nhấp chuột hoặc chạm nhẹ là đã có thể đặt đồ ăn. Hãy đặt đồ ăn trực tuyến hoặc tải xuống siêu ứng dụng Grab của chúng tôi để có trải nghiệm nhanh hơn và thú vị hơn.</span>
-                    </li>
-                    <li><span class="bold___2_Blq">Đáp ứng mọi nhu cầu</span><span> - Từ món ăn đặc sản địa phương đến các nhà hàng được ưa thích, nhiều lựa chọn đa dạng chắc chắn sẽ luôn làm hài lòng khẩu vị của bạn.</span>
-                    </li>
-                    <li><span class="bold___2_Blq">Thanh toán dễ dàng</span><span> - Giao và nhận đồ ăn thật dễ dàng. Thanh toán bằng GrabPay thậm chí còn dễ dàng hơn nữa.</span>
-                    </li>
-                    <li><span class="bold___2_Blq">Nhiều quà tặng hơn</span><span> - Tích điểm GrabRewards cho mỗi đơn hàng của bạn và sử dụng điểm thưởng để đổi lấy nhiều ưu đãi hơn.</span>
-                    </li>
-                </ul>
-                <h3>Các câu hỏi thường gặp</h3><h4>AptechFood là gì?</h4>
-                <p>Lunch, Bún Cá Chấm Gốc Đa - Vũ Thạnh for Dinner! We are here to satisfy your hunger with a wide
-                    selection of merchant partners in Vietnam.
-
-                    AptechFood là dịch vụ Giao đồ ăn nhanh nhất tại Việt Nam. Chúng tôi đã sắp xếp tất cả các món ăn,
-                    nhà
-                    hàng và thực phẩm yêu thích của bạn một cách hợp lý để giúp bạn tìm được đồ ăn dễ dàng và nhanh
-                    chóng nhất có thể. Tìm và đặt món ăn yêu thích trên khắp Việt Nam - đặt đồ ăn trực tuyến chỉ bằng
-                    vài thao tác, từ món Lifted Coffee &amp; Brunch cho bữa sáng, đến Maazi Indian – Nhà Hàng Ấn Độ cho
-                    bữa trưa, đến Bún Cá Chấm Gốc Đa – Vũ Thạnh cho bữa tối! Hãy để chúng tôi xua tan cơn đói của bạn
-                    nhờ một loạt đối tác bán đồ ăn ở Việt Nam.
-                </p>
-                <button type="button" class="ant-btn readMore___1HEqB ant-btn-block"><span>Read More</span></button>
-                <div class="hide___1cQi5">
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>Làm cách nào để đặt đồ ăn ở Việt Nam?</h4>
-                    <p>Sau đây là cách đơn giản nhất để đặt đồ ăn qua AptechFood khi bạn ở Việt Nam:</p>
-                    <ol>
-                        <li><span class="bold___2_Blq">Tìm kiếm nhà hàng hoặc món ăn yêu thích</span><span> - Nhập địa chỉ của bạn vào trang chủ. Xem các Nhà hàng và điểm ăn uống gần chỗ bạn trong danh sách của GrabFood. Chọn nhà hàng yêu thích, duyệt hết thực đơn và chọn món ăn bạn muốn đặt.</span>
-                        </li>
-                        <li><span class="bold___2_Blq">Kiểm tra &amp; Thanh toán</span><span> - Sau khi chắc chắn rằng bạn đã đặt đầy đủ các món theo nhu cầu, hãy nhấp vào tab “ORDER NOW” (ĐẶT MÓN NGAY) và nhập địa chỉ giao đồ ăn cuối cùng. Chọn phương thức thanh toán phù hợp nhất với bạn và thanh toán.</span>
-                        </li>
-                        <li><span class="bold___2_Blq">Giao hàng</span><span> - GrabFood đã thiết kế một hành trình phục vụ khách hàng liền mạch để bạn có thể thưởng thức món ăn một cách trọn vẹn. Chúng tôi sẽ gửi cho bạn email và tin nhắn SMS tức thời xác nhận đơn đặt hàng của bạn và thời gian giao hàng dự kiến. Sau đó chúng tôi sẽ giao ngay đồ ăn cho bạn.
-</span></li>
-                    </ol>
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>AptechFood có cung cấp dịch vụ giao đồ ăn 24x7 không?</h4>
-                    <p>Chúng tôi chỉ biết một điều duy nhất, đó là "đồ ăn", vậy nên tất nhiên chúng tôi cung cấp dịch vụ
-                        này rồi. Xin lưu ý, mặc dù chúng tôi là đối tác giao đồ ăn phục vụ 24x7, nhưng một số nhà hàng
-                        trong danh mục của chúng tôi có thể hạn chế giao đồ ăn khuya hoặc có thể không phục vụ đối với
-                        các đơn đặt hàng. Tuy nhiên, chúng tôi đã liệt kê danh sách những nhà hàng phục vụ nhu cầu ăn
-                        khuya của bạn trong mục Late Night Delivery (Giao hàng khuya).</p>
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>AptechFood có chấp nhận tiền mặt không?</h4>
-                    <p>Tất nhiên là có! GrabFood chấp nhận mọi hình thức thanh toán cho dịch vụ giao đồ ăn, bao gồm cả
-                        tiền mặt khi giao hàng tại Việt Nam.</p>
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>Tôi có thể thanh toán trực tuyến trên GrabFood cho đơn hàng của mình không?</h4>
-                    <p>AptechFood chấp nhận nhiều hình thức thanh toán cho các đơn đặt đồ ăn trực tuyến, bao gồm cả
-                        thanh
-                        toán trực tuyến tại Việt Nam bằng thẻ tín dụng, thẻ ghi nợ, PayPal hoặc trả tiền lúc nhận hàng.
-                        Hãy nhớ sử dụng <a href="https://www.grab.com/vn/pay/">Moca</a> để tích điểm thưởng mà bạn có
-                        thể sử dụng để được giảm giá cho đơn hàng tiếp theo và cho các dịch vụ khác của Grab nhé.</p>
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>Tôi có thể đặt đồ ăn trên ApteechFood cho người khác không?</h4>
-                    <p>Tất nhiên rồi, hãy chăm sóc những người thân yêu của mình bằng cách gửi những món ăn mà họ yêu
-                        thích đến tận nhà. Bạn chỉ cần cập nhật địa chỉ giao hàng và tên người nhận trước khi đặt đơn
-                        hàng của bạn.</p>
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>AptechFood tính phí giao đồ ăn như thế nào?</h4>
-                    <p>Phí giao hàng của chúng tôi phụ thuộc vào nhiều yếu tố hoạt động như khoảng cách từ vị trí của
-                        bạn đến nhà hàng. Bạn có thể kiểm tra phí giao hàng chính xác cần phải trả trước khi thanh toán
-                        tại mục thanh toán trên ứng dụng. Ngoài ra còn có phần “Free Delivery” (Giao hàng miễn phí)
-                        liệt kê các nhà hàng gần chỗ bạn mà không tính phí giao hàng.</p>
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>Những nhà hàng nào được liệt kê trong AptechFood?</h4>
-                    <p>Chúng tôi có gì trên AptechFood? Chúng tôi tự hào có nhiều nhà hàng và món ăn nhất so với bất kỳ
-                        ứng dụng giao đồ ăn nào ở Việt Nam. Bạn có thể lựa chọn trong số hàng nghìn nhà hàng trên
-                        AptechFood Việt Nam. Bạn có thể đặt đồ ăn trực tuyến từ tất cả các điểm ăn uống yêu thích của
-                        Burger King, Jollibee, KFC, McDonalds, Long John Silver, Pastamania, Dominos Pizza, Pizza Hut,
-                        Subway!</p>
-                    <p>AptechFood cũng có mã khuyến mãi, ưu đãi và giảm giá có hạn dành riêng cho các nhà hàng trong
-                        danh
-                        mục. Bạn có thể được hưởng chiết khấu lớn và hàng loạt ưu đãi khác cho đơn đặt đồ ăn của mình.
-                        Giờ thì đặt đồ ăn thôi! </p>
-                    <div class="ant-divider ant-divider-horizontal"></div>
-                    <h4>AptechFood có áp dụng giá trị đơn hàng tối thiểu không?</h4>
-                    <p>Có! Nhưng bạn có thể trả số tiền chênh lệch nếu giá trị đơn hàng của bạn nhỏ hơn số tiền đặt hàng
-                        tối thiểu.</p></div>
+        <div class="row my-5">
+            <div class="col-4">
+                <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
+                    <img style="width: 99px; height: 99px" src="https://chaysach.com/wp-content/uploads/2016/06/THUANCHAY-300x300.jpg" alt="">
+                </div>
+                <div class="icon-box-text">
+                    <h4 style="text-align: center;">Sản phẩm chất lượng, an toàn</h4>
+                    <p style="text-align: center;">Tất cả các mặt hàng Comchay bán đều là những sản phẩm chất lượng,an toàn và có nguồn gốc xuất xứ rõ ràng.</p>
+                    <p style="text-align: center;">Comchay hiểu rằng chất lượng và tốt cho sức khỏe là yếu tố hàng đầu khi khách hàng lựa chọn thực phẩm chay.</p>
+                    <p style="text-align: center;">Comchay có những tiêu chuẩn chất lượng nghiêm ngặt nhất để cung cấp các sản phẩm chất lượng.</p>
+                </div>
+            </div>
+            <div class="col-4" style="border-left: 1px solid #ececec;">
+                <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
+                    <img style="width: 99px; height: 99px" src="https://chaysach.com/wp-content/uploads/2016/06/HAILONG-300x300.jpg" alt="">
+                </div>
+                <div class="icon-box-text last-reset text-center">
+                    <h4>Dịch vụ ưu đãi tốt nhất, đổi trả miễn phí.</h4>
+                    <p>Comchay luôn nỗ lực mang đến một dịch vụ ưu đãi tốt nhất cho khách hàng.</p>
+                    <p>Chúng tôi cam kết hoàn tiền đổi trả hàng miễn phí với bất kỳ lý do gì.</p>
+                    <p>Comchay hỗ trợ vận chuyển tận nhà cho các khàng hàng.</p>
+                </div>
+            </div>
+            <div class="col-4" style="border-left: 1px solid #ececec;">
+                <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
+                    <img style="width: 99px; height: 99px" src="https://chaysach.com/wp-content/uploads/2016/06/ANTOAN-300x300.jpg" alt="">
+                </div>
+                <div class="icon-box-text last-reset text-center">
+                    <h4>Khuyến mãi, tặng quà và giảm giá để tri ân</h4>
+                    <p>Comchay luôn mong muốn khách hàng được thưởng thức nhiều hơn và tiết kiệm hơn khi đi mua sắm thực phẩm chay.</p>
+                    <p>Comchay thường xuyên khuyến mãi, tặng quà và giảm giá để tri ân tất cả khách hàng kính yêu của mình.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1616,49 +1147,6 @@
             for (var index = 0; index < elements.length; index++) {
                 elements[index].style.display = specifiedDisplay || 'block';
             }
-        }
-    </script>
-    <script>
-        // Khi người dùng quận trang thì gọi đến hàm myFunction
-        window.onscroll = function () {
-            myFunction()
-        };
-        // Get the header
-        var header = document.getElementById("myHeader");
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset > sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
-    </script>
-    <script>
-        var LoginForm = document.getElementById("log-form");
-        var RegForm = document.getElementById("reg-form");
-        var Indicator = document.getElementById("indicator");
-        var FormAccount = document.getElementById("form-account");
-
-        function register() {
-            RegForm.style.transform = "translateX(-500px)";
-            LoginForm.style.transform = "translateX(-500px)";
-            Indicator.style.transform = "translateX(236px)";
-            FormAccount.style.height = "590px";
-            RegForm.style.opacity = "0";
-            RegForm.style.opacity = "1";
-        }
-
-        function login() {
-            RegForm.style.transform = "translateX(0px)";
-            LoginForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(83px)";
-            FormAccount.style.height = "365px"
-            LoginForm.style.opacity = "0";
-            LoginForm.style.opacity = "1";
         }
     </script>
 @endsection
