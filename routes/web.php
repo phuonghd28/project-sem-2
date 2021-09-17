@@ -12,6 +12,7 @@ use App\Http\Controllers\EntryController;
 use App\Http\Controllers\ShoppingCartController;
 use App\Http\Controllers\UploadImageController;
 use App\Http\Middleware\CheckAdmin;
+use App\Models\Category;
 use App\Models\Product;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Route;
@@ -26,13 +27,22 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//->middleware(['auth', CheckAdmin::class])
-Route::prefix('admin')->group(function (){
+
+Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
     require_once __DIR__ . '/admin.php';
 });
 
 Route::get('/', function () {
-    return view('clients.index');
+    $selling = Product::query()->join('order_details','products.id', '=', 'order_details.productId')->select('products.*')->orderBy('quantity', 'DESC')->limit(8)->get();
+    $new = Product::query()->orderBy('created_at', 'DESC')->limit(8)->get();
+    $featured = Product::query()->where('is_featured', '=' ,true);
+    $categories = Category::query()->limit(8)->get();
+    return view('clients.index',[
+        'selling' => $selling,
+        'new' => $new,
+        'featured' => $featured,
+        'categories' => $categories
+    ]);
 })->name('index');
 
 
@@ -66,5 +76,6 @@ Route::get('mail',[MailController::class,'send_mail']);
 Route::get('mail-design',function (){
     return view('mails.mail');
 });
+
 
 
