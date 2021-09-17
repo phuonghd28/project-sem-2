@@ -2508,6 +2508,12 @@
     </div>
     <section class="product-list">
         <div class="container">
+            @if(session('add'))
+                <div class="alert alert-success alert-dismissible">
+                    {{session('add')}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            @endif
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
@@ -2555,7 +2561,7 @@
                                         <div class="product-name"><h6>{{$data->name}}</h6></div>
                                         <div class="product-price">
                                             <h6>
-                                                {{$data->price}}$
+                                                {{number_format($data->price)}} đ
                                             </h6>
                                         </div>
                                         <div class="product-btn"><a href="/add/{{$data->id}}"><i

@@ -50,7 +50,7 @@ class ProductController extends Controller
         if($category){
             $queryBuilder = $queryBuilder->where('category_id',$category);
         }
-        $data = $queryBuilder->paginate(10)->appends(['search' => $search, 'category' => $category]);
+        $data = $queryBuilder->orderBy('created_at','DESC')->paginate(10)->appends(['search' => $search, 'category' => $category]);
         return view('admin.products.table', [
             'products' => $data,
             'sort' => $sort,
@@ -77,8 +77,7 @@ class ProductController extends Controller
         $product->category_id = $request->category_id;
         $product->save();
 
-        return redirect()->route('listProduct')
-            ->flash('success', 'Update thành công.');
+        return redirect()->route('listProduct')->with('success', 'Update thành công.');
     }
 
     public function delete($id)

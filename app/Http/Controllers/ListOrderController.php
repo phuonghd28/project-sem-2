@@ -21,7 +21,8 @@ class ListOrderController extends Controller
         $date = $request->get('date');
 
         if ($search || strlen($search) > 0) {
-            $queryBuilder = $queryBuilder->where('shipName', 'like', '%' . $search . '%');
+            $queryBuilder = $queryBuilder->where('shipName', 'like', '%' . $search . '%')
+            ->orWhere('totalPrice', 'like', '%'.$search.'%');
         }
         if ($sort === 1) {
             $queryBuilder = $queryBuilder->orderBy('created_at', 'DESC');
@@ -41,7 +42,7 @@ class ListOrderController extends Controller
         if($date == 3){
             $queryBuilder = $queryBuilder->whereYear('created_at', Carbon::now()->year);
         }
-        $order = $queryBuilder->paginate(5)->appends(['search' => $search, 'status' => $status, 'date' => $date]);
+        $order = $queryBuilder->orderBy('created_at', 'DESC')->paginate(5)->appends(['search' => $search, 'status' => $status, 'date' => $date]);
         return view('admin/orders/table', [
             'orders' => $order,
             'status' => $status,

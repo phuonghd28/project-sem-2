@@ -40,7 +40,7 @@
                         </div>
                         <div class="shopping-cart d-flex justify-content-center">
                             <div class="align-self-center">
-                                <a class="color-cart" href="{{route('listCart')}}"><i class="fas fa-shopping-cart"></i></a>
+                                <a class="color-cart" href="{{route('listCart')}}"><i class="fas fa-shopping-cart"> {{\Gloudemans\Shoppingcart\Facades\Cart::content()->count()}}</i></a>
                             </div>
                         </div>
                         <div class="wrap-log-in d-flex">

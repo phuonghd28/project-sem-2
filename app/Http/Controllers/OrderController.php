@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\Status;
 use App\Models\Order;
 use App\Models\OrderDetail;
 use App\Models\Product;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class OrderController extends Controller
 {
@@ -25,7 +28,7 @@ class OrderController extends Controller
         $order->shipPhone = $request->shipPhone;
         $order->shipAddress = $request->shipAddress;
         $order->note = $request->note;
-        $order->isCheckout = false;
+        $order->status = Status::WAITING;
         $orderDetails = [];
         $messageError = '';
         foreach ($cart as $item) {
@@ -55,6 +58,7 @@ class OrderController extends Controller
             OrderDetail::insert($orderDetailArray);
             DB::commit();
             Cart::destroy();
+            $this->send_mail($order);
             return redirect()->route('detailOrder',$order->id)->with('success-msg','Bạn đã lưu giỏ hàng thành công.');
         }
         catch (\Exception $e) {
@@ -66,8 +70,20 @@ class OrderController extends Controller
     public function detail($id){
 
         $order = Order::where('id', $id)->with(['district', 'ward'])->first();
+//        return $order->orderDetails;
         return view('clients.orders',[
             'orders' => $order,
         ]);
+    }
+    public function send_mail($order){
+        $data = [
+            'order' => $order,
+            'user' => Auth::user(),
+        ];
+        Mail::send('mails.mail',$data,function ($message){
+            $message->from('phuonghdth2009010@outlook.com.vn','Cơm chay');
+            $message->to(Auth::user()->email,'Phuong');
+            $message->subject('Cơm chay - Đơn hàng mới');
+        });
     }
 }

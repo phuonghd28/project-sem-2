@@ -39,7 +39,7 @@ class CategoryController extends Controller
         if ($sort === 2) {
             $queryBuilder = $queryBuilder->orderBy('created_at', 'ASC');
         }
-        $data = $queryBuilder->paginate(10)->appends(['search' => $search]);
+        $data = $queryBuilder->orderBy('created_at','DESC')->paginate(10)->appends(['search' => $search]);
 
         return view('admin.categories.table', [
             'categories' => $data,

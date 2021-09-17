@@ -73,7 +73,7 @@
                             <td><img src="{{explode(',', $data->image)[0]}}" height="75"
                                      width="75" alt=""/></td>
                             <td>{{$data->category->name}}</td>
-                            <td>{{$data->price}}</td>
+                            <td>{{number_format($data->price)}} đ</td>
                             <td>
                                 <a class="btn btn-primary mr-2" href="{{route('editProduct', $data->id)}}"><i
                                         class="fas fa-edit"></i></a>

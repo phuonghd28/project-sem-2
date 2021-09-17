@@ -1,6 +1,7 @@
 <?php
 
 
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaypalController;
 use App\Http\Controllers\ProductClientController;
@@ -59,5 +60,10 @@ Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']
 Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
 Route::get('/api/ward/{id}', [ShoppingCartController::class, 'api']);
 
+Route::get('mail',[MailController::class,'send_mail']);
+
+Route::get('mail-design',function (){
+    return view('mails.mail');
+});
 
 
