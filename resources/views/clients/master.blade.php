@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/assets/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @yield('custom_css')
-
     <title>@yield('title')</title>
 </head>
 <body>
@@ -31,11 +30,11 @@
                 <div class="col-lg-10 col-9 order-lg-3 align-self-center">
                     <div class="d-flex justify-content-end">
                         <div class="main-nav col d-lex align-self-center">
-                            <a class="nav-item active" href="{{ route('index') }}">Home</a>
-                            <a class="nav-item " href="{{route('products')}}">Product</a>
-                            <a class="nav-item " href="{{route('blog')}}">Blog</a>
-                            <a class="nav-item " href="{{route('abouts')}}">Abouts</a>
-                            <a class="nav-item " href="{{route('contact')}}">Contact</a>
+                            <a class="nav-item active t-home" href="{{ route('index') }}">Home</a>
+                            <a class="nav-item t-product" href="{{route('products')}}">Product</a>
+                            <a class="nav-item t-blog" href="{{route('blog')}}">Blog</a>
+                            <a class="nav-item t-abouts" href="{{route('abouts')}}">Abouts</a>
+                            <a class="nav-item t-contact" href="{{route('contact')}}">Contact</a>
 
                         </div>
                         <div class="shopping-cart d-flex justify-content-center">
@@ -69,7 +68,6 @@
             </div>
         </div>
     </header>
-    @yield('upload')
     <div class="banner">
         @yield('banner')
     </div>
@@ -108,7 +106,7 @@
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <button class="btn btn-login mt-2 pb-2"><b>Đăng nhập</b></button>
+                        <button class="btn-login mt-2"><b>Đăng nhập</b></button>
                     </form>
                     <form id="reg-form" action="{{ route('register') }}" method="post">
                         @csrf
@@ -138,7 +136,7 @@
                             <input class="input-form-reg justify-content-end pass d-inline-block" type="password"
                                    placeholder="Re-password" name="password_confirmation">
                         </div>
-                        <button class="btn btn-login mt-2 pb-2"><b>Đăng ký</b></button>
+                        <button class="btn-login mt-2"><b>Đăng ký</b></button>
                     </form>
                 </div>
             </div>
@@ -196,6 +194,7 @@
         </div>
     </footer>
 </div>
+<script src="assets/scripts/index.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

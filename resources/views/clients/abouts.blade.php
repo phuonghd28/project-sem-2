@@ -4,25 +4,8 @@
 @endsection
 @section('custom_css')
     <style>
-        /*
-
-        */
-        @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900|Roboto+Condensed:300,300i,400,400i,700,700i');
-        /* Body */
         body {
             background-color: #eff7fa;
-            font-size: 13px;
-            font-family: 'Maven Pro', sans-serif;
-            line-height: 25px;
-            color: #888;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: #333;
-        }
-        p {
-            font-size: 13px;
-            line-height: 22px;
-            color:#888;
         }
         img {
             height: auto;
@@ -41,10 +24,8 @@
         a {
             text-decoration:none !important;
             color:#888;
-            transition-duration: 0.4s;
         }
         a:hover {
-            transition-duration: 0.4s;
             color:#333;
         }
         a, a:hover {
@@ -737,9 +718,10 @@
         .section-padding-d{
             padding-bottom: 50px;
         }
-        /*.section-padding {*/
-        /*    padding: 120px 0;*/
-        /*}*/
+        .main-nav .t-abouts {
+            border-bottom: 4px solid #00c6d7;
+            color: #00c6d7;
+        }
     </style>
 @endsection
 

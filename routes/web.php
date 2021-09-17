@@ -1,9 +1,9 @@
 <?php
 
 
+use App\Http\Controllers\FeedBackController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PaypalController;
-use App\Http\Controllers\ProductController;
 use App\Http\Controllers\EntryController;
 
 use App\Http\Controllers\ShoppingCartController;
@@ -40,6 +40,7 @@ Route::get('/products', function () {
 Route::get('abouts', function () {return view('clients.abouts');})->name('abouts');
 Route::get('blog', function () {return view('clients.blog');})->name('blog');
 Route::get('contact', function () {return view('clients.contact');})->name('contact');
+Route::post('contact', [FeedBackController::class, 'store'])->name('store');
 
 
 

@@ -605,9 +605,7 @@
             margin-bottom: 30px
         }
 
-        body {
-            background: var(--graycolor)
-        }
+
 
         .pagination {
             margin-bottom: 30px
@@ -694,19 +692,10 @@
             --tshadow: 2px 3px 8px rgba(0, 0, 0, 0.1)
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            outline: 0
-        }
 
-        img {
-            vertical-align: middle
-        }
 
         a {
             text-decoration: none;
-            display: inline-block
         }
 
         a:hover {
@@ -721,15 +710,8 @@
             margin-bottom: 0
         }
 
-        html, body {
-            scroll-behavior: smooth
-        }
 
         body {
-            font-size: var(--bodysize);
-            font-weight: var(--rweight);
-            font-family: var(--pfamily);
-            line-height: 26px;
             color: var(--textcolor);
             background: var(--graycolor)
         }
@@ -2486,10 +2468,14 @@
                 margin-bottom: 15px
             }
         }
+        .main-nav .t-product {
+            border-bottom: 4px solid #00c6d7;
+            color: #00c6d7;
+        }
     </style>
 @endsection
 
-<div class="container">
+@section('content')
     <div class="row">
         <div class="col-lg-12">
             <div class="navbar-element">
@@ -2920,9 +2906,6 @@
             </div>
         </div>
     </section>
-</div>
-@section('content')
-
 @endsection
 
 @section('custom_js')
