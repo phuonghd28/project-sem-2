@@ -20,13 +20,13 @@ class UserSeeder extends Seeder
         DB::table('users')->truncate();
         DB::table('users')->insert([
             [
-                'last_name' => 'Quân',
-                'first_name' => 'Bình',
-                'email' => 'quanthang@gmail.com',
-                'phone' => '0345686868',
-                'address' => 'Nghệ An',
-                'username' => 'quanthang',
-                'password' => Hash::make('20020101'),
+                'last_name' => 'Hoàng',
+                'first_name' => 'Phương',
+                'email' => 'phuonghdth2009010@fpt.edu.vn',
+                'phone' => '0334670699',
+                'address' => 'Hải Phòng',
+                'username' => 'admin',
+                'password' => Hash::make('123456'),
                 'role' => Role::ADMIN
             ],
             [
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
                 'email' => 'phuonghoang@gmail.com',
                 'phone' => '098968696',
                 'address' => 'Hải Phòng',
-                'username' => 'phương',
+                'username' => 'phuong123',
                 'password' => Hash::make('ahihi1'),
                 'role' => Role::ADMIN
             ],
@@ -95,7 +95,7 @@ class UserSeeder extends Seeder
                 'email' => 'duongbinh02@gmail.com',
                 'phone' => '0345898989',
                 'address' => 'Nghệ An',
-                'username' => 'duong',
+                'username' => 'duong123',
                 'password' => Hash::make('21032002'),
                 'role' => Role::USER
             ],
@@ -105,7 +105,7 @@ class UserSeeder extends Seeder
                 'email' => 'quanhosy@gmail.com',
                 'phone' => '0999999999',
                 'address' => 'Nghệ An',
-                'username' => 'quan',
+                'username' => 'quan123',
                 'password' =>Hash::make('72740204'),
                 'role' => Role::ADMIN
             ],
@@ -115,7 +115,7 @@ class UserSeeder extends Seeder
                 'email' => 'Nguyênthanh@gmail.com',
                 'phone' => '034578999',
                 'address' => 'Nghệ An',
-                'username' => 'nguyen',
+                'username' => 'nguyen123',
                 'password' => Hash::make('19102005'),
                 'role' => Role::ADMIN
             ]

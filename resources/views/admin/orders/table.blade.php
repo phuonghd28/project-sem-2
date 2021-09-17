@@ -59,9 +59,22 @@
                             <td>{{$order->id}}</td>
                             <td>{{$order->shipName}}</td>
                             <td>{{$order->shipAddress}}</td>
-                            <td>{{$order->totalPrice}}</td>
+                            <td>{{number_format($order->totalPrice)}} đ</td>
                             <td>{{date_format($order->created_at,'d/m/Y')}}</td>
-                            <td>{{\App\Enums\Status::getDescription($order->status)}}</td>
+                            <td>@switch($order->status)
+                                    @case(1)
+                                    Đang chờ
+                                    @break
+                                    @case(2)
+                                    Đã thanh toán
+                                    @break
+                                    @case(3)
+                                    Đang giao hàng
+                                    @break
+                                    @case(4)
+                                    Hoàn thành
+                                    @break
+                                @endswitch</td>
                             <td>
                                 <a onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này ?')"
                                    href="{{route('deleteOrder',$order->id)}}">

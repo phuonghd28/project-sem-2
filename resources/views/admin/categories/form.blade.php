@@ -15,9 +15,11 @@
             position: relative;
             overflow: hidden;
         }
+
         .button_outer:hover {
             background-color: #17a2b8;
         }
+
         .btn_upload {
             width: 100%;
             padding: 9px;
@@ -30,6 +32,7 @@
             z-index: 3;
             white-space: nowrap;
         }
+
         .btn_upload input {
             position: absolute;
             width: 100%;
@@ -38,6 +41,7 @@
             height: 100%;
             cursor: pointer;
         }
+
         #image-preview {
             height: 150px;
             width: 150px;
@@ -68,7 +72,8 @@
                     <div class="position-relative row form-group">
                         <label for="exampleEmail" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-4">
-                            <input name="name" value="{{$data ? $data->name : ''}}" type="text" class="form-control" placeholder="Enter name">
+                            <input name="name" value="{{$data ? $data->name : ''}}" type="text" class="form-control"
+                                   placeholder="Enter name">
                             @error('name')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
@@ -80,13 +85,13 @@
                             <div class="button_outer">
                                 <div class="btn_upload">
                                     <input style="opacity: 0" type="file" name="imageChooser" class="custom-file-input">
-                                    <input name="image" type="hidden">
+                                    <input name="image" type="hidden" value="{{$data ? $data->image : ''}}">
                                     Upload Image
                                 </div>
                             </div>
                             <div class="uploaded_file_view my-2" id="uploaded_view">
                             </div>
-                            <img src="{{$data ? $data->image : ''}}" id="image-preview" alt=""/>
+                            <img src="{{$data ? $data->image : ''}}" {{$data && $data->image ? '' : 'hidden'}} id="image-preview" alt=""/>
                             @error('image')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
@@ -122,6 +127,7 @@
                     imageUrl.value = responseDataJson.url;
                     let imagePreview = document.getElementById('image-preview');
                     imagePreview.src = responseDataJson.url;
+                    imagePreview.hidden = false;
                 }
             }
             xhr.open('POST', url, true);

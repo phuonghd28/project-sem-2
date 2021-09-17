@@ -84,7 +84,7 @@
                         {{ session('status') }}
                     </div>
                 @endif
-                <form action="" method="POST" enctype="multipart/form-data">
+                <form action="" method="POST">
                     @if($data)
                         @method('PUT')
                     @endif
@@ -134,7 +134,7 @@
                             <div class="button_outer">
                                 <div class="btn_upload">
                                     <input type="file" name="imageChooser" class="custom-file-input" style="opacity: 0">
-                                    <input type="hidden" name="image">
+                                    <input type="hidden" name="image" value="{{$data ? $data->image : ''}}">
                                     <button type="button" class="btn_choose_images">Upload Image</button>
                                 </div>
                             </div>
@@ -148,9 +148,9 @@
                                 $images = explode(',', $data->image);
                                 ?>
                                 @foreach($images as $item)
-                                        <img class="img-products" alt=""
-                                             src="{{$item}}" {{end($images) ? 'hidden' : ''}}/>
-
+                                    @if($item)
+                                        <img class="img-products" alt="" src="{{$item}}"/>
+                                    @endif
                                 @endforeach
                             @endif
                         </div>
