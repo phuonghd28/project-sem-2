@@ -3,6 +3,7 @@
     Home
 @endsection
 @section('custom_css')
+
     <style>
         h1, h2, h3, h4, h5, h6 {
             text-decoration: none;
@@ -673,6 +674,9 @@
             font-weight: 500;
         }
     </style>
+
+    <link rel="stylesheet" href="/assets/css/index-content.css">
+
 @endsection
 
 @section('banner')
@@ -688,406 +692,176 @@
                     <h3 class="head-title">Our Categories</h3>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#"> <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/Layer256-1.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Pizza</h3>
-                            </a>
+            @foreach($categories as $category)
+                <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                    <div class="category-main">
+                        <a href="/products?category={{$category->id}}">
+                            <img
+                                loading="lazy" alt="" class="cate-images"
+                                src="{{$category->image}}" style="object-fit: cover;width: 100% !important;"></a>
+                        <div class="category-text-box">
+                            <div class="category-text-inner">
+                                <a href="#">
+                                    <h3>{{$category->name}}</h3>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#" > <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/02.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Broast</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#" > <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/03.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Chicken</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#"> <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/04.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Burgers</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#"> <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/05.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Shakes</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#"> <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/06.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Sandwiches</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#"> <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/07.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Pasta</h3></a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
-                <div class="category-main">
-                    <a href="#"> <img
-                            loading="lazy" alt="" class="cate-images"
-                            src="assets/images/layer/08.png"></a>
-                    <div class="category-text-box">
-                        <div class="category-text-inner">
-                            <a href="#" class="text-reset">
-                                <h3>Desserts</h3></a></div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
     <div class="container mt-3">
         <div class="row">
             <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
                 <div class="heading-minimal">
-                    <div class="sub-title">TOP Products</div>
-                    <h3 class="head-title">Featured products</h3>
+                    <div class="sub-title">TOP FOODS</div>
+                </div>
+            </div>
+
+            <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
+                <div class="heading-minimal">
+                    <h3 class="head-title">Featured Foods</h3>
                 </div>
             </div>
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
                 <div class="row">
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a1.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
-                                        </a>
-                                    </div>
+                    @foreach($featured as $featured_food)
+                        <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new">
+                                    <a href="#">
+                                        <img src="{{explode(',',$featured_food->image)[0]}}" alt=""
+                                             class="img-fluid">
+                                    </a>
                                 </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                                <div class="text-s1">{{$featured_food->name}}</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-2-map-product d-flex justify-content-sm-between">
                                                 <span class="location-png">
                                                     <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    20.000 - 50.000
+                                                    {{number_format($featured_food->price)}} đ
                                                 </span>
-                                                <span class="location-png wrap-adding">
+                                                    <span class="location-png wrap-adding">
                                                     <a href="#">
                                                         <div class="btn-adding">+</div>
                                                     </a>
                                                 </span>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a2.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
+                    @endforeach
+                </div>
+            </div>
+
+            <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
+                <div class="heading-minimal">
+                    <h3 class="head-title">Selling Foods</h3>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
+                <div class="row">
+                    @if($selling)
+                        @foreach($selling as $selling_food)
+                            <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                                <div class="res-3-box ">
+                                    <div class="res-2-img parallex-new">
+                                        <a href="#">
+                                            <img height="200px" width="100%" style="object-fit: cover"
+                                                 src="{{explode(',',$selling_food->image)[0]}}" alt="">
                                         </a>
                                     </div>
+                                    <div class="res-2-bg-white">
+                                        <div class="res-2-inner">
+                                            <div class="res-2-text">
+                                                <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                                    <div class="text-s1">{{$selling_food->name}}</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="res-2-box">
+                                            <ul>
+                                                <li>
+                                                    <div class="res-2-map-product d-flex justify-content-sm-between">
+                                                        <span class="location-png">
+                                                            <i class="fas fa-dollar-sign dollar-icon"></i>
+                                                            {{number_format($selling_food->price)}} đ
+                                                        </span>
+                                                                <span class="location-png wrap-adding">
+                                                            <a href="#">
+                                                                <div class="btn-adding">+</div>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
+                            </div>
+                        @endforeach
+                        @endif
+                </div>
+            </div>
+
+            <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
+                <div class="heading-minimal">
+                    <h3 class="head-title">New Foods</h3>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
+                <div class="row">
+                    @foreach($new as $new_food)
+                        <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                            <div class="res-3-box ">
+                                <div class="res-2-img parallex-new">
+                                    <a href="#">
+                                        <img height="200px" width="100%" style="object-fit: cover"
+                                             src="{{explode(',',$selling_food->image)[0]}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="res-2-bg-white">
+                                    <div class="res-2-inner">
+                                        <div class="res-2-text">
+                                            <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                                <div class="text-s1">{{$new_food->name}}</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="res-2-box">
+                                        <ul>
+                                            <li>
+                                                <div class="res-2-map-product d-flex justify-content-sm-between">
                                                 <span class="location-png">
                                                     <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    30.000 - 50.000
+                                                    {{number_format($new_food->price)}} đ
                                                 </span>
-                                                <span class="location-png wrap-adding">
+                                                    <span class="location-png wrap-adding">
                                                     <a href="#">
                                                         <div class="btn-adding">+</div>
                                                     </a>
                                                 </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a03.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
-                                        </a>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
-                                                <span class="location-png">
-                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    40.000 - 50.000
-                                                </span>
-                                                <span class="location-png wrap-adding">
-                                                    <a href="#">
-                                                        <div class="btn-adding">+</div>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a4.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
-                                                <span class="location-png">
-                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    40.000 - 50.000
-                                                </span>
-                                                <span class="location-png wrap-adding">
-                                                    <a href="#">
-                                                        <div class="btn-adding">+</div>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a5.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
-                                                <span class="location-png">
-                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    40.000 - 50.000
-                                                </span>
-                                                <span class="location-png wrap-adding">
-                                                    <a href="#">
-                                                        <div class="btn-adding">+</div>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a6.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
-                                                <span class="location-png">
-                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    40.000 - 50.000
-                                                </span>
-                                                <span class="location-png wrap-adding">
-                                                    <a href="#">
-                                                        <div class="btn-adding">+</div>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a7.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
-                                                <span class="location-png">
-                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    40.000 - 50.000
-                                                </span>
-                                                <span class="location-png wrap-adding">
-                                                    <a href="#">
-                                                        <div class="btn-adding">+</div>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
-                        <div class="res-3-box ">
-                            <div class="res-2-img parallex-new">
-                                <a href="#">
-                                    <img src="assets/images/Restaurant/a8.jpg" alt="" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="res-2-bg-white">
-                                <div class="res-2-inner">
-                                    <div class="res-2-text">
-                                        <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
-                                            <div class="text-s1">Organic Arcadian Food</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="res-2-box">
-                                    <ul>
-                                        <li>
-                                            <div class="res-2-map-product d-flex justify-content-sm-between">
-                                                <span class="location-png">
-                                                    <i class="fas fa-dollar-sign dollar-icon"></i>
-                                                    40.000 - 50.000
-                                                </span>
-                                                <span class="location-png wrap-adding">
-                                                    <a href="#">
-                                                        <div class="btn-adding">+</div>
-                                                    </a>
-                                                </span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -1096,18 +870,21 @@
         <div class="row my-5">
             <div class="col-4">
                 <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
-                    <img style="width: 99px; height: 99px" src="https://chaysach.com/wp-content/uploads/2016/06/THUANCHAY-300x300.jpg" alt="">
+                    <i class="fas fa-hand-holding-heart fa-5x"></i>
                 </div>
                 <div class="icon-box-text">
                     <h4 style="text-align: center;">Sản phẩm chất lượng, an toàn</h4>
-                    <p style="text-align: center;">Tất cả các mặt hàng Comchay bán đều là những sản phẩm chất lượng,an toàn và có nguồn gốc xuất xứ rõ ràng.</p>
-                    <p style="text-align: center;">Comchay hiểu rằng chất lượng và tốt cho sức khỏe là yếu tố hàng đầu khi khách hàng lựa chọn thực phẩm chay.</p>
-                    <p style="text-align: center;">Comchay có những tiêu chuẩn chất lượng nghiêm ngặt nhất để cung cấp các sản phẩm chất lượng.</p>
+                    <p style="text-align: center;">Tất cả các mặt hàng Comchay bán đều là những sản phẩm chất lượng,an
+                        toàn và có nguồn gốc xuất xứ rõ ràng.</p>
+                    <p style="text-align: center;">Comchay hiểu rằng chất lượng và tốt cho sức khỏe là yếu tố hàng đầu
+                        khi khách hàng lựa chọn thực phẩm chay.</p>
+                    <p style="text-align: center;">Comchay có những tiêu chuẩn chất lượng nghiêm ngặt nhất để cung cấp
+                        các sản phẩm chất lượng.</p>
                 </div>
             </div>
             <div class="col-4" style="border-left: 1px solid #ececec;">
                 <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
-                    <img style="width: 99px; height: 99px" src="https://chaysach.com/wp-content/uploads/2016/06/HAILONG-300x300.jpg" alt="">
+                    <i class="fas fa-check fa-5x"></i>
                 </div>
                 <div class="icon-box-text last-reset text-center">
                     <h4>Dịch vụ ưu đãi tốt nhất, đổi trả miễn phí.</h4>
@@ -1118,12 +895,14 @@
             </div>
             <div class="col-4" style="border-left: 1px solid #ececec;">
                 <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
-                    <img style="width: 99px; height: 99px" src="https://chaysach.com/wp-content/uploads/2016/06/ANTOAN-300x300.jpg" alt="">
+                    <i class="fas fa-piggy-bank fa-5x"></i>
                 </div>
                 <div class="icon-box-text last-reset text-center">
                     <h4>Khuyến mãi, tặng quà và giảm giá để tri ân</h4>
-                    <p>Comchay luôn mong muốn khách hàng được thưởng thức nhiều hơn và tiết kiệm hơn khi đi mua sắm thực phẩm chay.</p>
-                    <p>Comchay thường xuyên khuyến mãi, tặng quà và giảm giá để tri ân tất cả khách hàng kính yêu của mình.</p>
+                    <p>Comchay luôn mong muốn khách hàng được thưởng thức nhiều hơn và tiết kiệm hơn khi đi mua sắm thực
+                        phẩm chay.</p>
+                    <p>Comchay thường xuyên khuyến mãi, tặng quà và giảm giá để tri ân tất cả khách hàng kính yêu của
+                        mình.</p>
                 </div>
             </div>
         </div>

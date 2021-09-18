@@ -17,7 +17,7 @@ class CreateOrdersTable extends Migration
             $table->increments('id');
             $table->string('districtId');
             $table->string('wardId');
-            $table->integer('userId');
+            $table->integer('userId')->nullable();
             $table->double('totalPrice');
             $table->string('shipName');
             $table->string('shipPhone');
