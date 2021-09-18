@@ -23,4 +23,10 @@ class ProductClientController extends Controller
            'products' => $product
         ]);
     }
+    public function detail($id){
+        $product = Product::find($id);
+        return view('clients.shop-details', [
+            'product' => $product
+        ]);
+    }
 }

@@ -33,7 +33,7 @@ Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function 
 });
 
 Route::get('/', function () {
-    $selling = Product::query()->join('order_details','products.id', '=', 'order_details.productId')->select('products.*')->orderBy('quantity', 'DESC')->limit(8)->get();
+    $selling = Product::query()->join('order_details','products.id', '=', 'order_details.productId')->select('products.*')->orderBy('quantity','DESC')->limit(8)->get();
     $new = Product::query()->orderBy('created_at', 'DESC')->limit(8)->get();
     $featured = Product::query()->where('is_featured', '=' ,true);
     $categories = Category::query()->limit(8)->get();
@@ -52,7 +52,7 @@ Route::get('contact', function () {return view('clients.contact');})->name('cont
 Route::post('contact', [FeedBackController::class, 'store'])->name('store');
 
 Route::get('/products',[ProductClientController::class,'list'])->name('products');
-
+Route::get('/product-detail/{id}', [ProductClientController::class,'detail'])->name('product_detail');
 
 
 Route::post('login',[EntryController::class,'login'])->name('login');
@@ -76,6 +76,5 @@ Route::get('mail',[MailController::class,'send_mail']);
 Route::get('mail-design',function (){
     return view('mails.mail');
 });
-
 
 
