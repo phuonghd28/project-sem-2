@@ -59,7 +59,7 @@ Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
 Route::post('register',[EntryController::class,'register'])->name('register');
 
-Route::get('add/{id}', [ShoppingCartController::class, 'add']);
+Route::get('add/{id}', [ShoppingCartController::class, 'add'])->name('addCart');
 Route::get('listCart', [ShoppingCartController::class, 'show'])->name('listCart');
 Route::get('remove/{rowId}', [ShoppingCartController::class, 'remove']);
 Route::get('update', [ShoppingCartController::class, 'update']);
