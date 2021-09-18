@@ -21,7 +21,7 @@ class OrderController extends Controller
         $cart = Cart::content();
         $order = new Order();
         $order->totalPrice = 0;
-        $order->userId = Auth::check() ? Auth::user()->id : '';
+        $order->userId = Auth::check() ? Auth::user()->id : null;
         $order->districtId = $request->district_id;
         $order->wardId = $request->ward_id;
         $order->shipName = $request->shipName;
@@ -58,7 +58,9 @@ class OrderController extends Controller
             OrderDetail::insert($orderDetailArray);
             DB::commit();
             Cart::destroy();
-            $this->send_mail($order);
+            if(Auth::check()){
+                $this->send_mail($order);
+            }
             return redirect()->route('detailOrder',$order->id)->with('success-msg','Bạn đã lưu giỏ hàng thành công.');
         }
         catch (\Exception $e) {

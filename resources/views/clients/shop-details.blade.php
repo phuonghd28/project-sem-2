@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Contact-Us
+    {{$product->name}}
 @endsection
 @section('custom_css')
     <style>
@@ -74,7 +74,7 @@
         }
 
         .card {
-            margin-top: 90px;
+            margin: 90px 0 90px 0;
             background: #eee;
             padding: 3em;
             line-height: 1.5em;
@@ -294,7 +294,7 @@
             top: 13px;
             height: 1px;
             width: 335px;
-            background: #e1e1e1;
+            /*background: #e1e1e1;*/
             content: "";
         }
 
@@ -304,7 +304,7 @@
             top: 13px;
             height: 1px;
             width: 335px;
-            background: #e1e1e1;
+            /*background: #e1e1e1;*/
             content: "";
         }
 
@@ -490,189 +490,42 @@
                 <div class="wrapper row">
                     <div class="preview col-md-6">
                         <div class="preview-pic tab-content">
-                            <div class="tab-pane active" id="pic-1"><img
-                                    src="https://afamilycdn.com/150157425591193600/2020/12/5/xac-5-mon-an-nhanh-duoc-ua-chuong-nhat-the-gioif413cea463-16071362188141792796206.jpg"
-                                    alt="#">
+                            <div class="tab-pane active" id="pic-0"><img
+                                    src="{{explode(',',$product->image)[0]}}"
+                                    alt="#" width="100%" height="400px" style="object-fit: cover">
                             </div>
-                            <div class="tab-pane" id="pic-2"><img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIzSEJVADpCIWIV2szVBR6fZZPqNA1ju9WvytSzVyyujNbl70p8EeVQCNy5uuRghCosI&usqp=CAU"
-                                    alt="#">
+                            @for($i = 1; $i < count(explode(',',$product->image)); $i++)
+                            <div class="tab-pane" id="pic-{{$i}}"><img
+                                    src="{{explode(',',$product->image)[$i]}}"
+                                    alt="#" width="100%" height="400px" style="object-fit: cover">
                             </div>
-                            <div class="tab-pane" id="pic-3"><img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkzSg9X1k_JAtvc3Ts0aUceJ0c7psoRhAvSYBaVp6fz_mSYEjeyaGDOHd23ew0Iu9aCg&usqp=CAU"
-                                    alt="#">
-                            </div>
-                            <div class="tab-pane" id="pic-4"><img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-EtZVOiv5XbG1sX7NwZeta0TraImWQUjVsqhUVq0zpw0tvZQPIqysf0otwV-ta3oWEkE&usqp=CAU"
-                                    alt="#">
-                            </div>
-                            <div class="tab-pane" id="pic-5"><img
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8yEZbKBxnwIPS8HpUnMeUP-vl5LBIuW_twWQFmsURNfd9h4JLjHA0dwLJEFIWxlQ9MtE&usqp=CAU"
-                                    alt="#">
-                            </div>
+                            @endfor
                         </div>
                         <ul class="preview-thumbnail nav nav-tabs">
-                            <div class="logo_menuchinh"
-                                 style="float:left; padding-top:5px; ; color:#fff; margin-left:auto; margin-right:auto; text-align:center; line-height:40px; font-size:16px;font-weight:bold;font-family:Arial">
-                            </div>
-                            <!--                        <div class="menu-icon">-->
-                            <li class="active"><a data-target="#pic-1" data-toggle="tab"><img
-                                        src="https://afamilycdn.com/150157425591193600/2020/12/5/xac-5-mon-an-nhanh-duoc-ua-chuong-nhat-the-gioif413cea463-16071362188141792796206.jpg"
-                                        alt="#"></a>
+                            <li class="active"><a data-target="#pic-0" data-toggle="tab">
+                                    <img
+                                        src="{{explode(',',$product->image)[0]}}"
+                                        alt="#" width="100%" height="73px" style="object-fit: cover"></a>
                             </li>
-                            <li><a data-target="#pic-2" data-toggle="tab"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwIzSEJVADpCIWIV2szVBR6fZZPqNA1ju9WvytSzVyyujNbl70p8EeVQCNy5uuRghCosI&usqp=CAU"
-                                        alt="#"></a>
+                            @for($i = 1; $i < count(explode(',',$product->image)); $i++)
+                            <li class="{{explode(',',$product->image)[0] ? 'active' : ''}}"><a data-target="#pic-{{$i}}" data-toggle="tab">
+                                    <img
+                                        src="{{explode(',',$product->image)[$i]}}"
+                                        alt="#" width="100%" height="73px" style="object-fit: cover"></a>
                             </li>
-                            <li><a data-target="#pic-3" data-toggle="tab"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkzSg9X1k_JAtvc3Ts0aUceJ0c7psoRhAvSYBaVp6fz_mSYEjeyaGDOHd23ew0Iu9aCg&usqp=CAU"
-                                        alt="#"></a>
-                            </li>
-                            <li><a data-target="#pic-4" data-toggle="tab"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-EtZVOiv5XbG1sX7NwZeta0TraImWQUjVsqhUVq0zpw0tvZQPIqysf0otwV-ta3oWEkE&usqp=CAU"
-                                        alt="#"></a>
-                            </li>
-                            <li><a data-target="#pic-5" data-toggle="tab"><img
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8yEZbKBxnwIPS8HpUnMeUP-vl5LBIuW_twWQFmsURNfd9h4JLjHA0dwLJEFIWxlQ9MtE&usqp=CAU"
-                                        alt="#"></a>
-                            </li>
+                            @endfor
                         </ul>
                     </div>
-                    <div class="details col-md-6">
-                        <h3 class="product-title">hamburgers</h3>
-                        <div class="rating">
-                            <div class="stars"><span class="fa fa-star checked"></span> <span
-                                    class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span
-                                    class="fa fa-star checked"></span> <span class="fa fa-star"></span>
-                            </div>
-                            <span class="review-no">123 đánh giá</span>
-                        </div>
-                        <p class="product-description">The name hamburger is derived from the name of the city of Hamburg,
-                            Germany,[2][3] a resident from Hamburg called "Hamburger"; Accordingly, anything that originated
-                            in this city or was first disseminated here is entitled to this name. (However, the name of this
-                            dish is not capitalized.) The first type of cake with ground beef called "Hamburger steak" was
-                            mentioned
-                            in an American cookbook in 1891; This dish is placed between two slices of noodles, and is
-                            called a
-                            "Hamburger sandwich". By the mid-20th century, both of these names had been shortened to
-                            "hamburger"
-                            or "burger".!</p>
-                        <h4 class="price">price: 10$</h4>
-                        <p class="vote"><strong>91%</strong> of buyers are satisfied with this product <strong>(87
-                                votes)</strong>
-                        </p>
-
-                        </h5>
-                        <div class="action"><a href="#" target="_blank">
-                                <button class="add-to-cart btn btn-default" type="button">add to cart</button>
-                            </a> <a href="#" target="_blank">
-                            </a>
-                        </div>
+                    <div class="col-md-6 details">
+                           <h3 class="product-title">{{$product->name}}</h3>
+                           <p class="product-description">{!! html_entity_decode($product->description) !!}</p>
+                           <h4 class="price">Giá: {{number_format($product->price)}} đ</h4>
+                           <div class="action"><a href="#" target="_blank">
+                                   <button class="add-to-cart btn btn-default" type="button">add to cart <i class="fas fa-cart-arrow-down"></i></button>
+                               </a> <a href="#" target="_blank">
+                               </a>
+                       </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-12">
-        <div class="product__details__tab">
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Description</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Specification</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Reviews ( 100 )</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                    <h6>Description</h6>
-                    <p>A hamburger is a sandwich with a piece of ground meat (usually beef) in the middle. The meat can be
-                        grilled, fried, or smoked and is usually eaten with some seasoning in the middle or a round piece
-                        of bread. They are usually enjoyed with french fries.</p>
-
-                </div>
-                <div class="tab-pane" id="tabs-2" role="tabpanel">
-                    <h6>Specification</h6>
-                    <p>This will be the food that gives you the energy to function all day. In the midst of the hustle,
-                        bustle, and modern life, you don't have time to cook yourself a nutritious and nutritious meal,
-                        then a hamburger is a great choice for you. Hamburger will give you enough energy for you. With the
-                        reputation we have, we are sure that you will be satisfied with our hamburger.</p>
-                </div>
-                <div class="tab-pane" id="tabs-3" role="tabpanel">
-                    <h3 class="mb-4">23 Reviews</h3>
-                    <div class="review">
-                        <div class="user-img" style="background-image: url('https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/132201829_386303379129171_9004750516161688930_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=FmMQJ4jRfP0AX9K5buJ&_nc_ht=scontent-sin6-3.xx&oh=be820017ace541484c525b0bfb037640&oe=616013AD')"></div>
-                        <div class="desc">
-                            <h4>
-                                <span class="text-left">Van Tien</span>
-                                <span class="text-right">22 jus 2021</span>
-                            </h4>
-                            <p class="star">
-								   				<span>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-							   					</span>
-                                <span class="text-right"><a href="#" class="reply"><i
-                                            class="icon-reply"></i></a></span>
-                            </p>
-                            <p>When she reached the first hills of the Italic Mountains, she had a last view
-                                back on the skyline of her hometown Bookmarksgrov</p>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <div class="user-img" style="background-image: url('https://scontent-sin6-1.xx.fbcdn.net/v/t1.6435-9/184351179_2870905003147692_8902101709393573265_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=E6Mczk2HalIAX--oJhy&_nc_ht=scontent-sin6-1.xx&oh=d14d75c7d9eaeb7087554a1131189b03&oe=615D594F')"></div>
-                        <div class="desc">
-                            <h4>
-                                <span class="text-left">Dac Phuong</span>
-                                <span class="text-right">16 may 2021</span>
-                            </h4>
-                            <p class="star">
-								   				<span>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-							   					</span>
-                                <span class="text-right"><a href="#" class="reply"><i
-                                            class="icon-reply"></i></a></span>
-                            </p>
-                            <p>When she reached the first hills of the Italic Mountains, she had a last view
-                                back on the skyline of her hometown Bookmarksgrov</p>
-                        </div>
-                    </div>
-                    <div class="review">
-                        <div class="user-img" style="background-image: url('https://scontent-sin6-4.xx.fbcdn.net/v/t1.6435-9/107824253_281382433289713_7935313136683057114_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=lz8tX1g_CHgAX86h-K1&tn=H2GBIisj_EzKksyK&_nc_ht=scontent-sin6-4.xx&oh=c3484d5c6e42c708045ef526419a1cdc&oe=615FC969')"></div>
-                        <div class="desc">
-                            <h4>
-                                <span class="text-left">Quan Thang</span>
-                                <span class="text-right">14 March 2021</span>
-                            </h4>
-                            <p class="star">
-								   				<span>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star"></i>
-								   					<i class="fas fa-star-half-alt"></i>
-							   					</span>
-                                <span class="text-right"><a href="#" class="reply"><i
-                                            class="icon-reply"></i></a></span>
-                            </p>
-                            <p>When she reached the first hills of the Italic Mountains, she had a last view
-                                back on the skyline of her hometown Bookmarksgrov</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="rating-wrap">
-                    </div>.
                 </div>
             </div>
         </div>

@@ -830,7 +830,7 @@
                                 <div class="res-2-img parallex-new">
                                     <a href="#">
                                         <img height="200px" width="100%" style="object-fit: cover"
-                                             src="{{explode(',',$selling_food->image)[0]}}" alt="">
+                                             src="{{explode(',',$new_food->image)[0]}}" alt="">
                                     </a>
                                 </div>
                                 <div class="res-2-bg-white">
