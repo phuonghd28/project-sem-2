@@ -297,7 +297,7 @@
         }
 
         .product-content {
-            padding: 15px;
+            padding: 10px 15px 0px 15px;
             border-top: 1px solid var(--bordercolor)
         }
 
@@ -364,41 +364,37 @@
             font-weight: 500
         }
 
-        .product-btn a {
-            width: 100%;
-            height: 40px;
-            font-size: 14px;
-            font-weight: 500;
-            padding: 12px 0;
-            border-radius: 3px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            color: #212529;
-            border: 1px solid #212529;
-            text-shadow: var(--tshadow);
-            transition: all linear .3s;
-            -webkit-transition: all linear .3s;
-            -moz-transition: all linear .3s;
-            -ms-transition: all linear .3s;
-            -o-transition: all linear .3s
-        }
+        /*.product-btn a {*/
+        /*    width: 100%;*/
+        /*    height: 40px;*/
+        /*    font-size: 14px;*/
+        /*    font-weight: 500;*/
+        /*    padding: 12px 0;*/
+        /*    border-radius: 3px;*/
+        /*    display: -webkit-box;*/
+        /*    display: -ms-flexbox;*/
+        /*    display: flex;*/
+        /*    -webkit-box-align: center;*/
+        /*    -ms-flex-align: center;*/
+        /*    align-items: center;*/
+        /*    -webkit-box-pack: center;*/
+        /*    -ms-flex-pack: center;*/
+        /*    justify-content: center;*/
+        /*    color: #212529;*/
+        /*    border: 1px solid #212529;*/
+        /*    text-shadow: var(--tshadow);*/
+        /*    transition: all linear .3s;*/
+        /*    -webkit-transition: all linear .3s;*/
+        /*    -moz-transition: all linear .3s;*/
+        /*    -ms-transition: all linear .3s;*/
+        /*    -o-transition: all linear .3s*/
+        /*}*/
 
-        .product-btn a:hover {
-            color: var(--whitecolor);
-            background: #212529
-        }
+        /*.product-btn a:hover {*/
+        /*    color: var(--whitecolor);*/
+        /*    background: #212529*/
+        /*}*/
 
-        .product-btn i {
-            margin-top: -2px;
-            margin-right: 8px
-        }
 
         @media (max-width: 575px) {
             .product-slider .product-card {
@@ -820,12 +816,12 @@
             height: 40px;
             width: 250px;
             font-size: 15px;
-            border-radius: 8px;
+            border-radius: 3px;
             cursor: pointer
         }
 
         .product-short-select:focus {
-            border-color: var(--brandcolor);
+            word-wrap: inherit;
             -webkit-box-shadow: none;
             box-shadow: none
         }
@@ -2472,6 +2468,22 @@
             border-bottom: 4px solid #00c6d7;
             color: #00c6d7;
         }
+        .btn-adding {
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 700;
+            line-height: 17px;
+            width: 22px;
+            height: 22px;
+            background-color: #00c6d7;
+            text-align: center;
+            color: #fff;
+            display: inline-block;
+            border-radius: 50%;
+        }
+        .btn-adding:hover {
+            background-color: #09b0be;
+        }
     </style>
 @endsection
 
@@ -2545,13 +2557,14 @@
                                     </div>
                                     <div class="product-content">
                                         <div class="product-name"><h6>{{$data->name}}</h6></div>
-                                        <div class="product-price">
-                                            <h6>
-                                                {{number_format($data->price)}} đ
-                                            </h6>
-                                        </div>
-                                        <div class="product-btn"><a href="/add/{{$data->id}}"><i
-                                                    class="fas fa-shopping-basket"></i><span>Add to Cart</span></a>
+                                        <div class="d-flex justify-content-sm-between">
+                                            <div class="product-price">
+                                                <h6>
+                                                    {{number_format($data->price)}} đ
+                                                </h6>
+                                            </div>
+                                            <div class="product-btn"><a href="/add/{{$data->id}}"><div class="btn-adding">+</div></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

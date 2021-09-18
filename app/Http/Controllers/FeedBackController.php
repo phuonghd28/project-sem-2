@@ -2,17 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FeedBackRequest;
 use App\Models\FeedBack;
 use Illuminate\Http\Request;
 
 class FeedBackController extends Controller
 {
-    public function store(Request $request) {
+    public function store(FeedBackRequest $request) {
         $fback = new FeedBack();
-        $fback->name = $request->name;
-        $fback->email = $request->email;
-        $fback->subject = $request->subject;
-        $fback->message = $request->message;
+        $fback->fill($request->validated());
         $fback->save();
         return redirect()->route('contact')->with('success', 'Your message has been sent. Thank you!');
     }
@@ -20,6 +18,10 @@ class FeedBackController extends Controller
     {
         $data = FeedBack::all();
         return view('admin.feedback.table', ['fback' => $data]);
+    }
+    public function detail($id) {
+        $detail = FeedBack::find($id);
+        return view('admin.feedback.detail', ['details'=>$detail]);
     }
     public function delete($id)
     {

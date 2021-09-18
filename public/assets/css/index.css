@@ -1,9 +1,9 @@
 body {
     background: #FFF;
     margin: 0;
-    font-family: "Noto Sans",sans-serif;!important;
-    line-height: 1.6;!important;
-    font-size: 18px;
+    font-family: "Noto Sans",sans-serif !important;
+    line-height: 1.6 !important;
+    font-size: 16px !important;
     font-weight: 600;
     -webkit-font-smoothing: antialiased;
     color: #000;
@@ -162,7 +162,6 @@ body {
 
 .icon-w3 {
     right: 0;
-    bottom: 0;
     width: 53px;
     height: 52px;
     display: inline-block;
@@ -197,6 +196,7 @@ button:focus {
     width: 100%;
     padding: 35px 24px 35px;
     height: 365px;
+    /*height: 430px;*/
     box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
     background: white;
     position: relative;
@@ -300,4 +300,10 @@ a:hover {
     margin-right: 15px;
     color: #00c6d7;
 }
+.wrap-footer p,a {
+    line-height: 1.6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
 

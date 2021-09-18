@@ -52,3 +52,4 @@ Route::prefix('products')->group(function () {
 
 Route::get('list-fback', [FeedBackController::class, 'list'])->name('listFeedBack');
 Route::get('delete-fback/{id}', [FeedBackController::class, 'delete'])->name('deleteFBack');
+Route::get('detail/{id}', [FeedBackController::class, 'detail'])->name('detailFBack');

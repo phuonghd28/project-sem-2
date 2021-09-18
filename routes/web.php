@@ -57,7 +57,7 @@ Route::get('/products',[ProductClientController::class,'list'])->name('products'
 
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
-Route::get('register',[EntryController::class,'register'])->name('register');
+Route::post('register',[EntryController::class,'register'])->name('register');
 
 Route::get('add/{id}', [ShoppingCartController::class, 'add']);
 Route::get('listCart', [ShoppingCartController::class, 'show'])->name('listCart');
