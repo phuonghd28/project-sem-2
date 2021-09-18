@@ -133,7 +133,7 @@ Lẩu l&agrave; m&oacute;n ăn đ&atilde; qu&aacute; quen thuộc trong nền �
 
 <p>- Lẩu th&aacute;i. + Đậu phụ + Nấm c&aacute;c loại + Rau theo m&ugrave;a + B&uacute;n tươi hoặc m&igrave; chay</p>
 
-<p>- Tặng 4 cốc nước gạo rang</p>
+<p>- Tặng 4 cốc nước gạo rang.</p>
 
 <p><strong>Set lẩu d&ugrave;ng được cho :</strong> 4 người</p>',
                 'category_id' => '8',
