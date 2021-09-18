@@ -18,7 +18,6 @@
                         <th>Name</th>
                         <th>Email</th>
                         <th>Subject</th>
-                        <th>Message</th>
                         <th style="width: 110px;">Actions</th>
                     </tr>
                     </thead>
@@ -29,11 +28,13 @@
                             <td>{{$data->name}}</td>
                             <td>{{$data->email}}</td>
                             <td>{{$data->subject}}</td>
-                            <td>{{$data->message}}</td>
                             <td>
-                                <a type="submit" href="{{route('deleteFBack', $data->id)}}"
-                                   class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xoá ?')">
-                                    <i class="fas fa-trash-alt"></i></a>
+                                <a type="submit" href="{{route('deleteFBack', $data->id)}}" style="padding: 7px 9px;"
+                                   class="btn btn-danger mr-2" onclick="return confirm('Bạn có chắc muốn xoá ?')">
+                                    <i class="fas fa-trash-alt" style="font-size: 17px"></i></a>
+                                <a style="padding: 7px 8px;" type="button" href="{{route('detailFBack', $data->id)}}" class="btn btn-primary">
+                                    <i class="fas fa-info-circle" style="font-size: 17px"></i>
+                                </a>
                             </td>
                         </tr>
                     </tbody>

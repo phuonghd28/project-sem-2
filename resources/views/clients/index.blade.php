@@ -5,7 +5,6 @@
 @section('custom_css')
     <style>
         h1, h2, h3, h4, h5, h6 {
-            color: #231900;
             text-decoration: none;
             line-height: 1.5;
             clear: both
@@ -650,14 +649,14 @@
             line-height: 17px;
             width: 22px;
             height: 22px;
-            background-color: #ee4d2d;
+            background-color: #00c6d7;
             text-align: center;
             color: #fff;
             display: inline-block;
             border-radius: 50%;
         }
         .btn-adding:hover {
-            background-color: #e37f68;
+            background-color: #09b0be;
         }
         .wrap-adding {
             width: 22px;
@@ -696,7 +695,7 @@
                             src="assets/images/layer/Layer256-1.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Pizza</h3>
                             </a>
                         </div>
@@ -705,12 +704,12 @@
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
                 <div class="category-main">
-                    <a href="#"> <img
+                    <a href="#" > <img
                             loading="lazy" alt="" class="cate-images"
                             src="assets/images/layer/02.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Broast</h3>
                             </a>
                         </div>
@@ -719,12 +718,12 @@
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
                 <div class="category-main">
-                    <a href="#"> <img
+                    <a href="#" > <img
                             loading="lazy" alt="" class="cate-images"
                             src="assets/images/layer/03.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Chicken</h3>
                             </a>
                         </div>
@@ -738,7 +737,7 @@
                             src="assets/images/layer/04.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Burgers</h3>
                             </a>
                         </div>
@@ -752,7 +751,7 @@
                             src="assets/images/layer/05.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Shakes</h3>
                             </a>
                         </div>
@@ -766,7 +765,7 @@
                             src="assets/images/layer/06.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Sandwiches</h3>
                             </a>
                         </div>
@@ -780,7 +779,7 @@
                             src="assets/images/layer/07.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Pasta</h3></a></div>
                     </div>
                 </div>
@@ -792,7 +791,7 @@
                             src="assets/images/layer/08.png"></a>
                     <div class="category-text-box">
                         <div class="category-text-inner">
-                            <a href="#">
+                            <a href="#" class="text-reset">
                                 <h3>Desserts</h3></a></div>
                     </div>
                 </div>
@@ -809,7 +808,7 @@
             </div>
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
                 <div class="row">
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -844,7 +843,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -879,7 +878,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -914,7 +913,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -949,7 +948,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -984,7 +983,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -1019,7 +1018,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">
@@ -1054,7 +1053,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                    <div class="eq-height col-xl-3 col-lg-6 col-md-6 mb-4">
                         <div class="res-3-box ">
                             <div class="res-2-img parallex-new">
                                 <a href="#">

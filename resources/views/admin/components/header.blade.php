@@ -67,7 +67,7 @@
                     <div class="widget-content-wrapper">
                         <div class="widget-content-left">
                             <div class="btn-group">
-                                <img width="50" height="40" style="object-fit: cover" class="rounded-circle"
+                                <img width="40" height="40" style="object-fit: cover" class="rounded-circle"
                                      src="/assets/images/avatars/anh-dep-2.jpg" alt="">
                             </div>
                         </div>

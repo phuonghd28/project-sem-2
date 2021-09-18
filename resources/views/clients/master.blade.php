@@ -9,7 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @yield('custom_css')
     <title>@yield('title')</title>
 </head>
@@ -39,26 +40,33 @@
                         </div>
                         <div class="shopping-cart d-flex justify-content-center">
                             <div class="align-self-center">
-                                <a class="color-cart" href="{{route('listCart')}}"><i class="fas fa-shopping-cart"> {{\Gloudemans\Shoppingcart\Facades\Cart::content()->count()}}</i></a>
+                                <a class="color-cart" href="{{route('listCart')}}"><i
+                                        class="fas fa-shopping-cart"> {{\Gloudemans\Shoppingcart\Facades\Cart::content()->count()}}</i></a>
                             </div>
                         </div>
                         <div class="wrap-log-in d-flex">
                             <div class="log-in align-self-center">
                                 @if(\Illuminate\Support\Facades\Auth::check())
-                                    <button class="dropdown-toggle" style="background: none;border: none; padding: 10px 14px;" type="button" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <a class="color-cart"><b
-                                                style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b></a>
+                                    <button class="dropdown-toggle"
+                                            style="background: none;border: none; padding: 10px 14px;" type="button"
+                                            role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                        <a class="color-cart" >
+                                            <b style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b>
+                                        </a>
                                     </button>
 
 
                                     <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="/"><i class="far fa-user ic-user mr-2"></i>Tài khoản</a>
-                                        <a class="dropdown-item border-0" href="{{route('logout')}}"><i class="fas fa-power-off mr-2 ic-logout"></i>Đăng xuất</a>
+                                        <a class="dropdown-item" href="/"><i class="far fa-user ic-user mr-2"></i>Tài
+                                            khoản</a>
+                                        <a class="dropdown-item border-0" href="{{route('logout')}}"><i
+                                                class="fas fa-power-off mr-2 ic-logout"></i>Đăng xuất</a>
                                     </div>
                                 @else
                                     <button style="background: none;border: none; padding: 10px 14px;" type="button"
                                             class="btn-account" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <a class="color-cart"><b style="font-size: 14px">Đăng nhập</b></a>
+                                        <a class="color-cart"><b style="font-size: 14px;display: flex">Đăng nhập</b></a>
                                     </button>
                                 @endif
                             </div>
@@ -83,7 +91,7 @@
                 </div>
                 <div class="form-login" id="form-account">
                     @if(session('error-login'))
-                        <div class="text-danger" style="font-weight: bold; margin-bottom: 10px;">
+                        <div class="text-danger" style="margin-bottom: 5px;">
                             {{session('error-login')}}
                         </div>
                     @endif
@@ -99,12 +107,19 @@
                             <div class="icon-w3">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
+                            @error('username')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                         </div>
+
                         <div class="input-pass mb-4">
                             <input class="pass" type="password" placeholder="Mật khẩu" name="password">
                             <div class="icon-w3">
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                             </div>
+                            @error('password')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                         </div>
                         <button class="btn-login mt-2"><b>Đăng nhập</b></button>
                     </form>
@@ -112,29 +127,52 @@
                         @csrf
                         <div class="input-user-name d-flex m-0 mb-4">
                             <input style="margin-right: 18px" class="user-name input-form-reg d-inline-block"
-                                   type="text"
-                                   placeholder="First Name" name="first_name">
+                                   type="text" placeholder="First Name" name="first_name">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                             <input type="text" class="justify-content-end pass d-inline-block input-form-reg"
                                    placeholder="Last Name" name="last_name">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                         </div>
                         <div class="input-pass mb-4">
                             <input class="pass" type="text" placeholder="Address" name="address">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                         </div>
                         <div class="input-user-name d-flex m-0 mb-4">
                             <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
                                    type="text"
                                    placeholder="User name" name="username">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                             <input type="text" class="input-form-reg justify-content-end pass d-inline-block"
                                    placeholder="Phone" name="phone">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                         </div>
                         <div class="input-pass mb-4">
                             <input class="pass" type="text" placeholder="Email" name="email">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                         </div>
                         <div class="input-user-name d-flex m-0 mb-4">
                             <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
                                    type="password" placeholder="Password" name="password">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                             <input class="input-form-reg justify-content-end pass d-inline-block" type="password"
                                    placeholder="Re-password" name="password_confirmation">
+                            @error('first_name')
+                            <div class="text-danger my-2"> * {{$message}}</div>
+                            @enderror
                         </div>
                         <button class="btn-login mt-2"><b>Đăng ký</b></button>
                     </form>
@@ -145,52 +183,67 @@
     <div class="container">
         @yield('content')
     </div>
-    <footer>
-        <div class="footer">
-            <div class="container py-3">
-                <div class="logo-footer row">
-                    <a class="col-lg-2 mt-3 " href="#">
-                        <img class="img-footer" src="/assets/images/coollogo_com-1065994.png" alt="">
-                    </a>
-                </div>
-                <div class="divider my-4"></div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="link-item">
-                            <a href="#">Về Cơm Chay</a>
-                        </div>
-                        <div class="link-item">
-                            <a href="#">Blog</a>
-                        </div>
+    <footer class="text-center" style="background-color: #0b0c10;color: #c5c6c7">
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row pt-5 wrap-footer">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h5 class="fw-bold mb-4 logo">
+                            <a href="{{route('index')}}">
+                                <img style="width: 110px;margin-right: 20px" src="https://chaysach.com/wp-content/uploads/2017/02/logo.jpg">
+                            </a>
+                            Về Com Chay
+                        </h5>
+                        <p>Thực phẩm chay, sạch, ngon, thuần chay.</p>
+                        <p>Đảm bảo vệ sinh an toàn thực phẩm.</p>
+                        <p>Dịch vụ tốt nhất.</p>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="link-item">
-                            <a href="#">Trung tâm hỗ trợ</a>
-                        </div>
-                        <div class="link-item">
-                            <a href="#">Câu hỏi thường gặp</a>
-                        </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h5 class="fw-bold mb-4">
+                            Danh sách
+                        </h5>
+                        <p>
+                            <a href="#" class="text-reset">Đồ chay hàng ngày</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Bánh chay</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Rau củ</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-reset">Giả mặn</a>
+                        </p>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="link-item">
-                            <a href="#" class="mr-2"><i class="icon-footer fab fa-facebook-square"></i></a>
-                            <a href="#" class="mx-2"><i class="icon-footer fab fa-instagram"></i></a>
-                            <a href="#" class="mx-2"><i class="icon-footer fab fa-twitter-square"></i></a>
-                        </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 support-link">
+                        <h5 class="fw-bold mb-4">
+                            Hỗ trợ
+                        </h5>
+                        <p>
+                            <a href="{{route('abouts')}}" class="text-reset">About</a>
+                        </p>
+                        <p>
+                            <a href="{{route('contact')}}" class="text-reset">Contact</a>
+                        </p>
                     </div>
-                </div>
-                <div class="divider my-4"></div>
-                <div class="d-flex mb-3 justify-content-center">
-                    <div class="and-copyright d-flex ">
-                        <div class="copy-right mr-5">© 2021 Cơm Chay</div>
-                        <div class="copy-right-item">
-                            <a href="#">Câu hỏi thường gặp</a>
-                            <span class="mx-1">•</span>
-                            <a href="#">Chính sách bảo mật</a>
-                        </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h5 class="fw-bold mb-4">
+                            Liên hệ
+                        </h5>
+                        <p><i class="fas fa-home me-3"></i>Số 8 Tôn Thất Thuyết, HN</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            comchay@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 84 567 999 999</p>
+                        <p><i class="fas fa-print me-3"></i> + 84 345 686 868</p>
                     </div>
                 </div>
             </div>
+        </section>
+        <div class="text-center p-4" style="background-color: #1f2833;color: #45A29E">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="{{route('index')}}">Comchay</a>
         </div>
     </footer>
 </div>

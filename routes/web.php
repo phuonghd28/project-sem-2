@@ -26,8 +26,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//->middleware(['auth', CheckAdmin::class])
-Route::prefix('admin')->group(function (){
+
+Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function (){
     require_once __DIR__ . '/admin.php';
 });
 
@@ -47,7 +47,7 @@ Route::get('/products',[ProductClientController::class,'list'])->name('products'
 
 Route::post('login',[EntryController::class,'login'])->name('login');
 Route::get('logout',[EntryController::class,'logout'])->name('logout');
-Route::get('register',[EntryController::class,'register'])->name('register');
+Route::post('register',[EntryController::class,'register'])->name('register');
 
 Route::get('add/{id}', [ShoppingCartController::class, 'add']);
 Route::get('listCart', [ShoppingCartController::class, 'show'])->name('listCart');

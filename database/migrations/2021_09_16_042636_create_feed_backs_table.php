@@ -17,8 +17,9 @@ class CreateFeedBacksTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email');
-            $table->string('subject');
-            $table->string('message');
+            $table->string('phone');
+            $table->integer('subject');
+            $table->text('message');
             $table->timestamps();
             $table->softDeletes();
         });

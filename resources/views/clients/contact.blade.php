@@ -175,17 +175,16 @@
             padding: 10px 12px;
         }
 
-        .contact .php-email-form button[type="submit"] {
+        .contact .php-email-form .btn-block {
             background: #00c6d7;
             border: 0;
             padding: 10px 24px;
             color: #fff;
-            transition: 0.4s;
-            border-radius: 4px;
+            transition: 0.2s;
         }
 
-        .contact .php-email-form button[type="submit"]:hover {
-            background: #00c6d7;
+        .contact .php-email-form .btn-block:hover {
+            background: #05b7c6;
         }
 
         @-webkit-keyframes animate-loading {
@@ -208,6 +207,18 @@
         .main-nav .t-contact {
             border-bottom: 4px solid #00c6d7;
             color: #00c6d7;
+        }
+        .select-subject:focus {
+            box-shadow: none;
+        }
+        .select-subject {
+            height: 44px;
+            border-radius: 0;
+            box-shadow: none;
+            font-size: 14px;
+        }
+        .wrap-footer p, a {
+            text-decoration: none;
         }
     </style>
 @endsection
@@ -255,37 +266,51 @@
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                     <form action="" method="post" role="form" class="php-email-form">
                         @csrf
-                        <div class="form-row">
+                        <div class="form-row row">
                             <div class="form-group col-md-6">
                                 <label for="name">Your Name</label>
-                                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                                <div class="validate"></div>
+                                <input type="text" name="name" class="form-control" id="name"/>
+                                @error('name')
+                                <div class="text-danger"> * {{$message}}</div>
+                                @enderror
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="name">Your Email</label>
-                                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                                <div class="validate"></div>
+                                <input type="email" class="form-control" name="email" id="email"/>
+                                @error('email')
+                                <div class="text-danger"> * {{$message}}</div>
+                                @enderror
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="name">Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                            <div class="validate"></div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Subject</label>
+                                <select class="form-select select-subject" name="subject" id="subject">
+                                    <option value="" disabled hidden selected>Chủ đề</option>
+                                    <option value="{{\App\Enums\Subject::SALES}}">Bán hàng</option>
+                                    <option value="{{\App\Enums\Subject::CUSTOMER_SUPPORT}}">Hỗ trợ khách hàng</option>
+                                    <option value="{{\App\Enums\Subject::PARTNERSHIPS}}">Quan hệ đối tác</option>
+                                </select>
+                                @error('subject')
+                                <div class="text-danger"> * {{$message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="name">Phone</label>
+                                <input type="text" class="form-control" name="phone"/>
+                                @error('phone')
+                                <div class="text-danger"> * {{$message}}</div>
+                                @enderror
+                            </div>
                         </div>
                         <div class="form-group">
                             <label for="name">Message</label>
                             <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                            <div class="validate"></div>
+                            @error('message')
+                            <div class="text-danger"> * {{$message}}</div>
+                            @enderror
                         </div>
-{{--                        <div class="mb-3">--}}
-{{--                            @if ($message = \Illuminate\Support\Facades\Session::get('success'))--}}
-{{--                                <div class="alert alert-success">--}}
-{{--                                    <p class="m-0 sent-message">{{ $message }}</p>--}}
-{{--                                </div>--}}
-{{--                            @endif--}}
-
-{{--                        </div>--}}
-                        <div class="text-center"><button class="btn btn-block">Send Message</button></div>
+                        <div class="text-center"><button class="btn-block">Send Message</button></div>
                     </form>
                 </div>
 
