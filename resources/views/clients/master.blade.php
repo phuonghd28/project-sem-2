@@ -24,7 +24,7 @@
                 <div class="col-lg-2 col-sm-3 col-3 align-self-center">
                     <div class="logo">
                         <a href="#">
-                            <img style="width: 100%;" src="https://chaysach.com/wp-content/uploads/2017/02/logo.jpg">
+                            <img style="width: 90%;height: 87px" src="/assets/images/logo2.png">
                         </a>
                     </div>
                 </div>
@@ -190,9 +190,8 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h5 class="fw-bold mb-4 logo">
                             <a href="{{route('index')}}">
-                                <img style="width: 110px;margin-right: 20px" src="https://chaysach.com/wp-content/uploads/2017/02/logo.jpg">
+                                <img style="width: 50%;height:80px;margin-right: 20px" src="/assets/images/logo1.png">
                             </a>
-                            Về Com Chay
                         </h5>
                         <p>Thực phẩm chay, sạch, ngon, thuần chay.</p>
                         <p>Đảm bảo vệ sinh an toàn thực phẩm.</p>

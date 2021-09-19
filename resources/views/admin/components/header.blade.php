@@ -1,6 +1,8 @@
 <div class="app-header header-shadow">
     <div class="app-header__logo">
-        <div class="logo-src"></div>
+        <div class="logo-src">
+            <img src="/assets/images/logo3.png" alt="" width="100%" height="100%">
+        </div>
         <div class="header__pane ml-auto">
             <div>
                 <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
