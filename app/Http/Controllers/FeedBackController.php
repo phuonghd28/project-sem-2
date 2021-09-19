@@ -14,10 +14,32 @@ class FeedBackController extends Controller
         $fback->save();
         return redirect()->route('contact')->with('success', 'Your message has been sent. Thank you!');
     }
-    public function list()
+    public function list(Request $request)
     {
-        $data = FeedBack::all();
-        return view('admin.feedback.table', ['fback' => $data]);
+        $queryBuilder = FeedBack::query();
+        $search = $request->get('search');
+        $sort = $request->get('sort');
+        $subject = $request->get('subject');
+        if ($search || strlen($search) > 0) {
+            $queryBuilder = $queryBuilder->where('name', 'like', '%' . $search . '%')
+            ->orWhere('email', 'like', '%' . $search . '%')
+                ->orWhere('message', 'like', '%' . $search . '%');
+        }
+        if ($sort === 1) {
+            $queryBuilder = $queryBuilder->orderBy('created_at', 'DESC');
+        }
+        if ($sort === 2) {
+            $queryBuilder = $queryBuilder->orderBy('created_at', 'ASC');
+        }
+        if ($subject){
+            $queryBuilder = $queryBuilder->where('subject',$subject);
+        }
+        $data = $queryBuilder->paginate(5)->appends(['search' => $search]);
+        return view('admin.feedback.table', [
+            'fback' => $data,
+            'sort' => $sort,
+            'subject' => $subject
+        ]);
     }
     public function detail($id) {
         $detail = FeedBack::find($id);

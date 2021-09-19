@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Category;
+use App\Models\Order;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,4 +19,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::get('/chart', function () {
+    $category = Category::query()->limit(1)->get();
+    $product = Product::query()->limit(1)->get();
+    return \Illuminate\Support\Facades\Response::json(['category' => $category, 'product' => $product]);
+
 });

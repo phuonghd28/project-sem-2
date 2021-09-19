@@ -38,12 +38,35 @@
                             <div class="product-filter">
                                 <div class="product-page-number"><p>Showing 1 – {{$products->perPage()}}
                                         of {{$products->total()}} results</p></div>
-                                <select class="product-short-select custom-select">
-                                    <option selected>Short by Best Sell</option>
-                                    <option value="1">Short by New Item</option>
-                                    <option value="2">Short by Popularity</option>
-                                    <option value="3">Short by Average review</option>
-                                </select>
+                                <form id="filter-form">
+                                    <select class="product-short-select custom-select" name="filter" id="filter">
+                                        <option selected>Short by</option>
+                                        <option value="1" {{$filter && $filter == 1 ? 'selected' : ''}}>Short by Best
+                                            Sell
+                                        </option>
+                                        <option value="2" {{$filter && $filter == 2 ? 'selected' : ''}}>Short by New
+                                            Item
+                                        </option>
+                                        <option value="3" {{$filter && $filter == 3 ? 'selected' : ''}}>Short by
+                                            Featured
+                                        </option>
+                                    </select>
+                                    <select class="product-short-select custom-select" name="price" id="price">
+                                        <option selected>Short by price</option>
+                                        <option value="1" {{$price && $price == 1 ? 'selected' : ''}}>Under 50.000
+                                        </option>
+                                        <option value="2" {{$price && $price == 2 ? 'selected' : ''}}>50.000 - 100.000
+                                        </option>
+                                        <option value="3" {{$price && $price == 3 ? 'selected' : ''}}>100.000 -
+                                            200.000
+                                        </option>
+                                        <option value="4" {{$price && $price == 4 ? 'selected' : ''}}>200.000 -
+                                            500.000
+                                        </option>
+                                        <option value="5" {{$price && $price == 5 ? 'selected' : ''}}>Over 500.000
+                                        </option>
+                                    </select>
+                                </form>
                             </div>
                             <div class="row mb-3" style="background-color: #ffffff">
                                 @foreach(\App\Models\Category::all() as $item)
@@ -56,43 +79,49 @@
                         </div>
                     </div>
                     <div class="row product-card-parent">
-                        @foreach($products as $data)
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-3">
-                                <div class="product-card card-gape">
-                                    <a href="{{route('product_detail',$data->id)}}">
-                                        <div class="product-img"><img
-                                                src="{{ explode(',',$data->image)[0]  }}"
-                                                alt="product" width="100%" height="200px" style="object-fit: cover">
-                                            <ul class="product-widget">
-                                                <li>
-                                                    <button><i class="fas fa-eye"></i></button>
-                                                </li>
-                                                <li>
-                                                    <button><i class="fas fa-heart"></i></button>
-                                                </li>
-                                                <li>
-                                                    <button><i class="fas fa-exchange-alt"></i></button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-content">
-                                            <div class="product-name"><h6>{{$data->name}}</h6></div>
-                                            <div class="d-flex justify-content-sm-between">
-                                                <div class="product-price">
-                                                    <h6>
-                                                        {{number_format($data->price)}} đ
-                                                    </h6>
-                                                </div>
-                                                <div class="product-btn"><a href="{{route('addCart',$data->id)}}">
-                                                        <div class="btn-adding">+</div>
-                                                    </a>
+                        @if(count($products) > 0)
+                            @foreach($products as $data)
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                    <div class="product-card card-gape">
+                                        <a href="{{route('product_detail',$data->id)}}">
+                                            <div class="product-img"><img
+                                                    src="{{ explode(',',$data->image)[0]  }}"
+                                                    alt="product" width="100%" height="200px" style="object-fit: cover">
+                                                <ul class="product-widget">
+                                                    <li>
+                                                        <button><i class="fas fa-eye"></i></button>
+                                                    </li>
+                                                    <li>
+                                                        <button><i class="fas fa-heart"></i></button>
+                                                    </li>
+                                                    <li>
+                                                        <button><i class="fas fa-exchange-alt"></i></button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <div class="product-name"><h6>{{$data->name}}</h6></div>
+                                                <div class="d-flex justify-content-sm-between">
+                                                    <div class="product-price">
+                                                        <h6>
+                                                            {{number_format($data->price)}} đ
+                                                        </h6>
+                                                    </div>
+                                                    <div class="product-btn"><a href="{{route('addCart',$data->id)}}">
+                                                            <div class="btn-adding">+</div>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
+                            @endforeach
+                        @else
+                            <div class="row mt-3 mb-3">
+                                <h2 class="text-center text-uppercase">Have no products !!</h2>
                             </div>
-                        @endforeach
+                        @endif
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
@@ -101,8 +130,10 @@
                             $link_limit = 7; // maximum number of links (a little bit inaccurate, but will be ok for now)
                             ?>
                             <ul class="pagination ">
-                                <li class="page-item"><a class="page-link" href="{{$products->url($products->url(1))}}">First</a>
-                                </li>
+                                @if($products->currentPage() != 1)
+                                    <li class="page-item"><a class="page-link" href="{{$products->url($products->url(1))}}"><i class="fas fa-backward"></i></a>
+                                    </li>
+                                @endif
                                 @for ($i = 1; $i <= $products->lastPage(); $i++)
                                     <?php
                                     $half_total_links = floor($link_limit / 2);
@@ -122,8 +153,10 @@
                                         </li>
                                     @endif
                                 @endfor
-                                <li class="page-item"><a class="page-link"
-                                                         href="{{$products->url($products->lastPage())}}">Last</a></li>
+                                @if($products->currentPage() != $products->lastPage())
+                                        <li class="page-item"><a class="page-link"
+                                                                 href="{{$products->url($products->lastPage())}}"> <i class="fas fa-forward"></i> </a></li>
+                                    @endif
                             </ul>
                         </div>
                     </div>
@@ -135,22 +168,6 @@
 @endsection
 
 @section('custom_js')
-    {{--    <script>--}}
-    {{--        var elements = document.querySelectorAll('.ant-btn-block .ant-divider-horizontal');--}}
-
-    {{--        show(elements, 'inline-block'); // The second param allows you to specify a display value--}}
-
-    {{--        show(document.getElementById('hidden-input'));--}}
-
-    {{--        function show(elements, specifiedDisplay) {--}}
-    {{--            elements = elements.length ? elements : [elements];--}}
-    {{--            for (var index = 0; index < elements.length; index++) {--}}
-    {{--                elements[index].style.display = specifiedDisplay || 'block';--}}
-    {{--            }--}}
-    {{--        }--}}
-
-
-    {{--    </script>--}}
     <script>
         $(document).ready(function () {
             let submit = false
@@ -164,6 +181,12 @@
             $('.btn_category').click(function () {
                 $('#category').val(this.slot)
                 $('#brand_filter').submit()
+            })
+            $('#filter').change(function () {
+                $('#filter-form').submit()
+            })
+            $('#price').change(function () {
+                $('#filter-form').submit()
             })
         });
     </script>
