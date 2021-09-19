@@ -35,7 +35,7 @@ Route::prefix('admin')->middleware(['auth', CheckAdmin::class])->group(function 
 Route::get('/', function () {
     $selling = Product::query()->join('order_details','products.id', '=', 'order_details.productId')->select('products.*')->orderBy('quantity','DESC')->limit(8)->get();
     $new = Product::query()->orderBy('created_at', 'DESC')->limit(8)->get();
-    $featured = Product::query()->where('is_featured', '=' ,true);
+    $featured = Product::query()->where('is_featured','=' , 1)->get();
     $categories = Category::query()->limit(8)->get();
     return view('clients.index',[
         'selling' => $selling,

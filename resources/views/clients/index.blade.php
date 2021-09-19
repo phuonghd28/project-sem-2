@@ -59,7 +59,7 @@
                             <div class="res-3-box ">
                                 <div class="res-2-img parallex-new">
                                     <a href="#">
-                                        <img src="{{explode(',',$featured_food->image)[0]}}" alt=""
+                                        <img style="object-fit: cover;height:200px;width:100%" src="{{explode(',',$featured_food->image)[0]}}" alt=""
                                              class="img-fluid">
                                     </a>
                                 </div>

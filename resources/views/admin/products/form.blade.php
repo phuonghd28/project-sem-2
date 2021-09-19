@@ -121,8 +121,21 @@
                         </div>
                     </div>
                     <div class="position-relative row form-group">
-                        <label class="col-sm-1 col-form-label">Description</label>
-                        <div class="col-sm-11">
+                        <label class="col-sm-1">Featured</label>
+                        <div class="col-sm-4">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="is_featured" id="inlineRadio1" value="1" {{$data && $data->is_featured == 1 ? 'checked' : ''}}>
+                                <label class="form-check-label" for="inlineRadio1" >Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="is_featured" id="inlineRadio2" value="0" {{$data && $data->is_featured == 0 ? 'checked' : ''}}>
+                                <label class="form-check-label" for="inlineRadio2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="position-relative row form-group">
+                        <label class="col-sm-2 col-form-label">Description</label>
+                        <div class="col-sm-12">
                             <textarea id="description" name="description" type="text" class="form-control"
                                       placeholder="Enter description"
                                       rows="3">{{$data ? $data->description : ''}}</textarea>

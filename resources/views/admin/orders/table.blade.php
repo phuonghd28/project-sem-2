@@ -39,8 +39,8 @@
                         </form>
                     </div>
                 </div>
+                <?php $orderTotal = 0; ?>
                 <table class="mb-0 table table-bordered">
-
                     <tr>
                         <th>Check</th>
                         <th>Id</th>
@@ -54,6 +54,11 @@
 
 
                     @foreach($orders as $order)
+                        <?php
+                        if (!empty($order)) {
+                            $orderTotal += $order->totalPrice;
+                        }
+                        ?>
                         <tr>
                             <td><input class="checkbox_choice" type="checkbox" value="{{$order->id}}"></td>
                             <td>{{$order->id}}</td>
@@ -76,12 +81,14 @@
                                     @break
                                 @endswitch</td>
                             <td>
+                                <a href="{{route('detailOrder', $order->id)}}"><button class="btn btn-primary"><i class="fa fa-info-circle"></i></button></a>
                                 <a onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này ?')"
                                    href="{{route('deleteOrder',$order->id)}}">
                                     <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
                                 </a></td>
                         </tr>
                     @endforeach
+                    <tr><td colspan="8" class="text-right"><strong> Tổng : {{number_format($orderTotal)}} đ</strong></td></tr>
 
                 </table>
                 <div class="row justify-content-end mt-3">
@@ -93,7 +100,8 @@
                             <select name="date" id="date" class="custom-select" style="width: 50%">
                                 <option selected disabled hidden>Lọc theo thời gian</option>
                                 <option value="1" {{$date && $date == 1 ? 'selected' : ''}}>Đơn hàng trong ngày</option>
-                                <option value="2" {{$date && $date == 2 ? 'selected' : ''}}>Đơn hàng trong tháng</option>
+                                <option value="2" {{$date && $date == 2 ? 'selected' : ''}}>Đơn hàng trong tháng
+                                </option>
                                 <option value="3" {{$date && $date == 3 ? 'selected' : ''}}>Đơn hàng trong năm</option>
                             </select>
                         </form>
@@ -110,12 +118,19 @@
                             @endforeach
                         </select>
                         <button class="btn btn-primary btn_submit" style="width: 120px">Apply</button>
+                        <button class="btn btn-danger btn_delete" style="width: 120px">Delete</button>
                         <form action="{{route('updateStatus')}}" id="form_update_status" method="post"
                               style="width: 0;height: 0;overflow: hidden!important;">
                             @csrf
                             <div style="width: 0;height: 0;overflow: hidden!important;">
                                 <input type="text" name="array_id" id="array_id">
                                 <input type="text" name="desire" id="desire">
+                            </div>
+                        </form>
+                        <form action="{{route('deleteAll')}}" id="delete_all" style="width: 0;height: 0;overflow: hidden!important;">
+                            @csrf
+                            <div style="width: 0;height: 0;overflow: hidden!important;">
+                                <input type="text" name="delete_id" id="delete_id">
                             </div>
                         </form>
                     </div>
@@ -152,6 +167,17 @@
                     $('#form_update_status').submit()
                 }
             })
+            $('.btn_delete').click(function () {
+                var checkboxs = document.querySelectorAll('.checkbox_choice')
+                var items = []
+                for (let i = 0; i < checkboxs.length; i++) {
+                    if (checkboxs[i].checked) {
+                        items.push(checkboxs[i].value)
+                    }
+                }
+                $('#delete_id').val(JSON.stringify(items))
+                $('#delete_all').submit()
+            })
             let submit = false
             $('#search').click(function () {
                 if (submit) {
@@ -166,7 +192,7 @@
             $('#sort').change(function () {
                 $('#filterForm').submit()
             })
-            $('#date').change(function (){
+            $('#date').change(function () {
                 $('#filter-date').submit()
             })
         })
