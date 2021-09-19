@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
                 'image' => 'https://imgamp.travelmag.vn/center/1200x800/files/thuthuy/2020/06/02/lau-chay-lang-dai-hoc-1510.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/12/lau-chay-chua-cay.jpg,https://img-global.cpcdn.com/recipes/095364a083a6e123/1200x630cq70/photo.jpg,https://cdn.tgdd.vn/Files/2019/08/17/1188661/lau-thai-chay-chua-chua-cay-cay-vua-an-vua-hit-ha-khen-ngon-202107231006472731.jpg',
                 'price' => 270000,
                 'name' => 'lẩu chay Thái chua cay',
-                'description' => '<p>C&aacute;ch nấu lẩu Th&aacute;i chay kh&aacute; đơn giản với đậu hũ, c&aacute;c loại nấm v&agrave; rau ăn k&egrave;m. Đ&acirc;y l&agrave; m&oacute;n ăn chay thanh đạm, rất ph&ugrave; hợp để l&agrave;m mới những bữa ăn h&agrave;ng ng&agrave;y. Ngo&agrave;i ra lẩu Th&aacute;i chay cũng l&agrave; m&oacute;n ăn bổ sung nhiều dưỡng chất cho những người ăn chay trường cần bổ sung năng lượng.</p>,<p><strong>Set 01 lẩu chay th&aacute;i chua cay</strong>:</p>
+                'description' => '<p><strong>Set 01 lẩu chay th&aacute;i chua cay</strong>:</p>
 
 <p>-Nem cuốn: 3 chiếc d&agrave;i</p>
 
@@ -49,7 +49,7 @@ class ProductSeeder extends Seeder
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-1.jpg,https://massageishealthy.com/wp-content/uploads/2019/08/cach-nau-lau-chay-chua-ngot-thap-cam-ngon-nhat-don-gian-thumb.jpg,https://i.ytimg.com/vi/JKXvN_TYw38/maxresdefault.jpg,https://cdn.tgdd.vn/Files/2019/12/16/1227037/thanh-dam-bo-mat-cuoi-tuan-voi-2-mon-lau-nam-chay-thom-ngon-don-gian-va-de-lam-9.jpg',
                 'price' => 450000,
                 'name' => 'Lẩu chay nấm kiểu Nhật',
-                'description' => '<p>Lẩu như một m&oacute;n ăn kh&ocirc;ng thể thiếu trong cuộc sống của người Việt, d&ugrave; l&agrave; m&ugrave;a đ&ocirc;ng hay m&ugrave;a h&egrave;, d&ugrave; tiết trời ấm &aacute;p hay r&eacute;t buốt. C&ograve;n điều g&igrave; tuyệt vời hơn khi ngồi qu&acirc;y quần b&ecirc;n bạn b&egrave;, người th&acirc;n quanh nồi lẩu n&oacute;ng hổi, c&ugrave;ng c&oacute; những ph&uacute;t gi&acirc;y qu&yacute; gi&aacute; v&agrave; vui vẻ c&ugrave;ng nhau. C&oacute; thể n&oacute;i, &ldquo;văn h&oacute;a lẩu&rdquo; đ&atilde; đi s&acirc;u v&agrave;o trong tiềm thức của người Việt Nam, trở th&agrave;nh một thứ &ldquo;gia vị&rdquo; kh&ocirc;ng thể thiếu trong ẩm thực người Việt. Thế nhưng, trong cuộc sống hiện nay, phần lớn c&aacute;c m&oacute;n lẩu được phục vụ l&agrave; lẩu mặn. Ch&iacute;nh v&igrave; vậy, những người ăn chay thường gặp kh&oacute; khăn để thưởng thức m&oacute;n lẩu trọn vẹn.Được chế biến từ những loại nấm đầy hương vị như nấm mỡ g&agrave;, nấm hương, nấm rơm.v.v. m&oacute;n lẩu chay với nấm n&agrave;y đem đến một hương vị ri&ecirc;ng kh&ocirc;ng đ&acirc;u c&oacute; được đến với người d&ugrave;ng. Với nước lẩu chay được l&agrave;m ho&agrave;n to&agrave;n từ c&aacute;c loại rau củ tươi ngon; sự trong, thanh m&aacute;t, ngọt vị của nước lẩu chay ch&iacute;nh l&agrave; điều sẽ g&acirc;y ấn tượng với bạn từ ban đầu. Đặc biệt, phần nguy&ecirc;n liệu nh&uacute;ng lẩu chay, bao gồm hơn 5 loại nấm thi&ecirc;n nhi&ecirc;n kh&aacute;c nhau, được sơ chế kỹ trước khi đưa l&ecirc;n; sẽ g&oacute;p phần mang đến cho thực kh&aacute;ch sự phong ph&uacute; khi d&ugrave;ng bữa, một liều thuốc bổ gi&uacute;p tiếp th&ecirc;m năng lượng cho người ăn sau những ng&agrave;y l&agrave;m việc mệt mỏi.</p>,<p><strong>Set lẩu nấm kiểu Nhật gồm c&oacute; :</strong></p>
+                'description' => '<p><strong>Set lẩu nấm kiểu Nhật gồm c&oacute; :</strong></p>
 
 <p>-&nbsp; M&oacute;n khai vị: Nem T&acirc;m Tịnh gi&ograve;n rụm v&agrave; Salad Rong Biển Tươi Với Nấm</p>
 
@@ -68,8 +68,7 @@ class ProductSeeder extends Seeder
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-2(3).jpg,https://suckhoedoisong.qltns.mediacdn.vn/Images/thanhloan/2017/01/03/cach-lua-chon-rau-cho-phu-hop-voi-tung-loai-lau9.jpg,https://cafefcdn.com/2019/11/25/photo-3-15746461607551940049705.jpeg,https://afamilycdn.com/2019/12/1/photo-1575136571529-15751365715401305251893.png',
                 'price' => 21000,
                 'name' => 'Lẩu chay chua cay cải ngọt',
-                'description' => '<pre>
-Vị chua cay nồng n&agrave;n trong c&aacute;c m&oacute;n lẩu chay thường khiến những người ăn th&iacute;ch th&uacute;. Dưới đ&acirc;y l&agrave; một c&ocirc;ng nấu m&oacute;n lẩu chay chua cay đơn giản, gi&uacute;p bạn tiết kiệm thời gian trong kh&acirc;u chuẩn bị c&aacute;c m&oacute;n chay ngon v&agrave;o những khoảng thời gian bận rộn.</pre>,<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
+                'description' => '<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
 
 <p>&nbsp;</p>
 
@@ -93,7 +92,20 @@ Vị chua cay nồng n&agrave;n trong c&aacute;c m&oacute;n lẩu chay thường
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-3.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2019/06/lau-mam-chay.jpg,https://cdn.tgdd.vn/2020/09/CookProduct/CachNauLAUMAMCHAYTHOMNGONMonAnChayBaMeQue0-17screenshot-1200x676.jpg,https://haithuycatering.com/image/5c385c9451046d693ead04ee/original.jpg',
                 'price' => 340000,
                 'name' => 'Lẩu chay mắm',
-                'description' => '<p>C&oacute; một điều kh&aacute; lạ l&agrave; miền T&acirc;y kh&ocirc;ng c&oacute; m&ugrave;a đ&ocirc;ng. Tuy nhi&ecirc;n, những m&oacute;n lẩu chay nơi đ&acirc;y lại rất ngon v&agrave; ấm &aacute;p như t&igrave;nh người ở đ&oacute;.Bạn sẽ cảm thấy thật tuyệt vời khi được thưởng thức nồi lẩu n&agrave;y.Nước d&ugrave;ng đun từ hoa boa r&ocirc;, chao, quyện với mắm đậu chay đặc chế l&agrave;m cho hương vị của m&oacute;n ăn như &ldquo;t&uacute;m lấy&rdquo; người d&ugrave;ng, th&ocirc;i th&uacute;c con người ta tiến đến v&agrave; thưởng thức m&oacute;n ăn. Rau củ tưới được nh&uacute;ng v&agrave;o nước d&ugrave;ng lẩu chay mắm, khi ch&iacute;n, mang theo c&aacute;i vị mắn ngọt hiếm nơi đ&acirc;u c&oacute; được. Để rồi khi ăn, ch&uacute;t dư vị vẫn c&ograve;n đọng tr&ecirc;n đầu lưỡi, l&agrave;m thực kh&aacute;ch kh&oacute; c&oacute; thể qu&ecirc;n được</p>.',
+                'description' => '<p><strong>Set ăn Họp mặt d&agrave;nh cho 06 người bao gồm:</strong></p>
+
+<p>-B&aacute;nh tr&aacute;ng -Trảng B&agrave;ng cuốn thịt ba chỉ quay / b&ograve; tơ</p>
+
+<p>-Củ ChiB&ograve; xi&ecirc;n tăm</p>
+
+<p>-.Cơm ch&aacute;y kho quẹt</p>
+
+<p>-Nem nướng lụi</p>
+
+<p>-Rau thập cẩm kho quẹt</p>
+
+<p>-Lẩu mắm miền T&acirc;y</p>
+',
                 'category_id' => '8',
                 'created_at' => Carbon::now()
             ],[
@@ -101,7 +113,7 @@ Vị chua cay nồng n&agrave;n trong c&aacute;c m&oacute;n lẩu chay thường
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-4.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/12/lau-chay-chua-cay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2020/05/lau-nam-chay-hap-dan.jpg,https://lh3.googleusercontent.com/proxy/bB_Tz9q6dFFkhcVBUf5XG6e0ZBXuhS6-D5d9gwA6KxJ2pP5Xz-Bq6aQxX3Pn7LGH3_xUQA8wmoRjPORNIXTPM41ankFnUCWBEzbzv18yFXuVeHGTY219IKOQ09ELidvXMX-vJcvfkuZ6kkGEWBq4h-OKGOCv2J8',
                 'price' => 420000,
                 'name' => 'Lẩu chay Vị Lai',
-                'description' => '<p>Trong nhịp sống bộn bề của x&atilde; hội hiện đại, việc tự chuẩn bị những m&oacute;n lẩu chay ngon cho bữa ăn thường tốn nhiều thời gian từ chuẩn bị nguy&ecirc;n liệu đến kh&acirc;u chế biến. Đặc biệt, với những người bị hạn chế về thời gian. Ch&iacute;nh v&igrave; vậy, những nh&agrave; h&agrave;ng phục vụ lẩu chay như Vị Lai l&agrave; điểm đến ho&agrave;n hảo cho bạn.Đối với những người y&ecirc;u th&iacute;ch ẩm thực chay, việc t&igrave;m được những địa điểm để thưởng thức lẩu chay ngon l&agrave; điều kh&aacute; kh&oacute; khăn. Tại H&agrave; Nội, dọc c&aacute;c con phố từ lớn đến nhỏ, c&aacute;c nh&agrave; h&agrave;ng thưởng chỉ phục vụ những m&oacute;n lẩu mặn để đ&aacute;p ứng nhu cầu của số đ&ocirc;ng. Ch&iacute;nh v&igrave; thế, số lượng những cửa h&agrave;ng phục vụ lẩu chay l&agrave; rất &iacute;t. Với mong muốn mang lại trải nghiệm ho&agrave;n hảo nhất về ẩm thực chay, Vị Lai đ&atilde; đưa v&agrave;o thực đơn của nh&agrave; h&agrave;ng những m&oacute;n lẩu chay bổ dưỡng, đầy hương vị. Với thực đơn lẩu chay đặc sắc, Vị Lai mong rằng những ph&uacute;t gi&acirc;y hội họp, qu&acirc;y quần b&ecirc;n người th&acirc;n v&agrave; bạn b&egrave; sẽ th&ecirc;m phần ấm c&uacute;ng. Điều m&agrave; nh&agrave; h&agrave;ng &ldquo;thắp l&ecirc;n&rdquo; sẽ kh&ocirc;ng chỉ l&agrave; một m&oacute;n lẩu chay đơn thuần, m&agrave; đ&oacute; ch&iacute;nh l&agrave; hơi ấm, t&igrave;nh cảm giữa bạn v&agrave; người th&acirc;n b&ecirc;n b&agrave;n ăn.</p>,<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
+                'description' => '<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
 
 <p>-Một số loại nấm: nấm kim ch&acirc;m, nấm đ&ocirc;ng c&ocirc;, nấm đ&ugrave;i g&agrave;, nấm rơm, nấm linh chi, nấm b&agrave;o ngư&hellip;</p>
 
@@ -122,8 +134,7 @@ Vị chua cay nồng n&agrave;n trong c&aacute;c m&oacute;n lẩu chay thường
                 'image' => 'https://wna.cdnxbvn.com/wp-content/uploads/2020/07/cach-nau-lau-thai-chay.jpg,https://massageishealthy.com/wp-content/uploads/2018/08/cach-nau-lau-thai-chay-5.jpg,https://img-global.cpcdn.com/recipes/3061dd97a2586a7e/1200x630cq70/photo.jpg,https://i.ytimg.com/vi/Bw7GzxTMb28/hqdefault.jpg',
                 'price' => 500000,
                 'name' => 'Lẩu chay thái',
-                'description' => '<pre>
-Lẩu l&agrave; m&oacute;n ăn đ&atilde; qu&aacute; quen thuộc trong nền ẩm thực Việt Nam, từ xuất hiện trong thực đơn m&oacute;n ngon đ&atilde;i tiệc lớn cho đến những bữa ăn nhỏ h&agrave;ng ng&agrave;y. V&agrave;o những dịp gặp gỡ bạn b&egrave;, tụ họp gia đ&igrave;nh, lẩu l&agrave; m&oacute;n ăn dễ ăn với nhiều loại &ldquo;topping&rdquo; đa dạng.Với c&aacute;c th&agrave;nh phần quen thuộc xung quanh ta.</pre>,<p><strong>Set lẩu th&aacute;i gồm c&oacute; :</strong></p>
+                'description' => '<p><strong>Set lẩu th&aacute;i gồm c&oacute; :</strong></p>
 
 <p>- Ng&ocirc; chi&ecirc;n</p>
 
@@ -144,14 +155,7 @@ Lẩu l&agrave; m&oacute;n ăn đ&atilde; qu&aacute; quen thuộc trong nền �
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/05/lau-chay-chua-cay.jpg,https://i.ytimg.com/vi/kDV1HxG5AgQ/maxresdefault.jpg,https://cdn.beptruong.edu.vn/wp-content/uploads/2015/11/mon-lau-nam-chay.jpg,https://cdn.daotaobeptruong.vn/wp-content/uploads/2019/07/hoc-nau-lau-nam-chay.jpg',
                 'price' => 340000,
                 'name' => 'LẨU NẤM THIÊN NHIÊN CHUA CAY',
-                'description' => '<pre>
-Mỗi một v&ugrave;ng đất, thi&ecirc;n nhi&ecirc;n đều ban tặng cho con người những sản vật đặc biệt khiến chỉ cần nhắc đến th&ocirc;i ch&uacute;ng ta đều c&oacute; thể biết đ&oacute; l&agrave; nơi n&agrave;o.
-Miền T&acirc;y Nam Bộ l&agrave; một b&igrave;nh nguy&ecirc;n bao la b&aacute;t ng&aacute;t với kh&iacute; hậu đặc trưng của v&ugrave;ng nhiệt đới nắng d&atilde;i, mưa dầu. Tuy khắc nghiệt l&agrave; thế, nhưng những sản vật nơi đ&acirc;y lại rất đa dạng, dồi d&agrave;o. Ch&iacute;nh vậy m&agrave; về miền T&acirc;y, người ta thường nhắc đến một số m&oacute;n ăn kho&aacute;i khẩu rất đặc trưng, trong đ&oacute; c&oacute; m&oacute;n &quot;Lẩu chua cay hoa đồng nội&quot; với v&ocirc; số c&aacute;c loại hoa như b&ocirc;ng b&iacute;, so đũa, đi&ecirc;n điển, k&egrave;o n&egrave;o...
-V&agrave; giờ m&igrave;nh c&ugrave;ng l&agrave;m ngay th&ocirc;i nha!
-Nồi lẩu c&oacute; vị cay v&agrave; thơm đặc trưng của RIỀNG v&agrave; ớt, m&agrave;u sắc hấp dẫn, vị chua cay, mặn ngọt h&agrave;i h&ograve;a...tạo n&ecirc;n hương vị đặc sắc, khiến người d&ugrave;ng một lần rồi chẳng thể n&agrave;o qu&ecirc;n...
-Trời mưa lạnh lạnh, cả nh&agrave; qu&acirc;y quần b&ecirc;n nồi lẩu n&oacute;ng, cứ h&iacute;t h&agrave;, xu&yacute;t xoa rồi r&iacute;u r&iacute;t kể chuyện c&ugrave;ng nhau...cảm gi&aacute;c thật ấm &aacute;p v&agrave; hạnh ph&uacute;c!
-H&atilde;y l&agrave;m v&agrave; cảm nhận c&ugrave;ng m&igrave;nh nh&eacute; cả nh&agrave;!
-Ch&uacute;c mọi người th&agrave;nh c&ocirc;ng!</pre>,<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>- Khoai t&acirc;y chi&ecirc;n : 1 đĩa</p>
 
@@ -183,8 +187,7 @@ Ch&uacute;c mọi người th&agrave;nh c&ocirc;ng!</pre>,<p><strong>&nbsp;Chi t
                 'image' => 'https://img-global.cpcdn.com/recipes/e798ffefbc386805/680x482cq70/l%E1%BA%A9u-nui-chay-recipe-main-photo.jpg,https://media.cooky.vn/recipe/g4/32925/s800x500/cooky-recipe-636653044147376593.jpg,https://img-global.cpcdn.com/recipes/89bba8ad31d99304/680x482cq70/nui-chay-recipe-main-photo.jpg,https://i.ytimg.com/vi/uDcVM2mOlOw/maxresdefault.jpg',
                 'price' => 320000,
                 'name' => 'Lẩu nui chay',
-                'description' => '<pre>
-Nui x&agrave;o chay l&agrave; m&oacute;n ăn thanh đạm, dễ l&agrave;m nhưng vẫn mang hương vị thơm ngon đặc biệt. Đ&acirc;y chắc chắn sẽ l&agrave; lựa chọn tuyệt vời để l&agrave;m mới thực đơn cho bữa cơm nh&agrave; bạn. Bắt tay v&agrave;o c&ugrave;ng chế biến m&oacute;n ăn n&agrave;y với c&aacute;ch l&agrave;m m&oacute;n nui x&agrave;o chay được ẩm thực đồ chay giới thiệu nh&eacute;!V&agrave; chắc chắn trong số m&oacute;n ăn chế biến từ nui sẽ c&oacute; m&oacute;n lẩu nui chay</pre>,<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>- khoai t&acirc;y, khoai m&ocirc;n, c&agrave; rốt (mỗi loại 1 củ)</p>
 
@@ -210,8 +213,7 @@ Nui x&agrave;o chay l&agrave; m&oacute;n ăn thanh đạm, dễ l&agrave;m nhưn
                 'image' => 'https://wna.cdnxbvn.com/wp-content/uploads/2021/01/lau-chao-khoai-mon-nau-chay.jpg,https://cdn.tgdd.vn/2021/07/CookProduct/cooky-recipe-cover-r51860-1200x676.jpg,https://i.ytimg.com/vi/yRqR-4X3w6M/maxresdefault.jpg,https://lh3.googleusercontent.com/proxy/BHUlWUCj7PkYfF47SiOKGuzcSecTxBENABRv6lZ7z5b7Uh4vDwSEbQI_ZP3NT3khoXSJ0t-3fo8GoTo7bq1W1jG4r6xlvLCOedwkwM-Px5BqJ7FugRkRMV58G2WZAfo-7YAmJyXm',
                 'price' => 210000,
                 'name' => ' lẩu khoai môn nấu chao chay',
-                'description' => '<pre>
-Món l&acirc;̉u chao khoai m&ocirc;n là sự lựa chọn tuy&ecirc;̣t vời cho những ng&agrave;y ng&aacute;n mặn th&egrave;m m&oacute;n chay thanh đạm. Vị ngọt của nước dùng béo ng&acirc;̣y của chao, bùi bùi của khoai m&ocirc;n, beo béo của đ&acirc;̣u hủ, mùi thơm của gừng k&ecirc;́t hợp với n&acirc;́m ngon ngọt và các loại rau, tạo th&agrave;nh một n&ocirc;̀i l&acirc;̉u nóng h&ocirc;̉i với mẹt rau tươi xanh trong thực đơn c&aacute;c m&oacute;n chay đ&atilde;i tiệc khi&ecirc;́n cho mọi người kh&ocirc;ng th&ecirc;̉ ch&ocirc;́i từ.</pre>,<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>- M&iacute;a 1 kh&uacute;c, ng&ocirc; 1 bắp</p>
 
@@ -229,7 +231,7 @@ Món l&acirc;̉u chao khoai m&ocirc;n là sự lựa chọn tuy&ecirc;̣t v�
                 'image' => 'https://cdn.huongnghiepaau.com/wp-content/uploads/2019/01/mon-canh-kim-chi-chay.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2019/03/lau-kim-chi-hai-san.jpg,https://cachlammonngon.vn/wp-content/uploads/2016/08/lau-nam-kim-chi.jpg,https://emoi.vn/wp-content/uploads/2018/11/lau-kim-chi-1.jpg',
                 'price' => 310000,
                 'name' => 'Lẩu nấm kim chi',
-                'description' => '<p>M&ugrave;a chay, quanh đi quẩn lại cũng chỉ mỗi rau với đậu, bạn đang kh&ocirc;ng biết phải ăn g&igrave;? V&agrave; bạn cũng ch&iacute;nh l&agrave; một t&iacute;n đồ ẩm thực H&agrave;n Quốc. Vậy tại sao bạn kh&ocirc;ng thử nấu ngay m&oacute;n lẩu kim chi chay? Với nguy&ecirc;n liệu đơn giản, m&oacute;n lẩu xuất xứ H&agrave;n Quốc n&agrave;y, hứa hẹn sẽ l&agrave;m phong ph&uacute; thực đơn bữa ăn gia đ&igrave;nh v&agrave; gi&uacute;p bạn chinh phục được vị gi&aacute;c của cả những người kh&oacute; t&iacute;nh nhất đấy</p>,<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>+ Lẩu nấm : nấm hương tươi, nấm hải sản tươi, nấm kim ch&acirc;m, nấm s&ograve; trắng. Ngo&agrave;i ra c&oacute;: v&aacute;ng đậu, đậu phụ, ng&ocirc; tươi, c&agrave; chua, rau cải, rau muống, mồng tơi, c&agrave; rốt, khoai t&acirc;y.<br />
 + Nem cuốn : 4 chiếc<br />
