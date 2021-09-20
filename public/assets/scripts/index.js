@@ -18,26 +18,38 @@ function myFunction() {
 }
 
 ////////////////////////////////////////////////////// FORM DANG NHAP///////////////////////////////////////////
+var login = document.getElementById('login');
+var regis = document.getElementById('regis');
+var dropdow = document.getElementById('dropdownMenuLink');
+var dropdowMenu = document.getElementById('dropd-menu');
 
 var LoginForm = document.getElementById("log-form");
 var RegForm = document.getElementById("reg-form");
 var Indicator = document.getElementById("indicator");
 var FormAccount = document.getElementById("form-account");
 
-function register() {
+regis.onclick = function () {
     RegForm.style.transform = "translateX(-500px)";
     LoginForm.style.transform = "translateX(-500px)";
     Indicator.style.transform = "translateX(236px)";
-    FormAccount.style.height = "590px";
+    FormAccount.style.height = "710px";
     RegForm.style.opacity = "0";
     RegForm.style.opacity = "1";
 }
 
-function login() {
+login.onclick = function () {
     RegForm.style.transform = "translateX(0px)";
     LoginForm.style.transform = "translateX(0px)";
     Indicator.style.transform = "translateX(83px)";
-    FormAccount.style.height = "365px"
+    FormAccount.style.height = "430px"
     LoginForm.style.opacity = "0";
     LoginForm.style.opacity = "1";
 }
+document.getElementById("dropdownMenuLink").onclick = function() {dropdowUser()};
+
+function dropdowUser() {
+    document.getElementById("dropd-menu").classList.toggle("show");
+}
+
+
+

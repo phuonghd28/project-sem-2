@@ -13,58 +13,133 @@
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @yield('custom_css')
     <title>@yield('title')</title>
+
 </head>
 <body>
 <div class="main">
     <!-- Header -->
     <header id="myHeader" class="header-main">
+
         <div class="container">
             <div class="row header-height">
                 <!-- Logo -->
                 <div class="col-lg-2 col-sm-3 col-3 align-self-center">
+                    <!--icon-bars-->
+                    <label for="nav-mobile-input" class="nav-mobil-bars"><i class="fas fa-bars"></i></label>
                     <div class="logo">
                         <a href="#">
                             <img style="width: 90%;height: 87px" src="/assets/images/logo2.png">
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-10 col-9 order-lg-3 align-self-center">
+                <div class="col-lg-10 col-9 order-lg-3 logo-center align-self-center">
                     <div class="d-flex justify-content-end">
-                        <div class="main-nav col d-lex align-self-center">
+                        <div class="main-nav col d-lex align-self-center menu-header-lap">
                             <a class="nav-item active t-home" href="{{ route('index') }}">Home</a>
-                            <a class="nav-item t-product" href="{{route('products')}}">Product</a>
+                            <div class="dropdown d-inline">
+                                <a  class="nav-item t-product dropdown-toggle" href="{{route('products')}}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product</a>
+                                <div class="dropdown-menu p-0" style="border-radius: 0;top:55px;left: 0" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item dropdown-link" href="#">Link 1</a>
+                                    <a class="dropdown-item dropdown-link" href="#">Link 2</a>
+                                    <a class="dropdown-item dropdown-link" href="#">Link 3</a>
+                                </div>
+                            </div>
                             <a class="nav-item t-blog" href="{{route('blog')}}">Blog</a>
                             <a class="nav-item t-abouts" href="{{route('abouts')}}">Abouts</a>
                             <a class="nav-item t-contact" href="{{route('contact')}}">Contact</a>
-
                         </div>
+{{---------------------------------------------------nav mobile-----------------------------------------}}
+                        <input type="checkbox" class="nav__input" id="nav-mobile-input">
+                        <label for="nav-mobile-input" class="nav__overlay"></label>
+                        <div class="nav-mobile">
+                            <label for="nav-mobile-input" class="nav-mobile-close">
+                                <i class="fas fa-times" style="margin: 7px 0;"></i>
+                            </label>
+                            <div class="nav-mobile-list">
+                                <div class="pd-menu-mb">
+                                    <div class="wrap-logo-mb">
+                                        <a href="{{route('index')}}" class="logo-mobile">
+                                            <img style="width: 100%;" src="https://chaysach.com/wp-content/uploads/2017/02/logo.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="pd-top-nav-mn">
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-home"></i>
+                                            <a class="nav-mobile-link" href="{{ route('index') }}">Trang chủ</a>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-hamburger" style="margin-top: 4px;position: absolute;"></i>
+                                            <div class="dropdown transition-drop" style="margin-left: 35px;position: static;width: 86%;">
+                                                <a class="nav-mobile-link dropdown-toggle" href="{{route('products')}}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Sản phẩm</a>
+                                                <ul class="dropdown-menu position-static" style="border-radius: 0;border: 0;padding: 0;">
+                                                    <li><a href="#">Bánh chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-blog"></i>
+                                            <a class="nav-mobile-link" href="{{route('blog')}}">Blog Chay</a>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-address-card"></i>
+                                            <a class="nav-mobile-link" href="{{route('abouts')}}">Về com chay</a>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <a class="nav-mobile-link" href="{{route('listCart')}}">Giỏ hàng</a>
+                                        </div>
+                                        <div class="wrap-mobile-link">
+                                            <i class="fas fa-comment-alt"></i>
+                                            <a class="nav-mobile-link" href="{{route('contact')}}">Gửi phản hồi</a>
+                                        </div>
+                                        @if(\Illuminate\Support\Facades\Auth::check())
+                                            <div class="wrap-mobile-link">
+                                                <i class="fas fa-user-circle"></i>
+                                                <a class="nav-mobile-link" href="{{route('detail-profile',\Illuminate\Support\Facades\Auth::user()->id)}}">{{\Illuminate\Support\Facades\Auth::user()->username}}</a>
+                                            </div>
+                                            <div class="wrap-mobile-link border-0">
+                                                <i class="fas fa-power-off"></i>
+                                                <a class="nav-mobile-link" href="{{route('logout')}}">Đăng xuất</a>
+                                            </div>
+                                        @else
+                                            <div class="wrap-mobile-link border-0">
+                                                <i class="fas fa-power-off"></i>
+                                                <a class="nav-mobile-link" href="{{route('logout')}}">Đăng xuất</a>
+                                            </div>
+                                        @endif
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
                         <div class="shopping-cart d-flex justify-content-center">
                             <div class="align-self-center">
                                 <a class="color-cart" href="{{route('listCart')}}"><i
                                         class="fas fa-shopping-cart"> {{\Gloudemans\Shoppingcart\Facades\Cart::content()->count()}}</i></a>
                             </div>
                         </div>
-                        <div class="wrap-log-in d-flex">
+                        <div class="wrap-log-in">
                             <div class="log-in align-self-center">
                                 @if(\Illuminate\Support\Facades\Auth::check())
                                     <button class="dropdown-toggle"
                                             style="background: none;border: none; padding: 10px 14px;" type="button"
                                             role="button" id="dropdownMenuLink" data-toggle="dropdown"
                                             aria-haspopup="true" aria-expanded="false">
-                                        <a class="color-cart" >
+                                        <a class="color-cart">
                                             <b style="font-size: 14px">{{\Illuminate\Support\Facades\Auth::user()->username}}</b>
                                         </a>
                                     </button>
-
-
-                                    <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="/"><i class="far fa-user ic-user mr-2"></i>Tài
+                                    <div id="dropd-menu" class="dropdown-menu p-0" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" href="{{route('detail-profile',\Illuminate\Support\Facades\Auth::user()->id)}}"><i class="far fa-user ic-user mr-2"></i>Tài
                                             khoản</a>
-                                        <a class="dropdown-item border-0" href="{{route('logout')}}"><i
+                                        <a class="dropdown-item border-0" style="border-radius: 0 0 4px 4px;" href="{{route('logout')}}"><i
                                                 class="fas fa-power-off mr-2 ic-logout"></i>Đăng xuất</a>
                                     </div>
                                 @else
-                                    <button style="background: none;border: none; padding: 10px 14px;" type="button"
+                                    <button type="submit" style="background: none;border: none; padding: 10px 14px;"
                                             class="btn-account" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <a class="color-cart"><b style="font-size: 14px;display: flex">Đăng nhập</b></a>
                                     </button>
@@ -96,83 +171,68 @@
                         </div>
                     @endif
                     <div class="heading text-center pb-3">
-                        <span onclick="login()" class="mb-2">Đăng nhập</span>
-                        <span onclick="register()" class="mb-2">Đăng kí</span>
+                        <span id="login" class="mb-2">Đăng nhập</span>
+                        <span id="regis" class="mb-2">Đăng kí</span>
                         <hr id="indicator">
                     </div>
-                    <form id="log-form" action="{{route('login')}}" method="post">
+                    <form name="login" id="log-form" action="{{route('login')}}" method="post">
                         @csrf
-                        <div class="input-user-name mb-4">
+                        <div class="input-user-name mb-4 validate">
                             <input class="user-name" type="text" placeholder="Tên người dùng" name="username">
                             <div class="icon-w3">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
-                            @error('username')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
                         </div>
 
-                        <div class="input-pass mb-4">
+                        <div class="input-pass mb-4 validate">
                             <input class="pass" type="password" placeholder="Mật khẩu" name="password">
                             <div class="icon-w3">
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                             </div>
-                            @error('password')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
                         </div>
                         <button class="btn-login mt-2"><b>Đăng nhập</b></button>
                     </form>
                     <form id="reg-form" action="{{ route('register') }}" method="post">
                         @csrf
-                        <div class="input-user-name d-flex m-0 mb-4">
-                            <input style="margin-right: 18px" class="user-name input-form-reg d-inline-block"
-                                   type="text" placeholder="First Name" name="first_name">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
-                            <input type="text" class="justify-content-end pass d-inline-block input-form-reg"
-                                   placeholder="Last Name" name="last_name">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
+                        <div class="input-user-name d-flex m-0 mb-4 justify-content-sm-between">
+                            <div style="width: 48%">
+                                <input style="margin-right: 18px" class="user-name input-form-reg d-inline-block"
+                                       type="text" placeholder="First Name" name="first_name"/>
+                            </div>
+                            <div style="width: 48%">
+                                <input type="text" class="justify-content-end pass d-inline-block input-form-reg"
+                                       placeholder="Last Name" name="last_name"/>
+                            </div>
                         </div>
                         <div class="input-pass mb-4">
-                            <input class="pass" type="text" placeholder="Address" name="address">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
+                            <input class="pass" type="text" placeholder="Address" name="address"/>
                         </div>
-                        <div class="input-user-name d-flex m-0 mb-4">
-                            <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
-                                   type="text"
-                                   placeholder="User name" name="username">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
-                            <input type="text" class="input-form-reg justify-content-end pass d-inline-block"
-                                   placeholder="Phone" name="phone">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
+                        <div class="input-user-name d-flex m-0 mb-4 justify-content-sm-between">
+                            <div style="width: 48%">
+                                <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
+                                       type="text"
+                                       placeholder="User name" name="username"/>
+                            </div>
+                            <div style="width: 48%">
+                                <input type="text" class="input-form-reg justify-content-end pass d-inline-block"
+                                       placeholder="Phone" name="phone"/>
+                            </div>
                         </div>
                         <div class="input-pass mb-4">
-                            <input class="pass" type="text" placeholder="Email" name="email">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
+                            <input class="pass" type="text" placeholder="Email" name="email"/>
+
                         </div>
-                        <div class="input-user-name d-flex m-0 mb-4">
-                            <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
-                                   type="password" placeholder="Password" name="password">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
-                            <input class="input-form-reg justify-content-end pass d-inline-block" type="password"
-                                   placeholder="Re-password" name="password_confirmation">
-                            @error('first_name')
-                            <div class="text-danger my-2"> * {{$message}}</div>
-                            @enderror
+                        <div class="input-user-name d-flex m-0 mb-4 justify-content-sm-between">
+                            <div style="width: 48%">
+                                <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
+                                       type="password" placeholder="Password" name="password"/>
+                            </div>
+
+                            <div style="width: 48%">
+                                <input class="input-form-reg justify-content-end pass d-inline-block" type="password"
+                                       placeholder="Re-password" name="password_confirmation"/>
+                            </div>
+
                         </div>
                         <button class="btn-login mt-2"><b>Đăng ký</b></button>
                     </form>
@@ -189,7 +249,7 @@
                 <div class="row pt-5 wrap-footer">
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <h5 class="fw-bold mb-4 logo">
-                            <a href="{{route('index')}}">
+                            <a href="{{route('index')}}" class="d-inline-block">
                                 <img style="width: 50%;height:80px;margin-right: 20px" src="/assets/images/logo1.png">
                             </a>
                         </h5>
@@ -198,7 +258,7 @@
                         <p>Dịch vụ tốt nhất.</p>
                     </div>
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h5 class="fw-bold mb-4">
+                        <h5 class="fw-bold mb-4" style="color: #c5c6c7">
                             Danh sách
                         </h5>
                         <p>
@@ -215,7 +275,7 @@
                         </p>
                     </div>
                     <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 support-link">
-                        <h5 class="fw-bold mb-4">
+                        <h5 class="fw-bold mb-4" style="color: #c5c6c7">
                             Hỗ trợ
                         </h5>
                         <p>
@@ -226,7 +286,7 @@
                         </p>
                     </div>
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h5 class="fw-bold mb-4">
+                        <h5 class="fw-bold mb-4" style="color: #c5c6c7">
                             Liên hệ
                         </h5>
                         <p><i class="fas fa-home me-3"></i>Số 8 Tôn Thất Thuyết, HN</p>
@@ -246,11 +306,8 @@
         </div>
     </footer>
 </div>
-<script src="assets/scripts/index.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/jquery.validate.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -260,6 +317,105 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+<script src="/assets/scripts/index.js"></script>
+<script>
+    $("#log-form").validate({
+        rules: {
+            username: {
+                required: true
+            },
+            password: {
+                required: true
+            }
+        },
+        messages: {
+            username: {
+                required: '* Vui lòng nhập username.',
+            },
+            password: {
+                required: '* Vui lòng nhập mật khẩu.',
+            },
+        },
+        submitHandler: function (form) {
+            $(form).submit();
+        }
+    });
+    $("#reg-form").validate({
+        rules: {
+            first_name: {
+                required: true
+            },
+            last_name: {
+                required: true
+            },
+            address: {
+                required: true
+            },
+            username: {
+                required: true
+            },
+            phone: {
+                required: true,
+                number: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            password: {
+                required: true,
+                minlength: 8
+            },
+            password_confirmation: {
+                required: true,
+                minlength: 8
+            }
+        },
+        messages: {
+            first_name: {
+                required: "* Vui lòng nhập first name"
+            },
+            last_name: {
+                required: '* Vui lòng nhâp last name'
+            },
+            address: {
+                required: '* Vui lòng nhập địa chỉ'
+            },
+            username: {
+                required: '* Vui lòng nhập user name'
+            },
+            phone: {
+                required: '* Vui lòng nhập số điện thoại',
+                number: '* Vui lòng nhập đúng số điện thoại',
+            },
+            email: {
+                required: '* Vui lòng nhập địa chỉ email',
+                email: '* Vui lòng nhập đúng định dạng email'
+            },
+            password: {
+                required: '* Vui lòng nhập mật khẩu',
+                minlength: '* Vui lòng nhập ít nhất 8 kí tự'
+            },
+            password_confirmation: {
+                required: '* Vui lòng nhập mật khẩu',
+                minlength: '* Vui lòng nhập ít nhất 8 kí tự'
+            }
+        },
+        submitHandler: function (form) {
+            $(form).submit();
+        }
+    });
+
+    // $(document).ready(function () {
+    //     $("#hover-product").hover(function () {
+    //             $(".dropdown-content").addClass("d-block");
+    //         },
+    //         // function () {
+    //         //     $(".dropdown-content").removeClass("d-block")
+    //         // }
+    //     );
+    // });
+</script>
 @yield('custom_js')
 </body>
 </html>

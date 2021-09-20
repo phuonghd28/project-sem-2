@@ -63,6 +63,13 @@ class UserController extends Controller
         return view('admin/users/form',
             ['data' => $user]);
     }
+    public function detailProfile($id)
+    {
+        $user = User::find($id);
+
+        return view('clients/detail-profile',
+            ['list' => $user]);
+    }
 
     public function save($id, UserRequest $request)
     {

@@ -263,7 +263,7 @@ ul {
 }
 
 .res-2-map-product span {
-    font-size: 15px;
+    font-size: 16px;
     color: #757575;
     font-weight: 300;
 }
@@ -665,7 +665,7 @@ injected stylesheet:root {
     line-height: 21px;
     width: 22px;
     height: 22px;
-    background-color: #56eff5;
+    /*background-color: #56eff5;*/
     text-align: center;
     color: #fff;
     display: inline-block;
