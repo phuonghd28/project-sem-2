@@ -63,6 +63,13 @@ class ListOrderController extends Controller
             $order->status = $request->desire;
             $order->save();
         }
-        return back();
+        return back()->with(['status' => 'Update status success']);
+    }
+    public function deleteAll(Request $request){
+        foreach (json_decode($request->delete_id) as $item){
+            $order = Order::find($item);
+            $order->delete();
+        }
+        return back()->with(['status' => 'Delete order success']);
     }
 }

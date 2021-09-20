@@ -28,7 +28,8 @@ class ProductRequest extends FormRequest
             'price'=>'required',
             'description'=>'required',
             'image'=>'required',
-            'category_id'=>'required'
+            'category_id'=>'required',
+            'is_featured' => ''
         ];
         return $rules;
     }

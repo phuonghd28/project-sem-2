@@ -1,6 +1,4 @@
-
 h1, h2, h3, h4, h5, h6 {
-    color: #231900;
     text-decoration: none;
     line-height: 1.5;
     clear: both
@@ -47,12 +45,7 @@ ul {
     height: 150px;
     margin-right: auto;
     margin-bottom: -83px;
-    margin-left: auto;
-    transition: transform 0.5s;
-}
-.cate-images:hover{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transform: translateY(5px);
+    margin-left: auto
 }
 
 .category-items-new .category-main .category-text-box {
@@ -121,18 +114,6 @@ ul {
     margin-bottom: 55px;
     position: relative;
     z-index: 1
-}
-
-.head-title::after{
-    content: '';
-    background: #03C3C4FF;
-    width: 80px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 110%;
-    transform: translateX(-50%);
 }
 
 .bg-color {
@@ -263,7 +244,7 @@ ul {
 }
 
 .res-2-map-product span {
-    font-size: 16px;
+    font-size: 15px;
     color: #757575;
     font-weight: 300;
 }
@@ -387,14 +368,12 @@ ul {
     border-radius: 10px;
     width: 100%;
     margin-bottom: 30px;
-    transition: transform 0.5s;
 }
 
 .res-3-box:hover {
     cursor: pointer;
     transition: all .3s;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transform: translateY(5px);
 }
 
 .res-2-img {
@@ -657,41 +636,33 @@ injected stylesheet:root {
     border-bottom: 4px solid #00c6d7;
     color: #00c6d7;
 }
-
 .btn-adding {
     font-size: 20px;
     cursor: pointer;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 17px;
     width: 22px;
     height: 22px;
-    /*background-color: #56eff5;*/
+    background-color: #00c6d7;
     text-align: center;
     color: #fff;
     display: inline-block;
     border-radius: 50%;
 }
-
 .btn-adding:hover {
-    background-color: #03C3C4FF;
+    background-color: #09b0be;
 }
-
 .wrap-adding {
     width: 22px;
     height: 22px;
 }
-
 .wrap-adding a {
     display: inline-block;
 }
-
 .icon-box-text p {
     line-height: 1.6;
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 1rem;
     font-weight: 500;
-}
-.fas {
-    color: #03C3C4FF;
 }

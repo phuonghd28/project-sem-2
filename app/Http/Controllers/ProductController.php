@@ -75,6 +75,7 @@ class ProductController extends Controller
         $product->price = $request->price;
         $product->description = $request->description;
         $product->category_id = $request->category_id;
+        $product->is_featured = $request->is_featured;
         $product->save();
 
         return redirect()->route('listProduct')->with('success', 'Update thành công.');

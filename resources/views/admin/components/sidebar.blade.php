@@ -32,7 +32,7 @@
     <div class="app-sidebar__inner" style="margin: 20px">
         <ul class="vertical-nav-menu metismenu">
             <li class="sidebar_item" style="border: none!important;">
-                <a href="#" class="mm-active sidebar_item">
+                <a href="{{route('home')}}" class="sidebar_item">
                     <i class="metismenu-icon fas fa-chart-bar"></i>
                     Dashboard Example 1
                 </a>

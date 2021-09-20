@@ -20,6 +20,7 @@ Route::prefix('orders')->group(function (){
     Route::get('', [ListOrderController::class, 'list'])->name('listOrder');
     Route::get('delete/{id}',[ListOrderController::class,'delete'])->name('deleteOrder');
     Route::post('update_status',[ListOrderController::class,'update_status'])->name('updateStatus');
+    Route::get('delete_all', [ListOrderController::class,'deleteAll'])->name('deleteAll');
 });
 
 Route::prefix('users')->group(function(){
