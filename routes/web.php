@@ -51,8 +51,8 @@ Route::get('blog', function () {return view('clients.blog');})->name('blog');
 Route::get('contact', function () {return view('clients.contact');})->name('contact');
 Route::post('contact', [FeedBackController::class, 'store'])->name('store');
 
-Route::get('/products',[ProductClientController::class,'list'])->name('products');
-
+Route::get('products',[ProductClientController::class,'list'])->name('products');
+Route::get('detail-profile/{id}', [\App\Http\Controllers\UserController::class,'detailProfile'])->name('detail-profile');
 
 
 Route::post('login',[EntryController::class,'login'])->name('login');

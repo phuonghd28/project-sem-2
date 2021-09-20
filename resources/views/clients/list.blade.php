@@ -711,49 +711,6 @@
             color: var(--textcolor);
             background: var(--graycolor)
         }
-
-        h1 {
-            font-size: var(--h1size);
-            font-weight: var(--bweight);
-            font-family: var(--sfamily);
-            color: var(--headingcolor)
-        }
-
-        h2 {
-            font-size: var(--h2size);
-            font-weight: var(--bweight);
-            font-family: var(--sfamily);
-            color: var(--headingcolor)
-        }
-
-        h3 {
-            font-size: var(--h3size);
-            font-weight: var(--bweight);
-            font-family: var(--sfamily);
-            color: var(--headingcolor)
-        }
-
-        h4 {
-            font-size: var(--h4size);
-            font-weight: var(--mweight);
-            font-family: var(--pfamily);
-            color: var(--headingcolor)
-        }
-
-        h5 {
-            font-size: var(--h5size);
-            font-weight: var(--mweight);
-            font-family: var(--pfamily);
-            color: var(--headingcolor)
-        }
-
-        h6 {
-            font-size: var(--h6size);
-            font-weight: var(--mweight);
-            font-family: var(--pfamily);
-            color: var(--headingcolor)
-        }
-
         input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
             color: var(--pldrcolor);
             font-size: 15px;
@@ -1232,6 +1189,7 @@
             height: 45px;
             border: none;
             outline: none;
+            margin-right: 15px;
             border-radius: 3px;
             background: var(--whitecolor);
             padding: 0 150px 0 20px
@@ -1239,7 +1197,7 @@
 
         .search-form .btn {
             top: 0;
-            right: 0;
+            position: absolute;
             height: 45px;
             padding: 11px 32px
         }
