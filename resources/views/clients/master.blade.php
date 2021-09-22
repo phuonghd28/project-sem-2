@@ -15,13 +15,14 @@
     <title>@yield('title')</title>
 
 </head>
-<body>
+<body id="reponsive-font-size">
 <div class="main">
     <!-- Header -->
     <header id="myHeader" class="header-main">
 
         <div class="container">
             <div class="row header-height">
+
                 <!-- Logo -->
                 <div class="col-lg-2 col-sm-3 col-3 align-self-center">
                     <!--icon-bars-->
@@ -32,13 +33,23 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-10 col-9 order-lg-3 logo-center align-self-center">
+                <div class="logo-none-lap col-sm-6 col-6">
+                    <div class="logo-mb-header d-flex justify-content-center">
+                        <div style="width: 90px">
+                            <a href="#">
+                                <img style="height: 48px" src="/assets/images/logo2.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-sm-3 col-3 order-lg-3 align-self-center">
+
                     <div class="d-flex justify-content-end">
                         <div class="main-nav col d-lex align-self-center menu-header-lap">
                             <a class="nav-item active t-home" href="{{ route('index') }}">Home</a>
                             <div class="dropdown d-inline">
-                                <a  class="nav-item t-product dropdown-toggle" href="{{route('products')}}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Product</a>
-                                <div class="dropdown-menu p-0" style="border-radius: 0;top:55px;left: 0" aria-labelledby="dropdownMenuButton">
+                                <a  class="nav-item t-product" href="{{route('products')}}">Product</a>
+                                <div class="dropdown-menu p-0" style="border-radius: 0;border-top:0;top:56px;left: 0" aria-labelledby="dropdownMenuButton">
                                     <a class="dropdown-item dropdown-link" href="#">Link 1</a>
                                     <a class="dropdown-item dropdown-link" href="#">Link 2</a>
                                     <a class="dropdown-item dropdown-link" href="#">Link 3</a>
@@ -51,15 +62,15 @@
 {{---------------------------------------------------nav mobile-----------------------------------------}}
                         <input type="checkbox" class="nav__input" id="nav-mobile-input">
                         <label for="nav-mobile-input" class="nav__overlay"></label>
-                        <div class="nav-mobile">
+                        <div class="nav-mobile" id="nav-mobile-respon">
                             <label for="nav-mobile-input" class="nav-mobile-close">
                                 <i class="fas fa-times" style="margin: 7px 0;"></i>
                             </label>
-                            <div class="nav-mobile-list">
-                                <div class="pd-menu-mb">
+                            <div class="nav-mobile-list" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+                                <div class="pd-menu-mb" id="myScrollspy">
                                     <div class="wrap-logo-mb">
                                         <a href="{{route('index')}}" class="logo-mobile">
-                                            <img style="width: 100%;" src="https://chaysach.com/wp-content/uploads/2017/02/logo.jpg">
+                                            <img style="width: 100%;" src="/assets/images/logo2.png">
                                         </a>
                                     </div>
                                     <div class="pd-top-nav-mn">
@@ -67,12 +78,20 @@
                                             <i class="fas fa-home"></i>
                                             <a class="nav-mobile-link" href="{{ route('index') }}">Trang chủ</a>
                                         </div>
-                                        <div class="wrap-mobile-link">
-                                            <i class="fas fa-hamburger" style="margin-top: 4px;position: absolute;"></i>
+                                        <div class="wrap-mobile-link" style="position: relative">
+                                            <i class="fas fa-hamburger" style="position: absolute;"></i>
                                             <div class="dropdown transition-drop" style="margin-left: 35px;position: static;width: 86%;">
-                                                <a class="nav-mobile-link dropdown-toggle" href="{{route('products')}}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Sản phẩm</a>
+                                                <a class="nav-mobile-link" href="{{route('products')}}">Sản phẩm</a>
                                                 <ul class="dropdown-menu position-static" style="border-radius: 0;border: 0;padding: 0;">
                                                     <li><a href="#">Bánh chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    <li><a href="#">Thực phẩm chay</a></li>
                                                     <li><a href="#">Thực phẩm chay</a></li>
                                                 </ul>
                                             </div>
@@ -105,7 +124,7 @@
                                         @else
                                             <div class="wrap-mobile-link border-0">
                                                 <i class="fas fa-power-off"></i>
-                                                <a class="nav-mobile-link" href="{{route('logout')}}">Đăng xuất</a>
+                                                <a class="nav-mobile-link" href="{{route('logout')}}">Đăng nhập</a>
                                             </div>
                                         @endif
                                     </div>
@@ -243,21 +262,21 @@
     <div class="container">
         @yield('content')
     </div>
-    <footer class="text-center" style="background-color: #0b0c10;color: #c5c6c7">
+    <footer class="text-left" style="background-color: #0b0c10;color: #c5c6c7">
         <section class="">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container text-sm-left text-md-start mt-5">
                 <div class="row pt-5 wrap-footer">
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <h5 class="fw-bold mb-4 logo">
+                    <div class="col-md-3 col-sm-4 col-lg-4 col-xl-3 col-8 mx-auto mb-lg-4 mb-md-4 mb-sm-3 img-nd">
+                        <h5 class="wrap-img-footer">
                             <a href="{{route('index')}}" class="d-inline-block">
-                                <img style="width: 50%;height:80px;margin-right: 20px" src="/assets/images/logo1.png">
+                                <img style="width: 100%" class="img-footer-respon" src="/assets/images/logo1.png">
                             </a>
                         </h5>
                         <p>Thực phẩm chay, sạch, ngon, thuần chay.</p>
                         <p>Đảm bảo vệ sinh an toàn thực phẩm.</p>
                         <p>Dịch vụ tốt nhất.</p>
                     </div>
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-2 col-sm-2 col-lg-2 col-xl-2 col-4 mx-auto mb-lg-4 mb-md-4 mb-sm-3 menu-footer">
                         <h5 class="fw-bold mb-4" style="color: #c5c6c7">
                             Danh sách
                         </h5>
@@ -274,7 +293,19 @@
                             <a href="#" class="text-reset">Giả mặn</a>
                         </p>
                     </div>
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 support-link">
+                    <div id="contact-mobile" class="col-md-4  col-sm-4 col-lg-3 col-xl-3 col-8 mx-auto mb-md-0 mb-lg-4 mb-sm-3 color-icon">
+                        <h5 class="fw-bold mb-4" style="color: #c5c6c7">
+                            Liên hệ
+                        </h5>
+                        <p><i class="fas fa-home me-3"></i>Số 8 Tôn Thất Thuyết, HN</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            comchay@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 84 567 999 999</p>
+                        <p><i class="fas fa-print me-3"></i> + 84 345 686 868</p>
+                    </div>
+                    <div class="col-md-3 col-sm-2 col-lg-2 col-xl-2 col-4 mx-auto mb-lg-4 mb-md-4 mb-sm-3 support-link">
                         <h5 class="fw-bold mb-4" style="color: #c5c6c7">
                             Hỗ trợ
                         </h5>
@@ -285,7 +316,7 @@
                             <a href="{{route('contact')}}" class="text-reset">Contact</a>
                         </p>
                     </div>
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div id="contact-auto" class="col-md-4  col-sm-4 col-lg-3 col-xl-3 col-8 mx-auto mb-md-0 mb-lg-4 mb-sm-3 color-icon">
                         <h5 class="fw-bold mb-4" style="color: #c5c6c7">
                             Liên hệ
                         </h5>
@@ -300,7 +331,7 @@
                 </div>
             </div>
         </section>
-        <div class="text-center p-4" style="background-color: #1f2833;color: #45A29E">
+        <div class="text-center copy-respon" style="padding:20px;background-color: #1f2833;color: #45A29E">
             © 2021 Copyright:
             <a class="text-reset fw-bold" href="{{route('index')}}">Comchay</a>
         </div>
@@ -406,15 +437,6 @@
         }
     });
 
-    // $(document).ready(function () {
-    //     $("#hover-product").hover(function () {
-    //             $(".dropdown-content").addClass("d-block");
-    //         },
-    //         // function () {
-    //         //     $(".dropdown-content").removeClass("d-block")
-    //         // }
-    //     );
-    // });
 </script>
 @yield('custom_js')
 </body>
