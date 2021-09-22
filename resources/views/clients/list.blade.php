@@ -101,7 +101,7 @@
                                             </div>
                                             <div class="product-content">
                                                 <div class="product-name"><h6>{{$data->name}}</h6></div>
-                                                <div class="d-flex justify-content-sm-between">
+                                                <div class="d-flex justify-content-sm-between" style="padding: 10px 0;">
                                                     <div class="product-price">
                                                         <h6>
                                                             {{number_format($data->price)}} đ

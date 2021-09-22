@@ -12,7 +12,7 @@
 @endsection
 
 @section('content')
-    <div class="container mt-5">
+    <div class="mt-2 mt-lg-5 mt-md-4 mt-sm-3">
         <div class="row">
             <div class="col-xxl-12 col-xl-12 col-lg-12">
                 <div class="heading-minimal">
@@ -39,7 +39,7 @@
             @endforeach
         </div>
     </div>
-    <div class="container mt-3">
+    <div class="mt-1 mt-lg-3 mt-md-3 mt-sm-3">
         <div class="row">
             <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
                 <div class="heading-minimal">
@@ -55,7 +55,7 @@
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
                 <div class="row">
                     @foreach($featured as $featured_food)
-                        <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                        <div class="eq-height col-xl-3 col-lg-6 col-md-4 col-sm-6">
                             <div class="res-3-box ">
                                 <div class="res-2-img parallex-new">
                                     <a href="#">
@@ -104,7 +104,7 @@
                 <div class="row">
                     @if($selling)
                         @foreach($selling as $selling_food)
-                            <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                            <div class="eq-height col-xl-3 col-lg-6 col-md-4 col-sm-6 col-6">
                                 <div class="res-3-box ">
                                     <div class="res-2-img parallex-new">
                                         <a href="#">
@@ -128,7 +128,7 @@
                                                             <i class="fas fa-dollar-sign dollar-icon"></i>
                                                             {{number_format($selling_food->price)}} đ
                                                         </span>
-                                                                <span class="location-png wrap-adding">
+                                                        <span class="location-png wrap-adding">
                                                             <a href="#">
                                                                 <div class="btn-adding">+</div>
                                                             </a>
@@ -141,7 +141,7 @@
                                 </div>
                             </div>
                         @endforeach
-                        @endif
+                    @endif
                 </div>
             </div>
 
@@ -153,7 +153,7 @@
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
                 <div class="row">
                     @foreach($new as $new_food)
-                        <div class="eq-height col-xl-3 col-lg-6 col-md-6">
+                        <div class="eq-height col-xl-3 col-lg-6 col-md-4 col-sm-6 col-6">
                             <div class="res-3-box ">
                                 <div class="res-2-img parallex-new">
                                     <a href="#">
@@ -195,9 +195,9 @@
         </div>
     </div>
     <section>
-        <div class="row my-5">
-            <div class="col-4">
-                <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
+        <div class="row my-lg-5 mt-0 my-sm-4 my-md-4">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12 div-an-toan">
+                <div class="icon-box-img mb-4">
                     <i class="fas fa-hand-holding-heart fa-5x"></i>
                 </div>
                 <div class="icon-box-text">
@@ -210,8 +210,8 @@
                         các sản phẩm chất lượng.</p>
                 </div>
             </div>
-            <div class="col-4" style="border-left: 1px solid #ececec;">
-                <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
+            <div class="col-lg-4 col-md-4 col-sm-12 div-dich-vu" style="border-left: 1px solid #ececec;">
+                <div class="icon-box-img mb-4 check-img">
                     <i class="fas fa-check fa-5x"></i>
                 </div>
                 <div class="icon-box-text last-reset text-center">
@@ -221,8 +221,8 @@
                     <p>Comchay hỗ trợ vận chuyển tận nhà cho các khàng hàng.</p>
                 </div>
             </div>
-            <div class="col-4" style="border-left: 1px solid #ececec;">
-                <div class="icon-box-img mb-4" style="width: 99px; margin: 0 auto">
+            <div class="col-lg-4 col-md-4 col-sm-12 div-sale" style="border-left: 1px solid #ececec;">
+                <div class="icon-box-img mb-4">
                     <i class="fas fa-piggy-bank fa-5x"></i>
                 </div>
                 <div class="icon-box-text last-reset text-center">

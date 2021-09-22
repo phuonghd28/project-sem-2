@@ -27,6 +27,9 @@ body {
     background-color: #ffffff;
     cursor: pointer;
 }
+.shopping-cart div a i, .nav-mobil-bars i {
+    color: #03C3C4FF;
+}
 
 .color-cart {
     color: #676767;
@@ -61,10 +64,14 @@ body {
     font-size: 15px;
     text-decoration: none;
     font-weight: 600;
+    margin-right: 0;
 }
 .main-nav a:hover {
     border-bottom: 4px solid #00c6d7;
     color: #00c6d7;
+}
+.wrap-img-footer {
+    width: 40%;
 }
 body {
     padding: 0;
@@ -312,9 +319,18 @@ a:hover {
 }
 .wrap-footer p,a {
     line-height: 1.6;
-    text-decoration: none;
+    text-decoration: none!important;
     font-weight: 500;
 }
+.wrap-footer p .me-3 {
+    color: #03C3C4FF;
+}
+.icon-box-img {
+    margin: 0 auto;
+    width: 90px;
+    color: #03C3C4FF;
+}
+
 
 /******************************************HOVER PRODUCT*************************************/
 
@@ -339,34 +355,8 @@ a:hover {
     display: none!important;
 }
 /*******************************************header mobile*******************************************/
-
-@media only screen and (max-width: 600px) {
-    .example {background: red;}
-}
-
-@media only screen and (max-width: 767px) {
-    .example {background: blue;}
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-    .wrap-log-in {
-        display: none!important;
-    }
-    .nav-mobil-bars {
-        display: block!important;
-    }
-    .menu-header-lap {
-        display: none;
-    }
-    .logo {
-        display: none;
-    }
-    .nav-mobile {
-        width: 40%!important;
-    }
-}
 .nav-mobil-bars {
+     margin-top: 6px;
      width: 28px;
      height: 28px;
      display: none;
@@ -469,9 +459,209 @@ a:hover {
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 10px;
-
-    color: #212121;
-    font-size: 14px;
-    padding-top: 7px;
+}
+.logo-mb-header {
+    display: inline;
+}
+.logo-none-lap {
+    display: none;
 }
 
+@media (max-width: 992px) {
+    .wrap-log-in {
+        display: none!important;
+    }
+    .nav-mobil-bars {
+        display: block!important;
+    }
+    .menu-header-lap {
+        display: none;
+    }
+    .logo {
+        display: none;
+    }
+    #nav-mobile-respon {
+        width: 40%;
+    }
+    .header-height {
+        height: 48px;
+    }
+    .shopping-cart {
+        height: 30px;
+        width: 32px;
+    }
+    .color-cart .fa-shopping-cart {
+        font-size: 13px;
+    }
+
+    .logo-none-lap {
+        display: block!important;
+    }
+    .pd-menu-mb {
+        height: 568px;
+        overflow-y: auto;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+   .div-dich-vu {
+       border-left: none!important;
+   }
+    section div.container {
+        margin-bottom: 20px;
+        margin-top: 0!important;
+    }
+    section div.container .wrap-footer {
+        padding-top: 30px!important;
+    }
+    .wrap-footer div h5 {
+        font-size: 13px;
+        margin-bottom: 10px!important;
+    }
+    .wrap-footer div p {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    .wrap-footer p .me-3 {
+        margin-right: 5px;
+    }
+    .wrap-img-footer {
+        width: 70%;
+    }
+    .copy-respon {
+        padding: 10px!important;
+        font-size: 13px;
+    }
+    div.div-sale {
+        border-left: 0!important;
+    }
+}
+
+@media (max-width: 575px){
+    #reponsive-font-size {
+        font-size: 14px;
+    }
+    #nav-mobile-respon {
+        width: 70%;
+    }
+    ul.dropdown-menu li a {
+        font-size: 14px;
+    }
+    div .nav-mobile div div.pd-menu-mb {
+        padding: 10px 20px 10px 20px;
+    }
+    .res-2-inner {
+        padding: 6px 10px!important;
+    }
+    .res-2-text .text-s1 {
+        font-size: 14px!important;
+    }
+    .res-2-box {
+        padding: 5px 10px!important;
+    }
+    .res-2-map-product {
+        justify-content: space-between;
+    }
+    .res-2-map-product span {
+        font-size: 12px!important;
+    }
+    .location-png .dollar-icon {
+        font-size: 7px!important;
+        width: 13px!important;
+        height: 13px!important;
+        line-height: 12px!important;
+    }
+    div.btn-adding {
+        font-size: 16px;
+        line-height: 13px;
+        width: 18px;
+        height: 18px;
+    }
+    .res-2-img a img {
+        height: 150px;
+    }
+    .wrap-adding {
+        width: 15px;
+        height: 15px;
+    }
+    div.pd-top-nav-mn {
+        padding-top: 0;
+    }
+    div.wrap-logo-mb {
+        width: 55%;
+    }
+    div.icon-box-img {
+        width: 67px;
+        margin-bottom: 5px!important;
+    }
+    div.check-img {
+        width: 60px;
+    }
+    .wrap-img-footer {
+        width: 60%;
+    }
+    .wrap-footer div .color-icon,.support-link,.menu-footer,.img-nd {
+        margin-bottom: 10px;
+    }
+    .wrap-footer div h5,p {
+        margin-bottom: 3px!important;
+    }
+    div.background-img {
+        height: 200px;
+        object-fit: cover;
+    }
+    div.heading-minimal {
+        margin-bottom: 25px;
+    }
+    div.category-items-new .category-main .category-text-inner h3 {
+        font-size: 15px;
+    }
+    div.category-items-new {
+        margin-bottom: 5px;
+    }
+    h3.head-title {
+        font-size: 18px;
+    }
+    div.res-3-box {
+        margin-bottom: 10px;
+    }
+    div.eq-height {
+        padding: 0 5px;
+    }
+    div.icon-box-text h4 {
+        font-size: 17px;
+    }
+    div.icon-box-text p {
+        font-size: 14px;
+    }
+    div.div-an-toan,div.div-dich-vu,div.div-sale {
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+    div.div-sale div.icon-box-text {
+        border-bottom: 0;
+    }
+    div.icon-box-text {
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ececec
+    }
+    div.div-dich-vu,div.div-sale {
+        border-left: 0!important;
+    }
+    div.res-2-bg-white {
+        border-radius: 0 0 5px 5px;
+    }
+    div.res-2-img {
+        border-radius: 5px 5px 0 0;
+    }
+    div#contact-mobile {
+        display: block;
+    }
+    #contact-auto {
+        display: none;
+    }
+}
+#contact-mobile {
+    display: none;
+}
