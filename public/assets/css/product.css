@@ -305,7 +305,6 @@
 }
 
 .product-price {
-    margin-bottom: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -693,11 +692,6 @@ a:hover {
 ul, ol {
     list-style: none
 }
-
-h1, h2, h3, h4, h5, h6, p, ul, li, span, label {
-    margin-bottom: 0
-}
-
 
 body {
     color: var(--textcolor);
@@ -1230,10 +1224,11 @@ button:focus {
 }
 
 .search-form .btn {
+    margin-left: 15px;
     top: 0;
-    right: 0;
+    position: absolute;
     height: 45px;
-    padding: 11px 32px
+    padding: 11px 32px;
 }
 
 .footer-form {
@@ -2466,13 +2461,12 @@ button:focus {
     font-size: 20px;
     cursor: pointer;
     font-weight: 700;
-    line-height: 21px;
+    line-height: 17px;
     width: 22px;
     height: 22px;
     background-color: #00c6d7;
     text-align: center;
     color: #fff;
-    display: inline-block;
     border-radius: 50%;
 }
 

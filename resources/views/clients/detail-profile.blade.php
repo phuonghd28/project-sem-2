@@ -55,7 +55,7 @@
             <div class="col-4 row-profile align-items-center">
                 <div class="profile-item-title txt-bold"><i class="fas fa-phone-square" style="margin-right: 10px"></i>Số điện thoại:</div>
                 <div class="profile-item-info">
-0874735634
+                    {{$list->phone}}
                 </div>
             </div>
             <div class="col-4 row-profile align-items-center">

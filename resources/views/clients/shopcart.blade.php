@@ -9,20 +9,20 @@
     <section class="shop-cart spad">
         @if(session('update'))
             <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Success!</strong>{{session('update')}}
+                {{session('update')}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
         @if(session('remove'))
             <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Success!</strong>{{session('remove')}}
+                {{session('remove')}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
         @if(session('destroy'))
             <div class="alert alert-success alert-dismissible">
-                <button type="button" class="close" data-dismiss="alert">&times;</button>
-                <strong>Success!</strong>{{session('destroy')}}
+                {{session('destroy')}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         @endif
         <div class="container">
@@ -93,27 +93,27 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 pb-md-4">
                     <div class="discount__content">
 
-                        <form name="orderForm" action="{{ route('saveOrder') }}" method="post">
+                        <form id="form-order" name="orderForm" action="{{ route('saveOrder') }}" method="post">
                             @csrf
                             <h4 class="mb-3">Ship Information</h4>
-                            <select class="mb-3" id="sel1" name="district_id">
+                            <select id="sel1" name="district_id">
                                 <option selected disabled hidden>Quận(Huyện)</option>
                                 @foreach($districts as $district )
                                     <option
                                         value="{{$district->maqh}}">{{$district->name}}</option>
                                 @endforeach
                             </select>
-                            <select class="mb-3" id="Ward" name="ward_id">
+                            <select class="mt-3" id="Ward" name="ward_id">
                                 <option selected disabled hidden>Phường(Xã)</option>
                             </select>
-                            <input name="shipAddress" type="text" class="mb-3" placeholder="Enter street">
-                            <input name="shipName" type="text" class="mb-3" placeholder="Enter name" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->first_name. ' ' . \Illuminate\Support\Facades\Auth::user()->last_name : ''}}">
-                            <input name="shipPhone" type="text" class="mb-3" placeholder="Enter phone" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->phone : ''}}">
-                            <input name="note" type="text" placeholder="Enter note">
-                            <button class="site-btn">Send</button>
+                            <input name="shipAddress" type="text" class="mt-3" placeholder="Enter street">
+                            <input name="shipName" type="text" class="mt-3" placeholder="Enter name" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->first_name. ' ' . \Illuminate\Support\Facades\Auth::user()->last_name : ''}}">
+                            <input name="shipPhone" type="text" class="mt-3" placeholder="Enter phone" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->phone : ''}}">
+                            <input name="note" class="mt-3" type="text" placeholder="Enter note">
+                            <input id="submit-form-order" class="d-none" type="submit">
                         </form>
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                         <ul>
                             <li>Total<span>{{\Gloudemans\Shoppingcart\Facades\Cart::total()}}</span></li>
                         </ul>
-                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                        <label for="submit-form-order" tabindex="0" class="primary-btn" style="cursor: pointer">Proceed to checkout</label>
                     </div>
                 </div>
             </div>
@@ -150,5 +150,51 @@
                 }
             });
         })
+
+        $("#form-order").validate({
+            rules: {
+                district_id: {
+                    required: true
+                },
+                ward_id: {
+                    required: true
+                },
+                shipAddress: {
+                    required: true
+                },
+                shipName: {
+                    required: true
+                },
+                shipPhone: {
+                    required: true
+                },
+                note: {
+                    required: true
+                }
+            },
+            messages: {
+                district_id: {
+                    required: '* Vui lòng chọn Quận(Huyện)',
+                },
+                ward_id: {
+                    required: '* Vui lòng chọn Phường(Xã).',
+                },
+                shipAddress: {
+                    required: '* Vui lòng nhập địa chỉ chi tiết.',
+                },
+                shipName: {
+                    required: '* Vui lòng nhập tên.',
+                },
+                shipPhone: {
+                    required: '* Vui lòng nhập số điện thoại.',
+                },
+                note: {
+                    required: '* Vui lòng nhập ghi chú.',
+                }
+            },
+            submitHandler: function (form) {
+                $(form).submit();
+            }
+        });
     </script>
 @endsection
