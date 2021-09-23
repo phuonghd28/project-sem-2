@@ -198,8 +198,9 @@
                     payerID: data.payerID
                 })
                     .then(function (res) {
-                        alert('Payment Success !!')
-                        location.reload();
+                        console.log(res)
+                        // alert('Payment Success !!')
+                        // location.reload();
                         // 3. Show the buyer a confirmation message.
                     });
             }
