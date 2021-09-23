@@ -70,8 +70,6 @@ Route::get('destroy', [ShoppingCartController::class, 'destroy']);
 Route::post('orders/save', [OrderController::class, 'save'])->name('saveOrder');
 Route::get('orders/{id}', [OrderController::class, 'detail'])->name('detailOrder');
 
-Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']);
-Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
 Route::get('/api/ward/{id}', [ShoppingCartController::class, 'api']);
 
 Route::get('mail',[MailController::class,'send_mail']);
@@ -79,5 +77,7 @@ Route::get('mail',[MailController::class,'send_mail']);
 Route::get('mail-design',function (){
     return view('mails.mail');
 });
+Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']);
+Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
 
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PaypalController;
 use App\Models\Category;
 use App\Models\Order;
 use App\Models\Product;

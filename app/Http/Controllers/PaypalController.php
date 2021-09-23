@@ -16,16 +16,19 @@ use PayPal\Api\PaymentExecution;
 use PayPal\Api\RedirectUrls;
 use PayPal\Api\Transaction;
 use PayPal\Auth\OAuthTokenCredential;
+use PayPal\Common\PayPalModel;
 use PayPal\Rest\ApiContext;
 
 class PaypalController extends Controller
 {
-    public function createPayment(Request $request) {
+    public function createPayment(Request $request)
+    {
         $orderId = $request->get('orderId');
         $order = Order::find($orderId);
         if ($order == null) {
             return 1;
         }
+        // Xử lý tạo payment của paypal sau khi có orders
         $apiContext = new ApiContext(
             new OAuthTokenCredential(
                 'AfPOmD4sA0AMx73t_1bqi5Zqvh84TOK8HKQzxfh7u6TfFVOABPEghh8a0epynKRfzTz4C9ZhzQCDxLCN',
@@ -33,10 +36,11 @@ class PaypalController extends Controller
             )
         );
         $apiContext->setConfig([
-            'mode'=>'sandbox'
+            'mode' => 'sandbox'
         ]);
         $payer = new Payer();
         $payer->setPaymentMethod("paypal");
+
         $itemArray = [];
         foreach ($order->orderDetails as $orderDetail) {
             $item = new Item();
@@ -63,9 +67,8 @@ class PaypalController extends Controller
         $transaction = new Transaction();
         $transaction->setAmount($amount)
             ->setItemList($itemList)
-            ->setDescription('Thanh toán thành công.')
+            ->setDescription("Thanh toán thành công")
             ->setInvoiceNumber($order->id);
-
         $redirectUrls = new RedirectUrls();
         $redirectUrls->setReturnUrl("http://127.0.0.1:8000/paypal/success")
             ->setCancelUrl("http://127.0.0.1:8000/paypal/cancel");
@@ -77,7 +80,7 @@ class PaypalController extends Controller
             ->setTransactions(array($transaction));
         try {
             $payment->create($apiContext);
-        } catch (\Exception $exception) {
+        } catch (Exception $ex) {
             exit(1);
         }
         return $payment;
@@ -115,7 +118,7 @@ class PaypalController extends Controller
             } catch (Exception $ex) {
                 exit(1);
             }
-        }catch (Exception $ex) {
+        } catch (Exception $ex) {
             exit(1);
         }
         return $payment;
