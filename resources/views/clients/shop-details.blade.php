@@ -61,12 +61,22 @@
                 </div>
             </div>
         </div>
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="true"></div>
     </div>
-    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width=""
-         data-numposts="1"></div>
+    <div class="fb-comments" data-href="https://alla.com.vn/" data-numposts="3"></div>
 @endsection
 @section('custom_js')
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v12.0" nonce="mfZuNA77"></script>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=1632614030377920";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, "script", "facebook-jssdk"));
+    </script>
 @endsection
