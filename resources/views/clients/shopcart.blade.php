@@ -32,9 +32,9 @@
                         <table>
                             <thead>
                             <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
                                 <th></th>
                             </tr>
                             </thead>
@@ -59,7 +59,7 @@
                                             </div>
                                         </td>
                                         <td>
-                                            <button class="btn btn-primary btn-update-qty">Update</button>
+                                            <button class="btn btn-primary btn-update-qty">Cập nhật</button>
                                         </td>
                                         <td class="cart__close">
                                                 <span>
@@ -80,14 +80,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="cart__btn">
-                        <a href="{{route('products')}}">Continue Shopping</a>
+                        <a href="{{route('products')}}">Tiếp tục mua hàng</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="cart__btn update__btn">
                         <a onclick="return confirm('Bạn có chắc muốn xóa tất cả giỏ hàng ?')" href="/destroy">
                             <span class="fa fa-spinner">
-                            </span> Remove All
+                            </span> Xoá tất cả
                         </a>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
 
                         <form id="form-order" name="orderForm" action="{{ route('saveOrder') }}" method="post">
                             @csrf
-                            <h4 class="mb-3">Ship Information</h4>
+                            <h4 class="mb-3">Thông tin</h4>
                             <select id="sel1" name="district_id">
                                 <option selected disabled hidden>Quận(Huyện)</option>
                                 @foreach($districts as $district )
@@ -109,19 +109,19 @@
                             <select class="mt-3" id="Ward" name="ward_id">
                                 <option selected disabled hidden>Phường(Xã)</option>
                             </select>
-                            <input name="shipAddress" type="text" class="mt-3" placeholder="Enter street">
-                            <input name="shipName" type="text" class="mt-3" placeholder="Enter name" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->first_name. ' ' . \Illuminate\Support\Facades\Auth::user()->last_name : ''}}">
-                            <input name="shipPhone" type="text" class="mt-3" placeholder="Enter phone" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->phone : ''}}">
-                            <input name="note" class="mt-3" type="text" placeholder="Enter note">
+                            <input name="shipAddress" type="text" class="mt-3" placeholder="Vui lòng nhập địa chỉ chi tiết">
+                            <input name="shipName" type="text" class="mt-3" placeholder="Vui lòng nhập tên" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->first_name. ' ' . \Illuminate\Support\Facades\Auth::user()->last_name : ''}}">
+                            <input name="shipPhone" type="text" class="mt-3" placeholder="Vui lòng nhập số điện thoại" value="{{\Illuminate\Support\Facades\Auth::check() ? \Illuminate\Support\Facades\Auth::user()->phone : ''}}">
+                            <input name="note" class="mt-3" type="text" placeholder="Vui lòng nhập ghi chú">
                             <input id="submit-form-order" class="d-none" type="submit">
                         </form>
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-2">
                     <div class="cart__total__procced">
-                        <h6>Cart total</h6>
+                        <h6>Tất cả giỏ hàng</h6>
                         <ul>
-                            <li>Total<span>{{\Gloudemans\Shoppingcart\Facades\Cart::total()}}</span></li>
+                            <li>Tổng tiền<span>{{\Gloudemans\Shoppingcart\Facades\Cart::total()}}</span></li>
                         </ul>
                         <label for="submit-form-order" tabindex="0" class="primary-btn" style="cursor: pointer">Proceed to checkout</label>
                     </div>

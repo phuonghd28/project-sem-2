@@ -549,7 +549,7 @@
 .product-filter {
     background: var(--whitecolor);
     border-radius: 3px;
-    padding: 15px 25px;
+    padding: 10px 0;
     margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -634,9 +634,31 @@
     .product-list {
         padding: 60px 0
     }
-
+    div.product-price span {
+        font-size: 14px;
+    }
+    div.btn-adding {
+        margin-top: 2px;
+    }
+    div.price-add {
+        padding: 5px 10px;
+    }
+    div.text-s1 {
+        font-size: 14px;
+    }
     .product-card-parent .col-6 {
-        padding: 0 10px
+        padding: 0 5px
+    }
+    .product-img img {
+        width: 100%;
+        height: 150px;
+        border-radius: 3px 3px 0 0;
+    }
+    div.product-content {
+        padding: 0;
+    }
+    .product-name {
+        padding: 6px 10px!important;
     }
 }
 
@@ -800,16 +822,20 @@ button:focus {
 
 .product-short-select {
     height: 40px;
-    width: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #212529;
     font-size: 15px;
     border-radius: 3px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .product-short-select:focus {
     word-wrap: inherit;
     -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
+    border: 1px solid #212529;
+    text-decoration: none;
 }
 
 .navbar-dropdown {
@@ -1183,18 +1209,9 @@ button:focus {
     box-shadow: none !important
 }
 
-.btn i {
-    margin-right: 8px
-}
-
 .btn-inline {
     color: var(--whitecolor);
     background: #212529
-}
-
-.btn-inline:hover {
-    color: #212529;
-    background: var(--whitecolor)
 }
 
 .btn-outline {
@@ -1209,12 +1226,13 @@ button:focus {
 
 .search-form {
     width: 100%;
+    border: 2px solid #00c6d7;
     display: block;
     position: relative
 }
 
 .search-form input {
-    width: 58%;
+    width: 100%;
     height: 45px;
     border: none;
     outline: none;
@@ -1224,11 +1242,13 @@ button:focus {
 }
 
 .search-form .btn {
-    margin-left: 15px;
-    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 0;
     position: absolute;
+    background-color: #00c6d8;
     height: 45px;
-    padding: 11px 32px;
+    padding: 10px 16px;
 }
 
 .footer-form {
@@ -1270,7 +1290,7 @@ button:focus {
 }
 
 .footer-form form .btn i {
-    margin-right: 8px
+    margin: 0;
 }
 
 .review-form h3 {
@@ -1748,19 +1768,13 @@ button:focus {
 }
 
 .navbar-element {
-    padding-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    padding: 0;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
 }
 
 .left-widget {
@@ -1773,7 +1787,7 @@ button:focus {
 }
 
 .navbar-src {
-    margin: 0 12px
+
 }
 
 .right-widget {
@@ -2472,4 +2486,48 @@ button:focus {
 
 .btn-adding:hover {
     background-color: #09b0be;
+}
+.text-s1 {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #071c1f;
+    font-weight: 600;
+}
+.price-add {
+    padding: 10px 0;
+    justify-content: space-between;
+}
+.product-price span {
+    font-size: 15px;
+    color: #757575;
+    font-weight: 500;
+}
+.heading-navbar-list {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #00c6d7;
+    color: #FFFFFF;
+}
+.btn_category {
+    text-align: left;
+    background: none;
+    border-radius: 0px;
+    border: none;
+    padding: 15px 0;
+    color: #222222;
+    width: 100%;
+    border-bottom: 1px solid #e1e1e1;
+    box-shadow: unset;
+    font-size: 14px;
+}
+.btn_category:hover {
+    color: #222222;
+}
+.panel-btn {
+    padding: 0 30px;
+}
+#search:hover {
+    color: #FFFFFF;
 }

@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-   List Product
+   Danh sách danh mục
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">
@@ -8,7 +8,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-4">
-                        <h2 class="">List Category</h2>
+                        <h2 class="">Danh sách danh mục</h2>
                     </div>
                     <div class="col-8">
                         <form id="filterForm">
@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="col-4 form-group">
                                     <select name="sort" class="custom-select" id="sort">
-                                        <option hidden selected disabled>Sort</option>
+                                        <option hidden selected disabled>Loại</option>
                                         <option value="1" {{$sort == 1 ? 'selected' : ''}}>Mới nhất</option>
                                         <option value="2" {{$sort == 2 ? 'selected' : ''}}>Cũ nhất</option>
                                     </select>
@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-lg-12 margin-tb">
                         <div class="pull-left mb-2">
-                            <a class="btn btn-success" href="{{route('createCategory')}}">Add <i class="fas fa-plus"></i></a>
+                            <a class="btn btn-success" href="{{route('createCategory')}}">Thêm mới <i class="fas fa-plus"></i></a>
                         </div>
                     </div>
                 </div>
@@ -47,9 +47,9 @@
                     <thead>
                     <tr>
                         <th style="width: 50px">Id</th>
-                        <th>Name</th>
-                        <th>Image</th>
-                        <th style="width: 174px;">Actions</th>
+                        <th>Tên</th>
+                        <th>Ảnh</th>
+                        <th style="width: 174px;">Sửa, Xoá</th>
                     </tr>
                     </thead>
                     <tbody>

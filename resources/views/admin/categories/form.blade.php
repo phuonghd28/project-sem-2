@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Create Category
+    Thêm danh mục
 @endsection
 @section('custom_css')
     <style>
@@ -54,9 +54,9 @@
         <div class="container">
             <div class="card-body mb-2"><h2 class="mb-3">
                     @if($data)
-                        Update Category
+                        Cập nhật danh mục
                     @else
-                        Create Category
+                        Thêm danh mục
                     @endif
                 </h2>
                 @if(session('status'))
@@ -70,23 +70,23 @@
                     @endif
                     @csrf
                     <div class="position-relative row form-group">
-                        <label for="exampleEmail" class="col-sm-2 col-form-label">Name</label>
+                        <label for="exampleEmail" class="col-sm-2 col-form-label">Tên</label>
                         <div class="col-sm-4">
                             <input name="name" value="{{$data ? $data->name : ''}}" type="text" class="form-control"
-                                   placeholder="Enter name">
+                                   placeholder="Tên">
                             @error('name')
                             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                             @enderror
                         </div>
                     </div>
                     <div class="position-relative row form-group">
-                        <label for="exampleFile" class="col-sm-2 col-form-label">Image</label>
+                        <label for="exampleFile" class="col-sm-2 col-form-label">Ảnh</label>
                         <div class="col-sm-10">
                             <div class="button_outer">
                                 <div class="btn_upload">
                                     <input style="opacity: 0" type="file" name="imageChooser" class="custom-file-input">
                                     <input name="image" type="hidden" value="{{$data ? $data->image : ''}}">
-                                    Upload Image
+                                    Chọn ảnh
                                 </div>
                             </div>
                             <div class="uploaded_file_view my-2" id="uploaded_view">
@@ -99,7 +99,7 @@
                     </div>
                     <div class="position-relative row form-check">
                         <div class="col-sm-10 offset-sm-2 p-0">
-                            <button class="btn btn-primary">Submit</button>
+                            <button class="btn btn-primary">Gửi</button>
                         </div>
                     </div>
                 </form>

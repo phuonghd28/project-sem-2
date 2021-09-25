@@ -33,27 +33,26 @@
         <ul class="vertical-nav-menu metismenu">
             <li class="sidebar_item" style="border: none!important;">
                 <a href="{{route('home')}}" class="sidebar_item">
-                    <i class="metismenu-icon fas fa-chart-bar"></i>
-                    Dashboard Example 1
+                    <i class="metismenu-icon fas fa-chart-bar"></i>Dashbroad
                 </a>
             </li>
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-user"></i>
-                    User
+                    Người dùng
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
                     <li>
                         <a href="{{route('listUser')}}">
                             <i class="metismenu-icon">
-                            </i>List
+                            </i>Danh sách
                         </a>
                     </li>
                     <li>
                         <a href="{{route('createUser')}}">
                             <i class="metismenu-icon"></i>
-                            Create
+                            Thêm mới
                         </a>
                     </li>
                 </ul>
@@ -61,20 +60,20 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-th-list"></i>
-                    Categories
+                    Danh mục
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
                     <li>
                         <a href="{{route('listCategory')}}">
                             <i class="metismenu-icon">
-                            </i>List
+                            </i>Danh sách
                         </a>
                     </li>
                     <li>
                         <a href="{{route('createCategory')}}">
                             <i class="metismenu-icon"></i>
-                            Create
+                            Thêm mới
                         </a>
                     </li>
                 </ul>
@@ -82,20 +81,20 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-hamburger"></i>
-                    Products
+                    Sản phẩm
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
                     <li>
                         <a href="{{route('listProduct')}}">
                             <i class="metismenu-icon">
-                            </i>List
+                            </i>Danh sách
                         </a>
                     </li>
                     <li>
                         <a href="{{route('createProduct')}}">
                             <i class="metismenu-icon"></i>
-                            Create
+                            Thêm mới
                         </a>
                     </li>
                 </ul>
@@ -103,14 +102,14 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-list-alt"></i>
-                    Orders
+                    Đơn hàng
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
                     <li>
                         <a href="{{route('listOrder')}}">
                             <i class="metismenu-icon"></i>
-                            List
+                            Danh sách
                         </a>
                     </li>
                 </ul>
@@ -118,14 +117,14 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-envelope"></i>
-                    FeedBack
+                    Phản hồi
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
                     <li>
                         <a href="{{route('listFeedBack')}}">
                             <i class="metismenu-icon">
-                            </i>List
+                            </i>Danh sách
                         </a>
                     </li>
                 </ul>

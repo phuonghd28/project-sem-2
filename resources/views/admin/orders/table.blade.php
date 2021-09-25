@@ -5,7 +5,7 @@
             <div class="card-body">
                 <div class="row mb-3">
                     <div class="col-4">
-                        <h2>List Order</h2>
+                        <h2>Danh sách đặt hàng</h2>
                     </div>
                     <div class="col-8">
                         <form id="filterForm">
@@ -19,7 +19,7 @@
                                 </div>
                                 <div class="col-4 form-group">
                                     <select name="status" class="custom-select" id="role">
-                                        <option hidden selected disabled>All</option>
+                                        <option hidden selected disabled>Tất cả</option>
                                         @foreach(\App\Enums\Status::getValues() as $type)
                                             <option
                                                 value="{{$type}}" {{$status && $status == $type ? 'selected' : ''}}>
@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="col-4 form-group">
                                     <select name="sort" class="custom-select" id="sort">
-                                        <option hidden selected disabled>Sort</option>
+                                        <option hidden selected disabled>Loại</option>
                                         <option value="1" {{$sort == 1 ? 'selected' : ''}}>Mới nhất</option>
                                         <option value="2" {{$sort == 2 ? 'selected' : ''}}>Cũ nhất</option>
                                     </select>
@@ -42,7 +42,7 @@
                 <?php $orderTotal = 0; ?>
                 <table class="mb-0 table table-bordered">
                     <tr>
-                        <th>Check</th>
+                        <th>Chọn</th>
                         <th>Id</th>
                         <th>Tên người nhận</th>
                         <th>Địa chỉ</th>
@@ -109,16 +109,16 @@
                 </div>
                 <div class="row">
                     <div>
-                        <span style="margin-right: 30px">Check all <input id="check_all" type="checkbox"
+                        <span style="margin-right: 30px">Chọn tất cả <input id="check_all" type="checkbox"
                                                                           style="transform: translateY(2px)"></span>
                         <select name="order_status" id="order_status" class="custom-select" style="width: 130px">
-                            <option disabled hidden selected>Change status</option>
+                            <option disabled hidden selected>Thay đổi trạng thái</option>
                             @foreach(\App\Enums\Status::getValues() as $type)
                                 <option value="{{$type}}">{{\App\Enums\Status::getDescription($type)}}</option>
                             @endforeach
                         </select>
-                        <button class="btn btn-primary btn_submit" style="width: 120px">Apply</button>
-                        <button class="btn btn-danger btn_delete" style="width: 120px">Delete</button>
+                        <button class="btn btn-primary btn_submit" style="width: 120px">Cập nhật</button>
+                        <button class="btn btn-danger btn_delete" style="width: 120px">Xoá</button>
                         <form action="{{route('updateStatus')}}" id="form_update_status" method="post"
                               style="width: 0;height: 0;overflow: hidden!important;">
                             @csrf

@@ -16,7 +16,7 @@
                             <div style="position:absolute;width:200%;height:200%;left:0; top:0"></div>
                         </div>
                     </div>
-                    <h5 class="card-title">Pie Chart</h5>
+                    <h5 class="card-title">Biểu đồ</h5>
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
             </div>

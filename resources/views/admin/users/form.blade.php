@@ -10,9 +10,9 @@
             @endif
             <h2 class="mb-3">
                 @if($data)
-                    Update User
+                    Cập nhật người dùng
                 @else
-                    Create User
+                    Thêm mới người dùng
                 @endif
             </h2>
             <form action="" method="post" id="form-user">
@@ -23,10 +23,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Firstname:</label>
+                            <label>Tên:</label>
 
                             <input value="{{$data ? $data->first_name : ''}}" type="text" class="form-control"
-                                   placeholder="Firstname" name="first_name" >
+                                   placeholder="Tên" name="first_name" >
                             @error('first_name')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -34,9 +34,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Lastname:</label>
+                            <label>Họ:</label>
                             <input value="{{$data ? $data->last_name : ''}}" type="text" class="form-control"
-                                   placeholder="Lastname" name="last_name">
+                                   placeholder="Họ" name="last_name">
                             @error('last_name')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -46,9 +46,9 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Address:</label>
+                            <label>Địa chỉ:</label>
                             <input value="{{$data ? $data->address : ''}}" type="text" class="form-control"
-                                   placeholder="Address" name="address">
+                                   placeholder="Địa chỉ" name="address">
                             @error('address')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -58,9 +58,9 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Email:</label>
+                            <label>Địa chỉ email:</label>
                             <input value="{{$data ? $data->email : ''}}" type="text" class="form-control"
-                                   placeholder="Email" name="email">
+                                   placeholder="Địa chỉ email" name="email">
                             @error('email')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -68,10 +68,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Phone:</label>
+                            <label>Số điện thoại:</label>
 
                             <input value="{{$data ? $data->phone : ''}}" type="text" class="form-control"
-                                   placeholder="Phone" name="phone">
+                                   placeholder="Số điện thoại" name="phone">
                             @error('phone')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -81,10 +81,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Username:</label>
+                            <label>Tên tài khoản:</label>
 
                             <input value="{{$data ? $data->username : ''}}" type="text" class="form-control"
-                                   placeholder="Username" name="username">
+                                   placeholder="Tên tài khoản" name="username">
                             @error('username')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -104,10 +104,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Password:</label>
+                            <label>Mật khẩu:</label>
 
                             <input value="{{$data ? $data->password : ''}}" type="password" class="form-control"
-                                   placeholder="Password" name="password">
+                                   placeholder="Mật khẩu" name="password">
                             @error('password')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -115,10 +115,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Re-password:</label>
+                            <label>Nhập lại mật khẩu:</label>
 
                             <input value="{{$data ? $data->password : ''}}" type="password" class="form-control"
-                                   placeholder="Re-password" name="password_confirmation" >
+                                   placeholder="Nhập lại mật khẩu" name="password_confirmation" >
                             @error('password_confirmation')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
@@ -127,7 +127,7 @@
                 </div>
                 <div class="row justify-content-end mt-3">
                     <div class="col-1">
-                        <button type="submit" class="btn btn-primary">Send</button>
+                        <button type="submit" class="btn btn-primary">Gửi</button>
                     </div>
                 </div>
             </form>

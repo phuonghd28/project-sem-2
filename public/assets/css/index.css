@@ -390,6 +390,7 @@ a:hover {
 .nav-mobile-close {
     width: 28px;
     height: 28px;
+    z-index: 99;
     position: absolute;
     top: 1rem;
     justify-content: center;
@@ -577,6 +578,7 @@ a:hover {
         line-height: 13px;
         width: 18px;
         height: 18px;
+        margin-left: 4px;
     }
     .res-2-img a img {
         height: 150px;
@@ -592,14 +594,14 @@ a:hover {
         width: 55%;
     }
     div.icon-box-img {
-        width: 67px;
+        width: 48px;
         margin-bottom: 5px!important;
     }
     div.check-img {
-        width: 60px;
+        width: 42px;
     }
     .wrap-img-footer {
-        width: 60%;
+        width: 50%;
     }
     .wrap-footer div .color-icon,.support-link,.menu-footer,.img-nd {
         margin-bottom: 10px;
@@ -661,7 +663,107 @@ a:hover {
     #contact-auto {
         display: none;
     }
+    div.form-login {
+        padding: 15px 10px 15px;
+    }
+    div.heading span {
+        font-size: 16px;
+        width: 100px;
+    }
+    hr#indicator {
+        display: none;
+    }
+    div.form-login form {
+        top: 120px;
+        width: 265px;
+        margin: 0 19px;
+    }
+    input.user-name, .pass {
+        padding: 10px;
+        font-size: 13px;
+        width: 80%;
+    }
+    div.icon-w3 {
+        width: 42px;
+        height: 39px;
+    }
+    div.icon-w3 i {
+        font-size: 13px;
+        line-height: 39px;
+    }
+    button.btn-login {
+        height: 39px;
+    }
+    div.validate label {
+        margin: 5px;
+        font-size: 13px;
+        color: red;
+    }
+    #error-invalid-acc {
+        margin: 10px auto 0;
+        width: 90%;
+        text-align: center;
+    }
+    div.div-2-input {
+        justify-content: space-between;
+    }
+    #reg-form input {
+        padding: 10px;
+    }
+    div.icon-box-img i.fa-5x {
+        font-size: 3em;
+    }
+    div.form-login {
+        height: 345px;
+    }
+    form#reg-form div label {
+        font-size: 12px;
+        padding: 5px;
+    }
+    form#reg-form {
+        overflow-y: auto;
+        height: 404px;
+    }
+    div.modal-content {
+        width: 302px;
+        margin: 0 auto;
+    }
+    span#login {
+        border-bottom: 3px solid white;
+        padding-bottom: 7px!important;
+    }
+    span#login:hover {
+        border-bottom: 3px solid #00c6d7;
+        transition: all .3s;
+    }
+    span#regis {
+        border-bottom: 3px solid white;
+        padding-bottom: 7px!important;
+    }
+    span#regis:hover {
+        border-bottom: 3px solid #00c6d7;
+        transition: all .3s;
+    }
+    h3.head-title::after {
+        width: 115px;
+        height: 3px;
+    }
+    span.wUrVib {
+        font-size: 12px!important;
+    }
+    div.MXl0lf {
+        padding: 0 10px;
+        height: 36px;
+    }
+    hr.pb5vrc {
+        margin-top: 18px;
+    }
+    div.ndElDd {
+        margin: 25px 0;
+    }
+
 }
 #contact-mobile {
     display: none;
 }
+

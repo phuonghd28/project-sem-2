@@ -10,8 +10,8 @@
         <div class="container">
             @if(session('success-msg'))
                 <div class="alert alert-success alert-dismissible">
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
-                    <strong>Success!</strong>{{session('success-msg')}}
+                    {{session('success-msg')}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             @endif
             <h2><strong>Đơn hàng #{{$orders->id}}</strong></h2>
@@ -46,10 +46,10 @@
                         <table>
                             <thead>
                             <tr>
-                                <th>Product</th>
-                                <th>Price</th>
-                                <th>Quantity</th>
-                                <th>SubTotal</th>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Tổng</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -84,7 +84,7 @@
             </div>
             <div class="row justify-content-between">
                 <div class="col-6">
-                    <strong>Total Price : {{number_format($totalPrice)}} đ</strong>
+                    <strong>Tổng tiền : {{number_format($totalPrice)}} đ</strong>
                 </div>
                 @if($orders->status == 1)
                     <div class="col-6">

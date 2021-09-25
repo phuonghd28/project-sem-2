@@ -695,8 +695,8 @@
                     </div>
                     <div class="col-xl-4 col-lg-5 col-md-5">
                         <div class="search_bar_list">
-                            <input type="text" class="form-control" placeholder="Search in blog...">
-                            <input type="submit" value="Search">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm trong blog...">
+                            <input type="submit" value="Tìm kiếm">
                         </div>
                     </div>
                 </div>
@@ -714,11 +714,11 @@
                                 <figure>
                                     <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-1.jpg"
                                                       alt="">
-                                        <div class="preview"><span>Read more</span></div>
+                                        <div class="preview"><span>Đọc thêm</span></div>
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Category - 20 Nov. 2017</small>
+                                    <small>Chuyên mục - 20 Nov. 2017</small>
                                     <h2><a href="#0">Ea exerci option hendrerit</a></h2>
                                     <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
                                         in
@@ -745,7 +745,7 @@
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Category - 20 Nov. 2017</small>
+                                    <small>Chuyên mục - 20 Nov. 2017</small>
                                     <h2><a href="blog-post.html">At usu sale dolorum offendit</a></h2>
                                     <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
                                         in
@@ -772,7 +772,7 @@
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Category - 20 Nov. 2017</small>
+                                    <small>Chuyên mục - 20 Nov. 2017</small>
                                     <h2><a href="blog-post.html">Iusto nominavi petentium in</a></h2>
                                     <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
                                         in
@@ -799,7 +799,7 @@
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Category - 20 Nov. 2017</small>
+                                    <small>Chuyên mục - 20 Nov. 2017</small>
                                     <h2><a href="#">Assueverit concludaturque quo</a></h2>
                                     <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
                                         in
@@ -826,7 +826,7 @@
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Category - 20 Nov. 2017</small>
+                                    <small>Chuyên mục - 20 Nov. 2017</small>
                                     <h2><a href="#">Nec nihil menandri appellantur</a></h2>
                                     <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
                                         in
@@ -853,7 +853,7 @@
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Category - 20 Nov. 2017</small>
+                                    <small>Chuyên mục - 20 Nov. 2017</small>
                                     <h2><a href="#">Te congue everti his salutandi</a></h2>
                                     <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
                                         in
@@ -890,28 +890,28 @@
                 <aside class="col-lg-3">
                     <div class="widget">
                         <div class="widget-title first">
-                            <h4>Latest Post</h4>
+                            <h4>Bài đăng mới nhất</h4>
                         </div>
                         <ul class="comments-list">
                             <li>
                                 <div class="alignleft">
                                     <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg" alt=""></a>
                                 </div>
-                                <small>Category - 11.08.2016</small>
+                                <small>Chuyên mục - 11.08.2016</small>
                                 <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>
                             </li>
                             <li>
                                 <div class="alignleft">
                                     <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-6.jpg" alt=""></a>
                                 </div>
-                                <small>Category - 11.08.2016</small>
+                                <small>Chuyên mục - 11.08.2016</small>
                                 <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>
                             </li>
                             <li>
                                 <div class="alignleft">
                                     <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg" alt=""></a>
                                 </div>
-                                <small>Category - 11.08.2016</small>
+                                <small>Chuyên mục - 11.08.2016</small>
                                 <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>
                             </li>
                         </ul>
@@ -919,28 +919,28 @@
                     <!-- /widget -->
                     <div class="widget">
                         <div class="widget-title">
-                            <h4>Categories</h4>
+                            <h4>Thể loại</h4>
                         </div>
                         <ul class="cats">
-                            <li><a href="#">Food <span>(12)</span></a></li>
-                            <li><a href="#">Places to visit <span>(21)</span></a></li>
-                            <li><a href="#">New Places <span>(44)</span></a></li>
-                            <li><a href="#">Suggestions and guides <span>(31)</span></a></li>
+                            <li><a href="#">Đồ ăn <span>(12)</span></a></li>
+                            <li><a href="#">Địa điểm tham quan <span>(21)</span></a></li>
+                            <li><a href="#">Địa điểm mới <span>(44)</span></a></li>
+                            <li><a href="#">Gợi ý và hướng dẫn <span>(31)</span></a></li>
                         </ul>
                     </div>
                     <!-- /widget -->
                     <div class="widget">
                         <div class="widget-title">
-                            <h4>Popular Tags</h4>
+                            <h4>Phổ biến</h4>
                         </div>
                         <div class="tags">
-                            <a href="#">Food</a>
+                            <a href="#">Đồ ăn</a>
                             <a href="#">Bars</a>
                             <a href="#">Cooktails</a>
-                            <a href="#">Shops</a>
-                            <a href="#">Best Offers</a>
+                            <a href="#">Cửa hàng</a>
+                            <a href="#">Ưu đãi tốt nhất</a>
                             <a href="#">Transports</a>
-                            <a href="#">Restaurants</a>
+                            <a href="#">Các nhà hàng</a>
                         </div>
                     </div>
                     <!-- /widget -->

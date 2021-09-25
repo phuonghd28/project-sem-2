@@ -74,9 +74,9 @@
         <div class="container">
             <div class="card-body mb-2"><h2 class="mb-2">
                     @if($data)
-                        Update Product
+                        Cập nhật sản phẩm
                     @else
-                        Create Product
+                        Thêm mới sản phẩm
                     @endif
                 </h2>
                 @if(session('status'))
@@ -90,26 +90,26 @@
                     @endif
                     @csrf
                     <div class="position-relative row form-group">
-                        <label class="col-sm-1 col-form-label">Name</label>
+                        <label class="col-sm-1 col-form-label">Tên</label>
                         <div class="col-sm-3">
                             <input name="name" value="{{$data ? $data->name : ''}}" type="text"
-                                   class="form-control form-control" placeholder="Enter name">
+                                   class="form-control form-control" placeholder="Vui lòng nhập tên">
                             @error('name')
                             <div class="mt-1 mb-1 ml-1 text-danger">{{ $message }}</div>
                             @enderror
                         </div>
-                        <label class="col-sm-1 col-form-label">Price</label>
+                        <label class="col-sm-1 col-form-label">Giá</label>
                         <div class="col-sm-3">
                             <input name="price" value="{{$data ? $data->price : ''}}" type="text" class="form-control"
-                                   placeholder="Enter price">
+                                   placeholder="Vui lòng nhập giá">
                             @error('price')
                             <div class="mt-1 mb-1 ml-1 text-danger">{{ $message }}</div>
                             @enderror
                         </div>
-                        <label class="col-sm-1 px-1 col-form-label">Category</label>
+                        <label class="col-sm-1 px-1 col-form-label">Danh mục</label>
                         <div class="col-sm-3">
                             <select class="form-control" name="category_id">
-                                <option selected disabled hidden>Category</option>
+                                <option selected disabled hidden>Danh mục</option>
                                 @foreach($category as $item)
                                     <option
                                         {{$data && $data->category_id === $item->id ? 'selected' : ''}} value="{{$item->id}}">{{$item->name}}</option>
@@ -121,7 +121,7 @@
                         </div>
                     </div>
                     <div class="position-relative row form-group">
-                        <label class="col-sm-1">Featured</label>
+                        <label class="col-sm-1">Nổi bật</label>
                         <div class="col-sm-4">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="is_featured" id="inlineRadio1" value="1" {{$data && $data->is_featured == 1 ? 'checked' : ''}}>
@@ -134,7 +134,7 @@
                         </div>
                     </div>
                     <div class="position-relative row form-group">
-                        <label class="col-sm-2 col-form-label">Description</label>
+                        <label class="col-sm-2 col-form-label">Mô tả chi <tiết></tiết></label>
                         <div class="col-sm-12">
                             <textarea id="description" name="description" type="text" class="form-control"
                                       placeholder="Enter description"
@@ -145,13 +145,13 @@
                         </div>
                     </div>
                     <div class="position-relative row form-group mb-0">
-                        <label for="exampleFile" class="col-sm-1 col-form-label">Image</label>
+                        <label for="exampleFile" class="col-sm-1 col-form-label">Ảnh</label>
                         <div class="col-sm-10">
                             <div class="button_outer">
                                 <div class="btn_upload">
                                     <input type="file" name="imageChooser" class="custom-file-input" style="opacity: 0">
                                     <input type="hidden" name="image" value="{{$data ? $data->image : ''}}">
-                                    <button type="button" class="btn_choose_images">Upload Image</button>
+                                    <button type="button" class="btn_choose_images">Chọn ảnh</button>
                                 </div>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                     <div class="position-relative row form-group">
                         <label class="col-sm-1 col-form-label"></label>
                         <div class="col-sm-11 d-flex justify-content-end">
-                            <button class="btn btn-primary">Send</button>
+                            <button class="btn btn-primary">Gửi</button>
                         </div>
                     </div>
                 </form>

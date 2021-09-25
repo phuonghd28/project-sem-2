@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    List Product
+    Danh sách sản phẩm
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">
@@ -8,7 +8,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-4">
-                        <h2 class="">List Product</h2>
+                        <h2 class="">Danh sách sản phẩm</h2>
                     </div>
                     <div class="col-8">
                         <form id="filterForm">
@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="col-4 form-group">
                                     <select name="category" class="custom-select" id="category">
-                                        <option hidden selected disabled>All</option>
+                                        <option hidden selected disabled>Tất cả sản phẩm</option>
                                         @foreach(\App\Models\Category::all() as $category)
                                             <option
                                                 value="{{$category->id}}" {{$category->id == $categories ? 'selected' : ''}}>
@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="col-4 form-group">
                                     <select name="sort" class="custom-select" id="sort">
-                                        <option hidden selected disabled>Sort</option>
+                                        <option hidden selected disabled>Loại</option>
                                         <option value="1" {{$sort == 1 ? 'selected' : ''}}>Mới nhất</option>
                                         <option value="2" {{$sort == 2 ? 'selected' : ''}}>Cũ nhất</option>
                                     </select>
@@ -58,11 +58,11 @@
                     <thead>
                     <tr>
                         <th>Id</th>
-                        <th style="width:10%">Name</th>
-                        <th>Image</th>
-                        <th>Category</th>
-                        <th>Price</th>
-                        <th>Actions</th>
+                        <th style="width:10%">Tên</th>
+                        <th>Ảnh</th>
+                        <th>Danh mục</th>
+                        <th>Giá</th>
+                        <th>Sửa, Xoá</th>
                     </tr>
                     </thead>
                     <tbody>

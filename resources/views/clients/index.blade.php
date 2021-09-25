@@ -16,12 +16,12 @@
         <div class="row">
             <div class="col-xxl-12 col-xl-12 col-lg-12">
                 <div class="heading-minimal">
-                    <div class="sub-title">Top Foods</div>
-                    <h3 class="head-title">Our Categories</h3>
+                    <div class="sub-title">Các món chay hàng đầu</div>
+                    <h3 class="head-title">Danh mục</h3>
                 </div>
             </div>
             @foreach($categories as $category)
-                <div class="col-xl-3 col-lg-6 col-md-6 category-items-new">
+                <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 col-6 category-items-new">
                     <div class="category-main">
                         <a href="/products?category={{$category->id}}">
                             <img
@@ -43,13 +43,13 @@
         <div class="row">
             <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
                 <div class="heading-minimal">
-                    <div class="sub-title">TOP FOODS</div>
+                    <div class="sub-title">Các món chay hàng đầu</div>
                 </div>
             </div>
 
             <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
                 <div class="heading-minimal">
-                    <h3 class="head-title">Featured Foods</h3>
+                    <h3 class="head-title">Các món chay nổi bật</h3>
                 </div>
             </div>
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
@@ -59,7 +59,8 @@
                             <div class="res-3-box ">
                                 <div class="res-2-img parallex-new">
                                     <a href="#">
-                                        <img style="object-fit: cover;height:200px;width:100%" src="{{explode(',',$featured_food->image)[0]}}" alt=""
+                                        <img style="object-fit: cover;height:200px;width:100%"
+                                             src="{{explode(',',$featured_food->image)[0]}}" alt=""
                                              class="img-fluid">
                                     </a>
                                 </div>
@@ -97,7 +98,7 @@
 
             <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
                 <div class="heading-minimal">
-                    <h3 class="head-title">Selling Foods</h3>
+                    <h3 class="head-title">Các món ăn chay được bán</h3>
                 </div>
             </div>
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
@@ -147,14 +148,14 @@
 
             <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
                 <div class="heading-minimal">
-                    <h3 class="head-title">New Foods</h3>
+                    <h3 class="head-title">Các món chay mới</h3>
                 </div>
             </div>
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
                 <div class="row">
                     @foreach($new as $new_food)
                         <div class="eq-height col-xl-3 col-lg-6 col-md-4 col-sm-6 col-6">
-                            <div class="res-3-box ">
+                            <div class="res-3-box">
                                 <div class="res-2-img parallex-new">
                                     <a href="#">
                                         <img height="200px" width="100%" style="object-fit: cover"
@@ -194,6 +195,18 @@
             </div>
         </div>
     </div>
+
+    <div>
+        <div class="ndElDd">
+            <g-more-link class="mIKy0c OSrXXb dGWpb">
+                <hr class="pb5vrc">
+                <div class="MXl0lf mtqGb">
+                    <span class="wUrVib OSrXXb">LỢI ÍCH TẠI COM CHAY</span>
+                </div>
+            </g-more-link>
+        </div>
+    </div>
+
     <section>
         <div class="row my-lg-5 mt-0 my-sm-4 my-md-4">
             <div class="col-lg-4 col-md-4 col-sm-12 col-12 div-an-toan">
