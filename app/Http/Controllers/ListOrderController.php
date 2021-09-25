@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\UserRequest;
+use App\Jobs\SendMail;
 use App\Models\Order;
 use App\Models\User;
 use Carbon\Carbon;
@@ -58,11 +59,14 @@ class ListOrderController extends Controller
         return redirect()->route('listOrder')->with(['status' => 'Delete order success']);
     }
     public function update_status(Request $request){
+        $id = [];
         foreach (json_decode($request->array_id) as $item){
             $order = Order::find($item);
             $order->status = $request->desire;
             $order->save();
+            array_push($id,$order->id);
         }
+        $this->dispatch(new SendMail(collect($id)->toArray()));
         return back()->with(['status' => 'Update status success']);
     }
     public function deleteAll(Request $request){

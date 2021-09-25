@@ -20,17 +20,20 @@
             <div class="row">
                 <hr>
             </div>
-            <div class="row" style="margin-left: 10px">
+            @switch($order->status)
+                @case(1)
+                <div class="row" style="margin-left: 10px">
 
-                <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
-                <p>Cảm ơn bạn đã quan tâm sản phẩm của Cơm chay. Đơn hàng của bạn đã được nhận và sẽ được xử lý ngay khi
-                    bạn xác nhận thanh toán.</p>
-                <p>Để xem chi tiết đơn hàng của mình tại web, bạn có thể nhấn vào nút bên dưới</p>
-            </div>
-            <div class="row justify-content-center" style="margin: 20px">
-                <div class="col-5">
+                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
+                    <p>Cảm ơn bạn đã quan tâm sản phẩm của Cơm chay. Đơn hàng của bạn đã được nhận và sẽ được xử lý ngay
+                        khi
+                        bạn xác nhận thanh toán.</p>
+                    <p>Để xem chi tiết đơn hàng của mình tại web, bạn có thể nhấn vào nút bên dưới</p>
+                </div>
+                <div class="row justify-content-center" style="margin: 20px">
+                    <div class="col-5">
 
-                    <a href="{{route('detailOrder',$order->id)}}" class="btn btn-primary" style="width:100%;color: #fff;
+                        <a href="{{route('detailOrder',$order->id)}}" class="btn btn-primary" style="width:100%;color: #fff;
     background-color: #0d6efd;
     border-color: #0d6efd;
 display: inline-block;
@@ -46,8 +49,32 @@ display: inline-block;
     padding: .375rem .75rem;
     font-size: 1rem;
     border-radius: .25rem;">Xem đơn hàng</a>
+                    </div>
                 </div>
-            </div>
+                @break
+                @case(2)
+                <div class="row" style="margin-left: 10px">
+
+                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
+                    <p>Đơn hàng của bạn đã được thanh toán</p>
+                </div>
+                @break
+                @case(3)
+                <div class="row" style="margin-left: 10px">
+
+                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
+                    <p>Đơn hàng của bạn đang được giao hàng</p>
+                </div>
+                @break
+                @case(4)
+                <div class="row" style="margin-left: 10px">
+
+                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
+                    <p>Đơn hàng của bạn đã hoàn thành</p>
+                </div>
+                @break
+            @endswitch
+
         </div>
     </div>
 </div>

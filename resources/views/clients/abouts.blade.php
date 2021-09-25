@@ -708,6 +708,7 @@
             width: 20%;
         }
         .img-fluid {
+            margin-top: 20px;
             max-width: 100%;
             height: 500px;
             width: 600px;

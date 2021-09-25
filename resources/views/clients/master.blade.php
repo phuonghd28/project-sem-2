@@ -48,18 +48,19 @@
                         <div class="main-nav col d-lex align-self-center menu-header-lap">
                             <a class="nav-item active t-home" href="{{ route('index') }}">Trang chủ</a>
                             <div class="dropdown d-inline">
-                                <a  class="nav-item t-product" href="{{route('products')}}">Sản phẩm</a>
-                                <div class="dropdown-menu p-0" style="border-radius: 0;border-top:0;top:56px;left: 0" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item dropdown-link" href="#">Link 1</a>
-                                    <a class="dropdown-item dropdown-link" href="#">Link 2</a>
-                                    <a class="dropdown-item dropdown-link" href="#">Link 3</a>
+                                <a class="nav-item t-product" href="{{route('products')}}">Product</a>
+                                <div class="dropdown-menu p-0" style="border-radius: 0;top:55px;left: 0"
+                                     aria-labelledby="dropdownMenuButton">
+                                    @foreach(\App\Models\Category::all() as $item)
+                                        <a class="dropdown-item dropdown-link" href="/products?category={{$item->id}}">{{$item->name}}</a>
+                                    @endforeach
                                 </div>
                             </div>
                             <a class="nav-item t-blog" href="{{route('blog')}}">Blog Chay</a>
                             <a class="nav-item t-abouts" href="{{route('abouts')}}">Về comchay</a>
                             <a class="nav-item t-contact" href="{{route('contact')}}">Liên hệ</a>
                         </div>
-{{---------------------------------------------------nav mobile-----------------------------------------}}
+                        {{---------------------------------------------------nav mobile-----------------------------------------}}
                         <input type="checkbox" class="nav__input" id="nav-mobile-input">
                         <label for="nav-mobile-input" class="nav__overlay"></label>
                         <div class="nav-mobile" id="nav-mobile-respon">
@@ -108,7 +109,8 @@
                                         @if(\Illuminate\Support\Facades\Auth::check())
                                             <div class="wrap-mobile-link">
                                                 <i class="fas fa-user-circle"></i>
-                                                <a class="nav-mobile-link" href="{{route('detail-profile',\Illuminate\Support\Facades\Auth::user()->id)}}">{{\Illuminate\Support\Facades\Auth::user()->username}}</a>
+                                                <a class="nav-mobile-link"
+                                                   href="{{route('detail-profile',\Illuminate\Support\Facades\Auth::user()->id)}}">{{\Illuminate\Support\Facades\Auth::user()->username}}</a>
                                             </div>
                                             <div class="wrap-mobile-link border-0">
                                                 <i class="fas fa-power-off"></i>
@@ -148,9 +150,12 @@
                                         </a>
                                     </button>
                                     <div id="dropd-menu" class="dropdown-menu p-0" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="{{route('detail-profile',\Illuminate\Support\Facades\Auth::user()->id)}}"><i class="far fa-user ic-user mr-2"></i>Tài
+                                        <a class="dropdown-item"
+                                           href="{{route('detail-profile',\Illuminate\Support\Facades\Auth::user()->id)}}"><i
+                                                class="far fa-user ic-user mr-2"></i>Tài
                                             khoản</a>
-                                        <a class="dropdown-item border-0" style="border-radius: 0 0 4px 4px;" href="{{route('logout')}}"><i
+                                        <a class="dropdown-item border-0" style="border-radius: 0 0 4px 4px;"
+                                           href="{{route('logout')}}"><i
                                                 class="fas fa-power-off mr-2 ic-logout"></i>Đăng xuất</a>
                                     </div>
                                 @else
@@ -266,7 +271,7 @@
                     <div class="col-md-3 col-sm-4 col-lg-4 col-xl-3 col-8 mx-auto mb-lg-4 mb-md-4 mb-sm-3 img-nd">
                         <h5 class="wrap-img-footer">
                             <a href="{{route('index')}}" class="d-inline-block">
-                                <img style="width: 100%" class="img-footer-respon" src="/assets/images/logo1.png">
+                                <img style="width: 86%;height:80px;margin-right: 20px" src="/assets/images/logo1.png">
                             </a>
                         </h5>
                         <p>Thực phẩm chay, sạch, ngon, thuần chay.</p>
@@ -335,17 +340,18 @@
     </footer>
 </div>
 <script type="text/javascript" src="/assets/scripts/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/scripts/jquery.validate.min.js"></script>
+{{--<script type="text/javascript" src="/assets/scripts/jquery.validate.min.js"></script>--}}
+@yield('custom_js')
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
-<script src="/assets/scripts/index.js"></script>
+{{--<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"--}}
+{{--        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"--}}
+{{--        crossorigin="anonymous"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"--}}
+{{--        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"--}}
+{{--        crossorigin="anonymous"></script>--}}
+{{--<script src="/assets/scripts/index.js"></script>--}}
 <script>
     $("#log-form").validate({
         rules: {
@@ -435,6 +441,5 @@
     });
 
 </script>
-@yield('custom_js')
 </body>
 </html>

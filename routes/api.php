@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PaypalController;
 use App\Models\Category;
 use App\Models\Order;
 use App\Models\Product;
@@ -22,8 +23,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/chart', function () {
-    $category = Category::query()->limit(1)->get();
-    $product = Product::query()->limit(1)->get();
-    return \Illuminate\Support\Facades\Response::json(['category' => $category, 'product' => $product]);
-
+    $month_6 = Order::query()->where('status', '=' , 4)->WhereMonth('created_at','06')->sum('totalPrice');
+    $month_7 = Order::query()->where('status','=', 4)->whereMonth('created_at', '07')->sum('totalPrice');
+    $month_8 = Order::query()->where('status','=', 4)->whereMonth('created_at', '08')->sum('totalPrice');
+    $month_9 = Order::query()->where('status','=', 4)->whereMonth('created_at', '09')->sum('totalPrice');
+    return \Illuminate\Support\Facades\Response::json(['month_9' => $month_9, 'month_8' => $month_8, 'month_7' => $month_7, 'month_6' => $month_6]);
 });
