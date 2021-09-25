@@ -1238,7 +1238,7 @@ button:focus {
     outline: none;
     border-radius: 3px;
     background: var(--whitecolor);
-    padding: 0 150px 0 20px
+    padding: 0 15px;
 }
 
 .search-form .btn {
@@ -1786,9 +1786,7 @@ button:focus {
     height: auto
 }
 
-.navbar-src {
 
-}
 
 .right-widget {
     display: -webkit-box;
@@ -1876,10 +1874,6 @@ button:focus {
         padding: 12px 0
     }
 
-    .left-widget {
-        display: block
-    }
-
     .right-widget li {
         margin-right: 0
     }
@@ -1892,7 +1886,7 @@ button:focus {
         width: 160px
     }
 
-    .navbar-src, .right-widget li {
+.right-widget li {
         display: none
     }
 
