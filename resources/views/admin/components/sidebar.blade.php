@@ -33,13 +33,14 @@
         <ul class="vertical-nav-menu metismenu">
             <li class="sidebar_item" style="border: none!important;">
                 <a href="{{route('home')}}" class="sidebar_item">
-                    <i class="metismenu-icon fas fa-chart-bar"></i>Dashbroad
+                    <i class="metismenu-icon fas fa-chart-bar"></i>
+                    <p style="margin-right: 20px">Dashbroad</p>
                 </a>
             </li>
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-user"></i>
-                    Người dùng
+                    <p style="margin-right: 20px">Người dùng</p>
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
@@ -60,7 +61,7 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-th-list"></i>
-                    Danh mục
+                    <p>Danh mục</p>
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
@@ -81,7 +82,7 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-hamburger"></i>
-                    Sản phẩm
+                    <p>Sản phẩm</p>
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
@@ -102,7 +103,7 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-list-alt"></i>
-                    Đơn hàng
+                    <p>Đơn hàng</p>
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">
@@ -117,7 +118,7 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-envelope"></i>
-                    Phản hồi
+                    <p>Liên hệ</p>
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">

@@ -39,6 +39,12 @@
                         </form>
                     </div>
                 </div>
+                @if(session()->get('status'))
+                    <div class="alert alert-success alert-dismissible fade show">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        <strong>Thành công !</strong> {{ session()->get( 'status' ) }}
+                    </div>
+                @endif
                 <?php $orderTotal = 0; ?>
                 <table class="mb-0 table table-bordered">
                     <tr>
@@ -81,7 +87,7 @@
                                     @break
                                 @endswitch</td>
                             <td>
-                                <a href="{{route('detailOrder', $order->id)}}"><button class="btn btn-primary"><i class="fa fa-info-circle"></i></button></a>
+                                <a href="{{route('showOrder', $order->id)}}"><button class="btn btn-primary"><i class="fa fa-info-circle"></i></button></a>
                                 <a onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này ?')"
                                    href="{{route('deleteOrder',$order->id)}}">
                                     <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
@@ -92,12 +98,9 @@
 
                 </table>
                 <div class="row justify-content-end mt-3">
-                    <div class="col-4">
-                        @include('admin.components.pagination',['list' => $orders])
-                    </div>
-                    <div class="col-4">
+                    <div class="col-2">
                         <form id="filter-date">
-                            <select name="date" id="date" class="custom-select" style="width: 50%">
+                            <select name="date" id="date" class="custom-select" style="width: 100%">
                                 <option selected disabled hidden>Lọc theo thời gian</option>
                                 <option value="1" {{$date && $date == 1 ? 'selected' : ''}}>Đơn hàng trong ngày</option>
                                 <option value="2" {{$date && $date == 2 ? 'selected' : ''}}>Đơn hàng trong tháng
@@ -105,6 +108,9 @@
                                 <option value="3" {{$date && $date == 3 ? 'selected' : ''}}>Đơn hàng trong năm</option>
                             </select>
                         </form>
+                    </div>
+                    <div class="col-2">
+                        @include('admin.components.pagination',['list' => $orders])
                     </div>
                 </div>
                 <div class="row">
@@ -116,21 +122,15 @@
                             @foreach(\App\Enums\Status::getValues() as $type)
                                 <option value="{{$type}}">{{\App\Enums\Status::getDescription($type)}}</option>
                             @endforeach
+                            <option value="5">Xóa đơn hàng</option>
                         </select>
                         <button class="btn btn-primary btn_submit" style="width: 120px">Cập nhật</button>
-                        <button class="btn btn-danger btn_delete" style="width: 120px">Xoá</button>
                         <form action="{{route('updateStatus')}}" id="form_update_status" method="post"
                               style="width: 0;height: 0;overflow: hidden!important;">
                             @csrf
                             <div style="width: 0;height: 0;overflow: hidden!important;">
                                 <input type="text" name="array_id" id="array_id">
                                 <input type="text" name="desire" id="desire">
-                            </div>
-                        </form>
-                        <form action="{{route('deleteAll')}}" id="delete_all" style="width: 0;height: 0;overflow: hidden!important;">
-                            @csrf
-                            <div style="width: 0;height: 0;overflow: hidden!important;">
-                                <input type="text" name="delete_id" id="delete_id">
                             </div>
                         </form>
                     </div>
@@ -167,17 +167,17 @@
                     $('#form_update_status').submit()
                 }
             })
-            $('.btn_delete').click(function () {
-                var checkboxs = document.querySelectorAll('.checkbox_choice')
-                var items = []
-                for (let i = 0; i < checkboxs.length; i++) {
-                    if (checkboxs[i].checked) {
-                        items.push(checkboxs[i].value)
-                    }
-                }
-                $('#delete_id').val(JSON.stringify(items))
-                $('#delete_all').submit()
-            })
+            // $('.btn_delete').click(function () {
+            //     var checkboxs = document.querySelectorAll('.checkbox_choice')
+            //     var items = []
+            //     for (let i = 0; i < checkboxs.length; i++) {
+            //         if (checkboxs[i].checked) {
+            //             items.push(checkboxs[i].value)
+            //         }
+            //     }
+            //     $('#delete_id').val(JSON.stringify(items))
+            //     $('#delete_all').submit()
+            // })
             let submit = false
             $('#search').click(function () {
                 if (submit) {
