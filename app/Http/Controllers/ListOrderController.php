@@ -23,7 +23,7 @@ class ListOrderController extends Controller
 
         if ($search || strlen($search) > 0) {
             $queryBuilder = $queryBuilder->where('shipName', 'like', '%' . $search . '%')
-            ->orWhere('totalPrice', 'like', '%'.$search.'%');
+                ->orWhere('totalPrice', 'like', '%' . $search . '%');
         }
         if ($sort === 1) {
             $queryBuilder = $queryBuilder->orderBy('created_at', 'DESC');
@@ -34,13 +34,13 @@ class ListOrderController extends Controller
         if ($status) {
             $queryBuilder = $queryBuilder->where('status', $status);
         }
-        if($date == 1){
-            $queryBuilder = $queryBuilder->whereDate('created_at',date_format(Carbon::now(),'Y/m/d'));
+        if ($date == 1) {
+            $queryBuilder = $queryBuilder->whereDate('created_at', date_format(Carbon::now(), 'Y/m/d'));
         }
-        if($date == 2){
+        if ($date == 2) {
             $queryBuilder = $queryBuilder->whereMonth('created_at', Carbon::now()->month);
         }
-        if($date == 3){
+        if ($date == 3) {
             $queryBuilder = $queryBuilder->whereYear('created_at', Carbon::now()->year);
         }
         $order = $queryBuilder->orderBy('created_at', 'DESC')->paginate(5)->appends(['search' => $search, 'status' => $status, 'date' => $date]);
@@ -52,28 +52,36 @@ class ListOrderController extends Controller
         ]);
 
     }
+
     public function delete($id)
     {
         $user = Order::find($id);
         $user->delete();
         return redirect()->route('listOrder')->with(['status' => 'Delete order success']);
     }
-    public function update_status(Request $request){
+
+    public function update_status(Request $request)
+    {
         $id = [];
-        foreach (json_decode($request->array_id) as $item){
+        foreach (json_decode($request->array_id) as $item) {
             $order = Order::find($item);
-            $order->status = $request->desire;
-            $order->save();
-            array_push($id,$order->id);
+            if ($request->desire == 5) {
+                $order->delete();
+            } else {
+                $order->status = $request->desire;
+                $order->save();
+                array_push($id, $order->id);
+            }
         }
-        $this->dispatch(new SendMail(collect($id)->toArray()));
-        return back()->with(['status' => 'Update status success']);
+        if( $request->desire != 5){
+            $this->dispatch(new SendMail(collect($id)->toArray()));
+        }
+        return back()->with(['status' => 'Cập nhập thành công']);
     }
-    public function deleteAll(Request $request){
-        foreach (json_decode($request->delete_id) as $item){
-            $order = Order::find($item);
-            $order->delete();
-        }
-        return back()->with(['status' => 'Delete order success']);
+    public function show($id) {
+        $order = Order::where('id', $id)->with(['district', 'ward'])->first();
+        return view('admin.orders.detail', [
+            'orders' => $order
+        ]);
     }
 }

@@ -29,9 +29,6 @@
                                         <button class="btn btn-inline" id="search"><i class="fas fa-search"></i>
                                         </button>
                                     </form>
-                                    <form id="brand_filter">
-                                        <input type="hidden" name="category" id="category">
-                                    </form>
                                 </div>
                             </div>
                             <div class="row">
@@ -40,6 +37,7 @@
                                         <div class="col-12 product-page-number"><p>Hiển thị 1 – {{$products->perPage()}}
                                                 trên {{$products->total()}} kết quả</p></div>
                                         <form id="filter-form" class="col-12">
+                                            <input type="hidden" name="category" id="category">
                                             <select class="product-short-select custom-select form-select" name="filter"
                                                     id="filter">
                                                 <option selected>Các loại thực phẩm</option>
@@ -197,7 +195,7 @@
             })
             $('.btn_category').click(function () {
                 $('#category').val(this.slot)
-                $('#brand_filter').submit()
+                $('#filter-form').submit()
             })
             $('#filter').change(function () {
                 $('#filter-form').submit()
