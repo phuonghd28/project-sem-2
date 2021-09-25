@@ -232,8 +232,8 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-up">
-                <h2>Contact Us</h2>
-                <p>Contact us the get started</p>
+                <h2>Liên hệ chúng tôi</h2>
+                <p>Liên hệ chúng tôi để bắt đầu</p>
             </div>
 
             <div class="row">
@@ -242,19 +242,19 @@
                     <div class="info">
                         <div class="address">
                             <i class="fas fa-map-marked-alt"></i>
-                            <h4>Location:</h4>
+                            <h4>Địa chỉ:</h4>
                             <p>8A Ton That Thuyet, Cau Giay,HN</p>
                         </div>
 
                         <div class="email">
                             <i class="far fa-envelope"></i>
-                            <h4>Email:</h4>
+                            <h4>Địa chỉ Email:</h4>
                             <p>comchay@ftp.edu.vn</p>
                         </div>
 
                         <div class="phone">
                             <i class="fas fa-phone-volume"></i>
-                            <h4>Call:</h4>
+                            <h4>Số điện thoại:</h4>
                             <p>+84 0981344889</p>
                         </div>
 
@@ -268,14 +268,14 @@
                         @csrf
                         <div class="form-row row">
                             <div class="form-group col-md-6">
-                                <label for="name">Your Name</label>
+                                <label for="name">Tên của bạn</label>
                                 <input type="text" name="name" class="form-control" id="name"/>
                                 @error('name')
                                 <div class="text-danger"> * {{$message}}</div>
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="name">Your Email</label>
+                                <label for="name">Địa chỉ Email</label>
                                 <input type="email" class="form-control" name="email" id="email"/>
                                 @error('email')
                                 <div class="text-danger"> * {{$message}}</div>
@@ -284,7 +284,7 @@
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label for="name">Subject</label>
+                                <label for="name">Chủ để</label>
                                 <select class="form-select select-subject" name="subject" id="subject">
                                     <option value="" disabled hidden selected>Chủ đề</option>
                                     <option value="{{\App\Enums\Subject::SALES}}">Bán hàng</option>
@@ -296,7 +296,7 @@
                                 @enderror
                             </div>
                             <div class="form-group col-md-6">
-                                <label for="name">Phone</label>
+                                <label for="name">Số điện thoại</label>
                                 <input type="text" class="form-control" name="phone"/>
                                 @error('phone')
                                 <div class="text-danger"> * {{$message}}</div>
@@ -304,13 +304,13 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="name">Message</label>
+                            <label for="name">Nội dung</label>
                             <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                             @error('message')
                             <div class="text-danger"> * {{$message}}</div>
                             @enderror
                         </div>
-                        <div class="text-center"><button class="btn-block">Send Message</button></div>
+                        <div class="text-center"><button class="btn-block">Gửi</button></div>
                     </form>
                 </div>
 

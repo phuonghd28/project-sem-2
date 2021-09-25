@@ -28,7 +28,7 @@
                     <!--icon-bars-->
                     <label for="nav-mobile-input" class="nav-mobil-bars"><i class="fas fa-bars"></i></label>
                     <div class="logo">
-                        <a href="#">
+                        <a href="{{route('index')}}">
                             <img style="width: 90%;height: 87px" src="/assets/images/logo2.png">
                         </a>
                     </div>
@@ -36,7 +36,7 @@
                 <div class="logo-none-lap col-sm-6 col-6">
                     <div class="logo-mb-header d-flex justify-content-center">
                         <div style="width: 90px">
-                            <a href="#">
+                            <a href="{{route('index')}}">
                                 <img style="height: 48px" src="/assets/images/logo2.png">
                             </a>
                         </div>
@@ -46,7 +46,7 @@
 
                     <div class="d-flex justify-content-end">
                         <div class="main-nav col d-lex align-self-center menu-header-lap">
-                            <a class="nav-item active t-home" href="{{ route('index') }}">Home</a>
+                            <a class="nav-item active t-home" href="{{ route('index') }}">Trang chủ</a>
                             <div class="dropdown d-inline">
                                 <a class="nav-item t-product" href="{{route('products')}}">Product</a>
                                 <div class="dropdown-menu p-0" style="border-radius: 0;top:55px;left: 0"
@@ -56,9 +56,9 @@
                                     @endforeach
                                 </div>
                             </div>
-                            <a class="nav-item t-blog" href="{{route('blog')}}">Blog</a>
-                            <a class="nav-item t-abouts" href="{{route('abouts')}}">Abouts</a>
-                            <a class="nav-item t-contact" href="{{route('contact')}}">Contact</a>
+                            <a class="nav-item t-blog" href="{{route('blog')}}">Blog Chay</a>
+                            <a class="nav-item t-abouts" href="{{route('abouts')}}">Về comchay</a>
+                            <a class="nav-item t-contact" href="{{route('contact')}}">Liên hệ</a>
                         </div>
                         {{---------------------------------------------------nav mobile-----------------------------------------}}
                         <input type="checkbox" class="nav__input" id="nav-mobile-input">
@@ -84,16 +84,9 @@
                                             <div class="dropdown transition-drop" style="margin-left: 35px;position: static;width: 86%;">
                                                 <a class="nav-mobile-link" href="{{route('products')}}">Sản phẩm</a>
                                                 <ul class="dropdown-menu position-static" style="border-radius: 0;border: 0;padding: 0;">
-                                                    <li><a href="#">Bánh chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
-                                                    <li><a href="#">Thực phẩm chay</a></li>
+                                                    @foreach(\App\Models\Category::all() as $item)
+                                                        <li><a href="{{$item->id}}">{{$item->name}}</a></li>
+                                                    @endforeach
                                                 </ul>
                                             </div>
                                         </div>
@@ -126,7 +119,10 @@
                                         @else
                                             <div class="wrap-mobile-link border-0">
                                                 <i class="fas fa-power-off"></i>
-                                                <a class="nav-mobile-link" href="{{route('logout')}}">Đăng nhập</a>
+                                                <button type="submit" style="background: none;border: none;padding: 0"
+                                                        class="btn-account" data-bs-toggle="modal" data-bs-target="#modal-mobile">
+                                                    <a class="nav-mobile-link">Đăng nhập</a>
+                                                </button>
                                             </div>
                                         @endif
                                     </div>
@@ -164,7 +160,7 @@
                                     </div>
                                 @else
                                     <button type="submit" style="background: none;border: none; padding: 10px 14px;"
-                                            class="btn-account" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            class="btn-account" data-bs-toggle="modal" data-bs-target="#modal-mobile">
                                         <a class="color-cart"><b style="font-size: 14px;display: flex">Đăng nhập</b></a>
                                     </button>
                                 @endif
@@ -178,7 +174,8 @@
     <div class="banner">
         @yield('banner')
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="10" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal fade" id="modal-mobile" tabindex="10" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" style="border: none;padding: 0;position: relative">
@@ -188,39 +185,39 @@
                         &times;
                     </button>
                 </div>
-                <div class="form-login" id="form-account">
+                <div class="form-login form-account-mb" id="form-account">
                     @if(session('error-login'))
-                        <div class="text-danger" style="margin-bottom: 5px;">
+                        <div id="error-invalid-acc" class="text-danger" style="margin-bottom: 5px;">
                             {{session('error-login')}}
                         </div>
                     @endif
                     <div class="heading text-center pb-3">
-                        <span id="login" class="mb-2">Đăng nhập</span>
-                        <span id="regis" class="mb-2">Đăng kí</span>
-                        <hr id="indicator">
+                        <span id="login" class="mb-lg-2 mb-md-2 mb-1">Đăng nhập</span>
+                        <span id="regis" class="mb-lg-2 mb-md-2 mb-1">Đăng kí</span>
+                        <hr id="indicator" class="indicator-mb">
                     </div>
-                    <form name="login" id="log-form" action="{{route('login')}}" method="post">
+                    <form name="login" id="log-form" action="{{route('login')}}" class="log-form-mb" method="post">
                         @csrf
-                        <div class="input-user-name mb-4 validate">
+                        <div class="input-user-name mb-lg-4 mb-md-3 mb-sm-3 mb-3 validate">
                             <input class="user-name" type="text" placeholder="Tên người dùng" name="username">
                             <div class="icon-w3">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </div>
                         </div>
 
-                        <div class="input-pass mb-4 validate">
+                        <div class="input-pass mb-lg-4 mb-md-3 mb-sm-3 mb-3 validate">
                             <input class="pass" type="password" placeholder="Mật khẩu" name="password">
                             <div class="icon-w3">
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <button class="btn-login mt-2"><b>Đăng nhập</b></button>
+                        <button class="btn-login mt-lg-2 mt-md-2 mt-sm-2 mt-0"><b>Đăng nhập</b></button>
                     </form>
-                    <form id="reg-form" action="{{ route('register') }}" method="post">
+                    <form id="reg-form" action="{{ route('register') }}" class="reg-form-mb" method="post">
                         @csrf
-                        <div class="input-user-name d-flex m-0 mb-4 justify-content-sm-between">
+                        <div class="input-user-name d-flex mb-lg-4 mb-md-3 mb-sm-3 mb-3 justify-content-sm-between div-2-input">
                             <div style="width: 48%">
-                                <input style="margin-right: 18px" class="user-name input-form-reg d-inline-block"
+                                <input class="user-name input-form-reg d-inline-block"
                                        type="text" placeholder="First Name" name="first_name"/>
                             </div>
                             <div style="width: 48%">
@@ -228,12 +225,12 @@
                                        placeholder="Last Name" name="last_name"/>
                             </div>
                         </div>
-                        <div class="input-pass mb-4">
+                        <div class="input-pass mb-lg-4 mb-md-3 mb-sm-3 mb-3">
                             <input class="pass" type="text" placeholder="Address" name="address"/>
                         </div>
-                        <div class="input-user-name d-flex m-0 mb-4 justify-content-sm-between">
+                        <div class="input-user-name d-flex m-0 mb-lg-4 mb-md-3 mb-sm-3 mb-3 justify-content-sm-between div-2-input">
                             <div style="width: 48%">
-                                <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
+                                <input class="input-form-reg user-name d-inline-block"
                                        type="text"
                                        placeholder="User name" name="username"/>
                             </div>
@@ -242,13 +239,13 @@
                                        placeholder="Phone" name="phone"/>
                             </div>
                         </div>
-                        <div class="input-pass mb-4">
+                        <div class="input-pass mb-lg-4 mb-md-3 mb-sm-3 mb-3">
                             <input class="pass" type="text" placeholder="Email" name="email"/>
 
                         </div>
-                        <div class="input-user-name d-flex m-0 mb-4 justify-content-sm-between">
+                        <div class="input-user-name d-flex mb-lg-4 mb-md-3 mb-sm-3 mb-3 justify-content-sm-between div-2-input">
                             <div style="width: 48%">
-                                <input style="margin-right: 18px" class="input-form-reg user-name d-inline-block"
+                                <input class="input-form-reg user-name d-inline-block"
                                        type="password" placeholder="Password" name="password"/>
                             </div>
 
@@ -258,7 +255,7 @@
                             </div>
 
                         </div>
-                        <button class="btn-login mt-2"><b>Đăng ký</b></button>
+                        <button class="btn-login mt-lg-2 mt-md-2 mt-sm-2 mt-0"><b>Đăng ký</b></button>
                     </form>
                 </div>
             </div>
@@ -315,10 +312,10 @@
                             Hỗ trợ
                         </h5>
                         <p>
-                            <a href="{{route('abouts')}}" class="text-reset">About</a>
+                            <a href="{{route('abouts')}}" class="text-reset">Về comchay</a>
                         </p>
                         <p>
-                            <a href="{{route('contact')}}" class="text-reset">Contact</a>
+                            <a href="{{route('contact')}}" class="text-reset">Liên hệ</a>
                         </p>
                     </div>
                     <div id="contact-auto" class="col-md-4  col-sm-4 col-lg-3 col-xl-3 col-8 mx-auto mb-md-0 mb-lg-4 mb-sm-3 color-icon">

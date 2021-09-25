@@ -31,8 +31,8 @@ var FormAccount = document.getElementById("form-account");
 regis.onclick = function () {
     RegForm.style.transform = "translateX(-500px)";
     LoginForm.style.transform = "translateX(-500px)";
-    Indicator.style.transform = "translateX(236px)";
-    FormAccount.style.height = "710px";
+    Indicator.style.transform = "translateX(239px)";//144
+    FormAccount.style.height = "710px";//545
     RegForm.style.opacity = "0";
     RegForm.style.opacity = "1";
 }
@@ -40,8 +40,8 @@ regis.onclick = function () {
 login.onclick = function () {
     RegForm.style.transform = "translateX(0px)";
     LoginForm.style.transform = "translateX(0px)";
-    Indicator.style.transform = "translateX(83px)";
-    FormAccount.style.height = "430px"
+    Indicator.style.transform = "translateX(82px)";//38
+    FormAccount.style.height = "430px";//345
     LoginForm.style.opacity = "0";
     LoginForm.style.opacity = "1";
 }
@@ -50,6 +50,4 @@ document.getElementById("dropdownMenuLink").onclick = function() {dropdowUser()}
 function dropdowUser() {
     document.getElementById("dropd-menu").classList.toggle("show");
 }
-
-
 

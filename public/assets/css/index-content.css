@@ -126,7 +126,7 @@ ul {
 .head-title::after{
     content: '';
     background: #03C3C4FF;
-    width: 80px;
+    width: 200px;
     height: 5px;
     border-radius: 5px;
     position: absolute;
@@ -387,14 +387,14 @@ ul {
     border-radius: 10px;
     width: 100%;
     margin-bottom: 30px;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
 }
 
 .res-3-box:hover {
     cursor: pointer;
     transition: all .3s;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transform: translateY(5px);
+    transform: translateY(-5px);
 }
 
 .res-2-img {
@@ -689,6 +689,62 @@ injected stylesheet:root {
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.ndElDd {
+    margin: 30px 0 60px 0;
+    position: relative;
+}
+g-more-link.dGWpb a.Q2MMlc {
+    display: inline-block;
+    /* pointer-events: none; */
+}
+g-more-link a.Q2MMlc {
+    align-items: center;
+    display: flex;
+}
+g-more-link.dGWpb {
+    cursor: initial;
+    text-align: center;
+}
+.mIKy0c {
+    display: block;
+    line-height: 18px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+.pb5vrc {
+    background:none;
+    border-bottom: 1px solid #8b8e94;
+    height: 1px;
+    left: 0;
+    margin-top: 24px;
+    position: absolute;
+    width: 100%;
+}
+.MXl0lf {
+    background: #fff;
+    border: 1px solid #dadce0;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 33px;
+    pointer-events: auto;
+    position: relative;
+    padding: 7px 30px;
+    height: 50px;
+    border-radius: 33PX;
+}
+.MXl0lf .wUrVib {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+}
+.wUrVib {
+    color: #686868;;
+    white-space: nowrap;
+    width: auto;
     font-weight: 500;
 }
 
