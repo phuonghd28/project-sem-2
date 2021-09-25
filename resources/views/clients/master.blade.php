@@ -85,7 +85,7 @@
                                                 <a class="nav-mobile-link" href="{{route('products')}}">Sản phẩm</a>
                                                 <ul class="dropdown-menu position-static" style="border-radius: 0;border: 0;padding: 0;">
                                                     @foreach(\App\Models\Category::all() as $item)
-                                                        <li><a href="{{$item->id}}">{{$item->name}}</a></li>
+                                                        <li><a href="/products?category={{$item->id}}">{{$item->name}}</a></li>
                                                     @endforeach
                                                 </ul>
                                             </div>

@@ -18,12 +18,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col-12">
                             <div class="row mb-3">
                                 <div class="navbar-element">
-                                    <ul class="left-widget">
-                                        <li><a class="icon icon-inline menu-bar" href="#"><i class="fas fa-align-left"></i></a></li>
-                                    </ul>
                                     <form class="search-form navbar-src">
                                         <input type="text" placeholder="Tìm kiếm..." name="search">
                                         <button class="btn btn-inline" id="search"><i class="fas fa-search"></i>
@@ -84,12 +81,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-9">
+                        <div class="col-xl-9 col-lg-9 col-md-8 col-sm-8 col-12">
                             <div class="row">
                                 @if(count($products) > 0)
                                     @foreach($products as $data)
 
-                                        <div class="col-6 col-sm-6 col-md-4 col-lg-4">
+                                        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                                             <div class="product-card card-gape">
                                                 <a href="{{route('product_detail',$data->id)}}">
                                                     <div class="product-img"><img

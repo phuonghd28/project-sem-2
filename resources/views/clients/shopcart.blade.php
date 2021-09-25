@@ -95,7 +95,6 @@
             <div class="row">
                 <div class="col-lg-6 pb-md-4">
                     <div class="discount__content">
-
                         <form id="form-order" name="orderForm" action="{{ route('saveOrder') }}" method="post">
                             @csrf
                             <h4 class="mb-3">Thông tin</h4>
@@ -123,7 +122,7 @@
                         <ul>
                             <li>Tổng tiền<span>{{\Gloudemans\Shoppingcart\Facades\Cart::total()}}</span></li>
                         </ul>
-                        <label for="submit-form-order" tabindex="0" class="primary-btn" style="cursor: pointer">Proceed to checkout</label>
+                        <label for="submit-form-order" tabindex="0" class="primary-btn" style="cursor: pointer">Thanh toán</label>
                     </div>
                 </div>
             </div>
