@@ -115,11 +115,15 @@ class PaypalController extends Controller
                         $order->save();
                     }
                 }
-            } catch (Exception $ex) {
-                exit(1);
+            } catch (\PayPal\Exception\PayPalConnectionException $ex) {
+                echo $ex->getCode(); // Prints the Error Code
+                echo $ex->getData(); // Prints the detailed error message
+                die($ex);
             }
-        } catch (Exception $ex) {
-            exit(1);
+        } catch (\PayPal\Exception\PayPalConnectionException $ex) {
+            echo $ex->getCode(); // Prints the Error Code
+            echo $ex->getData(); // Prints the detailed error message
+            die($ex);
         }
         return $payment;
     }
