@@ -339,6 +339,8 @@
         </div>
     </footer>
 </div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6151ca4bea193e91"></script>
 <script type="text/javascript" src="/assets/scripts/jquery.min.js"></script>
 {{--<script type="text/javascript" src="/assets/scripts/jquery.validate.min.js"></script>--}}
 @yield('custom_js')

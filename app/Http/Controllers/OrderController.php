@@ -59,7 +59,7 @@ class OrderController extends Controller
             DB::commit();
             Cart::destroy();
             if(Auth::check()){
-                $this->send_mail($order);
+//                $this->send_mail($order);
             }
             return redirect()->route('detailOrder',$order->id)->with('success-msg','Bạn đã lưu giỏ hàng thành công.');
         }
