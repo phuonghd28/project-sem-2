@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Feed Back
+    Admin | phản hồi
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">

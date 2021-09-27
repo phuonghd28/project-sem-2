@@ -1,4 +1,7 @@
 @extends('admin.master')
+@section('title')
+    Tạo người dùng
+@endsection
 @section('content')
     <div class="row main-card m-3 card">
         <div class="container p-5">

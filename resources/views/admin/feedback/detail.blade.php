@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Detail Feed Back
+    Admin | chi tiết phản hồi
 @endsection
 @section('custom_css')
     <style>

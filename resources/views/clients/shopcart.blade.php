@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Shoping-Cart
+    Giỏ hàng
 @endsection
 @section('custom_css')
     <link rel="stylesheet" href="/assets/css/cart.css">

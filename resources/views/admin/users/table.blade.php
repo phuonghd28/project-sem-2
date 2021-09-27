@@ -1,4 +1,7 @@
 @extends('admin.master')
+@section('title')
+    Admin | người dùng
+    @endsection
 @section('content')
     <div class="row main-card mb-3 card">
         <div class="container">
@@ -41,7 +44,7 @@
                         </form>
                     </div>
                 </div>
-                <a href="{{route('createUser')}}" class="btn btn-success mb-3">Thêm <i class="fa fa-plus"></i></a>
+                <a href="{{route('createUser')}}" class="btn btn-success mb-3">Thêm mới<i class="fa fa-plus"></i></a>
                 @if(session()->get('status'))
                     <div class="alert alert-success alert-dismissible fade show">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>

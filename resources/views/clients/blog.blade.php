@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Blog
+    Blog Comchay
 @endsection
 @section('custom_css')
     <style>
