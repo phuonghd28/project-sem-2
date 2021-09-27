@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Contact-Us
+    Liên Hệ
 @endsection
 @section('custom_css')
     <style>

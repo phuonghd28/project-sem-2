@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Create Product
+    Tạo sản phẩm
 @endsection
 @section('custom_css')
     <style>

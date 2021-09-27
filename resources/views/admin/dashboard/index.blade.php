@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title','| Dashboard')
+@section('title','Admin')
 @section('content')
     <div class="row">
         <div class="col-md-12">

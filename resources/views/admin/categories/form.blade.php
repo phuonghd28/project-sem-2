@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Thêm danh mục
+    Tạo danh mục
 @endsection
 @section('custom_css')
     <style>

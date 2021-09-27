@@ -3,7 +3,7 @@
 <head>
     @include('admin.components.head')
     <title>
-        Template Admin @yield('title')
+        @yield('title')
     </title>
     @yield('custom_css')
 </head>

@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    AptechFood
+    Sản phẩm
 @endsection
 @section('custom_css')
     <link rel="stylesheet" href="/assets/css/product.css">

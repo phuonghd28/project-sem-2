@@ -1,10 +1,11 @@
 @extends('clients.master')
 @section('title')
-    Home
+    Trang chủ
 @endsection
 @section('custom_css')
     <link rel="stylesheet" href="/assets/css/home.css">
     <link rel="stylesheet" href="/assets/css/index-content.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
 @endsection
 
 @section('banner')

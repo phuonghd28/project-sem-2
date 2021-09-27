@@ -1,12 +1,13 @@
 body {
-    background: #FFF;
+    /*color: var(--textcolor);*/
+    /*background: var(--graycolor);*/
     margin: 0;
-    font-family: "Noto Sans",sans-serif;
-    line-height: 1.6;
-    font-size: 18px;
-    font-weight: 600;
-    -webkit-font-smoothing: antialiased;
-    color: #000;
+    padding: 0;
+    /*font-family: "Noto Sans",sans-serif;*/
+    /*line-height: 1.6;*/
+    /*font-size: 18px;*/
+    /*font-weight: 600;*/
+    /*-webkit-font-smoothing: antialiased;*/
 }
 .header-main {
     top: 0;

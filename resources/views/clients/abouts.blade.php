@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    About-Us
+    Về Comchay
 @endsection
 @section('custom_css')
     <style>
@@ -739,19 +739,14 @@
                     <img class="rounded img-fluid" src="https://hoigi.net/images/cachlam/monngon/cach-lam-ga-nuong-nguyen-con.jpg" width="732px" height="600px" alt="Card image cap">
                 </div>
                 <div class="col-lg-6 col-md-6 pl-5 pr-5">
-                    <h2 class="mt-5 mb-5 text-secondary">Save more with GO! We give you the lowest prices on all your
-                        grocery needs.</h2>
-                    <h5 class="mt-2">Our Vision</h5>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here,</p>
-                    <h5 class="mt-4">Our Goal</h5>
-                    <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                        distribution of letters, as opposed to using 'Content here, Lorem Ipsum has been the industry's
-                        standard dummy text ever since.</p>
-                    <div class="btn-style01">
-                        <a href="about.html" class="btn style1">Đọc thêm<i class="flaticon-right-arrow-2"></i></a>
-                    </div>
+                    <h2 class="mt-5 mb-5 text-secondary">Tiết kiệm hơn với Comchay! Chúng tôi cung cấp cho bạn mức giá thấp nhất cho tất cả các nhu cầu của bạn.</h2>
+                    <h5 class="mt-2">Gần gũi</h5>
+                    <p>Chúng tôi có niềm tin vào tính gần gũi mà thanh liêm, nền tảng vững chắc cho một cuộc sống trung thực, bình dân và thành thật với bản thân.</p>
+                    <h5 class="mt-4">Vui vẻ</h5>
+                    <p>Chúng tôi dễ gần, đáng yêu và tràn đầy năng lượng, luôn mang đến niềm vui cho những người xung quanh.</p>
+{{--                    <div class="btn-style01">--}}
+{{--                        <a href="about.html" class="btn style1">Đọc thêm<i class="flaticon-right-arrow-2"></i></a>--}}
+{{--                    </div>--}}
 
                 </div>
 
@@ -763,48 +758,41 @@
 
     <section class="section-padding-t">
         <div class="section-title text-center mb-5">
-            <h2>Chúng tôi cung cấp những gì?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <h2>Giá trị của chúng tôi</h2>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-shopping mdi-48px"></i></div>
-                    <h5 class="mt-3 mb-3 text-secondary">Giá và ưu đãi tốt nhất</h5>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour.</p>
+                    <h5 class="mt-3 mb-3 text-secondary">Chúng tôi phục vụ</h5>
+                    <p>Khách hàng luôn đúng.Cung cấp những giá trị vượt xa sự mong đợi của khách hàng</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-earth mdi-48px"></i></div>
-                    <h5 class="mb-3 text-secondary">Phân loại</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text eve.</p>
+                    <h5 class="mb-3 text-secondary">Chúng tôi thích nghi</h5>
+                    <p>Dự đoán những thay đổi và lập kế hoạch trước. Chấp nhận những thay đổi không lường trước và chủ động trong việc thực thi</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-refresh mdi-48px"></i></div>
-                    <h5 class="mt-3 mb-3 text-secondary">Trả hàng dễ dàng</h5>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                        looking at its layout. The point of using.</p>
+                    <h5 class="mt-3 mb-3 text-secondary">Chúng tôi chạy</h5>
+                    <p>Tự định hướng để phát triển, không cần ai thúc đẩy. Luôn khẩn trương hoàn thành công việc</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-truck-fast mdi-48px"></i></div>
-                    <h5 class="mb-3 text-secondary">Giao hàng miễn phí</h5>
-                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                        classical Latin literature from 45 BC.</p>
+                    <h5 class="mb-3 text-secondary">Chúng tôi cam kết</h5>
+                    <p>Đáng tin cậy, làm những gì đã nói. Nâng cao các tiêu chuẩn; không đi đường tắt ngay cả khi không có ai đang quan sát. Chủ động tìm cách phát triển tổ chức</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-basket mdi-48px"></i></div>
                     <h5 class="mt-3 mb-3 text-secondary">Đảm bảo 100% sự hài lòng</h5>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour.</p>
+                    <p>Chúng tôi cố gắng đảm bảo khách hàng luôn an tâm khi sử dụng sản phẩm, chất lượng ngày một nâng cao.</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi mdi-tag-heart mdi-48px"></i></div>
-                    <h5 class="mt-3 mb-3 text-secondary">Giảm giá ưu đãi hàng ngày</h5>
-                    <p>Một thực tế đã có từ lâu rằng người đọc sẽ bị phân tâm bởi nội dung có thể đọc được của một trang khi
-                        nhìn vào cách bố trí của nó. Các quan điểm của việc sử dụng.</p>
+                    <h5 class="mt-3 mb-3 text-secondary">Chúng tôi khiêm tốn</h5>
+                    <p>Chấp nhận rằng chúng tôi không hoàn hảo. Làm việc chăm chỉ trước, tận hưởng sau</p>
                 </div>
             </div>
         </div>
@@ -814,15 +802,12 @@
     <section class="section-padding-d bg-white">
         <div class="section-title text-center mb-5">
             <h2>Nhóm của chúng tôi</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="team-card text-center">
-                        <img class="img-fluid mb-4" src="https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/73504746_525317411622483_8760334498891038720_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=DhaFrk5l9TUAX9k38Bu&_nc_ht=scontent-sin6-3.xx&oh=ca60ba35782df14152a9492f3a51ecc5&oe=615A5800" alt="">
-                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been.</p>
+                        <img class="img-fluid mb-4" style="object-fit: cover" src="https://cafefcdn.com/thumb_w/650/203337114487263232/2021/6/14/photo1623634413024-1623634413155188967658.jpg" alt="">
                         <h6 class="mb-0 text-success">- Phạm Đức Thắng</h6>
                         <small>Manager</small>
                     </div>
@@ -830,8 +815,8 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="team-card text-center">
                         <img class="img-fluid mb-4" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.6435-9/184351179_2870905003147692_8902101709393573265_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=_GKL1e6tm9gAX8jgbVu&_nc_ht=scontent-sin6-1.xx&oh=ed1d5257bfb83671a2d206c9c56bc1c9&oe=615964CF" alt="">
-                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been.</p>
+{{--                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem--}}
+{{--                            Ipsum has been.</p>--}}
                         <h6 class="mb-0 text-success">- Hoàng Đắc Phương</h6>
                         <small>Designer</small>
                     </div>
@@ -839,8 +824,8 @@
                 <div class="col-lg-4 col-md-4">
                     <div class="team-card text-center">
                         <img class="img-fluid mb-4" src="https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/132201829_386303379129171_9004750516161688930_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=kPREAvvPILMAX_qlxpD&_nc_ht=scontent-sin6-3.xx&oh=6d26ffa78b717c8f8ebc54d278e83885&oe=615C1F2D" alt="">
-                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                            Ipsum has been.</p>
+{{--                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem--}}
+{{--                            Ipsum has been.</p>--}}
                         <h6 class="mb-0 text-success">- Đặng Văn Tiến</h6>
                         <small>Marketing</small>
                     </div>

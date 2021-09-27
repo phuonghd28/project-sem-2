@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Danh sách sản phẩm
+    Admin | sản phẩm
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">
@@ -45,7 +45,7 @@
                 <div class="row">
                     <div class="col-lg-12 margin-tb">
                         <div class="pull-left mb-2">
-                            <a class="btn btn-success" href="{{route('createProduct')}}">Add <i class="fas fa-plus"></i></a>
+                            <a class="btn btn-success" href="{{route('createProduct')}}">Thêm mới <i class="fas fa-plus"></i></a>
                         </div>
                     </div>
                 </div>

@@ -1,4 +1,7 @@
 @extends('admin.master')
+@section('title')
+    Admin | order
+@endsection
 @section('content')
     <div class="row main-card mb-3 card">
         <div class="container">

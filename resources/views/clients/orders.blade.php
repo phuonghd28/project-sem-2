@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Orders
+    Đơn hàng
 @endsection
 @section('custom_css')
     <link rel="stylesheet" href="/assets/css/orders.css">
