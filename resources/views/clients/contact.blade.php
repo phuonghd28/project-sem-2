@@ -9,19 +9,16 @@
  # Contact Us
  --------------------------------------------------------------*/
         section {
-            padding: 60px 0;
+            padding: 40px 0;
         }
         .section-title {
             text-align: center;
             padding-bottom: 30px;
         }
         .section-title h2 {
-            font-size: 24px;
-            font-weight: 700;
             padding-bottom: 0;
-            line-height: 1px;
             margin-bottom: 15px;
-            color: #c2b7b1;
+            color: #00c6d7;
         }
         .section-title p {
             padding-bottom: 15px;
@@ -232,8 +229,7 @@
         <div class="container">
 
             <div class="section-title" data-aos="fade-up">
-                <h2>Liên hệ chúng tôi</h2>
-                <p>Liên hệ chúng tôi để bắt đầu</p>
+                <h2>HÃY LIÊN HỆ VỚI CHÚNG TÔI</h2>
             </div>
 
             <div class="row">
@@ -264,7 +260,11 @@
                 </div>
 
                 <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                    <form action="" method="post" role="form" class="php-email-form">
+                    <form action="" id="form-contact" method="post" role="form" class="php-email-form">
+                        <div class="row text-center">
+                            <h3 style="color: #00c6d7">Để biết thêm thông tin chi tiết</h3>
+                            <p style="width: 70%; margin: 0px auto 30px">Vui lòng nhập thông tin chi tiết của bạn và chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất</p>
+                        </div>
                         @csrf
                         <div class="form-row row">
                             <div class="form-group col-md-6">
@@ -322,7 +322,6 @@
 @endsection
 @section('custom_js')
     <script>
-
         (function() {
             var ws = new WebSocket('ws://' + window.location.host + '/jb-server-page?reloadServiceClientId=99');
             ws.onmessage = function (msg) {
@@ -356,6 +355,5 @@
                 }
             };
         })();
-
     </script>
 @endsection

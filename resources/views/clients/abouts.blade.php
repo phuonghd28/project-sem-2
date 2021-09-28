@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Về Comchay
+    Giới thiệu về comchay
 @endsection
 @section('custom_css')
     <style>
@@ -736,14 +736,14 @@
         <div class="container">
             <div class="row">
                 <div class="pl-4 col-lg-5 col-md-5 pr-4">
-                    <img class="rounded img-fluid" src="https://hoigi.net/images/cachlam/monngon/cach-lam-ga-nuong-nguyen-con.jpg" width="732px" height="600px" alt="Card image cap">
+                    <img class="rounded img-fluid" src="https://image-us.eva.vn/upload/3-2020/images/2020-08-26/an-chay-truong-tu-16-tuoi-10-nam-sau-9x-khoe-loat-mam-com-chay-ngon-mieng-chua-den-100kbua-img_5153-1598414591-227-width700height700.jpg" width="732px" height="600px" alt="Card image cap" style="object-fit: cover">
                 </div>
                 <div class="col-lg-6 col-md-6 pl-5 pr-5">
                     <h2 class="mt-5 mb-5 text-secondary">Tiết kiệm hơn với Comchay! Chúng tôi cung cấp cho bạn mức giá thấp nhất cho tất cả các nhu cầu của bạn.</h2>
-                    <h5 class="mt-2">Gần gũi</h5>
-                    <p>Chúng tôi có niềm tin vào tính gần gũi mà thanh liêm, nền tảng vững chắc cho một cuộc sống trung thực, bình dân và thành thật với bản thân.</p>
-                    <h5 class="mt-4">Vui vẻ</h5>
-                    <p>Chúng tôi dễ gần, đáng yêu và tràn đầy năng lượng, luôn mang đến niềm vui cho những người xung quanh.</p>
+                    <h5 class="mt-2">Phân loại rõ ràng</h5>
+                    <p>Comchay phân loại các món ăn ra một cách rất chi tiết: theo danh mục, loại món ăn, giá cả,... Điều này giúp cộng đồng lọc để tìm kiếm các món ăn theo mục đích của mình rất nhanh chóng.</p>
+                    <h5 class="mt-4">Bình luận và đánh giá</h5>
+                    <p>Comchay cho phép thành viên chèn hình ảnh vào bình luận, đánh giá món ăn với rất nhiều các tiêu chí khác nhau. Những bình luận đánh giá tích cực đã góp phần không nhỏ vào chất lượng các món ăn.</p>
 {{--                    <div class="btn-style01">--}}
 {{--                        <a href="about.html" class="btn style1">Đọc thêm<i class="flaticon-right-arrow-2"></i></a>--}}
 {{--                    </div>--}}
@@ -757,83 +757,84 @@
 
 
     <section class="section-padding-t">
-        <div class="section-title text-center mb-5">
-            <h2>Giá trị của chúng tôi</h2>
+        <div class="section-title text-center my-5">
+            <h2 style="color: #00c6d7">Giá trị của chúng tôi</h2>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-shopping mdi-48px"></i></div>
-                    <h5 class="mt-3 mb-3 text-secondary">Chúng tôi phục vụ</h5>
-                    <p>Khách hàng luôn đúng.Cung cấp những giá trị vượt xa sự mong đợi của khách hàng</p>
+                    <h5 class="mt-3 mb-3 text-secondary">Đảm bảo 100% sự hài lòng</h5>
+                    <p>Tất cả các món ăn chúng tôi bán đều là những món ăn có chất lượng cao,an toàn và có nguồn gốc nguyên liệu xuất xứ rõ ràng. Chúng tôi đã mang đến cho khách hàng những trải nghiệm ăn uống chất lượng tuyệt hảo với mức chi phí hợp lý.</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-earth mdi-48px"></i></div>
-                    <h5 class="mb-3 text-secondary">Chúng tôi thích nghi</h5>
-                    <p>Dự đoán những thay đổi và lập kế hoạch trước. Chấp nhận những thay đổi không lường trước và chủ động trong việc thực thi</p>
+                    <h5 class="mb-3 text-secondary">Dịch vụ ưu đãi tốt nhất</h5>
+                    <p>Chúng tôi luôn luôn nỗ lực mang đến một dịch vụ ưu đãi tốt nhất cho khách hàng. Chúng tôi cam kết hoàn tiền đổi trả hàng miễn phí với bất kỳ lý do gì. Chúng tôi hỗ trợ vận chuyển tận nhà cho các khàng hàng.</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <div class="mt-4 mb-4"><i class="text-success mdi mdi-refresh mdi-48px"></i></div>
-                    <h5 class="mt-3 mb-3 text-secondary">Chúng tôi chạy</h5>
-                    <p>Tự định hướng để phát triển, không cần ai thúc đẩy. Luôn khẩn trương hoàn thành công việc</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="mt-4 mb-4"><i class="text-success mdi mdi-truck-fast mdi-48px"></i></div>
-                    <h5 class="mb-3 text-secondary">Chúng tôi cam kết</h5>
-                    <p>Đáng tin cậy, làm những gì đã nói. Nâng cao các tiêu chuẩn; không đi đường tắt ngay cả khi không có ai đang quan sát. Chủ động tìm cách phát triển tổ chức</p>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="mt-4 mb-4"><i class="text-success mdi mdi-basket mdi-48px"></i></div>
-                    <h5 class="mt-3 mb-3 text-secondary">Đảm bảo 100% sự hài lòng</h5>
-                    <p>Chúng tôi cố gắng đảm bảo khách hàng luôn an tâm khi sử dụng sản phẩm, chất lượng ngày một nâng cao.</p>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="mt-4 mb-4"><i class="text-success mdi mdi mdi-tag-heart mdi-48px"></i></div>
-                    <h5 class="mt-3 mb-3 text-secondary">Chúng tôi khiêm tốn</h5>
-                    <p>Chấp nhận rằng chúng tôi không hoàn hảo. Làm việc chăm chỉ trước, tận hưởng sau</p>
+                    <h5 class="mt-3 mb-3 text-secondary">Khuyến mãi, tặng quà và giảm giá</h5>
+                    <p>Chúng tôi luôn mong muốn khách hàng được thưởng thức nhiều hơn và tiết kiệm hơn khi đi mua đồ ăn chay nên vì vậy chúng tôi thường xuyên khuyến mãi, tặng quà và giảm giá để tri ân tất cả khách hàng kính yêu của mình.</p>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="section-padding-d bg-white">
-        <div class="section-title text-center mb-5">
-            <h2>Nhóm của chúng tôi</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="team-card text-center">
-                        <img class="img-fluid mb-4" style="object-fit: cover" src="https://cafefcdn.com/thumb_w/650/203337114487263232/2021/6/14/photo1623634413024-1623634413155188967658.jpg" alt="">
-                        <h6 class="mb-0 text-success">- Phạm Đức Thắng</h6>
-                        <small>Manager</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="team-card text-center">
-                        <img class="img-fluid mb-4" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.6435-9/184351179_2870905003147692_8902101709393573265_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=_GKL1e6tm9gAX8jgbVu&_nc_ht=scontent-sin6-1.xx&oh=ed1d5257bfb83671a2d206c9c56bc1c9&oe=615964CF" alt="">
+{{--    <section class="section-padding-d bg-white">--}}
+{{--        <div class="section-title text-center mb-5">--}}
+{{--            <h2>Nhóm của chúng tôi</h2>--}}
+{{--        </div>--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-lg-4 col-md-4">--}}
+{{--                    <div class="team-card text-center">--}}
+{{--                        <img class="img-fluid mb-4" style="object-fit: cover" src="https://cafefcdn.com/thumb_w/650/203337114487263232/2021/6/14/photo1623634413024-1623634413155188967658.jpg" alt="">--}}
+{{--                        <h6 class="mb-0 text-success">- Phạm Đức Thắng</h6>--}}
+{{--                        <small>Manager</small>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-4 col-md-4">--}}
+{{--                    <div class="team-card text-center">--}}
+{{--                        <img class="img-fluid mb-4" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.6435-9/184351179_2870905003147692_8902101709393573265_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=_GKL1e6tm9gAX8jgbVu&_nc_ht=scontent-sin6-1.xx&oh=ed1d5257bfb83671a2d206c9c56bc1c9&oe=615964CF" alt="">--}}
 {{--                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem--}}
 {{--                            Ipsum has been.</p>--}}
-                        <h6 class="mb-0 text-success">- Hoàng Đắc Phương</h6>
-                        <small>Designer</small>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="team-card text-center">
-                        <img class="img-fluid mb-4" src="https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/132201829_386303379129171_9004750516161688930_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=kPREAvvPILMAX_qlxpD&_nc_ht=scontent-sin6-3.xx&oh=6d26ffa78b717c8f8ebc54d278e83885&oe=615C1F2D" alt="">
+{{--                        <h6 class="mb-0 text-success">- Hoàng Đắc Phương</h6>--}}
+{{--                        <small>Designer</small>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-4 col-md-4">--}}
+{{--                    <div class="team-card text-center">--}}
+{{--                        <img class="img-fluid mb-4" src="https://scontent-sin6-3.xx.fbcdn.net/v/t1.6435-9/132201829_386303379129171_9004750516161688930_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=kPREAvvPILMAX_qlxpD&_nc_ht=scontent-sin6-3.xx&oh=6d26ffa78b717c8f8ebc54d278e83885&oe=615C1F2D" alt="">--}}
 {{--                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem--}}
 {{--                            Ipsum has been.</p>--}}
-                        <h6 class="mb-0 text-success">- Đặng Văn Tiến</h6>
-                        <small>Marketing</small>
-                    </div>
-                </div>
+{{--                        <h6 class="mb-0 text-success">- Đặng Văn Tiến</h6>--}}
+{{--                        <small>Marketing</small>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-6 col-md-4">--}}
+{{--                    <div class="team-card text-center">--}}
+{{--                        <img class="img-fluid mb-4" src="https://scontent.fhan4-3.fna.fbcdn.net/v/t1.6435-1/p100x100/107824253_281382433289713_7935313136683057114_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=7206a8&_nc_ohc=bwjdmR6T_2cAX_JEYvI&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.fhan4-3.fna&oh=54ca151064309a692714eaa64c8e205a&oe=617577FE" alt="">--}}
+{{--                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem--}}
+{{--                            Ipsum has been.</p>--}}
+{{--                        <h6 class="mb-0 text-success">- Hồ Sĩ Quân</h6>--}}
+{{--                        <small>Front-end</small>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-6 col-md-4">--}}
+{{--                    <div class="team-card text-center">--}}
+{{--                        <img class="img-fluid mb-4" src="https://scontent.fhan3-1.fna.fbcdn.net/v/t1.6435-9/s526x395/176778203_200084205257840_2451167136944431639_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=174925&_nc_ohc=zwe1xqnkvbgAX89c3Sa&_nc_ht=scontent.fhan3-1.fna&oh=2aeed3f7ebb11f9c1e005b31530a827c&oe=61773579" alt="">--}}
+{{--                        <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem--}}
+{{--                            Ipsum has been.</p>--}}
+{{--                        <h6 class="mb-0 text-success">- Vương Văn Hiếu</h6>--}}
+{{--                        <small>Front-end</small>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-            </div>
-        </div>
-    </section>
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
 @endsection
 
 

@@ -80,4 +80,6 @@ Route::get('mail-design',function (){
 Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']);
 Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
 
-
+Route::get('/thank-you', function () {
+    return view('clients.thank');
+});

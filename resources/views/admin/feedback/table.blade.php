@@ -1,13 +1,13 @@
 @extends('admin.master')
 @section('title')
-    Admin | phản hồi
+    Admin | liên hệ
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">
         <div class="container">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-4"><h2 class="">List Feed Back</h2></div>
+                    <div class="col-4"><h2 class="">Danh sách liên hệ</h2></div>
                     <div class="col-8">
                         <form id="filterForm">
                             <div class="row justify-content-end">
@@ -49,10 +49,10 @@
                     <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>Tên</th>
                         <th>Email</th>
                         <th>Subject</th>
-                        <th style="width: 110px;">Actions</th>
+                        <th style="width: 110px;">Thao tác</th>
                     </tr>
                     </thead>
                     <tbody>
