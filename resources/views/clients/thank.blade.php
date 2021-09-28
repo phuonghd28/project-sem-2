@@ -93,7 +93,7 @@
 
         .icon-check {
             font-size: 85px;
-            color: green;
+            color: #4CBB17;
         }
 
         .title-thank {
@@ -148,6 +148,7 @@
             <a class="btn-back-home" href="{{route('index')}}">Tiếp tục mua sắm</a>
         </div>
     </div>
+
 @endsection
 
 
