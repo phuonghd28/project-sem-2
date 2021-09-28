@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Sản phẩm
+    Tất cả món ăn
 @endsection
 @section('custom_css')
     <link rel="stylesheet" href="/assets/css/product.css">

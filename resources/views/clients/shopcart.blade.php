@@ -148,8 +148,9 @@
                     alert(errors.map(a => a.msg).join(';'));
                 }
             });
-        })
-
+        });
+    </script>
+    <script>
         $("#form-order").validate({
             rules: {
                 district_id: {

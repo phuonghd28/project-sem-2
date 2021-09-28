@@ -82,7 +82,7 @@
             <li class="sidebar_item" style="border: none!important;">
                 <a href="#" class="sidebar_item">
                     <i class="metismenu-icon fas fa-hamburger"></i>
-                    <p>Sản phẩm</p>
+                    <p>Món ăn</p>
                     <i class="metismenu-state-icon fas fa-caret-down fa-caret-up"></i>
                 </a>
                 <ul class="mm-collapse">

@@ -32,7 +32,6 @@
                 </div>
                 <div class="row justify-content-center" style="margin: 20px">
                     <div class="col-5">
-
                         <a href="{{route('detailOrder',$order->id)}}" class="btn btn-primary" style="width:100%;color: #fff;
     background-color: #0d6efd;
     border-color: #0d6efd;
@@ -54,21 +53,18 @@ display: inline-block;
                 @break
                 @case(2)
                 <div class="row" style="margin-left: 10px">
-
                     <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
                     <p>Đơn hàng của bạn đã được thanh toán</p>
                 </div>
                 @break
                 @case(3)
                 <div class="row" style="margin-left: 10px">
-
                     <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
                     <p>Đơn hàng của bạn đang được giao hàng</p>
                 </div>
                 @break
                 @case(4)
                 <div class="row" style="margin-left: 10px">
-
                     <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>
                     <p>Đơn hàng của bạn đã hoàn thành</p>
                 </div>

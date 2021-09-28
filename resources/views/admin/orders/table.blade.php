@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Admin | order
+    Admin | danh sách đơn hàng
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">

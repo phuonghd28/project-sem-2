@@ -1,6 +1,6 @@
 @extends('clients.master')
 @section('title')
-    Blog Comchay
+    Lưu trữ Blog chay
 @endsection
 @section('custom_css')
     <style>
@@ -687,264 +687,198 @@
 @section('content')
     <main>
         <div class="hero_single inner_pages background-image" data-background="url('http://www.ansonika.com/foogra/img/home_section_1.jpg')" style="background-image: url('http://www.ansonika.com/foogra/img/home_section_1.jpg');"></div>
-        <div class="page_header element_to_stick">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-7 col-md-7 d-none d-md-block">
+{{--        <div class="page_header element_to_stick">--}}
+{{--            <div class="container">--}}
+{{--                <div class="row">--}}
+{{--                    <div class="col-xl-8 col-lg-7 col-md-7 d-none d-md-block">--}}
 
-                    </div>
-                    <div class="col-xl-4 col-lg-5 col-md-5">
-                        <div class="search_bar_list">
-                            <input type="text" class="form-control" placeholder="Tìm kiếm trong blog...">
-                            <input type="submit" value="Tìm kiếm">
-                        </div>
-                    </div>
-                </div>
-                <!-- /row -->
-            </div>
-        </div>
+{{--                    </div>--}}
+{{--                    <div class="col-xl-4 col-lg-5 col-md-5">--}}
+{{--                        <div class="search_bar_list">--}}
+{{--                            <input type="text" class="form-control" placeholder="Tìm kiếm trong blog...">--}}
+{{--                            <input type="submit" value="Tìm kiếm">--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <!-- /row -->--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <!-- /page_header -->
 
         <div class="container margin_30_40">
             <div class="row">
-                <div class="col-lg-9">
+                <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-6">
                             <article class="blog">
                                 <figure>
-                                    <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-1.jpg"
+                                    <a href="#0"><img src="https://thucphamchayngonsach.com/wp-content/uploads/2019/12/hinh-com-sen-cung-dinh-hue-600x400-770x350.jpg"
                                                       alt="">
-                                        <div class="preview"><span>Đọc thêm</span></div>
+{{--                                        <div class="preview"><span>Đọc thêm</span></div>--}}
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Chuyên mục - 20 Nov. 2017</small>
-                                    <h2><a href="#0">Ea exerci option hendrerit</a></h2>
-                                    <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
-                                        in
-                                        eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                                    <ul>
-                                        <li>
-                                            <div class="thumb"><img src="http://www.ansonika.com/foogra/img/blog-2.jpg"
-                                                                    alt=""></div>
-                                            Admin
-                                        </li>
-                                        <li><i class="icon_comment_alt"></i>20</li>
-                                    </ul>
+                                    <small>Chuyên mục - 29/9/2021</small>
+                                    <h2><a href="#0">Ăn Chay Giúp Giảm Khí Thải Nhà Kính</a></h2>
+                                    <p>Việc ăn chay, giảm ăn thịt sẽ giúp chúng ta có hành động gián tiếp giảm khí thải nhà kính. Vì những chất thải từ động vật là một trong những nguồn phát khải khí metan (CH4) thông qua quá trình phân hủy, metan là một khí gây hiệu ứng nhà kính.</p>
                                 </div>
                             </article>
                             <!-- /article -->
                         </div>
-                        <!-- /col -->
                         <div class="col-md-6">
                             <article class="blog">
                                 <figure>
-                                    <a href="blog-post.html"><img src="http://www.ansonika.com/foogra/img/blog-3.jpg"
-                                                                  alt="">
-                                        <div class="preview"><span>Read more</span></div>
+                                    <a href="#"><img src="https://thucphamchayngonsach.com/wp-content/uploads/2018/11/heart-health-foods.jpg"
+                                                     alt="">
+{{--                                        <div class="preview"><span>Read more</span></div>--}}
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Chuyên mục - 20 Nov. 2017</small>
-                                    <h2><a href="blog-post.html">At usu sale dolorum offendit</a></h2>
-                                    <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
-                                        in
-                                        eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                                    <ul>
-                                        <li>
-                                            <div class="thumb"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg"
-                                                                    alt=""></div>
-                                            Admin
-                                        </li>
-                                        <li><i class="icon_comment_alt"></i>20</li>
-                                    </ul>
+                                    <small>Chuyên mục - 25/06/2021</small>
+                                    <h2><a href="blog-post.html">Thực phẩm thuần chay đang trở thành xu thế trên thế giới</a></h2>
+                                    <p>Thực phẩm thuần chay ngày nay không còn xa lạ nữa rất dễ sàng tìm cho mình một món ăn chay trong các nhà hàng thậm chí là những của hàng nhỏ. Việc món ăn chay xuất hiện trên thực đơn của những nhà hàng nổi tiếng và thậm chí là các chuỗi cửa hàng thức ăn nhanh đang dần đánh dấu sự chuyển mình trong xu hướng ăn chay hiện nay.</p>
                                 </div>
                             </article>
                             <!-- /article -->
                         </div>
-                        <!-- /col -->
                         <div class="col-md-6">
                             <article class="blog">
                                 <figure>
-                                    <a href="#"><img src="http://www.ansonika.com/foogra/img/blog-5.jpg"
+                                    <a href="#"><img src="https://thucphamchayngonsach.com/wp-content/uploads/2018/07/song-lau-va-an-vui-770x350.jpg"
                                                                   alt="">
-                                        <div class="preview"><span>Read more</span></div>
+{{--                                        <div class="preview"><span>Read more</span></div>--}}
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Chuyên mục - 20 Nov. 2017</small>
-                                    <h2><a href="blog-post.html">Iusto nominavi petentium in</a></h2>
-                                    <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
-                                        in
-                                        eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                                    <ul>
-                                        <li>
-                                            <div class="thumb"><img src="http://www.ansonika.com/foogra/img/blog-6.jpg"
-                                                                    alt=""></div>
-                                            Admin
-                                        </li>
-                                        <li><i class="icon_comment_alt"></i>20</li>
-                                    </ul>
+                                    <small>Chuyên mục - 10/08/2021</small>
+                                    <h2><a href="#">Ăn Chay Giảm Nguy Cơ Mắc Bệnh Ung Thư, Tiểu Đường</a></h2>
+                                    <p>Qua rất nhiều nghiên cứa khoa học được thưc hiện trên thế giới đã chứng minh rằng ăn chay rất có lợi cho sức khỏe, không chỉ mang lại một sức khỏe tốt ăn chay giúp chòng chống nguy cơ mắc bênh và đem lại một cuộc sống tốt đẹp hon.</p>
                                 </div>
                             </article>
                             <!-- /article -->
                         </div>
-                        <!-- /col -->
                         <div class="col-md-6">
                             <article class="blog">
                                 <figure>
-                                    <a href="#"><img src="http://www.ansonika.com/foogra/img/blog-1.jpg"
+                                    <a href="#"><img src="https://thucphamchayngonsach.com/wp-content/uploads/2018/06/Chopping-Board-with-veg.jpg"
                                                                   alt="">
-                                        <div class="preview"><span>Read more</span></div>
+{{--                                        <div class="preview"><span>Read more</span></div>--}}
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Chuyên mục - 20 Nov. 2017</small>
-                                    <h2><a href="#">Assueverit concludaturque quo</a></h2>
-                                    <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
-                                        in
-                                        eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                                    <ul>
-                                        <li>
-                                            <div class="thumb"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg"
-                                                                    alt=""></div>
-                                            Admin
-                                        </li>
-                                        <li><i class="icon_comment_alt"></i>20</li>
-                                    </ul>
+                                    <small>Chuyên mục - 22/07/2021</small>
+                                    <h2><a href="#">Cân bằng các nguồn dinh dưỡng chay</a></h2>
+                                    <p>Chế độ ăn chay không chỉ mang lại sức khỏe tốt mà giúp chúng ta giảm thiểu được bệnh tật một cách hiệu quả nhất. Chế độ ăn uống phải có đầy đủ vitamin và khoáng chất để cơ thể hoạt động tốt và ngăn ngừa bệnh tật, các vitamin cần thiết bao gồm vitamin A,B,D,E và K</p>
                                 </div>
                             </article>
                             <!-- /article -->
                         </div>
-                        <!-- /col -->
                         <div class="col-md-6">
                             <article class="blog">
                                 <figure>
-                                    <a href="#"><img src="http://www.ansonika.com/foogra/img/blog-6.jpg"
+                                    <a href="blog-post.html"><img src="http://thucphamchaythanhdung.com/wp-content/uploads/2018/11/44063005_2296052470407679_7235138161213440000_n.jpg"
                                                                   alt="">
-                                        <div class="preview"><span>Read more</span></div>
+{{--                                        <div class="preview"><span>Read more</span></div>--}}
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Chuyên mục - 20 Nov. 2017</small>
-                                    <h2><a href="#">Nec nihil menandri appellantur</a></h2>
-                                    <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
-                                        in
-                                        eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                                    <ul>
-                                        <li>
-                                            <div class="thumb"><img src="http://www.ansonika.com/foogra/img/blog-5.jpg"
-                                                                    alt=""></div>
-                                            Admin
-                                        </li>
-                                        <li><i class="icon_comment_alt"></i>20</li>
-                                    </ul>
+                                    <small>Chuyên mục - 20/09/2021</small>
+                                    <h2><a href="blog-post.html">Ăn chay, phương pháp ăn tốt cho trí não</a></h2>
+                                    <p>Nhiều nghiên cứu chỉ ra rằng người ăn chay trường thường có khả năng tư duy và làm việc tốt hơn những người ăn thịt. Ăn Chay tốt cho trí não và giúp cuộc sống vui vẻ.</p>
                                 </div>
                             </article>
                             <!-- /article -->
                         </div>
-                        <!-- /col -->
                         <div class="col-md-6">
                             <article class="blog">
                                 <figure>
-                                    <a href="#l"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg"
+                                    <a href="#"><img src="https://thucphamchayngonsach.com/wp-content/uploads/2018/06/IMG_0133-1.jpg"
                                                                   alt="">
-                                        <div class="preview"><span>Read more</span></div>
+{{--                                        <div class="preview"><span>Read more</span></div>--}}
                                     </a>
                                 </figure>
                                 <div class="post_info">
-                                    <small>Chuyên mục - 20 Nov. 2017</small>
-                                    <h2><a href="#">Te congue everti his salutandi</a></h2>
-                                    <p>Quodsi sanctus pro eu, ne audire scripserit quo. Vel an enim offendit salutandi,
-                                        in
-                                        eos quod omnes epicurei, ex veri qualisque scriptorem mei.</p>
-                                    <ul>
-                                        <li>
-                                            <div class="thumb"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg"
-                                                                    alt=""></div>
-                                            Admin
-                                        </li>
-                                        <li><i class="icon_comment_alt"></i>20</li>
-                                    </ul>
+                                    <small>Chuyên mục - 14/08/2021</small>
+                                    <h2><a href="#">Ý nghĩa của ăn chay</a></h2>
+                                    <p>Cung cấp đầy đủ chất đạm cho cơ thể. Giảm thiểu bệnh ung thư và tim mạch. Tiết kiệm chi phí. Ăn chay giúp tâm trí thoải mái nhẹ nhàng.</p>
                                 </div>
                             </article>
                             <!-- /article -->
                         </div>
-                        <!-- /col -->
                     </div>
                     <!-- /row -->
 
-                    <div class="pagination_fg">
-                        <a href="#">«</a>
-                        <a href="#" class="active">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">»</a>
-                    </div>
+{{--                    <div class="pagination_fg">--}}
+{{--                        <a href="#">«</a>--}}
+{{--                        <a href="#" class="active">1</a>--}}
+{{--                        <a href="#">2</a>--}}
+{{--                        <a href="#">3</a>--}}
+{{--                        <a href="#">4</a>--}}
+{{--                        <a href="#">5</a>--}}
+{{--                        <a href="#">»</a>--}}
+{{--                    </div>--}}
 
                 </div>
                 <!-- /col -->
 
-                <aside class="col-lg-3">
-                    <div class="widget">
-                        <div class="widget-title first">
-                            <h4>Bài đăng mới nhất</h4>
-                        </div>
-                        <ul class="comments-list">
-                            <li>
-                                <div class="alignleft">
-                                    <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg" alt=""></a>
-                                </div>
-                                <small>Chuyên mục - 11.08.2016</small>
-                                <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>
-                            </li>
-                            <li>
-                                <div class="alignleft">
-                                    <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-6.jpg" alt=""></a>
-                                </div>
-                                <small>Chuyên mục - 11.08.2016</small>
-                                <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>
-                            </li>
-                            <li>
-                                <div class="alignleft">
-                                    <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg" alt=""></a>
-                                </div>
-                                <small>Chuyên mục - 11.08.2016</small>
-                                <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /widget -->
-                    <div class="widget">
-                        <div class="widget-title">
-                            <h4>Thể loại</h4>
-                        </div>
-                        <ul class="cats">
-                            <li><a href="#">Đồ ăn <span>(12)</span></a></li>
-                            <li><a href="#">Địa điểm tham quan <span>(21)</span></a></li>
-                            <li><a href="#">Địa điểm mới <span>(44)</span></a></li>
-                            <li><a href="#">Gợi ý và hướng dẫn <span>(31)</span></a></li>
-                        </ul>
-                    </div>
-                    <!-- /widget -->
-                    <div class="widget">
-                        <div class="widget-title">
-                            <h4>Phổ biến</h4>
-                        </div>
-                        <div class="tags">
-                            <a href="#">Đồ ăn</a>
-                            <a href="#">Bars</a>
-                            <a href="#">Cooktails</a>
-                            <a href="#">Cửa hàng</a>
-                            <a href="#">Ưu đãi tốt nhất</a>
-                            <a href="#">Transports</a>
-                            <a href="#">Các nhà hàng</a>
-                        </div>
-                    </div>
-                    <!-- /widget -->
-                </aside>
+{{--                <aside class="col-lg-3">--}}
+{{--                    <div class="widget">--}}
+{{--                        <div class="widget-title first">--}}
+{{--                            <h4>Bài đăng mới nhất</h4>--}}
+{{--                        </div>--}}
+{{--                        <ul class="comments-list">--}}
+{{--                            <li>--}}
+{{--                                <div class="alignleft">--}}
+{{--                                    <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg" alt=""></a>--}}
+{{--                                </div>--}}
+{{--                                <small>Chuyên mục - 11.08.2016</small>--}}
+{{--                                <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <div class="alignleft">--}}
+{{--                                    <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-6.jpg" alt=""></a>--}}
+{{--                                </div>--}}
+{{--                                <small>Chuyên mục - 11.08.2016</small>--}}
+{{--                                <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>--}}
+{{--                            </li>--}}
+{{--                            <li>--}}
+{{--                                <div class="alignleft">--}}
+{{--                                    <a href="#0"><img src="http://www.ansonika.com/foogra/img/blog-4.jpg" alt=""></a>--}}
+{{--                                </div>--}}
+{{--                                <small>Chuyên mục - 11.08.2016</small>--}}
+{{--                                <h3><a href="#" title="">Verear qualisque ex minimum...</a></h3>--}}
+{{--                            </li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                    <!-- /widget -->--}}
+{{--                    <div class="widget">--}}
+{{--                        <div class="widget-title">--}}
+{{--                            <h4>Thể loại</h4>--}}
+{{--                        </div>--}}
+{{--                        <ul class="cats">--}}
+{{--                            <li><a href="#">Đồ ăn <span>(12)</span></a></li>--}}
+{{--                            <li><a href="#">Địa điểm tham quan <span>(21)</span></a></li>--}}
+{{--                            <li><a href="#">Địa điểm mới <span>(44)</span></a></li>--}}
+{{--                            <li><a href="#">Gợi ý và hướng dẫn <span>(31)</span></a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                    <!-- /widget -->--}}
+{{--                    <div class="widget">--}}
+{{--                        <div class="widget-title">--}}
+{{--                            <h4>Phổ biến</h4>--}}
+{{--                        </div>--}}
+{{--                        <div class="tags">--}}
+{{--                            <a href="#">Đồ ăn</a>--}}
+{{--                            <a href="#">Bars</a>--}}
+{{--                            <a href="#">Cooktails</a>--}}
+{{--                            <a href="#">Cửa hàng</a>--}}
+{{--                            <a href="#">Ưu đãi tốt nhất</a>--}}
+{{--                            <a href="#">Transports</a>--}}
+{{--                            <a href="#">Các nhà hàng</a>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <!-- /widget -->--}}
+{{--                </aside>--}}
                 <!-- /aside -->
             </div>
             <!-- /row -->

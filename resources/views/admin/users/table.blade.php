@@ -44,7 +44,7 @@
                         </form>
                     </div>
                 </div>
-                <a href="{{route('createUser')}}" class="btn btn-success mb-3">Thêm mới<i class="fa fa-plus"></i></a>
+                <a href="{{route('createUser')}}" class="btn btn-success mb-3">Thêm mới<i class="ml-1 fa fa-plus"></i></a>
                 @if(session()->get('status'))
                     <div class="alert alert-success alert-dismissible fade show">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -59,7 +59,7 @@
                         <th>Họ Tên</th>
                         <th>Email</th>
                         <th>Địa chỉ</th>
-                        <th>Sửa, xoá</th>
+                        <th>Thao tác</th>
                     </tr>
 
 

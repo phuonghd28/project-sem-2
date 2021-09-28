@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/assets/images/icon-logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -12,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     @yield('custom_css')
-    <title>@yield('title')</title>
+    <title>Cơm chay | @yield('title')</title>
 
 </head>
 <body id="reponsive-font-size">
@@ -48,7 +49,7 @@
                         <div class="main-nav col d-lex align-self-center menu-header-lap">
                             <a class="nav-item active t-home" href="{{ route('index') }}">Trang chủ</a>
                             <div class="dropdown d-inline">
-                                <a class="nav-item t-product" href="{{route('products')}}">Product</a>
+                                <a class="nav-item t-product" href="{{route('products')}}">Món ăn</a>
                                 <div class="dropdown-menu p-0" style="border-radius: 0;top:55px;left: 0"
                                      aria-labelledby="dropdownMenuButton">
                                     @foreach(\App\Models\Category::all() as $item)
@@ -57,7 +58,7 @@
                                 </div>
                             </div>
                             <a class="nav-item t-blog" href="{{route('blog')}}">Blog Chay</a>
-                            <a class="nav-item t-abouts" href="{{route('abouts')}}">Về comchay</a>
+                            <a class="nav-item t-abouts" href="{{route('abouts')}}">Về chúng tôi</a>
                             <a class="nav-item t-contact" href="{{route('contact')}}">Liên hệ</a>
                         </div>
                         {{---------------------------------------------------nav mobile-----------------------------------------}}
@@ -82,7 +83,7 @@
                                         <div class="wrap-mobile-link" style="position: relative">
                                             <i class="fas fa-hamburger" style="position: absolute;"></i>
                                             <div class="dropdown transition-drop" style="margin-left: 35px;position: static;width: 86%;">
-                                                <a class="nav-mobile-link" href="{{route('products')}}">Sản phẩm</a>
+                                                <a class="nav-mobile-link" href="{{route('products')}}">Món ăn</a>
                                                 <ul class="dropdown-menu position-static" style="border-radius: 0;border: 0;padding: 0;">
                                                     @foreach(\App\Models\Category::all() as $item)
                                                         <li><a href="/products?category={{$item->id}}">{{$item->name}}</a></li>
@@ -96,7 +97,7 @@
                                         </div>
                                         <div class="wrap-mobile-link">
                                             <i class="fas fa-address-card"></i>
-                                            <a class="nav-mobile-link" href="{{route('abouts')}}">Về com chay</a>
+                                            <a class="nav-mobile-link" href="{{route('abouts')}}">Về chúng tôi</a>
                                         </div>
                                         <div class="wrap-mobile-link">
                                             <i class="fas fa-shopping-cart"></i>
@@ -342,7 +343,7 @@
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6151ca4bea193e91"></script>
 <script type="text/javascript" src="/assets/scripts/jquery.min.js"></script>
-{{--<script type="text/javascript" src="/assets/scripts/jquery.validate.min.js"></script>--}}
+<script type="text/javascript" src="/assets/scripts/jquery.validate.min.js"></script>
 @yield('custom_js')
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
