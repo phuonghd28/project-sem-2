@@ -42,13 +42,15 @@ class PaypalController extends Controller
         $payer->setPaymentMethod("paypal");
 
         $itemArray = [];
+        $totalPrice = 0;
         foreach ($order->orderDetails as $orderDetail) {
+            $totalPrice += $orderDetail->unitPrice / 22750 * $orderDetail->quantity;
             $item = new Item();
             $item->setName($orderDetail->product->name)
                 ->setCurrency('USD')
                 ->setQuantity($orderDetail->quantity)
                 ->setSku($orderDetail->productId)
-                ->setPrice($orderDetail->unitPrice);
+                ->setPrice($orderDetail->unitPrice / 22750);
             array_push($itemArray, $item);
         }
         $itemList = new ItemList();
@@ -57,11 +59,11 @@ class PaypalController extends Controller
         $details = new Details();
         $details->setShipping(0)
             ->setTax(0)
-            ->setSubtotal($order->totalPrice);
+            ->setSubtotal($totalPrice);
 
         $amount = new Amount();
         $amount->setCurrency("USD")
-            ->setTotal($order->totalPrice)
+            ->setTotal($totalPrice)
             ->setDetails($details);
 
         $transaction = new Transaction();

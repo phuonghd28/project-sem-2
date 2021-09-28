@@ -59,7 +59,7 @@ class OrderController extends Controller
             DB::commit();
             Cart::destroy();
             if(Auth::check()){
-//                $this->send_mail($order);
+                $this->send_mail($order);
             }
             return redirect()->route('detailOrder',$order->id)->with('success-msg','Bạn đã lưu giỏ hàng thành công.');
         }
@@ -83,7 +83,7 @@ class OrderController extends Controller
             'user' => Auth::user(),
         ];
         Mail::send('mails.mail',$data,function ($message){
-            $message->from('phuonghdth2009010@outlook.com.vn','Cơm chay');
+            $message->from(env('MAIL_USERNAME'),'Cơm chay');
             $message->to(Auth::user()->email,'Phuong');
             $message->subject('Cơm chay - Đơn hàng mới');
         });
