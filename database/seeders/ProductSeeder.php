@@ -42,7 +42,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set lẩu d&ugrave;ng được :</strong> cho 3 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 2,
@@ -61,7 +61,7 @@ class ProductSeeder extends Seeder
 
 <p><strong>Set lẩu n&agrave;y d&ugrave;ng được cho</strong> :4 người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 3,
@@ -85,7 +85,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set lẩu n&agrave;y d&ugrave;ng cho :</strong> 4 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 4,
@@ -107,7 +107,7 @@ class ProductSeeder extends Seeder
 <p>-Lẩu mắm miền T&acirc;y</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],[
                 'id' => 5,
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-4.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/12/lau-chay-chua-cay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2020/05/lau-nam-chay-hap-dan.jpg,https://lh3.googleusercontent.com/proxy/bB_Tz9q6dFFkhcVBUf5XG6e0ZBXuhS6-D5d9gwA6KxJ2pP5Xz-Bq6aQxX3Pn7LGH3_xUQA8wmoRjPORNIXTPM41ankFnUCWBEzbzv18yFXuVeHGTY219IKOQ09ELidvXMX-vJcvfkuZ6kkGEWBq4h-OKGOCv2J8',
@@ -127,7 +127,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set lẩu n&agrave;y d&ugrave;ng cho :</strong> 4 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 6,
@@ -148,7 +148,7 @@ class ProductSeeder extends Seeder
 
 <p><strong>Set lẩu d&ugrave;ng được cho :</strong> 4 người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 7,
@@ -180,7 +180,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong> 2 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 8,
@@ -206,7 +206,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong>&nbsp;4&nbsp;người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 9,
@@ -225,7 +225,7 @@ class ProductSeeder extends Seeder
 
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong>&nbsp;4&nbsp;người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],[
                 'id' => 10,
                 'image' => 'https://cdn.huongnghiepaau.com/wp-content/uploads/2019/01/mon-canh-kim-chi-chay.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2019/03/lau-kim-chi-hai-san.jpg,https://cachlammonngon.vn/wp-content/uploads/2016/08/lau-nam-kim-chi.jpg,https://emoi.vn/wp-content/uploads/2018/11/lau-kim-chi-1.jpg',
@@ -239,7 +239,7 @@ class ProductSeeder extends Seeder
 
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong>&nbsp;4&nbsp;người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],[
                 'id' => 11,
                 'image' => 'https://yummyday.vn/uploads/images/nam-rom-kho-dau-hu.jpg,https://monngonmoingay.tv/wp-content/uploads/2019/08/dau-phu-xao-nam-cay.jpg,https://monngonmoingay.tv/wp-content/uploads/2019/08/dau-hu-xao-nam-huong-ngon.jpg,https://lh3.googleusercontent.com/proxy/-QSc0oFSqf7lxMTmfoZyCooilq9TLcFkhiYgMHSL9t7DQU_hdQxi0Ky3pTCdkmMXfJvCWl-UVON4eRvpzDoUO8PzD1u1FGFlECBvMmBvuSfopHMsVVo',

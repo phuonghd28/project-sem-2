@@ -114,6 +114,7 @@ class PaypalController extends Controller
                     $order = Order::find($orderId);
                     if ($order != null) {
                         $order->status = Status::PAID;
+                        $order->is_checkout = 1;
                         $order->save();
                     }
                 }

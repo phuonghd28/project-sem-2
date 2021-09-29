@@ -15,10 +15,10 @@
 @section('content')
     <div class="mt-2 mt-lg-5 mt-md-4 mt-sm-3">
         <div class="row">
+
             <div class="col-xxl-12 col-xl-12 col-lg-12">
                 <div class="heading-minimal">
-                    <div class="sub-title">Các món chay hàng đầu</div>
-                    <h3 class="head-title">Danh mục</h3>
+                    <h3 class="head-title">Danh mục nổi bật</h3>
                 </div>
             </div>
             @foreach($categories as $category)
@@ -27,7 +27,7 @@
                         <a href="/products?category={{$category->id}}">
                             <img
                                 loading="lazy" alt="" class="cate-images"
-                                src="{{$category->image}}" style="object-fit: cover;width: 100% !important;"></a>
+                                src="{{$category->image}}" style="object-fit: cover;width: 61% !important;border-radius: 50%"></a>
                         <div class="category-text-box">
                             <div class="category-text-inner">
                                 <a href="#">
@@ -59,7 +59,7 @@
                         <div class="eq-height col-xl-3 col-lg-6 col-md-4 col-sm-6">
                             <div class="res-3-box ">
                                 <div class="res-2-img parallex-new">
-                                    <a href="#">
+                                    <a href="{{route('product_detail',$featured_food->id)}}">
                                         <img style="object-fit: cover;height:200px;width:100%"
                                              src="{{explode(',',$featured_food->image)[0]}}" alt=""
                                              class="img-fluid">
@@ -68,7 +68,7 @@
                                 <div class="res-2-bg-white">
                                     <div class="res-2-inner">
                                         <div class="res-2-text">
-                                            <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <a href="{{route('product_detail',$featured_food->id)}}">
                                                 <div class="text-s1">{{$featured_food->name}}</div>
                                             </a>
                                         </div>
@@ -82,7 +82,7 @@
                                                     {{number_format($featured_food->price)}} đ
                                                 </span>
                                                     <span class="location-png wrap-adding">
-                                                    <a href="#">
+                                                    <a href="{{route('addCart',$featured_food->id)}}">
                                                         <div class="btn-adding">+</div>
                                                     </a>
                                                 </span>
@@ -99,7 +99,7 @@
 
             <div class="col-xl-12 col-xxl-12 col-lg-12 col-md-12">
                 <div class="heading-minimal">
-                    <h3 class="head-title">Các món ăn chay được bán</h3>
+                    <h3 class="head-title">Các món chay bán chạy</h3>
                 </div>
             </div>
             <div class="col-xl-12 col-lg-12 col-xxl-12 col-md-12">
@@ -109,7 +109,7 @@
                             <div class="eq-height col-xl-3 col-lg-6 col-md-4 col-sm-6 col-6">
                                 <div class="res-3-box ">
                                     <div class="res-2-img parallex-new">
-                                        <a href="#">
+                                        <a href="{{route('product_detail',$selling_food->id)}}">
                                             <img height="200px" width="100%" style="object-fit: cover"
                                                  src="{{explode(',',$selling_food->image)[0]}}" alt="">
                                         </a>
@@ -117,7 +117,7 @@
                                     <div class="res-2-bg-white">
                                         <div class="res-2-inner">
                                             <div class="res-2-text">
-                                                <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                                <a href="{{route('product_detail',$selling_food->id)}}">
                                                     <div class="text-s1">{{$selling_food->name}}</div>
                                                 </a>
                                             </div>
@@ -131,7 +131,7 @@
                                                             {{number_format($selling_food->price)}} đ
                                                         </span>
                                                         <span class="location-png wrap-adding">
-                                                            <a href="#">
+                                                            <a href="{{route('addCart',$selling_food->id)}}">
                                                                 <div class="btn-adding">+</div>
                                                             </a>
                                                         </span>
@@ -158,7 +158,7 @@
                         <div class="eq-height col-xl-3 col-lg-6 col-md-4 col-sm-6 col-6">
                             <div class="res-3-box">
                                 <div class="res-2-img parallex-new">
-                                    <a href="#">
+                                    <a href="{{route('product_detail',$new_food->id)}}">
                                         <img height="200px" width="100%" style="object-fit: cover"
                                              src="{{explode(',',$new_food->image)[0]}}" alt="">
                                     </a>
@@ -166,7 +166,7 @@
                                 <div class="res-2-bg-white">
                                     <div class="res-2-inner">
                                         <div class="res-2-text">
-                                            <a href="https://marketplace.foodotawp.com/store/arcadian-cafe/">
+                                            <a href="{{route('product_detail',$new_food->id)}}">
                                                 <div class="text-s1">{{$new_food->name}}</div>
                                             </a>
                                         </div>
@@ -180,7 +180,7 @@
                                                     {{number_format($new_food->price)}} đ
                                                 </span>
                                                     <span class="location-png wrap-adding">
-                                                    <a href="#">
+                                                    <a href="{{route('addCart',$new_food->id)}}">
                                                         <div class="btn-adding">+</div>
                                                     </a>
                                                 </span>

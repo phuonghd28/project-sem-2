@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Enums\Status;
 use App\Http\Requests\UserRequest;
 use App\Jobs\SendMail;
 use App\Models\Order;
@@ -67,7 +68,12 @@ class ListOrderController extends Controller
             $order = Order::find($item);
             if ($request->desire == 5) {
                 $order->delete();
-            } else {
+            }elseif ($request->desire == 6){
+                $order->is_checkout = 1;
+                $order->status = Status::PAID;
+                $order->save();
+            }
+            else {
                 $order->status = $request->desire;
                 $order->save();
                 array_push($id, $order->id);

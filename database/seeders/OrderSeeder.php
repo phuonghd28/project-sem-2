@@ -27,7 +27,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0837287287',
                 'shipAddress' => 'Đối diện Trường Tiểu Học, THCS & THPT Nguyễn Siêu',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
                 'created_at' => '2021-06-02',
             ],
             [
@@ -39,7 +39,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0389776228',
                 'shipAddress' => 'Chung Cư HOME City 177 Trung Kính',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
                 'created_at' => '2021-07-22',
             ],
             [
@@ -51,7 +51,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0334670699',
                 'shipAddress' => 'Ngõ 173 Trung Kính',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
                 'created_at' => '2021-06-20',
             ],
             [
@@ -63,7 +63,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0837287287',
                 'shipAddress' => 'Cổng Trường Đại Học Phương Đông',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
                 'created_at' => '2021-09-02',
             ],
             [
@@ -75,7 +75,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0312343569',
                 'shipAddress' => 'Ngõ 68 Trung Kính',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-02',
             ],
             [
@@ -87,7 +87,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0334670699',
                 'shipAddress' => 'Ngõ 125 Trung Kính',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-12',
             ],
             [
@@ -99,7 +99,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0686789999',
                 'shipAddress' => 'Văn Phòng Công Chứng Nguyễn Hùng',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-11',
             ],
             [
@@ -111,7 +111,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0686789999',
                 'shipAddress' => 'Ngõ 68 Trung Kính',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-17',
             ],
             [
@@ -123,7 +123,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0686789999',
                 'shipAddress' => 'Ngân Hàng Ngoại Thương',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-21',
             ],
             [
@@ -135,7 +135,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0686789999',
                 'shipAddress' => 'Ngõ 55 Thiên Đức',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-25',
             ],
             [
@@ -147,7 +147,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0686789999',
                 'shipAddress' => 'Ngõ 53 Thiên Đức',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-25',
             ],
             [
@@ -159,7 +159,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0686789999',
                 'shipAddress' => 'Cy Cổ Phần Tường Đẹp Cộng',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-21',
             ],
             [
@@ -171,7 +171,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0686789999',
                 'shipAddress' => 'Ngõ 63 Đ.Hà Huy Tập',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-10',
             ],
             [
@@ -183,7 +183,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0837287287',
                 'shipAddress' => 'UBND Phường Mỹ Đình 1',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-15',
             ],
             [
@@ -195,7 +195,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Ngõ P2 Lê Quang Đạo',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-13',
             ],
             [
@@ -207,7 +207,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Ngõ 1 Vườn Cam',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-18',
             ],
             [
@@ -219,7 +219,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Ngõ 2 Phố Đồng Me',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-04',
             ],
             [
@@ -231,7 +231,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Ngõ 322/95 Mỹ Đình',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-09',
             ],
             [
@@ -243,7 +243,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Đối diện Trường Cao Đẳng Công Nghệ Bách Khoa Hà Nộ...',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-06',
             ],
             [
@@ -255,7 +255,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Nhà Hạ 152/322',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-05',
             ],
             [
@@ -267,7 +267,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Đài Phát Thanh Đông Dương VN1',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-19',
             ],
             [
@@ -279,7 +279,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0568686800',
                 'shipAddress' => 'Làng Lễ Khê',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-13',
             ],
             [
@@ -291,7 +291,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '034737389',
                 'shipAddress' => 'P. Ngô Quyền',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-28',
             ],
             [
@@ -303,7 +303,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '034737389',
                 'shipAddress' => 'Cung Thiếu Nhi Hà Nội Phố Lý Thái Tổ',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-28',
             ],
             [
@@ -315,7 +315,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '034737389',
                 'shipAddress' => 'Ngõ 13 Dốc Tam Đa',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-29',
             ],
             [
@@ -327,7 +327,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0689999999',
                 'shipAddress' => 'Ngõ 83 Trần Duy Hưng',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-19',
             ],
             [
@@ -339,7 +339,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0689999999',
                 'shipAddress' => 'Ngõ 354 Phố Bắc Cầu',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-24',
             ],
             [
@@ -351,7 +351,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0689999999',
                 'shipAddress' => 'Thôn Lễ Khê',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-14',
             ],
             [
@@ -363,7 +363,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0689999999',
                 'shipAddress' => 'Trường THCS Tả Thanh Oai',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-08',
             ],
             [
@@ -375,7 +375,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0689999999',
                 'shipAddress' => 'Sau bến xe Mỹ Đình',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-03',
             ],
             [
@@ -387,7 +387,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0689999999',
                 'shipAddress' => 'Ngõ 354 Phố Bắc Cầu',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-02',
             ],
             [
@@ -399,7 +399,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'B15 Lô 5 Đô Thị Định Công Hà Nội',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-05',
             ],
             [
@@ -411,7 +411,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'B15 Lô 5 Đô Thị Định Công Hà Nội',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-06',
             ],
             [
@@ -423,7 +423,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'B15 Lô 5 Đô Thị Định Công Hà Nội',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-03',
             ],
             [
@@ -435,7 +435,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'B15 Lô 5 Đô Thị Định Công Hà Nội',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-01',
             ],
             [
@@ -447,7 +447,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'Nhà May Ngọc Liên',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-06',
             ],
             [
@@ -459,7 +459,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'Sau Trường Cao Đẳng nghề số 17',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-07',
             ],
             [
@@ -471,7 +471,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'Ngõ 36 Trần Điền',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-07',
             ],
             [
@@ -483,7 +483,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'Ngõ 51 Trần Điền',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-18',
             ],
             [
@@ -495,7 +495,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '045678900',
                 'shipAddress' => 'Ngõ 210 Lê Trọng Tấn',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-19',
             ],
             [
@@ -507,7 +507,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0345898989',
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-06-16',
             ],
             [
@@ -519,7 +519,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0345898989',
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-18',
             ],
             [
@@ -531,7 +531,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0345898989',
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-22',
             ],
             [
@@ -543,7 +543,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0345898989',
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-08',
             ],
             [
@@ -555,7 +555,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0345898989',
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-19',
             ],
             [
@@ -567,7 +567,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0345898989',
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-07-07',
             ],
             [
@@ -579,7 +579,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '0345898989',
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-08',
             ],
             [
@@ -591,7 +591,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '034578999',
                 'shipAddress' => 'Ngõ Yết Kiêu',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-09',
             ],
             [
@@ -603,7 +603,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '034578999',
                 'shipAddress' => 'Ngõ Yết Kiêu',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-09-10',
             ],
             [
@@ -615,7 +615,7 @@ class OrderSeeder extends Seeder
                 'shipPhone' => '034578999',
                 'shipAddress' => 'Ngõ Yết Kiêu',
                 'note' => 'Không có ghi chú',
-                'status' => 1,
+                'status' => 4,
               'created_at' => '2021-08-15',
             ],
 

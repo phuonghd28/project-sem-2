@@ -10,10 +10,12 @@
     <section class="product-list">
         <div class="container">
             @if(session('add'))
-                <div class="alert alert-success alert-dismissible">
-                    {{session('add')}}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
+                <a href="{{route('listCart')}}" style="cursor: pointer">
+                    <div class="alert alert-success alert-dismissible">
+                        {{session('add')}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </a>
             @endif
             <div class="row">
                 <div class="col-lg-12">
