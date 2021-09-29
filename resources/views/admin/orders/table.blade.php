@@ -80,7 +80,7 @@
                                     Đang chờ
                                     @break
                                     @case(2)
-                                    Đã thanh toán
+                                    Chờ xử lý
                                     @break
                                     @case(3)
                                     Đang giao hàng
@@ -112,7 +112,7 @@
                             </select>
                         </form>
                     </div>
-                    <div class="col-2">
+                    <div class="col-4">
                         @include('admin.components.pagination',['list' => $orders])
                     </div>
                 </div>
@@ -126,6 +126,7 @@
                                 <option value="{{$type}}">{{\App\Enums\Status::getDescription($type)}}</option>
                             @endforeach
                             <option value="5">Xóa đơn hàng</option>
+                            <option value="6">Đã thanh toán</option>
                         </select>
                         <button class="btn btn-primary btn_submit" style="width: 120px">Cập nhật</button>
                         <form action="{{route('updateStatus')}}" id="form_update_status" method="post"

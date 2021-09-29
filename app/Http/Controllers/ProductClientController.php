@@ -44,7 +44,7 @@ class ProductClientController extends Controller
         if ($price == 5) {
             $query = $query->where('price', '>', 500000);
         }
-        $product = $query->paginate(12)->appends(['search' => $search, 'filter' => $filter]);
+        $product = $query->orderBy('created_at','DESC')->paginate(12)->appends(['search' => $search, 'filter' => $filter]);
         return view('clients.list', [
             'products' => $product,
             'filter' => $filter,

@@ -29,6 +29,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="shop__cart__table">
+                        <?php
+                        $totalPrice = 0
+                        ?>
                         <table>
                             <thead>
                             <tr>
@@ -40,6 +43,11 @@
                             </thead>
                             <tbody>
                             @foreach(\Gloudemans\Shoppingcart\Facades\Cart::content() as $data)
+                                <?php
+                                if (!empty($data)) {
+                                    $totalPrice += $data->price * $data->qty;
+                                }
+                                ?>
                                 <form action="/update" method="get">
                                     <tr>
                                         <input type="hidden" name="rowId" value="{{$data->rowId}}">
@@ -85,10 +93,10 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="cart__btn update__btn">
-                        <a onclick="return confirm('Bạn có chắc muốn xóa tất cả giỏ hàng ?')" href="/destroy">
-                            <span class="fa fa-spinner">
-                            </span> Xoá tất cả
-                        </a>
+{{--                        <a onclick="return confirm('Bạn có chắc muốn xóa tất cả giỏ hàng ?')" href="/destroy">--}}
+{{--                            <span class="fa fa-spinner">--}}
+{{--                            </span> Xoá tất cả--}}
+{{--                        </a>--}}
                     </div>
                 </div>
             </div>
@@ -120,9 +128,9 @@
                     <div class="cart__total__procced">
                         <h6>Tất cả giỏ hàng</h6>
                         <ul>
-                            <li>Tổng tiền<span>{{\Gloudemans\Shoppingcart\Facades\Cart::total()}}</span></li>
+                            <li>Tổng tiền<span>{{number_format($totalPrice)}} đ</span></li>
                         </ul>
-                        <label for="submit-form-order" tabindex="0" class="primary-btn" style="cursor: pointer">Thanh toán</label>
+                        <label for="submit-form-order" tabindex="0" class="primary-btn" style="cursor: pointer">Đặt hàng</label>
                     </div>
                 </div>
             </div>

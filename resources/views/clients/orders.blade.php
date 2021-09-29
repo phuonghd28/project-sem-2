@@ -201,6 +201,7 @@
                         console.log(res)
                         // alert('Payment Success !!')
                         // location.reload();
+                        window.location.href = '/pay_success'
                         // 3. Show the buyer a confirmation message.
                     });
             }
