@@ -82,7 +82,7 @@
                                                     {{number_format($featured_food->price)}} đ
                                                 </span>
                                                     <span class="location-png wrap-adding">
-                                                    <a href="#">
+                                                    <a href="{{route('addCart',$featured_food->id)}}">
                                                         <div class="btn-adding">+</div>
                                                     </a>
                                                 </span>

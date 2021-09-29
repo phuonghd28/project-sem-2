@@ -212,7 +212,7 @@
                                 <i class="fa fa-unlock-alt" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <button class="btn-login mt-lg-2 mt-md-2 mt-sm-2 mt-0"><b>Đăng nhập</b></button>
+                        <button type="submit" class="btn-login mt-lg-2 mt-md-2 mt-sm-2 mt-0"><b>Đăng nhập</b></button>
                     </form>
                     <form id="reg-form" action="{{ route('register') }}" class="reg-form-mb" method="post">
                         @csrf
@@ -256,7 +256,7 @@
                             </div>
 
                         </div>
-                        <button class="btn-login mt-lg-2 mt-md-2 mt-sm-2 mt-0"><b>Đăng ký</b></button>
+                        <button type="submit"~ class="btn-login mt-lg-2 mt-md-2 mt-sm-2 mt-0"><b>Đăng ký</b></button>
                     </form>
                 </div>
             </div>
