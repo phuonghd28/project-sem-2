@@ -23,11 +23,13 @@ class ProductSeeder extends Seeder
                 'image' => 'https://imgamp.travelmag.vn/center/1200x800/files/thuthuy/2020/06/02/lau-chay-lang-dai-hoc-1510.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/12/lau-chay-chua-cay.jpg,https://img-global.cpcdn.com/recipes/095364a083a6e123/1200x630cq70/photo.jpg,https://cdn.tgdd.vn/Files/2019/08/17/1188661/lau-thai-chay-chua-chua-cay-cay-vua-an-vua-hit-ha-khen-ngon-202107231006472731.jpg',
                 'price' => 270000,
                 'name' => 'lẩu chay Thái chua cay',
-                'description' => '<p><strong>Set 01 lẩu chay th&aacute;i chua cay</strong>:</p>
+                'description' => '<p><em><strong>Lẩu th&aacute;i</strong>&nbsp;l&agrave; m&oacute;n ăn thơm ngon được kh&aacute; nhiều người y&ecirc;u th&iacute;ch. V&agrave;o những ng&agrave;y trời se lạnh hay c&aacute;c cuộc gặp gỡ cuối tuần, lẩu th&aacute;i ch&iacute;nh l&agrave; sự lựa chọn kh&ocirc;ng thể n&agrave;o l&yacute; tưởng hơn cả. Lẩu th&aacute;i c&oacute; nguồn gốc từ Th&aacute;i Lan, du nhập v&agrave;o Việt Nam từ rất l&acirc;u v&agrave; tạo n&ecirc;n một l&agrave;n s&oacute;ng mới cho nền ẩm thực th&ecirc;m phong ph&uacute;.</em></p>
+
+<p><strong>Ẩm thực Th&aacute;i Lan</strong>&nbsp;lu&ocirc;n c&oacute; đặc điểm chung l&agrave; sự hội tụ đầy đủ c&aacute;c gia vị trong một m&oacute;n ăn: chua, cay, mặn, ngọt. D&ugrave; được chế biến từ những nguy&ecirc;n liệu kh&aacute;c nhau những do c&aacute;ch định lượng hương liệu chuẩn x&aacute;c m&agrave; mỗi m&oacute;n ăn đều c&oacute; m&ugrave;i vị ri&ecirc;ng kh&aacute; đặc biệt.</p>
+
+<p><strong>Set 01 lẩu chay th&aacute;i chua cay</strong>:</p>
 
 <p>-Nem cuốn: 3 chiếc d&agrave;i</p>
-
-<p>&nbsp;</p>
 
 <p>-1 nồi lẩu nấm đ&ocirc;ng c&ocirc;, nấm hương, củ quả&nbsp;</p>
 
@@ -49,7 +51,13 @@ class ProductSeeder extends Seeder
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-1.jpg,https://massageishealthy.com/wp-content/uploads/2019/08/cach-nau-lau-chay-chua-ngot-thap-cam-ngon-nhat-don-gian-thumb.jpg,https://i.ytimg.com/vi/JKXvN_TYw38/maxresdefault.jpg,https://cdn.tgdd.vn/Files/2019/12/16/1227037/thanh-dam-bo-mat-cuoi-tuan-voi-2-mon-lau-nam-chay-thom-ngon-don-gian-va-de-lam-9.jpg',
                 'price' => 450000,
                 'name' => 'Lẩu chay nấm kiểu Nhật',
-                'description' => '<p><strong>Set lẩu nấm kiểu Nhật gồm c&oacute; :</strong></p>
+                'description' => '<p>Sự nổi tiếng của lẩu chay nấm kiểu Nhật&nbsp;c&oacute; lẽ l&agrave; kh&ocirc;ng một ai kh&ocirc;ng biết. Người Nhật vốn nổi tiếng với c&aacute;c m&oacute;n&nbsp;<a href="http://vilai.vn/nhung-dieu-ban-can-biet-ve-che-do-an-chay-trong-dao-phat-nd35741.html">ăn chay</a>&nbsp;ngon, gi&agrave;u dinh dưỡng v&agrave; tốt cho cơ thể từ trước đến nay v&agrave; m&oacute;n lẩu nấm tới từ nước Nhật cũng kh&ocirc;ng phải ngoại lệ.</p>
+
+<p>Được chế biến từ những loại nấm đầy hương vị như nấm mỡ g&agrave;, nấm hương, nấm rơm.v.v. m&oacute;n lẩu chay với&nbsp;nấm&nbsp;n&agrave;y&nbsp;đem đến một hương vị ri&ecirc;ng kh&ocirc;ng đ&acirc;u c&oacute; được đến với người d&ugrave;ng. Với nước lẩu chay được l&agrave;m&nbsp;ho&agrave;n to&agrave;n từ c&aacute;c loại rau củ tươi ngon; sự trong, thanh m&aacute;t, ngọt vị của nước lẩu&nbsp;chay ch&iacute;nh l&agrave; điều sẽ g&acirc;y ấn tượng với bạn từ ban đầu.</p>
+
+<p>Đặc biệt, phần nguy&ecirc;n liệu nh&uacute;ng lẩu chay, bao gồm hơn 5 loại nấm thi&ecirc;n nhi&ecirc;n kh&aacute;c nhau, được sơ chế kỹ trước khi đưa l&ecirc;n; sẽ g&oacute;p phần mang đến cho thực kh&aacute;ch sự phong ph&uacute; khi d&ugrave;ng bữa, một liều thuốc bổ gi&uacute;p tiếp th&ecirc;m năng lượng cho người ăn sau những ng&agrave;y l&agrave;m việc mệt mỏi.</p>
+
+<p><strong>Set lẩu nấm kiểu Nhật gồm c&oacute; :</strong></p>
 
 <p>-&nbsp; M&oacute;n khai vị: Nem T&acirc;m Tịnh gi&ograve;n rụm v&agrave; Salad Rong Biển Tươi Với Nấm</p>
 
@@ -66,9 +74,17 @@ class ProductSeeder extends Seeder
             [
                 'id' => 3,
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-2(3).jpg,https://suckhoedoisong.qltns.mediacdn.vn/Images/thanhloan/2017/01/03/cach-lua-chon-rau-cho-phu-hop-voi-tung-loai-lau9.jpg,https://cafefcdn.com/2019/11/25/photo-3-15746461607551940049705.jpeg,https://afamilycdn.com/2019/12/1/photo-1575136571529-15751365715401305251893.png',
-                'price' => 21000,
-                'name' => 'Lẩu chay chua cay cải ngọt',
-                'description' => '<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
+                'price' => 210000,
+                'name' => 'Lẩu chay chua cay cải nấm',
+                'description' => '<p>Vị chua cay nồng n&agrave;n trong c&aacute;c m&oacute;n lẩu chay thường khiến những người ăn th&iacute;ch th&uacute;. Dưới đ&acirc;y l&agrave; một c&ocirc;ng nấu m&oacute;n lẩu chay chua cay đơn giản, gi&uacute;p bạn tiết kiệm thời gian trong kh&acirc;u chuẩn bị c&aacute;c m&oacute;n chay ngon v&agrave;o những khoảng thời gian bận rộn.</p>
+
+<p><strong>Lẩu Nấm</strong>&nbsp;-&nbsp;Trong thực đơn h&agrave;ng ng&agrave;y, c&aacute;c bữa tiệc chi&ecirc;u đ&atilde;i,&nbsp;ch&uacute;ng ta kh&ocirc;ng thể bỏ&nbsp;<strong>m&oacute;n lẩu&nbsp;nấm</strong>, m&oacute;n ăn&nbsp;kh&ocirc;ng chỉ&nbsp;tuyệt vời về hương vị, dễ ăn&nbsp;d&agrave;nh cho tất cả mọi người m&agrave; c&ograve;n l&agrave; loại thuốc qu&yacute; trong việc chăm s&oacute;c sức khỏe cho cơ thể. Ngo&agrave;i những m&oacute;n ăn quen thuộc như x&agrave;o, nấu canh th&igrave; nấu&nbsp;lẩu nấm&nbsp;cũng rất được ưa chuộng, người d&ugrave;ng kh&ocirc;ng chỉ được thưởng thức những bữa lẩu&nbsp;nấm ngon ngọt m&agrave; c&ograve;n ch&igrave;m đắm trong nước d&ugrave;ng v&ocirc; c&ugrave;ng dinh dưỡng. Để l&agrave;m phong ph&uacute; th&ecirc;m thực đơn nấu&nbsp;lẩu nấm h&atilde;y c&ugrave;ng ch&uacute;ng t&ocirc;i học&nbsp;<strong>nấu&nbsp;</strong>một số loại lẩu nấm thơm ngon với b&agrave;i viết của&nbsp;<a href="http://linhchihoanggia.com/">Thảo Dược Ho&agrave;ng Gia</a>&nbsp;ngay sau đ&acirc;y!</p>
+
+<p>Nấu lẩu nấm th&igrave; th&agrave;nh phần nấm l&agrave; một loại thực phẩm dinh dưỡng khi đảm bảo cho người d&ugrave;ng&nbsp;kh&ocirc;ng c&oacute; cholesterol, kh&ocirc;ng c&oacute; chất b&eacute;o, h&agrave;m lượng calo thấp, cũng như h&agrave;m lượng muối v&agrave; đường rất thấp. Th&ecirc;m v&agrave;o đ&oacute;, nấm c&ograve;n bổ sung nguồn chất xơ gi&aacute; trị, đồng thời c&oacute; th&ecirc;m một v&agrave;i kho&aacute;ng chất (canxi, kẽm, sắt,..) v&agrave; vitamin (vitamin D, B1, B5,..).</p>
+
+<p>C&oacute; rất nhiều&nbsp;lo&agrave;i nấm ăn kh&aacute;c nhau, v&igrave; thế người ti&ecirc;u d&ugrave;ng c&oacute; nhiều sự lựa chọn để l&agrave;m phong ph&uacute; bữa ăn cho gia đ&igrave;nh của bạn. Tuy nhi&ecirc;n, theo c&aacute;c chuy&ecirc;n gia dinh dưỡng th&igrave; c&oacute; một số loại nấm gi&agrave;u gi&aacute; trị dinh dưỡng chẳng hạn như: nấm đ&ocirc;ng c&ocirc; &ndash; vua c&aacute;c loại nấm, nấm rơm, nấm mỡ, nấm tai m&egrave;o, nấm mỡ g&agrave;,...</p>
+
+<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
 
 <p>&nbsp;</p>
 
@@ -92,7 +108,13 @@ class ProductSeeder extends Seeder
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-3.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2019/06/lau-mam-chay.jpg,https://cdn.tgdd.vn/2020/09/CookProduct/CachNauLAUMAMCHAYTHOMNGONMonAnChayBaMeQue0-17screenshot-1200x676.jpg,https://haithuycatering.com/image/5c385c9451046d693ead04ee/original.jpg',
                 'price' => 340000,
                 'name' => 'Lẩu chay mắm',
-                'description' => '<p><strong>Set ăn Họp mặt d&agrave;nh cho 06 người bao gồm:</strong></p>
+                'description' => '<p>C&oacute; một điều kh&aacute; lạ l&agrave; miền T&acirc;y kh&ocirc;ng c&oacute; m&ugrave;a đ&ocirc;ng. Tuy nhi&ecirc;n, những m&oacute;n lẩu chay nơi đ&acirc;y lại rất ngon v&agrave; ấm &aacute;p như t&igrave;nh người ở đ&oacute;.</p>
+
+<p>Với mong muốn đem đến n&eacute;t đặc sắc của v&ugrave;ng đất đồng bằng s&ocirc;ng Cửu Long tới nhiều người hơn nữa, lẩu chay&nbsp;mắm&nbsp;được Vị Lai giới thiệu trong b&agrave;i viết n&agrave;y như một c&aacute;ch để t&ocirc;n l&ecirc;n gi&aacute; trị của ẩm thực truyền thống Việt.</p>
+
+<p>Nước d&ugrave;ng đun từ hoa boa r&ocirc;, chao, quyện với mắm đậu chay đặc chế l&agrave;m cho hương vị của m&oacute;n ăn như &ldquo;t&uacute;m lấy&rdquo; người d&ugrave;ng, th&ocirc;i th&uacute;c con người ta tiến đến v&agrave; thưởng thức m&oacute;n ăn. Rau củ tưới được nh&uacute;ng v&agrave;o nước d&ugrave;ng lẩu chay&nbsp;mắm, khi ch&iacute;n, mang theo c&aacute;i vị mắn ngọt hiếm nơi đ&acirc;u c&oacute; được. Để rồi khi ăn, ch&uacute;t dư vị vẫn c&ograve;n đọng tr&ecirc;n đầu lưỡi, l&agrave;m thực kh&aacute;ch kh&oacute; c&oacute; thể qu&ecirc;n được.</p>
+
+<p><strong>Set ăn Họp mặt d&agrave;nh cho 06 người bao gồm:</strong></p>
 
 <p>-B&aacute;nh tr&aacute;ng -Trảng B&agrave;ng cuốn thịt ba chỉ quay / b&ograve; tơ</p>
 
@@ -110,10 +132,17 @@ class ProductSeeder extends Seeder
                 'created_at' => Carbon::now()
             ],[
                 'id' => 5,
-                'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-4.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/12/lau-chay-chua-cay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2020/05/lau-nam-chay-hap-dan.jpg,https://lh3.googleusercontent.com/proxy/bB_Tz9q6dFFkhcVBUf5XG6e0ZBXuhS6-D5d9gwA6KxJ2pP5Xz-Bq6aQxX3Pn7LGH3_xUQA8wmoRjPORNIXTPM41ankFnUCWBEzbzv18yFXuVeHGTY219IKOQ09ELidvXMX-vJcvfkuZ6kkGEWBq4h-OKGOCv2J8',
+                'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-4.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/12/lau-chay-chua-cay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2020/05/lau-nam-chay-hap-dan.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/08/lau-nam-chua-cay.jpg',
                 'price' => 420000,
                 'name' => 'Lẩu chay Vị Lai',
-                'description' => '<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
+                'description' => '<p>Trong nhịp sống bộn bề của x&atilde; hội hiện đại, việc tự chuẩn bị những m&oacute;n lẩu chay ngon cho bữa ăn thường tốn nhiều thời gian từ chuẩn bị nguy&ecirc;n liệu đến kh&acirc;u chế biến. Đặc biệt, với những người bị hạn chế về thời gian. Ch&iacute;nh v&igrave; vậy, những nh&agrave; h&agrave;ng phục vụ lẩu chay như Vị Lai l&agrave; điểm đến ho&agrave;n hảo cho bạn.</p>
+
+<p>Đối với những người y&ecirc;u th&iacute;ch&nbsp;<a href="https://vilai.vn/"><strong>ẩm thực chay</strong></a>, việc t&igrave;m được những địa điểm để thưởng thức&nbsp;lẩu chay ngon l&agrave; điều kh&aacute; kh&oacute; khăn. Tại H&agrave; Nội, dọc c&aacute;c con phố từ lớn đến nhỏ, c&aacute;c nh&agrave; h&agrave;ng thưởng chỉ phục vụ những m&oacute;n lẩu mặn để đ&aacute;p ứng nhu cầu của số đ&ocirc;ng. Ch&iacute;nh v&igrave; thế, số lượng những cửa h&agrave;ng phục vụ lẩu chay&nbsp;l&agrave; rất &iacute;t.</p>
+
+<p>Với mong muốn mang lại trải nghiệm ho&agrave;n hảo nhất về ẩm thực chay, Vị Lai đ&atilde; đưa v&agrave;o&nbsp;thực đơn của nh&agrave; h&agrave;ng những m&oacute;n lẩu chay bổ dưỡng, đầy hương vị. Với thực đơn lẩu chay đặc sắc, Vị Lai mong rằng những ph&uacute;t gi&acirc;y hội họp, qu&acirc;y quần b&ecirc;n người th&acirc;n v&agrave; bạn b&egrave; sẽ th&ecirc;m phần ấm c&uacute;ng. Điều m&agrave; nh&agrave; h&agrave;ng &ldquo;thắp l&ecirc;n&rdquo; sẽ kh&ocirc;ng chỉ l&agrave; một m&oacute;n lẩu chay đơn thuần, m&agrave; đ&oacute; ch&iacute;nh l&agrave; hơi ấm, t&igrave;nh cảm giữa&nbsp;bạn v&agrave; người th&acirc;n&nbsp;b&ecirc;n b&agrave;n ăn.</p>
+
+<p>&nbsp;</p>
+<p><strong>Set lẩu chua cay cải ngọt gồm c&oacute; :</strong></p>
 
 <p>-Một số loại nấm: nấm kim ch&acirc;m, nấm đ&ocirc;ng c&ocirc;, nấm đ&ugrave;i g&agrave;, nấm rơm, nấm linh chi, nấm b&agrave;o ngư&hellip;</p>
 
@@ -134,7 +163,14 @@ class ProductSeeder extends Seeder
                 'image' => 'https://wna.cdnxbvn.com/wp-content/uploads/2020/07/cach-nau-lau-thai-chay.jpg,https://massageishealthy.com/wp-content/uploads/2018/08/cach-nau-lau-thai-chay-5.jpg,https://img-global.cpcdn.com/recipes/3061dd97a2586a7e/1200x630cq70/photo.jpg,https://i.ytimg.com/vi/Bw7GzxTMb28/hqdefault.jpg',
                 'price' => 500000,
                 'name' => 'Lẩu chay thái',
-                'description' => '<p><strong>Set lẩu th&aacute;i gồm c&oacute; :</strong></p>
+                'description' => 'Theo nguồn gốc xa xưa, lẩu được ăn vào mùa đông để giữ ấm cho cơ thể. Nồi nước lẩu sôi hùng hục trên lò than, cho đồ ăn vào nhúng cho chín rồi cho vào miệng khiến mỗi phần trên cơ thể ấm trở lại. Và đó trở nên nét chính trong ẩm thực của Trung Quốc khi mỗi dịp lễ tết gia đình bạn bè quây quần. Người Đài Loan lại có tục vào ngày mùng 7 Tết âm lịch ăn món lẩu có 7 loại nguyên liệu là rau cần, rau thơm, tỏi, hành, hẹ, cá, thịt, thiếu một loại cũng không được. Ngụ ý chúc rằng: “Năm mới chăm chỉ, may mắn, vui vẻ, thông minh, hạnh phúc lâu bền, giàu có sung túc”.
+
+Lẩu du nhập vào ẩm thực Việt Nam không biết tự lúc nào với đa dạng nhiều loại lẩu khác nhau: từ lẩu thái, lẩu Hong Kong, lẩu nấm v..v và từ đó biến tấu với các nguyên liệu khác nhau. Trong bài sau chúng tôi sẽ tổng hợp các loại lẩu phổ biến và đặc trưng ở Việt Nam
+
+Lẩu là một trong những món ăn ngon, chế biến đơn giản và rất phù hợp cho những buổi cả gia đình sum họp bên nhau. Có rất nhiều loại lẩu: lẩu bò, lầu gà, lẩu nấm hải sản… phù hợp với khẩu vị khác nhau của mỗi người. Một trong những loại lẩu có hương vị thanh đạm, thích hợp ăn vào những dịp đầu tháng hay rằm đó chính là lẩu chay.
+
+Còn gì tuyệt vời hơn khi vào những ngày cuối tuần, tất cả gia đình cùng nhau ăn lẩu thái chay, kể cho nhau nghe về những câu chuyện thú vị trong cuộc sống. Cách nấu lẩu thái chay ngon khá đơn giản.
+<p><strong>Set lẩu th&aacute;i gồm c&oacute; :</strong></p>
 
 <p>- Ng&ocirc; chi&ecirc;n</p>
 
@@ -155,7 +191,16 @@ class ProductSeeder extends Seeder
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/05/lau-chay-chua-cay.jpg,https://i.ytimg.com/vi/kDV1HxG5AgQ/maxresdefault.jpg,https://cdn.beptruong.edu.vn/wp-content/uploads/2015/11/mon-lau-nam-chay.jpg,https://cdn.daotaobeptruong.vn/wp-content/uploads/2019/07/hoc-nau-lau-nam-chay.jpg',
                 'price' => 340000,
                 'name' => 'LẨU NẤM THIÊN NHIÊN CHUA CAY',
-                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '
+Theo nguồn gốc xa xưa, lẩu được ăn vào mùa đông để giữ ấm cho cơ thể. Nồi nước lẩu sôi hùng hục trên lò than, cho đồ ăn vào nhúng cho chín rồi cho vào miệng khiến mỗi phần trên cơ thể ấm trở lại. Và đó trở nên nét chính trong ẩm thực của Trung Quốc khi mỗi dịp lễ tết gia đình bạn bè quây quần. Người Đài Loan lại có tục vào ngày mùng 7 Tết âm lịch ăn món lẩu có 7 loại nguyên liệu là rau cần, rau thơm, tỏi, hành, hẹ, cá, thịt, thiếu một loại cũng không được. Ngụ ý chúc rằng: “Năm mới chăm chỉ, may mắn, vui vẻ, thông minh, hạnh phúc lâu bền, giàu có sung túc”.
+
+Lẩu du nhập vào ẩm thực Việt Nam không biết tự lúc nào với đa dạng nhiều loại lẩu khác nhau: từ lẩu thái, lẩu Hong Kong, lẩu nấm v..v và từ đó biến tấu với các nguyên liệu khác nhau. Trong bài sau chúng tôi sẽ tổng hợp các loại lẩu phổ biến và đặc trưng ở Việt Nam
+
+Lẩu là một trong những món ăn ngon, chế biến đơn giản và rất phù hợp cho những buổi cả gia đình sum họp bên nhau. Có rất nhiều loại lẩu: lẩu bò, lầu gà, lẩu nấm hải sản… phù hợp với khẩu vị khác nhau của mỗi người. Một trong những loại lẩu có hương vị thanh đạm, thích hợp ăn vào những dịp đầu tháng hay rằm đó chính là lẩu chay.
+
+Lẩu nấm chay.
+
+Đây là một trong những loại lẩu chay được rất nhiều người yêu thích bởi hương vị tuyệt vời khó quên. Để nấu được nồi lẩu nấm chay đúng vị thì bạn cần chuẩn bị đầy đủ nguyên liệu.<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>- Khoai t&acirc;y chi&ecirc;n : 1 đĩa</p>
 
@@ -187,7 +232,10 @@ class ProductSeeder extends Seeder
                 'image' => 'https://img-global.cpcdn.com/recipes/e798ffefbc386805/680x482cq70/l%E1%BA%A9u-nui-chay-recipe-main-photo.jpg,https://media.cooky.vn/recipe/g4/32925/s800x500/cooky-recipe-636653044147376593.jpg,https://img-global.cpcdn.com/recipes/89bba8ad31d99304/680x482cq70/nui-chay-recipe-main-photo.jpg,https://i.ytimg.com/vi/uDcVM2mOlOw/maxresdefault.jpg',
                 'price' => 320000,
                 'name' => 'Lẩu nui chay',
-                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '<p>Lẩu l&agrave; một trong những m&oacute;n ăn ngon, chế biến đơn giản v&agrave; rất ph&ugrave; hợp cho những buổi cả gia đ&igrave;nh sum họp b&ecirc;n nhau. C&oacute; rất nhiều loại lẩu: lẩu b&ograve;, lầu g&agrave;, lẩu nấm hải sản&hellip; ph&ugrave; hợp với khẩu vị kh&aacute;c nhau của mỗi người. Một trong những loại lẩu c&oacute; hương vị thanh đạm, th&iacute;ch hợp ăn v&agrave;o những dịp đầu th&aacute;ng hay rằm đ&oacute; ch&iacute;nh l&agrave; lẩu chay.</p>
+
+<p>Sau những ng&agrave;y d&agrave;i ăn nhiều thịt, c&aacute; th&igrave; lẩu chay trở th&agrave;nh m&oacute;n ăn lạ miệng cho cả gia đ&igrave;nh, gi&uacute;p mọi người ngon miệng hơn. Hi vọng qua những th&ocirc;ng tin hữu &iacute;ch b&agrave;i viết cung cấp tr&ecirc;n đ&acirc;y, bạn v&agrave; gia đ&igrave;nh sẽ biết&nbsp;c&aacute;ch nấu lẩu chay ngon, bổ sung v&agrave;o thực đơn ăn uống mỗi tuần nh&eacute;.</p>
+<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>- khoai t&acirc;y, khoai m&ocirc;n, c&agrave; rốt (mỗi loại 1 củ)</p>
 
@@ -213,7 +261,8 @@ class ProductSeeder extends Seeder
                 'image' => 'https://wna.cdnxbvn.com/wp-content/uploads/2021/01/lau-chao-khoai-mon-nau-chay.jpg,https://cdn.tgdd.vn/2021/07/CookProduct/cooky-recipe-cover-r51860-1200x676.jpg,https://i.ytimg.com/vi/yRqR-4X3w6M/maxresdefault.jpg,https://lh3.googleusercontent.com/proxy/BHUlWUCj7PkYfF47SiOKGuzcSecTxBENABRv6lZ7z5b7Uh4vDwSEbQI_ZP3NT3khoXSJ0t-3fo8GoTo7bq1W1jG4r6xlvLCOedwkwM-Px5BqJ7FugRkRMV58G2WZAfo-7YAmJyXm',
                 'price' => 210000,
                 'name' => ' lẩu khoai môn nấu chao chay',
-                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '<p>rong những ng&agrave;y sum họp gia đ&igrave;nh th&igrave; lẩu l&agrave; một m&oacute;n ăn ngon, dễ l&agrave;m. Đồng thời tạo sự gắn kết c&aacute;c th&agrave;nh vi&ecirc;n trong gia đ&igrave;nh. Ch&uacute;ng ta đ&atilde; biết đến rất nhiều loại lẩu c&oacute; thể kể đến như lẩu b&ograve;, nấm hải sản, lẩu g&agrave;, hay lẩu c&aacute; di&ecirc;u hồng &hellip; V&agrave; kh&ocirc;ng thể kh&ocirc;ng nhắc đến lẩu chay &ndash; một loại lẩu thanh đạm, ai cũng c&oacute; thể ăn v&agrave; rất c&oacute; lợi cho sức khỏe. Th&iacute;ch hợp ăn v&agrave;o những dịp đầu th&aacute;ng hay rằm đ&oacute; ch&iacute;nh l&agrave; lẩu chay. Theo nguồn gốc xa xưa, lẩu được ăn v&agrave;o m&ugrave;a đ&ocirc;ng để giữ ấm cho cơ thể. Nồi nước lẩu s&ocirc;i h&ugrave;ng hục tr&ecirc;n l&ograve; than, cho đồ ăn v&agrave;o nh&uacute;ng cho ch&iacute;n rồi cho v&agrave;o miệng khiến mỗi phần tr&ecirc;n cơ thể ấm trở lại. Lẩu chay đ&atilde; xuất hiện từ rất l&acirc;u v&agrave; l&agrave; một trong những m&oacute;n ăn ngon, chế biến đơn giản. Rất ph&ugrave; hợp cho những buổi cả gia đ&igrave;nh sum họp b&ecirc;n nhau. Chỉ cần một hũ chao m&ocirc;n ngon, khoai m&ocirc;n, nấm... Vậy l&agrave; c&oacute; ngay một nồi lẩu ấm bụng cho cả gia đ&igrave;nh. C&aacute;ch nấu lẩu chaoo khoai m&ocirc;n ngon v&agrave; đơn giản chỉ cần v&agrave;i thao t&aacute;c. Đầu ti&ecirc;n bạn cho ch&uacute;t dầu ăn, h&agrave;nh, xả x&agrave;o cho thơm. Sau đ&oacute; bỏ chao v&agrave;o x&agrave;o chung. Cho nước v&agrave;o v&agrave; nấu s&ocirc;i. Tiếp theo cho th&ecirc;m khoai m&ocirc;n, đậu hũ, nấm, dầu m&agrave;u điều, th&ecirc;m gia vị v&agrave; n&ecirc;m nếm ph&ugrave; hợp với khẩu vị. Cuối c&ugrave;ng chỉ l&agrave; thưởng thức c&ugrave;ng gia đ&igrave;nh với những nguy&ecirc;n liệu m&agrave; m&igrave;nh đ&atilde; chuẩn bị th&ecirc;m như rau, t&agrave;u hũ, nấm,.. c&oacute; thể ăn c&ugrave;ng với chả chay. Dọn k&egrave;m với b&uacute;n gạo, ch&eacute;n chao trộn với sate. Ngon tuyệt c&uacute; m&egrave;o.</p>
+<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>- M&iacute;a 1 kh&uacute;c, ng&ocirc; 1 bắp</p>
 
@@ -231,7 +280,11 @@ class ProductSeeder extends Seeder
                 'image' => 'https://cdn.huongnghiepaau.com/wp-content/uploads/2019/01/mon-canh-kim-chi-chay.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2019/03/lau-kim-chi-hai-san.jpg,https://cachlammonngon.vn/wp-content/uploads/2016/08/lau-nam-kim-chi.jpg,https://emoi.vn/wp-content/uploads/2018/11/lau-kim-chi-1.jpg',
                 'price' => 310000,
                 'name' => 'Lẩu nấm kim chi',
-                'description' => '<p><strong>&nbsp;Chi tiết set:</strong></p>
+                'description' => '<p>Nếu l&agrave; một t&iacute;n đồ của ẩm thực H&agrave;n Quốc, bạn đừng bỏ qua c&aacute;ch sử dụng kim chi chay để tạo ra c&aacute;c m&oacute;n ăn ngon lạ.Lẩu kim chi chay với vị cay nồng sẽ hấp dẫn vị gi&aacute;c của c&aacute;c th&agrave;nh vi&ecirc;n trong gia đ&igrave;nh v&agrave;o những ng&agrave;y rằm hay đầu th&aacute;ng. B&ecirc;n cạnh đ&oacute;, m&oacute;n canh n&agrave;y cũng rất bổ dưỡng v&agrave; tốt cho sức khỏe người d&ugrave;ng nhất l&agrave; v&agrave;o những ng&agrave;y đ&ocirc;ng với tiết trời se lạnh.</p>
+
+<p>Kh&ocirc;ng qu&aacute; cầu k&igrave; như c&aacute;ch nấu canh kim chi mặn, bạn chỉ cần thao t&aacute;c đơn giản l&agrave; đ&atilde; chế biến được m&oacute;n canh ngon như &yacute; muốn. Canh kim chi chay l&agrave; một m&oacute;n ăn đạm bạc nhưng hương vị rất hấp dẫn v&agrave; cuốn h&uacute;t. Sự kết hợp tuyệt vời của nấm, đậu hũ v&agrave; đặc biệt l&agrave; vị chua cay rất lạ của kim chi sẽ khiến người thưởng thức kh&ocirc;ng thể n&agrave;o qu&ecirc;n được. Kim chi l&agrave; m&oacute;n ăn đặc trưng của người H&agrave;n v&agrave; c&oacute; lịch sử h&igrave;nh th&agrave;nh, ph&aacute;t triển c&aacute;ch đ&acirc;y hơn 4000 năm. Người H&agrave;n sử dụng kim chi l&agrave;m nguy&ecirc;n liệu ch&iacute;nh&nbsp;<a href="https://www.huongnghiepaau.com/hoc-nau-an/mon-chay" target="_blank">chế biến m&oacute;n chay ngon</a>. Canh kim chi chay l&agrave; một c&aacute;ch biến tấu mới để c&oacute; thể d&ugrave;ng được trong những ng&agrave;y ăn chay k&igrave; của t&iacute;n đồ t&ocirc;n gi&aacute;o hay cho ai đang trong giai đoạn ăn ki&ecirc;ng.</p>
+
+<p><strong>&nbsp;Chi tiết set:</strong></p>
 
 <p>+ Lẩu nấm : nấm hương tươi, nấm hải sản tươi, nấm kim ch&acirc;m, nấm s&ograve; trắng. Ngo&agrave;i ra c&oacute;: v&aacute;ng đậu, đậu phụ, ng&ocirc; tươi, c&agrave; chua, rau cải, rau muống, mồng tơi, c&agrave; rốt, khoai t&acirc;y.<br />
 + Nem cuốn : 4 chiếc<br />
@@ -245,7 +298,8 @@ class ProductSeeder extends Seeder
                 'image' => 'https://yummyday.vn/uploads/images/nam-rom-kho-dau-hu.jpg,https://monngonmoingay.tv/wp-content/uploads/2019/08/dau-phu-xao-nam-cay.jpg,https://monngonmoingay.tv/wp-content/uploads/2019/08/dau-hu-xao-nam-huong-ngon.jpg,https://lh3.googleusercontent.com/proxy/-QSc0oFSqf7lxMTmfoZyCooilq9TLcFkhiYgMHSL9t7DQU_hdQxi0Ky3pTCdkmMXfJvCWl-UVON4eRvpzDoUO8PzD1u1FGFlECBvMmBvuSfopHMsVVo',
                 'price' => 50000,
                 'name' => 'Đậu phụ xào nấm',
-                'description' => '<p>Đậu hũ kho nấm rơm l&agrave; m&oacute;n ăn thanh đạm kh&aacute; quen thuộc đối với nhiều bữa cơm Việt của ch&uacute;ng ta, m&oacute;n ăn c&oacute; thể được chế biến v&agrave;o những ng&agrave;y rằm, lễ hay chỉ đơn giản l&agrave; bữa ăn h&agrave;ng ng&agrave;y. Bởi t&iacute;nh thơm ngon v&agrave; thanh đạm của m&oacute;n ăn cộng th&ecirc;m nguy&ecirc;n liệu cũng như c&aacute;ch chế biến dễ d&agrave;ng m&agrave; m&oacute;n đậu hũ kho nấm rơm ng&agrave;y c&agrave;ng được nhiều người ưa chuộng, m&oacute;n ăn kh&ocirc;ng chỉ đem lại cho ch&uacute;ng ta sự ngon, lạ miệng m&agrave; c&ograve;n chứa h&agrave;m lượng dinh dưỡng cao.</p>',
+                'description' => '<p>&ndash; Nấm rơm l&agrave; loại nấm rất th&ocirc;ng dụng để nấu c&aacute;c m&oacute;n chay hoặc mặn, nấm c&oacute; vị ngọt, t&iacute;nh b&igrave;nh, c&oacute; khả năng sinh nhiệt thấp, bổ cơ thể tăng lực. &ndash; Nấm m&egrave;o c&ograve;n gọi l&agrave; mộc nhĩ. C&oacute; nhiều loại nấm m&egrave;o như nấm m&egrave;o trắng, nấm m&egrave;o đen, nấm m&egrave;o một mặt đen một mặt x&aacute;m. Nấm m&egrave;o c&oacute; c&ocirc;ng dụng bổ tỳ vị, m&aacute;t gan, s&aacute;ng mắt, &iacute;ch kh&iacute; cường b&igrave;. &ndash; Nấm đ&ocirc;ng c&ocirc;: So với hai loại nấm tr&ecirc;n, gi&aacute; trị nấm đ&ocirc;ng c&ocirc; cao hơn hẳn, v&igrave; thế gi&aacute; cả cũng cao hơn. Nấm đ&ocirc;ng c&ocirc; c&oacute; vị ngọt v&agrave; thơm, trong nấm đ&ocirc;ng c&ocirc; c&oacute; nhiều tiền sinh tố D, thường d&ugrave;ng nấm đ&ocirc;ng c&ocirc; sẽ đề ph&ograve;ng được cảm mạo, xơ cứng động mạch, cao huyết &aacute;p, vi&ecirc;m gan m&atilde;n t&iacute;nh. &ndash; M&oacute;n ăn n&agrave;y c&oacute; c&ocirc;ng dụng bồi bổ sức khỏe, bổ m&aacute;u, gi&uacute;p m&aacute;u huyết lưu th&ocirc;ng, tươi nhuận da thịt, ch&ocirc;ng mập v&agrave; c&oacute; khả năng giảm cholesterol trong m&aacute;u. Đ&ocirc;i khi ăn nhiều những m&oacute;n ăn được chế biến từ thịt, c&aacute; h&agrave;ng ng&agrave;y sẽ khiến bạn c&oacute; cảm gi&aacute;c &ldquo;ng&aacute;n&rdquo;, kh&ocirc;ng muốn ăn, đẶc biệt v&agrave;o những ng&agrave;y nắng n&oacute;ng, tiết trời kh&oacute; chịu th&igrave; hiện tượng ch&aacute;n ăn c&agrave;ng trở n&ecirc;n phổ biến. Ch&iacute;nh v&igrave; vậy, việc t&igrave;m ra những m&oacute;n ăn vừa lạ miệng, vừa chống ng&aacute;n cho cả gia đ&igrave;nh để mọi người ăn ngon hơn, ăn nhiều hơn, hấp thu dưỡng chất tốt hơn đ&oacute;ng vai tr&ograve; v&ocirc; c&ugrave;ng quan trọng. V&agrave; c&aacute;ch l&agrave;m m&oacute;n nấm x&agrave;o đậu hũ ngon, hấp dẫn, lạ miệng được monantribenh.com hướng dẫn ở tr&ecirc;n sẽ gi&uacute;p bạn giải quyết hiệu quả vấn đề n&agrave;y đấy.</p>
+<p>Đậu hũ kho nấm rơm l&agrave; m&oacute;n ăn thanh đạm kh&aacute; quen thuộc đối với nhiều bữa cơm Việt của ch&uacute;ng ta, m&oacute;n ăn c&oacute; thể được chế biến v&agrave;o những ng&agrave;y rằm, lễ hay chỉ đơn giản l&agrave; bữa ăn h&agrave;ng ng&agrave;y. Bởi t&iacute;nh thơm ngon v&agrave; thanh đạm của m&oacute;n ăn cộng th&ecirc;m nguy&ecirc;n liệu cũng như c&aacute;ch chế biến dễ d&agrave;ng m&agrave; m&oacute;n đậu hũ kho nấm rơm ng&agrave;y c&agrave;ng được nhiều người ưa chuộng, m&oacute;n ăn kh&ocirc;ng chỉ đem lại cho ch&uacute;ng ta sự ngon, lạ miệng m&agrave; c&ograve;n chứa h&agrave;m lượng dinh dưỡng cao.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],
@@ -254,7 +308,9 @@ class ProductSeeder extends Seeder
                 'image' => 'https://image.thanhnien.vn/2048/uploaded/ngocthanh/2018_07_25/canh-muop-nam-rom-2_nbao.jpg,https://img-global.cpcdn.com/005_steps/fd2861603eabeab1/480x360cq70/photo.jpg,https://binhbung.files.wordpress.com/2010/09/1285034732-muop-xao.jpg,https://vcdn1-giadinh.vnecdn.net/2014/08/12/DSC-0041-JPG-7378-1407837350.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=HjV4u-mU-hP6e4ABieflig',
                 'price' => 20000,
                 'name' => 'mướp xào nấm rơm',
-                'description' => '<p>Mưa m&ugrave;a hạ đ&atilde; về nhưng vắng b&oacute;ng trẻ thơ t&igrave;m nhặt nấm rơm như ch&uacute;ng t&ocirc;i thuở trước. Cuộc sống giờ sung t&uacute;c hơn n&ecirc;n c&aacute;c b&agrave; nội trợ thường mua nấm rơm cấy trồng về chế biến bữa cơm gia đ&igrave;nh. Với t&ocirc;i c&ugrave;ng những người bạn thuở thiếu thời, d&ugrave; được thưởng thức nhiều m&oacute;n ngon từ nấm rơm nhưng vẫn kh&ocirc;ng thể qu&ecirc;n t&ocirc; canh nấm rơm nấu với mướp hương phảng phất m&ugrave;i rơm rạ đồng qu&ecirc; ng&agrave;y ấy.</p>
+                'description' => '<p>Theo Đ&ocirc;ng y, mướp c&oacute; vị ngọt, t&iacute;nh m&aacute;t, kh&ocirc;ng độc, c&oacute; t&aacute;c dụng điều kinh, chỉ đới, b&igrave;nh can tức phong, thanh nhiệt, nhuận da, th&ocirc;ng kinh lạc, th&ocirc;ng đại tiểu tiện, h&agrave;nh huyết mạch. Mướp gi&agrave; đốt tồn t&iacute;nh, d&ugrave;ng l&agrave;m thuốc c&oacute; thể khử phong, h&oacute;a đờm, lương huyết, giải độc, s&aacute;t khuẩn, th&ocirc;ng kinh lạc, th&ocirc;ng sữa. Mướp kết hợp với nấm kh&ocirc;ng chỉ l&agrave; m&oacute;n ăn ngon m&agrave; c&ograve;n l&agrave; &ldquo;thuốc qu&yacute;&rdquo; gi&uacute;p tăng cường sức đề kh&aacute;ng của cơ thể, l&agrave;m giảm nguy cơ mắc nhiều bệnh. Cuối c&ugrave;ng, bạn b&agrave;y thức ăn ra dĩa v&agrave; trang tr&iacute; tuỳ th&iacute;ch sao cho m&oacute;n ăn đẹp mắt v&agrave; hấp dẫn: rắt th&ecirc;m ti&ecirc;u, cho v&agrave;i l&aacute;t ớt hoặc 2 nh&aacute;nh ng&ograve; r&iacute; nhỏ. M&oacute;n ăn sẽ ngon đ&uacute;ng vị nếu được d&ugrave;ng k&egrave;m với cơm trắng n&oacute;ng hổi v&agrave; nước tương tỏi ớt</p>
+
+<p>Mưa m&ugrave;a hạ đ&atilde; về nhưng vắng b&oacute;ng trẻ thơ t&igrave;m nhặt nấm rơm như ch&uacute;ng t&ocirc;i thuở trước. Cuộc sống giờ sung t&uacute;c hơn n&ecirc;n c&aacute;c b&agrave; nội trợ thường mua nấm rơm cấy trồng về chế biến bữa cơm gia đ&igrave;nh. Với t&ocirc;i c&ugrave;ng những người bạn thuở thiếu thời, d&ugrave; được thưởng thức nhiều m&oacute;n ngon từ nấm rơm nhưng vẫn kh&ocirc;ng thể qu&ecirc;n t&ocirc; canh nấm rơm nấu với mướp hương phảng phất m&ugrave;i rơm rạ đồng qu&ecirc; ng&agrave;y ấy.</p>
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -264,7 +320,8 @@ class ProductSeeder extends Seeder
                 'image' => 'https://monan.foodhub.vn/wp-content/uploads/2020/12/unnamed-1.jpg,https://baokhanhhoa.vn/dataimages/201907/original/images5370252_daubap.jpg,https://media.tuoitrexahoi.vn/mediav2/files/dau-bap-chien-bo-sua.jpg,https://3.bp.blogspot.com/-rxf6An4Z300/WKRgVPATeEI/AAAAAAAAGR8/3Ritwk6dg1c5h1_4NI7P8zqjRyTPB2m4gCLcB/s400/dau-bap-chien-bo.jpg',
                 'price' => 15000,
                 'name' => 'Đậu bắp nướng bơ chay',
-                'description' => '<p>Đậu bắp kh&ocirc;ng c&ograve;n xa lạ với người nội trợ bởi lượng chất xơ dồi d&agrave;o, ổn định đường trong m&aacute;u, bảo vệ thận&hellip; Đậu bắp c&oacute; vị thơm ngọt, m&ugrave;i như bắp tự nhi&ecirc;n, thường được sử dụng c&ugrave;ng với nhiều m&oacute;n nướng. H&ocirc;m nay, Foodhub xin m&aacute;ch nhỏ bạn c&aacute;ch l&agrave;m Đậu bắp nướng chay v&ocirc; c&ugrave;ng đơn giản, một lựa chọn cho bữa ăn chay của gia đ&igrave;nh hoặc người c&oacute; nhu cầu ăn ki&ecirc;ng, giảm c&acirc;n&hellip;</p>
+                'description' => '<p>Đậu bắp vốn kh&ocirc;ng xa lạ với m&acirc;m cơm của nhiều gia đ&igrave;nh. Ăn đậu bắp thường xuy&ecirc;n cũng được ghi nhận l&agrave; c&oacute; lợi cho sức khỏe v&igrave; gi&uacute;p l&agrave;m giảm nguy cơ mắc bệnh tim mạch, bệnh tiểu đường, b&eacute;o ph&igrave;,... Tuy nhi&ecirc;n, dường như rất nhiều người đều kh&ocirc;ng biết đậu bắp l&agrave;m m&oacute;n g&igrave; ngon n&ecirc;n cứ &ldquo;l&ograve;ng v&ograve;ng&rdquo; chỉ một hai m&oacute;n đơn giản. Trong khi đậu bắp c&oacute; thể l&agrave;m được rất nhiều m&oacute;n ăn hấp dẫn, thơm ngon.</p>
+<p>Đậu bắp kh&ocirc;ng c&ograve;n xa lạ với người nội trợ bởi lượng chất xơ dồi d&agrave;o, ổn định đường trong m&aacute;u, bảo vệ thận&hellip; Đậu bắp c&oacute; vị thơm ngọt, m&ugrave;i như bắp tự nhi&ecirc;n, thường được sử dụng c&ugrave;ng với nhiều m&oacute;n nướng. H&ocirc;m nay, Foodhub xin m&aacute;ch nhỏ bạn c&aacute;ch l&agrave;m Đậu bắp nướng chay v&ocirc; c&ugrave;ng đơn giản, một lựa chọn cho bữa ăn chay của gia đ&igrave;nh hoặc người c&oacute; nhu cầu ăn ki&ecirc;ng, giảm c&acirc;n&hellip;</p>
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -274,7 +331,9 @@ class ProductSeeder extends Seeder
                 'image' => 'https://useful.vn/wp-content/uploads/2020/04/1551756183597_7922897.jpg,https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/thanh-pham-1008.jpg,https://img.chebienmonngon.net/2017/03/bunxaochay.jpg',
                 'price' => 35000,
                 'name' => 'Bún xào chay',
-                'description' => '<pre>
+                'description' => '<p>Ăn chay hiện đang l&agrave; xu hướng rất được y&ecirc;u th&iacute;ch, kh&ocirc;ng ri&ecirc;ng g&igrave; Phật tử m&agrave; n&oacute; c&ograve;n phổ biển trong bữa ăn của nhiều gia đ&igrave;nh Việt. Một trong những m&oacute;n chay đơn giản, dễ l&agrave;m ch&iacute;nh v&agrave; c&oacute; thể d&ugrave;ng cho cả 3 bữa ăn ch&iacute;nh l&agrave; b&uacute;n x&agrave;o chay. B&uacute;n x&agrave;o chay được chế biến chủ yếu từ c&aacute;c loại rau củ như cải th&igrave;a, nấm đ&ugrave;i g&agrave;, c&agrave; rốt v&agrave; kh&ocirc;ng thể thiếu hai nguy&ecirc;n liệu ch&iacute;nh l&agrave; t&agrave;u hũ ti v&agrave; t&agrave;u hũ chi&ecirc;n. Sợi b&uacute;n mềm mại, dai dai h&ograve;a quyện với vị ngọt của rau củ, t&agrave;u hũ ky dai gi&ograve;n v&agrave; t&agrave;u hũ chi&ecirc;n thơm v&agrave;ng sẽ mang đến cho bạn m&oacute;n ăn hấp dẫn v&agrave; kh&oacute; l&ograve;ng cưỡng lại.</p>
+
+<pre>
 Nếu đang muốn đổi vị bữa s&aacute;ng hay c&oacute; th&ecirc;m một c&ocirc;ng thức mới cho thực đơn ăn chay nh&agrave; m&igrave;nh, b&uacute;n x&agrave;o chay sẽ l&agrave; gợi &yacute; ph&ugrave; hợp cho bạn đấy. M&oacute;n ăn thanh đạm n&agrave;y c&oacute; c&aacute;ch l&agrave;m đơn giản với những nguy&ecirc;n liệu dễ mua nhưng vẫn rất gi&agrave;u dinh dưỡng v&agrave; cực k&iacute;ch th&iacute;ch vị gi&aacute;c.
 Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng đảo mọi người hưởng ứng v&agrave; phổ biến trong c&aacute;c bữa ăn của c&aacute;c gia đ&igrave;nh Việt. Ăn chay c&oacute; nhiều t&aacute;c dụng tốt cho sức khỏe, l&agrave; một biện ph&aacute;p giảm c&acirc;n hiệu quả v&agrave; ngăn ngừa được nhiều bệnh tật. M&oacute;n chay ngon v&igrave; thế cũng được s&aacute;ng tạo rất phong ph&uacute;, đa đạng để đ&aacute;p ứng nhu cầu ăn chay của c&aacute;c tầng lớp đa dạng.</pre>
 ',
@@ -285,7 +344,13 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2016/11/11/an_chay.jpg,https://thucphamdongxanh.com/wp-content/uploads/2019/11/rau-c%E1%BB%A7-qu%E1%BA%A3-lu%E1%BB%99c.jpg,https://img-global.cpcdn.com/recipes/5f2d0e28d865d2c1/680x482cq70/cleaneating-v%E1%BB%9Bi-rau-c%E1%BB%A7-lu%E1%BB%99c-recipe-main-photo.jpg,https://img-global.cpcdn.com/recipes/5f2d0e28d865d2c1/680x482cq70/cleaneating-v%E1%BB%9Bi-rau-c%E1%BB%A7-lu%E1%BB%99c-recipe-main-photo.jpg',
                 'price' => 10000,
                 'name' => 'rau củ luộc',
-                'description' => '<p>với cac loại rau củ quả quanh ta ch&uacute;ng ta sẽ c&oacute; ngay một đĩa rau củ quả luộc.kh&ocirc;ng những thanh đạm m&agrave; c&ograve;n bổ sung nhiều vitamin v&agrave; chất sơ để b&ugrave; đắp những kho&aacute;ng chất m&agrave; cơ thể cần</p>
+                'description' => '<p>khi được luộc sẽ giữ lại được nhiều chất dinh dưỡng nhất. Giảm nguy cơ mắc c&aacute;c bệnh: Sử dụng rau luộc thường xuy&ecirc;n bạn sẽ c&oacute; thể tr&aacute;nh được một số loại bệnh như bệnh tim mạch, b&eacute;o ph&igrave;, ung thư&hellip; Tăng cường chất chống oxy ho&aacute;: Khi đun s&ocirc;i rau, bạn sẽ trực tiếp l&agrave;m tăng c&aacute;c chất chống oxy ho&aacute; c&oacute; trong rau xanh.</p>
+
+<p><em>Rau củ luộc</em>&nbsp;dễ ti&ecirc;u h&oacute;a v&igrave; bạn c&oacute; thể nhai ch&uacute;ng dễ d&agrave;ng. Hệ ti&ecirc;u h&oacute;a của cơ thể kh&ocirc;ng thể ti&ecirc;u h&oacute;a được tất cả c&aacute;c loại rau củ sống, trừ khi ch&uacute;ng th&iacute;ch hợp để ăn sống.</p>
+
+<p>Rau củ c&oacute; chứa nhiều th&agrave;nh phần kho&aacute;ng chất, bao gồm canxi, kali, magi&ecirc;, sắt, iốt, v.v&hellip; v&agrave; cơ thể bạn c&oacute; thể nhận đủ tất cả c&aacute;c kho&aacute;ng chất bằng c&aacute;ch ăn rau củ luộc v&igrave; ch&uacute;ng kh&ocirc;ng bị mất đi trong qu&aacute; tr&igrave;nh nấu.</p>
+
+<p>với cac loại rau củ quả quanh ta ch&uacute;ng ta sẽ c&oacute; ngay một đĩa rau củ quả luộc.kh&ocirc;ng những thanh đạm m&agrave; c&ograve;n bổ sung nhiều vitamin v&agrave; chất sơ để b&ugrave; đắp những kho&aacute;ng chất m&agrave; cơ thể cần</p>
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -294,7 +359,9 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'http://www.elle.vn/wp-content/uploads/2016/03/17/dau-phu-xot-nam-cay.jpg,https://kinhnghiemquy.com/upload/img/2019/10/02/nhung_mon_an_don_gian_de_lam_cho_sinh_vien_1_1570019291821.jpg,https://vncooking.com/files/cuisine/2019/02/09/dau-hu-sot-ca-chua-vg3y.jpg,https://monngonsaigon.net/wp-content/uploads/2018/12/%C4%90%E1%BA%ADu-h%C5%A9-s%E1%BB%91t-n%E1%BA%A5m-1200x900.jpg',
                 'price' => 50000,
                 'name' => 'Đậu hũ sốt chua ',
-                'description' => '<p>Đậu sốt c&agrave; chua l&agrave; m&oacute;n ăn đơn giản trong bữa cơm của gia đ&igrave;nh. Mặc d&ugrave; kh&ocirc;ng c&oacute; nhiều chất đạm, chất b&eacute;o như trong thịt, c&aacute; nhưng m&oacute;n đậu sốt c&agrave; chua vẫn được nhiều gia đ&igrave;nh lựa chọn trong những bữa cơm nhất l&agrave; ng&agrave;y h&egrave; n&oacute;ng nực. Đậu phụ hay c&ograve;n gọi l&agrave; đậu hũ sốt c&agrave; chua kh&ocirc;ng những thơm ngon, hấp dẫn về hương vị m&agrave; c&ograve;n thanh m&aacute;t, nhẹ nh&agrave;ng, dễ ăn v&agrave; kh&ocirc;ng bị ng&aacute;n.</p>',
+                'description' => '
+<p>Mỗi khi th&aacute;ng Bảy &acirc;m lịch về, m&aacute; t&ocirc;i hay nấu c&aacute;c m&oacute;n ăn chay cho bữa cơm gia đ&igrave;nh. M&aacute; kh&ocirc;ng phải l&agrave; người m&ecirc; t&iacute;n, nhưng vẫn tin rằng ăn chay v&agrave;o th&aacute;ng Vu Lan sẽ gi&uacute;p l&ograve;ng người thanh thản, nhẹ nh&agrave;ng hơn. V&agrave; trong số những m&oacute;n chay m&aacute; nấu, chị em t&ocirc;i th&iacute;ch nhất l&agrave; m&oacute;n đậu phụ sốt c&agrave; chua. Đậu phụ sốt c&agrave; chua tuy l&agrave; m&oacute;n ăn kh&ocirc;ng cầu kỳ, nhưng chế biến m&agrave; kh&ocirc;ng c&oacute; &ldquo;b&iacute; quyết&rdquo; th&igrave; cũng kh&ocirc;ng ngon. Khi nấu m&oacute;n n&agrave;y, kh&acirc;u quan trọng nhất l&agrave; sốt đậu phụ. Khi sốt phải vặn lửa vừa để nước sốt thấm đều v&agrave;o c&aacute;c miếng đậu phụ, khi n&ecirc;m nước sốt th&igrave; phải n&ecirc;m sao cho hơi nhạt để c&ograve;n ăn k&egrave;m với nước chấm. Đặc biệt, m&oacute;n n&agrave;y phải d&ugrave;ng n&oacute;ng v&agrave; ăn v&agrave;o ng&agrave;y mưa th&igrave; lại c&agrave;ng ngon v&agrave; hấp dẫn.</p>
+<p>Đậu sốt c&agrave; chua l&agrave; m&oacute;n ăn đơn giản trong bữa cơm của gia đ&igrave;nh. Mặc d&ugrave; kh&ocirc;ng c&oacute; nhiều chất đạm, chất b&eacute;o như trong thịt, c&aacute; nhưng m&oacute;n đậu sốt c&agrave; chua vẫn được nhiều gia đ&igrave;nh lựa chọn trong những bữa cơm nhất l&agrave; ng&agrave;y h&egrave; n&oacute;ng nực. Đậu phụ hay c&ograve;n gọi l&agrave; đậu hũ sốt c&agrave; chua kh&ocirc;ng những thơm ngon, hấp dẫn về hương vị m&agrave; c&ograve;n thanh m&aacute;t, nhẹ nh&agrave;ng, dễ ăn v&agrave; kh&ocirc;ng bị ng&aacute;n.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],[
@@ -302,7 +369,11 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://benhvienthammykangnam.vn/wp-content/uploads/2020/02/an-chay-giam-can.jpg,https://2sao.vietnamnetjsc.vn/images/2018/12/01/08/33/mon-ngon-ava2.jpg,https://congaiba.com/wp-content/uploads/2015/07/cach-nau-dau-phu-dau-hu-xao-hoa-lo.jpg,https://media.vneconomy.vn/w900/images/upload/2021/04/21/xao2-15526264001581354436124.jpg',
                 'price' => 30000,
                 'name' => 'Đậu hũ xào súp lơ',
-                'description' => '<p>bạn nghĩ sao về 1 m&oacute;n ăn thơm ngon m&agrave; lại gi&ograve;n của s&uacute;p lơ</p>',
+                'description' => '<p>C&aacute;ch nấu đậu phụ (đậu hũ) x&agrave;o hoa lơ thơm ngon lạ miệng: D&ugrave; th&agrave;nh phần ch&iacute;nh của m&oacute;n ăn chỉ gồm to&agrave;n rau v&agrave; đậu, song m&oacute;n đậu phụ x&agrave;o hoa lơ n&agrave;y lại mang hương vị đậm đ&agrave; rất đặc biệt nhờ phần nước sốt kh&aacute; lạ miệng. Sự g&oacute;p mặt của bơ đậu phộng v&agrave; dầu m&egrave; khiến cho từng miếng đậu phụ kh&ocirc;ng chỉ thơm dậy m&ugrave;i m&agrave; c&ograve;n b&eacute;o ngậy cực hấp dẫn.</p>
+
+<p><strong>&nbsp;đậu phụ (đậu hũ) x&agrave;o hoa lơ thơm ngon lạ miệng</strong>: D&ugrave; th&agrave;nh phần ch&iacute;nh của m&oacute;n ăn chỉ gồm to&agrave;n rau v&agrave; đậu, song m&oacute;n đậu phụ x&agrave;o hoa lơ n&agrave;y lại mang hương vị đậm đ&agrave; rất đặc biệt nhờ phần nước sốt kh&aacute; lạ miệng. Sự g&oacute;p mặt của bơ đậu phộng v&agrave; dầu m&egrave; khiến cho từng miếng đậu phụ kh&ocirc;ng chỉ thơm dậy m&ugrave;i m&agrave; c&ograve;n b&eacute;o ngậy cực hấp dẫn. Ch&uacute;ng m&igrave;nh c&oacute; thể vắt th&ecirc;m một ch&uacute;t nước cốt chanh l&ecirc;n tr&ecirc;n trước khi thưởng thức nh&eacute;!</p>
+
+<p>bạn nghĩ sao về 1 m&oacute;n ăn thơm ngon m&agrave; lại gi&ograve;n của s&uacute;p lơ</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],
@@ -311,7 +382,11 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://toplist.vn/images/800px/dau-phu-cuon-la-lot-387855.jpg,https://www.hoidaubepaau.com/wp-content/uploads/2016/01/cham-dau-hu-cuon-la-lot-cung-nuoc-tuong.jpg,https://www.hoidaubepaau.com/wp-content/uploads/2016/01/dau-hu-cuon-la-lot.jpg,https://img-global.cpcdn.com/recipes/5fe7f2b0c963869c/1200x630cq70/photo.jpg',
                 'price' => 35000,
                 'name' => 'Đậu phụ cuốn lá lốt',
-                'description' => '<p>Đậu phụ cuốn l&aacute; lốt rất th&iacute;ch hợp để bạn d&ugrave;ng l&agrave;m m&oacute;n chay đầu th&aacute;ng. Đậu phụ b&eacute;o ngậy, thoang thoảng m&ugrave;i nấm hương v&agrave; mộc nhĩ gi&ograve;n sần sật khiến bạn c&oacute; thể ăn rất nhiều m&agrave; kh&ocirc;ng ch&aacute;n. Theo Y học d&acirc;n tộc, l&aacute; lốt vị cay, m&ugrave;i thơm, t&iacute;nh rất ấm, c&oacute; t&aacute;c dụng trừ thấp, ấm bụng, ti&ecirc;u thực, hạ kh&iacute; trừ h&ocirc;i tanh n&ecirc;n rất tốt cho sứa khỏe. Khi ăn t&ugrave;y sở th&iacute;ch bạn c&oacute; thể d&ugrave;ng k&egrave;m tương ớt hoặc x&igrave; dầu chấm t&ugrave;y khẩu vị. Tuy l&agrave; một m&oacute;n chay nhưng đậu phụ cuốn l&aacute; lốt rất dễ ăn v&agrave; thơm ngon kh&ocirc;ng k&eacute;m g&igrave; chả l&aacute; lốt th&ocirc;ng thường n&ecirc;n bạn h&atilde;y l&agrave;m cho cả gia đ&igrave;nh được thưởng thức m&oacute;n ăn thanh đạm ng&agrave;y đầu th&aacute;ng nh&eacute;.</p>
+                'description' => '
+<p>Đậu hũ l&agrave; nguy&ecirc;n liệu chế biến m&oacute;n ăn b&igrave;nh d&acirc;n lại bổ dưỡng. H&ocirc;m nay, ch&uacute;ng t&ocirc;i sẽ hướng dẫn bạn th&ecirc;m một m&oacute;n ăn l&agrave;m tự đậu hũ để bạn bổ sung v&agrave;o thực đơn chế biến m&oacute;n ăn cho gia đ&igrave;nh.</p>
+
+<p>M&oacute;n đậu hũ cuốn l&aacute; lốt vị vừa ăn, đậu hũ được nghiền nhuyễn mịn kết hợp h&agrave;i h&ograve;a với c&aacute;c nguy&ecirc;n liệu kh&aacute;c. Hương vị đặc trưng của l&aacute; lốt đ&atilde; tạo n&ecirc;n tạo n&ecirc;n một m&oacute;n ăn thơm ngon, hấp dẫn, lạ miệng. Đậu hũ chi&ecirc;n ch&iacute;n đều, v&agrave;ng gi&ograve;n b&ecirc;n ngo&agrave;i, mềm b&ecirc;n trong kh&ocirc;ng bị kh&ocirc; v&agrave; ngấm qu&aacute; nhiều dầu. Để m&oacute;n đậu hũ cuốn l&aacute; lốt n&agrave;y th&ecirc;m đậm đ&agrave;, bạn c&oacute; thể ăn k&egrave;m với nước tương pha ớt tươi.</p>
+<p>Đậu phụ cuốn l&aacute; lốt rất th&iacute;ch hợp để bạn d&ugrave;ng l&agrave;m m&oacute;n chay đầu th&aacute;ng. Đậu phụ b&eacute;o ngậy, thoang thoảng m&ugrave;i nấm hương v&agrave; mộc nhĩ gi&ograve;n sần sật khiến bạn c&oacute; thể ăn rất nhiều m&agrave; kh&ocirc;ng ch&aacute;n. Theo Y học d&acirc;n tộc, l&aacute; lốt vị cay, m&ugrave;i thơm, t&iacute;nh rất ấm, c&oacute; t&aacute;c dụng trừ thấp, ấm bụng, ti&ecirc;u thực, hạ kh&iacute; trừ h&ocirc;i tanh n&ecirc;n rất tốt cho sứa khỏe. Khi ăn t&ugrave;y sở th&iacute;ch bạn c&oacute; thể d&ugrave;ng k&egrave;m tương ớt hoặc x&igrave; dầu chấm t&ugrave;y khẩu vị. Tuy l&agrave; một m&oacute;n chay nhưng đậu phụ cuốn l&aacute; lốt rất dễ ăn v&agrave; thơm ngon kh&ocirc;ng k&eacute;m g&igrave; chả l&aacute; lốt th&ocirc;ng thường n&ecirc;n bạn h&atilde;y l&agrave;m cho cả gia đ&igrave;nh được thưởng thức m&oacute;n ăn thanh đạm ng&agrave;y đầu th&aacute;ng nh&eacute;.</p>
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -320,7 +395,9 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://toplist.vn/images/800px/canh-dau-phu-rau-cu-41043.jpg,https://img-global.cpcdn.com/recipes/ae9f169898813d4f/680x482cq70/canh-d%E1%BA%ADu-h%E1%BB%A7-rau-c%E1%BB%A7-recipe-main-photo.jpg,https://ngaymoionline.com.vn/stores/news_dataimages/ngaymoionlinecomvn/062020/03/08/mat-lanh-canh-dau-phu-nau-rau-cu-don-gian-23-.6048.jpg,https://toplist.vn/images/800px/canh-dau-phu-rau-cu-41043.jpg',
                 'price' => 40000,
                 'name' => 'Canh đậu phụ rau củ',
-                'description' => '<p>Canh đậu phụ rau củ l&agrave; m&oacute;n ăn chay kh&ocirc;ng chỉ tốt cho sức khỏe m&agrave; c&ograve;n rất th&iacute;ch hợp để ăn trong những ng&agrave;y h&egrave; n&oacute;ng bức, vị ngọt m&aacute;t từ đậu phụ v&agrave; c&aacute;c loại rau củ sẽ gi&uacute;p bạn giải nhiệt cơ thể một c&aacute;ch hiệu quả. C&aacute;ch l&agrave;m canh đậu phụ nấu rau củ ngon đơn giản dễ l&agrave;m cực thanh m&aacute;t lại đơn giản dễ thực hiện tại nh&agrave;. Với c&aacute;c nguy&ecirc;n liệu ch&iacute;nh l&agrave; đậu phụ v&agrave; c&aacute;c loại rau củ tự nhi&ecirc;n như c&agrave; rốt, s&uacute;p lơ,&hellip; rất tốt cho sức khỏe, c&aacute;c chị em sẽ tạo n&ecirc;n một m&oacute;n ăn cực ngon, cực m&aacute;t cho bạn đấy. Hơn nữa những loại rau củ n&agrave;y cực tốt gi&uacute;p lọc cơ thể loại bỏ những chất độc hại rất tốt cho cả gia đ&igrave;nh một cơ thể khỏe mạnh.</p>
+                'description' => '<p>Đậu hủ (hay c&ograve;n gọi l&agrave; đậu phụ ) rất tốt cho sức khẻo, l&agrave; 1 m&oacute;n ăn v&ocirc; c&ugrave;ng thanh đạm v&agrave; lại rất dễ d&agrave;ng chế biến th&agrave;nh c&aacute;c m&oacute;n ăn ngon như: chi&ecirc;n, x&agrave;o, canh, sốt, kho,.... M&oacute;n canh đậu hủ n&agrave;y nh&agrave; m&igrave;nh c&oacute; thể th&ecirc;m v&agrave;o thực đơn chay nữa đ&oacute; nh&eacute;! Với c&aacute;c nguy&ecirc;n liệu ch&iacute;nh l&agrave; đậu phụ v&agrave; c&aacute;c loại rau củ tự nhi&ecirc;n như c&agrave; rốt, s&uacute;p lơ,&hellip;rất tốt cho sức khỏe của bạn sẽ tạo n&ecirc;n một m&oacute;n ăn cực ngon, cực m&aacute;t cho những ăn chay đấy. Hơn nữa những loại rau củ n&agrave;y cực tốt gi&uacute;p lọc cơ thể loại bỏ những chất độc hại rất tốt cho bạn một cơ thể khỏe mạnh.</p>
+
+<p>Canh đậu phụ rau củ l&agrave; m&oacute;n ăn chay kh&ocirc;ng chỉ tốt cho sức khỏe m&agrave; c&ograve;n rất th&iacute;ch hợp để ăn trong những ng&agrave;y h&egrave; n&oacute;ng bức, vị ngọt m&aacute;t từ đậu phụ v&agrave; c&aacute;c loại rau củ sẽ gi&uacute;p bạn giải nhiệt cơ thể một c&aacute;ch hiệu quả. C&aacute;ch l&agrave;m canh đậu phụ nấu rau củ ngon đơn giản dễ l&agrave;m cực thanh m&aacute;t lại đơn giản dễ thực hiện tại nh&agrave;. Với c&aacute;c nguy&ecirc;n liệu ch&iacute;nh l&agrave; đậu phụ v&agrave; c&aacute;c loại rau củ tự nhi&ecirc;n như c&agrave; rốt, s&uacute;p lơ,&hellip; rất tốt cho sức khỏe, c&aacute;c chị em sẽ tạo n&ecirc;n một m&oacute;n ăn cực ngon, cực m&aacute;t cho bạn đấy. Hơn nữa những loại rau củ n&agrave;y cực tốt gi&uacute;p lọc cơ thể loại bỏ những chất độc hại rất tốt cho cả gia đ&igrave;nh một cơ thể khỏe mạnh.</p>
  ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -329,7 +406,11 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://cdn.daynauan.info.vn/wp-content/uploads/2019/05/sup-chay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2019/05/sup-ga-nam-huong.jpg,https://i-ngoisao.vnecdn.net/2018/12/17/39144034-300833310690456-61909-7223-3606-1545037702.jpg,https://i.ytimg.com/vi/Ld8ruLTVeQc/hqdefault.jpg',
                 'price' => 100000,
                 'name' => 'súp chay nấm',
-                'description' => '<p>S&uacute;p chay dinh dưỡng c&oacute; nhiều c&aacute;ch nấu kh&aacute;c nhau. C&oacute; thể bạn vẫn chưa biết nhưng s&uacute;p chay cũng đa dạng kh&ocirc;ng k&eacute;m c&aacute;c loại s&uacute;p mặn. Bạn c&oacute; thể sử dụng c&aacute;c nguy&ecirc;n liệu phổ biến để nấu c&aacute;c m&oacute;n ăn chay h&agrave;ng ng&agrave;y như rau, củ, quả, c&aacute;c loại nấm để nấu th&agrave;nh m&oacute;n s&uacute;p.</p>',
+                'description' => '<p>Nấm cũng được đ&aacute;nh gi&aacute; l&agrave; loại &ldquo;thịt sạch&rdquo; đối với người ăn chay bởi nấm rất gi&agrave;u c&aacute;c chất dinh dưỡng như: protein, c&aacute;c acid amin, lại kh&ocirc;ng g&acirc;y sơ vữa động mạch v&agrave; kh&ocirc;ng l&agrave;m tăng lượng cholesterol trong m&aacute;u. Nhiều người cho rằng chỉ những thực phẩm c&oacute; nguồn gốc động vật như thịt đỏ, hải sản&hellip; mới cung cấp đủ nguồn đạm cần thiết cho cơ thể hoạt động. Tuy nhi&ecirc;n, những thực phẩm như đậu n&agrave;nh, nấm, tảo cũng chứa nguồn đạm dồi d&agrave;o kh&ocirc;ng k&eacute;m. Thậm ch&iacute;, nguồn đạm được t&igrave;m thấy trong đậu n&agrave;nh c&ograve;n c&oacute; chất lượng cao tương đương đạm c&oacute; trong trứng v&agrave; sữa b&ograve;.</p>
+
+<p>V&igrave; vậy 1 b&aacute;t s&uacute;p nấm sẽ gi&uacute;p bạn đầy đủ dinh dưỡng trong những ng&agrave;y ăn chay d&agrave;i hơi</p>
+
+<p>S&uacute;p chay dinh dưỡng c&oacute; nhiều c&aacute;ch nấu kh&aacute;c nhau. C&oacute; thể bạn vẫn chưa biết nhưng s&uacute;p chay cũng đa dạng kh&ocirc;ng k&eacute;m c&aacute;c loại s&uacute;p mặn. Bạn c&oacute; thể sử dụng c&aacute;c nguy&ecirc;n liệu phổ biến để nấu c&aacute;c m&oacute;n ăn chay h&agrave;ng ng&agrave;y như rau, củ, quả, c&aacute;c loại nấm để nấu th&agrave;nh m&oacute;n s&uacute;p.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],[
@@ -337,7 +418,9 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://giamcanantoan.com/images/minhquan/thuocgiamcan/11-2013/ha-cao-chay.jpg,https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/ha-cao-chay-thumbnail.jpg,https://tuthuoc24h.net/upload/images/cach-lam-ha-cao-chay.jpg,https://i.ytimg.com/vi/TsggIGacCqA/maxresdefault.jpg',
                 'price' => 100000,
                 'name' => 'há cảo chay',
-                'description' => '<p>H&aacute; cảo chay l&agrave; m&oacute;n ngon gi&uacute;p giảm c&acirc;n hiệu quả được chọn cho thực đơn giảm c&acirc;n với c&aacute;c m&oacute;n chay cho bữa xế của gia đ&igrave;nh. Với vị thanh ngọt của rau củ, dai dai của b&aacute;nh h&aacute; cảo n&oacute;ng hổi chấm với nước sốt tương ớt rất hấp dẫn người thưởng thức.</p>',
+                'description' => '<p>L&agrave; m&oacute;n điểm t&acirc;m ho&agrave;n hảo cho người ăn chay, h&aacute; cảo chay với vị đặc trưng của nấm, vị ngọt b&ugrave;i của khoai m&ocirc;n v&agrave; đậu phộng c&ugrave;ng với vỏ bột trắng mịn, mềm nhưng dai sẽ thực sự l&agrave;m bạn h&agrave;i l&ograve;ng</p>
+
+<p>H&aacute; cảo chay l&agrave; m&oacute;n ngon gi&uacute;p giảm c&acirc;n hiệu quả được chọn cho thực đơn giảm c&acirc;n với c&aacute;c m&oacute;n chay cho bữa xế của gia đ&igrave;nh. Với vị thanh ngọt của rau củ, dai dai của b&aacute;nh h&aacute; cảo n&oacute;ng hổi chấm với nước sốt tương ớt rất hấp dẫn người thưởng thức.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],[
@@ -345,7 +428,8 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://product.hstatic.net/1000232601/product/c_ch-l_m-m_n-c_i-th_a-x_o-n_m-d_ng-c_-4_1024x1024.jpg,https://pastaxi-manager.onepas.vn/content/uploads/articles/thanhmai/cai-thia-xao-nam/cai-chip-xao-nam%C4%83%C4%83.jpg,https://yummyday.vn/uploads/images/cai-thia-xao-nam-dong-co-8.jpg,https://www.iunauan.com/images/400x-1/anh1-iunauan.com-465065.jpg',
                 'price' => 120000,
                 'name' => 'Cải thìa xào nấm đông cô',
-                'description' => '<p>Sự kết hợp của hai loại nguy&ecirc;n liệu n&agrave;y trong m&oacute;n cải th&igrave;a x&agrave;o nấm đ&ocirc;ng c&ocirc; tạo n&ecirc;n m&oacute;n ăn v&ocirc; c&ugrave;ng tốt cho sức khỏe m&agrave; lại rất ngon miệng. Vị ngon của m&oacute;n ăn c&agrave;ng th&ecirc;m đậm đ&agrave; hơn khi th&ecirc;m nước xốt dầu h&agrave;o v&agrave; một &iacute;t vị mặn từ nước tương. Cải th&igrave;a v&agrave; nấm đ&ocirc;ng c&ocirc; v&ocirc; c&ugrave;ng tốt cho sức khỏe n&ecirc;n c&aacute;c bạn cũng n&ecirc;n bổ sung v&agrave;o thực đơn nấu ăn của m&igrave;nh nh&eacute;!</p>',
+                'description' => '<p>Sự kết hợp của hai loại nguy&ecirc;n liệu n&agrave;y trong m&oacute;n cải th&igrave;a x&agrave;o nấm đ&ocirc;ng c&ocirc; tạo n&ecirc;n m&oacute;n ăn v&ocirc; c&ugrave;ng tốt cho sức khỏe m&agrave; lại rất ngon miệng. Vị ngon của m&oacute;n ăn c&agrave;ng th&ecirc;m đậm đ&agrave; hơn khi th&ecirc;m nước xốt dầu h&agrave;o v&agrave; một &iacute;t vị mặn từ nước tương. Cải th&igrave;a v&agrave; nấm đ&ocirc;ng c&ocirc; v&ocirc; c&ugrave;ng tốt cho sức khỏe n&ecirc;n c&aacute;c bạn cũng n&ecirc;n bổ sung v&agrave;o thực đơn nấu ăn của m&igrave;nh nh&eacute;!</p>
+<p>Sự kết hợp của hai loại nguy&ecirc;n liệu n&agrave;y trong m&oacute;n cải th&igrave;a x&agrave;o nấm đ&ocirc;ng c&ocirc; tạo n&ecirc;n m&oacute;n ăn v&ocirc; c&ugrave;ng tốt cho sức khỏe m&agrave; lại rất ngon miệng. Vị ngon của m&oacute;n ăn c&agrave;ng th&ecirc;m đậm đ&agrave; hơn khi th&ecirc;m nước xốt dầu h&agrave;o v&agrave; một &iacute;t vị mặn từ nước tương. Cải th&igrave;a v&agrave; nấm đ&ocirc;ng c&ocirc; v&ocirc; c&ugrave;ng tốt cho sức khỏe n&ecirc;n c&aacute;c bạn cũng n&ecirc;n bổ sung v&agrave;o thực đơn nấu ăn của m&igrave;nh nh&eacute;!</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],[
@@ -353,7 +437,11 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://thucduongbaoan.com.vn/wp-content/uploads/2021/08/Nem-Lui-Chay.jpg,http://baokhanhhoa.vn/dataimages/201803/original/images5326315_Nem.jpg,https://img-global.cpcdn.com/recipes/d0e3b4695b76cc01/1200x630cq70/photo.jpg,https://anchay.vn/media/2021/03/n%E1%BB%81n-4.jpg',
                 'price' => 50000,
                 'name' => 'Nem lụi chay',
-                'description' => '<p>Những chiếc nem lụi chay với m&ugrave;i thơm đặc trưng của sả, kết hợp với phần nh&acirc;n l&agrave;m từ bột gạo thực dưỡng, bột yến mạch, bột mỳ nguy&ecirc;n c&aacute;m, c&agrave; rốt, một số nguy&ecirc;n liệu v&agrave; gia vị thực dưỡng. L&agrave; một m&oacute;n ăn gi&agrave;u dinh dưỡng, c&oacute; thể d&ugrave;ng cho c&aacute;c bữa tiệc hoặc bữa cơm gia đ&igrave;nh h&agrave;ng ng&agrave;y.</p>
+                'description' => '
+<p>Những chiếc nem lụi chay với m&ugrave;i thơm đặc trưng của sả, kết hợp với phần nh&acirc;n l&agrave;m từ bột gạo thực dưỡng, bột yến mạch, bột mỳ nguy&ecirc;n c&aacute;m, c&agrave; rốt, một số nguy&ecirc;n liệu v&agrave; gia vị thực dưỡng. L&agrave; một m&oacute;n ăn gi&agrave;u dinh dưỡng, c&oacute; thể d&ugrave;ng cho c&aacute;c bữa tiệc hoặc bữa cơm gia đ&igrave;nh h&agrave;ng ng&agrave;y.</p>
+
+<p>Cuối tuần cả nh&agrave; c&ugrave;ng qu&acirc;y quần b&ecirc;n m&acirc;m cơm với m&oacute;n nem lụi ăn k&egrave;m b&uacute;n v&agrave; rau sống th&igrave; tuyệt vời.</p>
+<p>Những chiếc nem lụi chay với m&ugrave;i thơm đặc trưng của sả, kết hợp với phần nh&acirc;n l&agrave;m từ bột gạo thực dưỡng, bột yến mạch, bột mỳ nguy&ecirc;n c&aacute;m, c&agrave; rốt, một số nguy&ecirc;n liệu v&agrave; gia vị thực dưỡng. L&agrave; một m&oacute;n ăn gi&agrave;u dinh dưỡng, c&oacute; thể d&ugrave;ng cho c&aacute;c bữa tiệc hoặc bữa cơm gia đ&igrave;nh h&agrave;ng ng&agrave;y.</p>
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -362,7 +450,11 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://afamilycdn.com/thumb_w/600/E88MOq9iOdccccccccccccjjVmV53G/Image/2016/09/Dau-hu-non-sot-chua-ngot%20(10)-571a1.jpg,https://sieungon.com/wp-content/uploads/2017/11/dau-phu-xao-nam-ot-review.jpg,https://media.healthplus.vn/thumb_x650x382/Images/Uploaded/Share/2017/06/26/mon-ngon-dau-tuan-dau-phu-chien-xao-ot-chuong11498451515.jpg,https://dichothongminh.com/wp-content/uploads/2020/12/dau-hu-sot-chua-ngot.jpg',
                 'price' => 120000,
                 'name' => 'Đậu phụ sốt ớt chuông chua ngọt',
-                'description' => '<p>Đậu phụ sốt chua ngọt l&agrave; m&oacute;n ăn hấp dẫn rất nhiều t&iacute;n đồ ẩm thực, nhưng với những người ăn chay hay những ng&agrave;y ăn chay th&igrave; khẩu vị ấy được biến tấu thay thế bằng đậu phụ sốt chua ngọt để gi&uacute;p họ thỏa l&ograve;ng. M&oacute;n ăn chắc chắn sẽ &quot;h&uacute;t mắt&quot; c&aacute;c th&agrave;nh vi&ecirc;n trong nh&agrave; bởi m&agrave;u sắc tươi tắn v&agrave; nước sốt &oacute;ng ả, vị ngon th&igrave; miễn b&agrave;n rồi. Miếng đậu phụ chi&ecirc;n v&agrave;ng gi&ograve;n phủ đều một lớp sốt chua ngọt đẫm mượt tr&ocirc;ng v&ocirc; c&ugrave;ng hấp dẫn, ăn k&egrave;m ớt chu&ocirc;ng, dứa v&agrave; h&agrave;nh t&acirc;y đem đến sự ngon miệng pha ch&uacute;t th&iacute;ch th&uacute;.</p>',
+                'description' => '<p><strong>Đậu phụ x&agrave;o nấm ớt</strong>&nbsp;l&agrave; một&nbsp;<a href="https://sieungon.com/tag/mon-chay/">m&oacute;n chay</a>&nbsp;dễ ăn, dễ nấu m&agrave; ai cũng n&ecirc;n biết để bổ sung v&agrave;o thực đơn h&agrave;ng ng&agrave;y của gia đ&igrave;nh. Sự kết hợp của từng miếng đậu mềm mịn, vị thơm đặc trưng của nấm c&ugrave;ng c&aacute;i ấm nồng của ớt chu&ocirc;ng, tất cả được ngấm vị đậm đ&agrave; của dầu h&agrave;o tạo n&ecirc;n một m&oacute;n ăn đơn giản nhưng kh&ocirc;ng k&eacute;m đi sự hấp dẫn.</p>
+
+<p>M&oacute;n đậu hũ sốt nấm l&agrave; sự kết hợp h&agrave;i h&ograve;a giữa vị b&eacute;o ngậy của đậu hũ non v&agrave; vị thanh m&aacute;t của nấm củng với vị sốt chua ngọt tạo n&ecirc;n m&oacute;n ăn chay đậm đ&agrave;, đầy đủ dưỡng chất, ph&ugrave; hợp với người ăn chay trường hoặc người mới ăn bắt đầu ăn chay m&agrave; kh&ocirc;ng lo bị thiếu chất. Để c&oacute; ngay&nbsp;<a href="https://daiphatfoods.vn/mon-chay?fbclid=IwAR0NK5Q3xxl9VUEfx51K_m64uNqKuDzwTltoB3v0dDmkX9pHStXjuDCc6iE"><strong>m&oacute;n ăn chay ngon hấp dẫn</strong></a>&nbsp;cho bữa ăn ng&agrave;y rằm</p>
+
+<p>Đậu phụ sốt chua ngọt l&agrave; m&oacute;n ăn hấp dẫn rất nhiều t&iacute;n đồ ẩm thực, nhưng với những người ăn chay hay những ng&agrave;y ăn chay th&igrave; khẩu vị ấy được biến tấu thay thế bằng đậu phụ sốt chua ngọt để gi&uacute;p họ thỏa l&ograve;ng. M&oacute;n ăn chắc chắn sẽ &quot;h&uacute;t mắt&quot; c&aacute;c th&agrave;nh vi&ecirc;n trong nh&agrave; bởi m&agrave;u sắc tươi tắn v&agrave; nước sốt &oacute;ng ả, vị ngon th&igrave; miễn b&agrave;n rồi. Miếng đậu phụ chi&ecirc;n v&agrave;ng gi&ograve;n phủ đều một lớp sốt chua ngọt đẫm mượt tr&ocirc;ng v&ocirc; c&ugrave;ng hấp dẫn, ăn k&egrave;m ớt chu&ocirc;ng, dứa v&agrave; h&agrave;nh t&acirc;y đem đến sự ngon miệng pha ch&uacute;t th&iacute;ch th&uacute;.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],[
@@ -510,7 +602,12 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://cdnmedia.thethaovanhoa.vn/Upload/tyTrfgkgEUQwPYuvZ4Kn1g/files/2020/03/2403/5ryuy.jpg,https://meta.vn/Data/image/2020/01/30/tet-han-thuc-banh-troi-banh-chay-3.jpg,http://media.kinhtedothi.vn//2021/04/13/bannhtroichay.jpg,https://cdnmedia.thethaovanhoa.vn/Upload/tyTrfgkgEUQwPYuvZ4Kn1g/files/2020/03/2403/5ryuy.jpg',
                 'price' => 20000,
                 'name' => 'Bánh trôi chay',
-                'description' => '<p>Chắc chắn bạn sẽ cần một đĩa b&aacute;nh tr&ocirc;i chay v&agrave;o ng&agrave;y tết H&agrave;n thực</p>',
+                'description' => '<p>Chiều đ&ocirc;ng. Khi đang rảo bước tr&ecirc;n những con phố, cảm nhận từng cơn gi&oacute; lướt qua lạnh đến r&ugrave;ng m&igrave;nh, bất gi&aacute;c, một m&ugrave;i hương quen thuộc cũng đủ khiến l&ograve;ng bạn cảm thấy nao nao.</p>
+
+<p>B&aacute;nh tr&ocirc;i ở H&agrave; Nội c&oacute; 2 loại. V&agrave;o th&aacute;ng Ba &acirc;m lịch (dịp Tết H&agrave;n thực), người Việt đ&atilde; quen với m&oacute;n b&aacute;nh tr&ocirc;i c&oacute; nh&acirc;n đường mật m&iacute;a. Loại b&aacute;nh n&agrave;y được b&agrave;y b&aacute;n nhiều cả trong những ng&agrave;y thường. Loại thứ hai l&agrave; b&aacute;nh tr&ocirc;i t&agrave;u - m&oacute;n ăn m&agrave; bất cứ ai cũng phải thưởng thức ngay từ khi cơn gi&oacute; m&ugrave;a đầu ti&ecirc;n vừa len lỏi v&agrave;o th&agrave;nh phố.</p>
+
+<p>Nguy&ecirc;n liệu l&agrave;m b&aacute;nh tr&ocirc;i l&agrave; những thứ đơn giản v&agrave; v&ocirc; c&ugrave;ng dễ kiếm: gạo nếp, đỗ xanh, vừng đen, gừng gi&agrave;, đường. Một b&aacute;t b&aacute;nh tr&ocirc;i thường c&oacute; 2 vi&ecirc;n, một tr&ograve;n xoe, một bầu dục, n&eacute;p m&igrave;nh trong thứ nước s&oacute;ng s&aacute;nh thơm phức m&ugrave;i gừng.</p>
+<p>Chắc chắn bạn sẽ cần một đĩa b&aacute;nh tr&ocirc;i chay v&agrave;o ng&agrave;y tết H&agrave;n thực</p>',
                 'category_id' => '2',
                 'created_at' => Carbon::now()
             ],[
@@ -565,9 +662,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://wikiohana.net/wp-content/uploads/2019/10/huong-dan-lam-banh-dau-xanh-nuong.jpg,https://i.ytimg.com/vi/d73ovmYWYhA/maxresdefault.jpg,http://yeunoitro.net/wp-content/uploads/2015/05/Cach-lam-banh-dau-xanh-nuong1.jpg,https://i.vietgiaitri.com/2016/12/20/tu-lam-banh-dau-xanh-bang-noi-com-dien-tuyet-ngon-cho-ngay-tet-f76b9c.jpg',
                 'price' => 40000,
                 'name' => 'Bánh đậu xanh nướng',
-                'description' => '<pre>
-B&aacute;nh đậu xanh l&agrave; một loại b&aacute;nh (b&aacute;nh ngọt) l&agrave;m từ bột đậu xanh quết nhuyễn với đường v&agrave; dầu thực vật hay mỡ động vật, thường l&agrave; mỡ lợn. B&aacute;nh được cắt th&agrave;nh từng khối vu&ocirc;ng nhỏ, g&oacute;i giấy bạc th&agrave;nh hộp nhỏ, lớn hay g&oacute;i giấy thấm mỡ th&agrave;nh từng thỏi v&agrave;ng. B&aacute;nh thường được d&ugrave;ng khi uống tr&agrave; t&agrave;u hay ch&egrave; xanh, khi đ&oacute; sẽ tạo cảm gi&aacute;c thư th&aacute;i. Địa phương l&agrave;m b&aacute;nh đậu xanh nổi tiếng l&agrave; Hải Dương.</pre>
-',
+                'description' => '<p>B&aacute;nh đậu xanh l&agrave; một loại b&aacute;nh (b&aacute;nh ngọt) l&agrave;m từ bột đậu xanh quết nhuyễn với đường v&agrave; dầu thực vật hay mỡ động vật, thường l&agrave; mỡ lợn. B&aacute;nh được cắt th&agrave;nh từng khối vu&ocirc;ng nhỏ, g&oacute;i giấy bạc th&agrave;nh hộp nhỏ, lớn hay g&oacute;i giấy thấm mỡ th&agrave;nh từng thỏi v&agrave;ng. B&aacute;nh thường được d&ugrave;ng khi uống tr&agrave; t&agrave;u hay ch&egrave; xanh, khi đ&oacute; sẽ tạo cảm gi&aacute;c thư th&aacute;i. Địa phương l&agrave;m b&aacute;nh đậu xanh nổi tiếng l&agrave; Hải Dương</p>',
                 'category_id' => '2',
                 'created_at' => Carbon::now()
             ],
@@ -596,7 +691,9 @@ B&aacute;nh đậu xanh l&agrave; một loại b&aacute;nh (b&aacute;nh ngọt) 
                 'image' => 'https://cdn.tgdd.vn/2020/06/CookProduct/1-1200x676-5.jpg,https://cdn.tgdd.vn/Products/Images/7301/239097/bhx/banh-bao-dau-xanh-bi-do-la-cusina-goi-300g-202105161638051234.jpg,https://cdn.tgdd.vn/Products/Images/7301/239097/bhx/banh-bao-dau-xanh-bi-do-la-cusina-goi-300g-202105161638055237.jpg,https://media.cooky.vn/recipe/g5/45180/s320x320/cooky-recipe-cover-r45180.jpg',
                 'price' => 40000,
                 'name' => ' Bánh bao nhân bí đỏ',
-                'description' => '<p>M&oacute;n b&aacute;nh bao b&iacute; đỏ với phần nh&acirc;n thơm mịn c&ugrave;ng lớp vỏ b&aacute;nh mềm, ngọt ng&agrave;o chắc chắn sẽ l&agrave;m mọi thực kh&aacute;ch say m&ecirc; chỉ trong 1 lần thưởng thức</p>
+                'description' => '<p>Kết hợp với một ch&uacute;t b&iacute; đỏ, m&oacute;n b&aacute;nh bao quen thuộc đ&atilde; kho&aacute;c l&ecirc;n m&igrave;nh một diện mạo mới mẻ v&agrave; hấp dẫn hơn, sẵn s&agrave;ng trở th&agrave;nh một bữa ăn s&aacute;ng hay ăn nhẹ bổ dưỡng v&agrave; ngon miệng.</p>
+
+<p>M&oacute;n b&aacute;nh bao b&iacute; đỏ với phần nh&acirc;n thơm mịn c&ugrave;ng lớp vỏ b&aacute;nh mềm, ngọt ng&agrave;o chắc chắn sẽ l&agrave;m mọi thực kh&aacute;ch say m&ecirc; chỉ trong 1 lần thưởng thức</p>
 ',
                 'category_id' => '2',
                 'created_at' => Carbon::now()
