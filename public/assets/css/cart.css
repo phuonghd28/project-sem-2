@@ -79,13 +79,17 @@
 
 .shop__cart__table tbody tr .cart__quantity .pro-qty input {
     color: #444444;
+    height: 45px;
 }
 
 .shop__cart__table tbody tr .cart__quantity .pro-qty .qtybtn {
     font-size: 16px;
     color: #444444;
 }
-
+.pro-qty input:focus {
+    outline: none;
+    box-shadow: none;
+}
 .shop__cart__table tbody tr .cart__total {
     font-size: 16px;
     color: #212529FF;
@@ -109,6 +113,12 @@
     display: inline-block;
     font-weight: 600;
     cursor: pointer;
+}
+.cart__close span:hover {
+    background-color: #c5bcbc;
+}
+.cart__close span a {
+    color: #FFFFFF;
 }
 
 .cart__btn {
@@ -262,9 +272,22 @@ button:focus {
     outline: none;
 }
 
+.btn-update-qty:hover {
+    background-color: #c5bcbc;
+}
 .btn-update-qty {
     background-color: #cecaca;
     border: none;
+    height: 45px;
+    padding: 0 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+.btn-update-qty:focus {
+    box-shadow: none;
+    border: none;
+    outline:none;
 }
 label.error {
     color: red;

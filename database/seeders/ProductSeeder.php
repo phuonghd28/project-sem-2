@@ -246,6 +246,7 @@ class ProductSeeder extends Seeder
                 'price' => 50000,
                 'name' => 'Đậu phụ xào nấm',
                 'description' => '<p>Đậu hũ kho nấm rơm l&agrave; m&oacute;n ăn thanh đạm kh&aacute; quen thuộc đối với nhiều bữa cơm Việt của ch&uacute;ng ta, m&oacute;n ăn c&oacute; thể được chế biến v&agrave;o những ng&agrave;y rằm, lễ hay chỉ đơn giản l&agrave; bữa ăn h&agrave;ng ng&agrave;y. Bởi t&iacute;nh thơm ngon v&agrave; thanh đạm của m&oacute;n ăn cộng th&ecirc;m nguy&ecirc;n liệu cũng như c&aacute;ch chế biến dễ d&agrave;ng m&agrave; m&oacute;n đậu hũ kho nấm rơm ng&agrave;y c&agrave;ng được nhiều người ưa chuộng, m&oacute;n ăn kh&ocirc;ng chỉ đem lại cho ch&uacute;ng ta sự ngon, lạ miệng m&agrave; c&ograve;n chứa h&agrave;m lượng dinh dưỡng cao.</p>
+<div>- Món ăn này phù hợp với bữa cơm gia đình khoảng 4 đến 6 thành viên</div>
 <div><b>Nguyên Liệu</b>: Đậu hũ chiên, nấm linh chi nâu, nấm đông cô, nước mắm chay, muối, đường trắng, tiêu, dầu ăn chay</div>
 <div><b>Công dụng</b>:  Món ăn này có công dụng bồi bổ sức khỏe, bổ máu, giúp máu huyết lưu thông, tươi nhuận da thịt, chông mập và có khả năng giảm cholesterol trong máu.</div>',
                 'category_id' => '1',
@@ -257,6 +258,7 @@ class ProductSeeder extends Seeder
                 'price' => 20000,
                 'name' => 'mướp xào nấm rơm',
                 'description' => '<p>Mưa m&ugrave;a hạ đ&atilde; về nhưng vắng b&oacute;ng trẻ thơ t&igrave;m nhặt nấm rơm như ch&uacute;ng t&ocirc;i thuở trước. Cuộc sống giờ sung t&uacute;c hơn n&ecirc;n c&aacute;c b&agrave; nội trợ thường mua nấm rơm cấy trồng về chế biến bữa cơm gia đ&igrave;nh. Với t&ocirc;i c&ugrave;ng những người bạn thuở thiếu thời, d&ugrave; được thưởng thức nhiều m&oacute;n ngon từ nấm rơm nhưng vẫn kh&ocirc;ng thể qu&ecirc;n t&ocirc; canh nấm rơm nấu với mướp hương phảng phất m&ugrave;i rơm rạ đồng qu&ecirc; ng&agrave;y ấy.</p>
+<div>- Món ăn này phù hơp với các bữa cơm gia đình khoảng 4 người.</div>
 <div><b>Nguyên liệu: </b>Mướp hương, nấm rơm búp, cà rốt, hạt nêm Knorr, nấm Hương Organic</div>
 <div><b>Công dụng: </b>Nấm chứa ergothioneine được coi là một chất chống oxy hóa mạnh chứa trong nấm và có tác dụng bảo vệ cơ thể khỏi các gốc tự do.Mướp có tác dụng điều kinh, chỉ đới, bình can tức phong, thanh nhiệt, nhuận da, thông kinh lạc, thông đại tiểu tiện, hành huyết mạch.</div>
 ',
@@ -269,6 +271,7 @@ class ProductSeeder extends Seeder
                 'price' => 15000,
                 'name' => 'Đậu bắp nướng bơ chay',
                 'description' => '<p>Đậu bắp kh&ocirc;ng c&ograve;n xa lạ với người nội trợ bởi lượng chất xơ dồi d&agrave;o, ổn định đường trong m&aacute;u, bảo vệ thận&hellip; Đậu bắp c&oacute; vị thơm ngọt, m&ugrave;i như bắp tự nhi&ecirc;n, thường được sử dụng c&ugrave;ng với nhiều m&oacute;n nướng. H&ocirc;m nay, Foodhub xin m&aacute;ch nhỏ bạn c&aacute;ch l&agrave;m Đậu bắp nướng chay v&ocirc; c&ugrave;ng đơn giản, một lựa chọn cho bữa ăn chay của gia đ&igrave;nh hoặc người c&oacute; nhu cầu ăn ki&ecirc;ng, giảm c&acirc;n&hellip;</p>
+<div>- Món ăn này thì phù hợp với nhiều người nên có thể ăn trong dịp giỗ chạp, ngày rằm.</div>
 <div><b>Nguyên Liệu: </b>Đậu bắp tươi, đường, gừng, nước tương, giấm, dầu ăn</div>
 <div><b>Công dụng: </b>Đậu bắp nướng bơ chay giúp phòng ngừa thiếu máu, chữa ho và viêm họng...</div>
 ',
@@ -283,6 +286,7 @@ class ProductSeeder extends Seeder
                 'description' => '<pre>
 Nếu đang muốn đổi vị bữa s&aacute;ng hay c&oacute; th&ecirc;m một c&ocirc;ng thức mới cho thực đơn ăn chay nh&agrave; m&igrave;nh, b&uacute;n x&agrave;o chay sẽ l&agrave; gợi &yacute; ph&ugrave; hợp cho bạn đấy. M&oacute;n ăn thanh đạm n&agrave;y c&oacute; c&aacute;ch l&agrave;m đơn giản với những nguy&ecirc;n liệu dễ mua nhưng vẫn rất gi&agrave;u dinh dưỡng v&agrave; cực k&iacute;ch th&iacute;ch vị gi&aacute;c.
 Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng đảo mọi người hưởng ứng v&agrave; phổ biến trong c&aacute;c bữa ăn của c&aacute;c gia đ&igrave;nh Việt. Ăn chay c&oacute; nhiều t&aacute;c dụng tốt cho sức khỏe, l&agrave; một biện ph&aacute;p giảm c&acirc;n hiệu quả v&agrave; ngăn ngừa được nhiều bệnh tật. M&oacute;n chay ngon v&igrave; thế cũng được s&aacute;ng tạo rất phong ph&uacute;, đa đạng để đ&aacute;p ứng nhu cầu ăn chay của c&aacute;c tầng lớp đa dạng.</pre>
+<div>- Món ăn này phù hơp với những cá nhân hay ăn chay vào các ngày rằm.</div>
 <div><b>Nguyên liệu: </b> Bún gạo 200 gr, đậu hũ chiên, đậu que, giá, nước tương chay, dầu ăn chay, đường, hạt nêm chay</div>
 <div><b>Công dụng: </b>Bún xào chay giúp ngừa bệnh tim mạch, chất isoflavine trong đậu phụ còn có thể giúp giảm mức cholesterol xấu LDL, giảm nguy cơ bệnh ung thư...</div>
 ',
@@ -294,6 +298,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'price' => 10000,
                 'name' => 'rau củ luộc',
                 'description' => '<p>với cac loại rau củ quả quanh ta ch&uacute;ng ta sẽ c&oacute; ngay một đĩa rau củ quả luộc.kh&ocirc;ng những thanh đạm m&agrave; c&ograve;n bổ sung nhiều vitamin v&agrave; chất sơ để b&ugrave; đắp những kho&aacute;ng chất m&agrave; cơ thể cần</p>
+<div>- Món ăn này phù hợp với nhiều người nên dùng trong các tiệc đông người như cưới hỏi...</div>
 <div><b>Nguyên liệu: </b>bông cải xanh, bầu, củ cải trắng, đậu cove, khoai lang, mồng tơi</div>
 <div><b>Công dụng: </b>sử dụng rau củ luộc bạn sẽ có thể tránh được một số loại bệnh như bệnh tim mạch, béo phì, ung thư. Ngoài ra còn tăng cường chất chống oxy hoá: khi đun sôi rau, bạn sẽ trực tiếp làm tăng các chất chống oxy hoá có trong rau xanh.</div>
 ',
@@ -305,8 +310,9 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'price' => 50000,
                 'name' => 'Đậu hũ sốt chua ',
                 'description' => '<p>Đậu sốt c&agrave; chua l&agrave; m&oacute;n ăn đơn giản trong bữa cơm của gia đ&igrave;nh. Mặc d&ugrave; kh&ocirc;ng c&oacute; nhiều chất đạm, chất b&eacute;o như trong thịt, c&aacute; nhưng m&oacute;n đậu sốt c&agrave; chua vẫn được nhiều gia đ&igrave;nh lựa chọn trong những bữa cơm nhất l&agrave; ng&agrave;y h&egrave; n&oacute;ng nực. Đậu phụ hay c&ograve;n gọi l&agrave; đậu hũ sốt c&agrave; chua kh&ocirc;ng những thơm ngon, hấp dẫn về hương vị m&agrave; c&ograve;n thanh m&aacute;t, nhẹ nh&agrave;ng, dễ ăn v&agrave; kh&ocirc;ng bị ng&aacute;n.</p>
+<div>- Món ăn ngày hơp với các bữa cơm gia đình khoảng 4 thành viên.</div>
 <div><b>Nguyên liệu: </b> đậu hũ chiên, cà chua, dầu ăn chay, hạt nêm chay, bột ngọt, muối</div>
-<div><b>Công dụng: </b></div>',
+<div><b>Công dụng: </b>ngăn ngừa và giảm các tổn thương cho gan, giảm các bệnh về não do tuổi tác...</div>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ], [
@@ -315,6 +321,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'price' => 30000,
                 'name' => 'Đậu hũ xào súp lơ',
                 'description' => '<p>bạn nghĩ sao về 1 m&oacute;n ăn thơm ngon m&agrave; lại gi&ograve;n của s&uacute;p lơ</p>
+<div>- Món ăn này phù hợp với đông người nên có thể dùng trong dịp cưới hỏi...</div>
 <div><b>Nguyên liệu: </b>đậu phụ, hoa lơ xanh, cà rốt, dầu ăn chay, đường, muối, hạt nêm, chay.</div>
 <div><b>Công dụng: </b>giảm nguy cơ mắc bệnh ung thư, chống viêm, giảm nguy cơ mắc bệnh tim và rối loạn não, tốt cho sức khỏe, cải thiện tiêu hóa và giải độc, hỗ trợ giảm cân...</div>',
                 'category_id' => '1',
@@ -326,6 +333,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'price' => 35000,
                 'name' => 'Đậu phụ cuốn lá lốt',
                 'description' => '<p>Đậu phụ cuốn l&aacute; lốt rất th&iacute;ch hợp để bạn d&ugrave;ng l&agrave;m m&oacute;n chay đầu th&aacute;ng. Đậu phụ b&eacute;o ngậy, thoang thoảng m&ugrave;i nấm hương v&agrave; mộc nhĩ gi&ograve;n sần sật khiến bạn c&oacute; thể ăn rất nhiều m&agrave; kh&ocirc;ng ch&aacute;n. Theo Y học d&acirc;n tộc, l&aacute; lốt vị cay, m&ugrave;i thơm, t&iacute;nh rất ấm, c&oacute; t&aacute;c dụng trừ thấp, ấm bụng, ti&ecirc;u thực, hạ kh&iacute; trừ h&ocirc;i tanh n&ecirc;n rất tốt cho sứa khỏe. Khi ăn t&ugrave;y sở th&iacute;ch bạn c&oacute; thể d&ugrave;ng k&egrave;m tương ớt hoặc x&igrave; dầu chấm t&ugrave;y khẩu vị. Tuy l&agrave; một m&oacute;n chay nhưng đậu phụ cuốn l&aacute; lốt rất dễ ăn v&agrave; thơm ngon kh&ocirc;ng k&eacute;m g&igrave; chả l&aacute; lốt th&ocirc;ng thường n&ecirc;n bạn h&atilde;y l&agrave;m cho cả gia đ&igrave;nh được thưởng thức m&oacute;n ăn thanh đạm ng&agrave;y đầu th&aacute;ng nh&eacute;.</p>
+<div>- Món ăn này phù hợp với các bữa ăn gia đình khoảng 4 người.</div>
 <div><b>Nguyên liệu: </b>đậu hũ trắng, lá lốt, nấm mộc nhĩ, nấm hương - Gia vị gồm có: hạt nêm chay, tiêu, xì dầu, dầu ăn,…</div>
 <div><b>Công dụng: </b>giảm đau nhức xương khớp, chánh đau đầu, đau răng, nôn mửa, tốt cho thận...</div>
 ',
