@@ -44,7 +44,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set lẩu d&ugrave;ng được :</strong> cho 3 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 2,
@@ -69,7 +69,7 @@ class ProductSeeder extends Seeder
 
 <p><strong>Set lẩu n&agrave;y d&ugrave;ng được cho</strong> :4 người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 3,
@@ -101,7 +101,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set lẩu n&agrave;y d&ugrave;ng cho :</strong> 4 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 4,
@@ -129,8 +129,8 @@ class ProductSeeder extends Seeder
 <p>-Lẩu mắm miền T&acirc;y</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
-            ],[
+                'created_at' => '2021-03-09'
+            ], [
                 'id' => 5,
                 'image' => 'http://vilai.vn/data/media/1827/images/quan-lau-chay-ngon-4.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/12/lau-chay-chua-cay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2020/05/lau-nam-chay-hap-dan.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/08/lau-nam-chua-cay.jpg',
                 'price' => 420000,
@@ -156,7 +156,7 @@ class ProductSeeder extends Seeder
 <p><strong>Set lẩu n&agrave;y d&ugrave;ng cho :</strong> 4 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 6,
@@ -184,7 +184,7 @@ Còn gì tuyệt vời hơn khi vào những ngày cuối tuần, tất cả gia
 
 <p><strong>Set lẩu d&ugrave;ng được cho :</strong> 4 người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 7,
@@ -225,7 +225,7 @@ Lẩu nấm chay.
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong> 2 người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 8,
@@ -254,7 +254,7 @@ Lẩu nấm chay.
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong>&nbsp;4&nbsp;người</p>
 ',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
+                'created_at' => '2021-03-09'
             ],
             [
                 'id' => 9,
@@ -274,8 +274,8 @@ Lẩu nấm chay.
 
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong>&nbsp;4&nbsp;người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
-            ],[
+                'created_at' => '2021-03-09'
+            ], [
                 'id' => 10,
                 'image' => 'https://cdn.huongnghiepaau.com/wp-content/uploads/2019/01/mon-canh-kim-chi-chay.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2019/03/lau-kim-chi-hai-san.jpg,https://cachlammonngon.vn/wp-content/uploads/2016/08/lau-nam-kim-chi.jpg,https://emoi.vn/wp-content/uploads/2018/11/lau-kim-chi-1.jpg',
                 'price' => 310000,
@@ -292,14 +292,16 @@ Lẩu nấm chay.
 
 <p><strong>Set n&agrave;y d&ugrave;ng được cho :</strong>&nbsp;4&nbsp;người</p>',
                 'category_id' => '8',
-                'created_at' => Carbon::now()
-            ],[
+                'created_at' => '2021-03-09'
+            ], [
                 'id' => 11,
                 'image' => 'https://yummyday.vn/uploads/images/nam-rom-kho-dau-hu.jpg,https://monngonmoingay.tv/wp-content/uploads/2019/08/dau-phu-xao-nam-cay.jpg,https://monngonmoingay.tv/wp-content/uploads/2019/08/dau-hu-xao-nam-huong-ngon.jpg,https://lh3.googleusercontent.com/proxy/-QSc0oFSqf7lxMTmfoZyCooilq9TLcFkhiYgMHSL9t7DQU_hdQxi0Ky3pTCdkmMXfJvCWl-UVON4eRvpzDoUO8PzD1u1FGFlECBvMmBvuSfopHMsVVo',
                 'price' => 50000,
                 'name' => 'Đậu phụ xào nấm',
+
                 'description' => '<p>&ndash; Nấm rơm l&agrave; loại nấm rất th&ocirc;ng dụng để nấu c&aacute;c m&oacute;n chay hoặc mặn, nấm c&oacute; vị ngọt, t&iacute;nh b&igrave;nh, c&oacute; khả năng sinh nhiệt thấp, bổ cơ thể tăng lực. &ndash; Nấm m&egrave;o c&ograve;n gọi l&agrave; mộc nhĩ. C&oacute; nhiều loại nấm m&egrave;o như nấm m&egrave;o trắng, nấm m&egrave;o đen, nấm m&egrave;o một mặt đen một mặt x&aacute;m. Nấm m&egrave;o c&oacute; c&ocirc;ng dụng bổ tỳ vị, m&aacute;t gan, s&aacute;ng mắt, &iacute;ch kh&iacute; cường b&igrave;. &ndash; Nấm đ&ocirc;ng c&ocirc;: So với hai loại nấm tr&ecirc;n, gi&aacute; trị nấm đ&ocirc;ng c&ocirc; cao hơn hẳn, v&igrave; thế gi&aacute; cả cũng cao hơn. Nấm đ&ocirc;ng c&ocirc; c&oacute; vị ngọt v&agrave; thơm, trong nấm đ&ocirc;ng c&ocirc; c&oacute; nhiều tiền sinh tố D, thường d&ugrave;ng nấm đ&ocirc;ng c&ocirc; sẽ đề ph&ograve;ng được cảm mạo, xơ cứng động mạch, cao huyết &aacute;p, vi&ecirc;m gan m&atilde;n t&iacute;nh. &ndash; M&oacute;n ăn n&agrave;y c&oacute; c&ocirc;ng dụng bồi bổ sức khỏe, bổ m&aacute;u, gi&uacute;p m&aacute;u huyết lưu th&ocirc;ng, tươi nhuận da thịt, ch&ocirc;ng mập v&agrave; c&oacute; khả năng giảm cholesterol trong m&aacute;u. Đ&ocirc;i khi ăn nhiều những m&oacute;n ăn được chế biến từ thịt, c&aacute; h&agrave;ng ng&agrave;y sẽ khiến bạn c&oacute; cảm gi&aacute;c &ldquo;ng&aacute;n&rdquo;, kh&ocirc;ng muốn ăn, đẶc biệt v&agrave;o những ng&agrave;y nắng n&oacute;ng, tiết trời kh&oacute; chịu th&igrave; hiện tượng ch&aacute;n ăn c&agrave;ng trở n&ecirc;n phổ biến. Ch&iacute;nh v&igrave; vậy, việc t&igrave;m ra những m&oacute;n ăn vừa lạ miệng, vừa chống ng&aacute;n cho cả gia đ&igrave;nh để mọi người ăn ngon hơn, ăn nhiều hơn, hấp thu dưỡng chất tốt hơn đ&oacute;ng vai tr&ograve; v&ocirc; c&ugrave;ng quan trọng. V&agrave; c&aacute;ch l&agrave;m m&oacute;n nấm x&agrave;o đậu hũ ngon, hấp dẫn, lạ miệng được monantribenh.com hướng dẫn ở tr&ecirc;n sẽ gi&uacute;p bạn giải quyết hiệu quả vấn đề n&agrave;y đấy.</p>
 <p>Đậu hũ kho nấm rơm l&agrave; m&oacute;n ăn thanh đạm kh&aacute; quen thuộc đối với nhiều bữa cơm Việt của ch&uacute;ng ta, m&oacute;n ăn c&oacute; thể được chế biến v&agrave;o những ng&agrave;y rằm, lễ hay chỉ đơn giản l&agrave; bữa ăn h&agrave;ng ng&agrave;y. Bởi t&iacute;nh thơm ngon v&agrave; thanh đạm của m&oacute;n ăn cộng th&ecirc;m nguy&ecirc;n liệu cũng như c&aacute;ch chế biến dễ d&agrave;ng m&agrave; m&oacute;n đậu hũ kho nấm rơm ng&agrave;y c&agrave;ng được nhiều người ưa chuộng, m&oacute;n ăn kh&ocirc;ng chỉ đem lại cho ch&uacute;ng ta sự ngon, lạ miệng m&agrave; c&ograve;n chứa h&agrave;m lượng dinh dưỡng cao.</p>',
+
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],
@@ -308,9 +310,11 @@ Lẩu nấm chay.
                 'image' => 'https://image.thanhnien.vn/2048/uploaded/ngocthanh/2018_07_25/canh-muop-nam-rom-2_nbao.jpg,https://img-global.cpcdn.com/005_steps/fd2861603eabeab1/480x360cq70/photo.jpg,https://binhbung.files.wordpress.com/2010/09/1285034732-muop-xao.jpg,https://vcdn1-giadinh.vnecdn.net/2014/08/12/DSC-0041-JPG-7378-1407837350.jpg?w=680&h=0&q=100&dpr=1&fit=crop&s=HjV4u-mU-hP6e4ABieflig',
                 'price' => 20000,
                 'name' => 'mướp xào nấm rơm',
+
                 'description' => '<p>Theo Đ&ocirc;ng y, mướp c&oacute; vị ngọt, t&iacute;nh m&aacute;t, kh&ocirc;ng độc, c&oacute; t&aacute;c dụng điều kinh, chỉ đới, b&igrave;nh can tức phong, thanh nhiệt, nhuận da, th&ocirc;ng kinh lạc, th&ocirc;ng đại tiểu tiện, h&agrave;nh huyết mạch. Mướp gi&agrave; đốt tồn t&iacute;nh, d&ugrave;ng l&agrave;m thuốc c&oacute; thể khử phong, h&oacute;a đờm, lương huyết, giải độc, s&aacute;t khuẩn, th&ocirc;ng kinh lạc, th&ocirc;ng sữa. Mướp kết hợp với nấm kh&ocirc;ng chỉ l&agrave; m&oacute;n ăn ngon m&agrave; c&ograve;n l&agrave; &ldquo;thuốc qu&yacute;&rdquo; gi&uacute;p tăng cường sức đề kh&aacute;ng của cơ thể, l&agrave;m giảm nguy cơ mắc nhiều bệnh. Cuối c&ugrave;ng, bạn b&agrave;y thức ăn ra dĩa v&agrave; trang tr&iacute; tuỳ th&iacute;ch sao cho m&oacute;n ăn đẹp mắt v&agrave; hấp dẫn: rắt th&ecirc;m ti&ecirc;u, cho v&agrave;i l&aacute;t ớt hoặc 2 nh&aacute;nh ng&ograve; r&iacute; nhỏ. M&oacute;n ăn sẽ ngon đ&uacute;ng vị nếu được d&ugrave;ng k&egrave;m với cơm trắng n&oacute;ng hổi v&agrave; nước tương tỏi ớt</p>
 
 <p>Mưa m&ugrave;a hạ đ&atilde; về nhưng vắng b&oacute;ng trẻ thơ t&igrave;m nhặt nấm rơm như ch&uacute;ng t&ocirc;i thuở trước. Cuộc sống giờ sung t&uacute;c hơn n&ecirc;n c&aacute;c b&agrave; nội trợ thường mua nấm rơm cấy trồng về chế biến bữa cơm gia đ&igrave;nh. Với t&ocirc;i c&ugrave;ng những người bạn thuở thiếu thời, d&ugrave; được thưởng thức nhiều m&oacute;n ngon từ nấm rơm nhưng vẫn kh&ocirc;ng thể qu&ecirc;n t&ocirc; canh nấm rơm nấu với mướp hương phảng phất m&ugrave;i rơm rạ đồng qu&ecirc; ng&agrave;y ấy.</p>
+
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -320,8 +324,10 @@ Lẩu nấm chay.
                 'image' => 'https://monan.foodhub.vn/wp-content/uploads/2020/12/unnamed-1.jpg,https://baokhanhhoa.vn/dataimages/201907/original/images5370252_daubap.jpg,https://media.tuoitrexahoi.vn/mediav2/files/dau-bap-chien-bo-sua.jpg,https://3.bp.blogspot.com/-rxf6An4Z300/WKRgVPATeEI/AAAAAAAAGR8/3Ritwk6dg1c5h1_4NI7P8zqjRyTPB2m4gCLcB/s400/dau-bap-chien-bo.jpg',
                 'price' => 15000,
                 'name' => 'Đậu bắp nướng bơ chay',
+
                 'description' => '<p>Đậu bắp vốn kh&ocirc;ng xa lạ với m&acirc;m cơm của nhiều gia đ&igrave;nh. Ăn đậu bắp thường xuy&ecirc;n cũng được ghi nhận l&agrave; c&oacute; lợi cho sức khỏe v&igrave; gi&uacute;p l&agrave;m giảm nguy cơ mắc bệnh tim mạch, bệnh tiểu đường, b&eacute;o ph&igrave;,... Tuy nhi&ecirc;n, dường như rất nhiều người đều kh&ocirc;ng biết đậu bắp l&agrave;m m&oacute;n g&igrave; ngon n&ecirc;n cứ &ldquo;l&ograve;ng v&ograve;ng&rdquo; chỉ một hai m&oacute;n đơn giản. Trong khi đậu bắp c&oacute; thể l&agrave;m được rất nhiều m&oacute;n ăn hấp dẫn, thơm ngon.</p>
 <p>Đậu bắp kh&ocirc;ng c&ograve;n xa lạ với người nội trợ bởi lượng chất xơ dồi d&agrave;o, ổn định đường trong m&aacute;u, bảo vệ thận&hellip; Đậu bắp c&oacute; vị thơm ngọt, m&ugrave;i như bắp tự nhi&ecirc;n, thường được sử dụng c&ugrave;ng với nhiều m&oacute;n nướng. H&ocirc;m nay, Foodhub xin m&aacute;ch nhỏ bạn c&aacute;ch l&agrave;m Đậu bắp nướng chay v&ocirc; c&ugrave;ng đơn giản, một lựa chọn cho bữa ăn chay của gia đ&igrave;nh hoặc người c&oacute; nhu cầu ăn ki&ecirc;ng, giảm c&acirc;n&hellip;</p>
+
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
@@ -336,14 +342,18 @@ Lẩu nấm chay.
 <pre>
 Nếu đang muốn đổi vị bữa s&aacute;ng hay c&oacute; th&ecirc;m một c&ocirc;ng thức mới cho thực đơn ăn chay nh&agrave; m&igrave;nh, b&uacute;n x&agrave;o chay sẽ l&agrave; gợi &yacute; ph&ugrave; hợp cho bạn đấy. M&oacute;n ăn thanh đạm n&agrave;y c&oacute; c&aacute;ch l&agrave;m đơn giản với những nguy&ecirc;n liệu dễ mua nhưng vẫn rất gi&agrave;u dinh dưỡng v&agrave; cực k&iacute;ch th&iacute;ch vị gi&aacute;c.
 Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng đảo mọi người hưởng ứng v&agrave; phổ biến trong c&aacute;c bữa ăn của c&aacute;c gia đ&igrave;nh Việt. Ăn chay c&oacute; nhiều t&aacute;c dụng tốt cho sức khỏe, l&agrave; một biện ph&aacute;p giảm c&acirc;n hiệu quả v&agrave; ngăn ngừa được nhiều bệnh tật. M&oacute;n chay ngon v&igrave; thế cũng được s&aacute;ng tạo rất phong ph&uacute;, đa đạng để đ&aacute;p ứng nhu cầu ăn chay của c&aacute;c tầng lớp đa dạng.</pre>
+<div>- Món ăn này phù hơp với những cá nhân hay ăn chay vào các ngày rằm.</div>
+<div><b>Nguyên liệu: </b> Bún gạo 200 gr, đậu hũ chiên, đậu que, giá, nước tương chay, dầu ăn chay, đường, hạt nêm chay</div>
+<div><b>Công dụng: </b>Bún xào chay giúp ngừa bệnh tim mạch, chất isoflavine trong đậu phụ còn có thể giúp giảm mức cholesterol xấu LDL, giảm nguy cơ bệnh ung thư...</div>
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 15,
                 'image' => 'https://suckhoedoisong.qltns.mediacdn.vn/Images/nguyenkhanh/2016/11/11/an_chay.jpg,https://thucphamdongxanh.com/wp-content/uploads/2019/11/rau-c%E1%BB%A7-qu%E1%BA%A3-lu%E1%BB%99c.jpg,https://img-global.cpcdn.com/recipes/5f2d0e28d865d2c1/680x482cq70/cleaneating-v%E1%BB%9Bi-rau-c%E1%BB%A7-lu%E1%BB%99c-recipe-main-photo.jpg,https://img-global.cpcdn.com/recipes/5f2d0e28d865d2c1/680x482cq70/cleaneating-v%E1%BB%9Bi-rau-c%E1%BB%A7-lu%E1%BB%99c-recipe-main-photo.jpg',
                 'price' => 10000,
                 'name' => 'rau củ luộc',
+
                 'description' => '<p>khi được luộc sẽ giữ lại được nhiều chất dinh dưỡng nhất. Giảm nguy cơ mắc c&aacute;c bệnh: Sử dụng rau luộc thường xuy&ecirc;n bạn sẽ c&oacute; thể tr&aacute;nh được một số loại bệnh như bệnh tim mạch, b&eacute;o ph&igrave;, ung thư&hellip; Tăng cường chất chống oxy ho&aacute;: Khi đun s&ocirc;i rau, bạn sẽ trực tiếp l&agrave;m tăng c&aacute;c chất chống oxy ho&aacute; c&oacute; trong rau xanh.</p>
 
 <p><em>Rau củ luộc</em>&nbsp;dễ ti&ecirc;u h&oacute;a v&igrave; bạn c&oacute; thể nhai ch&uacute;ng dễ d&agrave;ng. Hệ ti&ecirc;u h&oacute;a của cơ thể kh&ocirc;ng thể ti&ecirc;u h&oacute;a được tất cả c&aacute;c loại rau củ sống, trừ khi ch&uacute;ng th&iacute;ch hợp để ăn sống.</p>
@@ -351,29 +361,34 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 <p>Rau củ c&oacute; chứa nhiều th&agrave;nh phần kho&aacute;ng chất, bao gồm canxi, kali, magi&ecirc;, sắt, iốt, v.v&hellip; v&agrave; cơ thể bạn c&oacute; thể nhận đủ tất cả c&aacute;c kho&aacute;ng chất bằng c&aacute;ch ăn rau củ luộc v&igrave; ch&uacute;ng kh&ocirc;ng bị mất đi trong qu&aacute; tr&igrave;nh nấu.</p>
 
 <p>với cac loại rau củ quả quanh ta ch&uacute;ng ta sẽ c&oacute; ngay một đĩa rau củ quả luộc.kh&ocirc;ng những thanh đạm m&agrave; c&ograve;n bổ sung nhiều vitamin v&agrave; chất sơ để b&ugrave; đắp những kho&aacute;ng chất m&agrave; cơ thể cần</p>
+
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 16,
                 'image' => 'http://www.elle.vn/wp-content/uploads/2016/03/17/dau-phu-xot-nam-cay.jpg,https://kinhnghiemquy.com/upload/img/2019/10/02/nhung_mon_an_don_gian_de_lam_cho_sinh_vien_1_1570019291821.jpg,https://vncooking.com/files/cuisine/2019/02/09/dau-hu-sot-ca-chua-vg3y.jpg,https://monngonsaigon.net/wp-content/uploads/2018/12/%C4%90%E1%BA%ADu-h%C5%A9-s%E1%BB%91t-n%E1%BA%A5m-1200x900.jpg',
                 'price' => 50000,
                 'name' => 'Đậu hũ sốt chua ',
+
                 'description' => '
 <p>Mỗi khi th&aacute;ng Bảy &acirc;m lịch về, m&aacute; t&ocirc;i hay nấu c&aacute;c m&oacute;n ăn chay cho bữa cơm gia đ&igrave;nh. M&aacute; kh&ocirc;ng phải l&agrave; người m&ecirc; t&iacute;n, nhưng vẫn tin rằng ăn chay v&agrave;o th&aacute;ng Vu Lan sẽ gi&uacute;p l&ograve;ng người thanh thản, nhẹ nh&agrave;ng hơn. V&agrave; trong số những m&oacute;n chay m&aacute; nấu, chị em t&ocirc;i th&iacute;ch nhất l&agrave; m&oacute;n đậu phụ sốt c&agrave; chua. Đậu phụ sốt c&agrave; chua tuy l&agrave; m&oacute;n ăn kh&ocirc;ng cầu kỳ, nhưng chế biến m&agrave; kh&ocirc;ng c&oacute; &ldquo;b&iacute; quyết&rdquo; th&igrave; cũng kh&ocirc;ng ngon. Khi nấu m&oacute;n n&agrave;y, kh&acirc;u quan trọng nhất l&agrave; sốt đậu phụ. Khi sốt phải vặn lửa vừa để nước sốt thấm đều v&agrave;o c&aacute;c miếng đậu phụ, khi n&ecirc;m nước sốt th&igrave; phải n&ecirc;m sao cho hơi nhạt để c&ograve;n ăn k&egrave;m với nước chấm. Đặc biệt, m&oacute;n n&agrave;y phải d&ugrave;ng n&oacute;ng v&agrave; ăn v&agrave;o ng&agrave;y mưa th&igrave; lại c&agrave;ng ngon v&agrave; hấp dẫn.</p>
 <p>Đậu sốt c&agrave; chua l&agrave; m&oacute;n ăn đơn giản trong bữa cơm của gia đ&igrave;nh. Mặc d&ugrave; kh&ocirc;ng c&oacute; nhiều chất đạm, chất b&eacute;o như trong thịt, c&aacute; nhưng m&oacute;n đậu sốt c&agrave; chua vẫn được nhiều gia đ&igrave;nh lựa chọn trong những bữa cơm nhất l&agrave; ng&agrave;y h&egrave; n&oacute;ng nực. Đậu phụ hay c&ograve;n gọi l&agrave; đậu hũ sốt c&agrave; chua kh&ocirc;ng những thơm ngon, hấp dẫn về hương vị m&agrave; c&ograve;n thanh m&aacute;t, nhẹ nh&agrave;ng, dễ ăn v&agrave; kh&ocirc;ng bị ng&aacute;n.</p>',
+
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 17,
                 'image' => 'https://benhvienthammykangnam.vn/wp-content/uploads/2020/02/an-chay-giam-can.jpg,https://2sao.vietnamnetjsc.vn/images/2018/12/01/08/33/mon-ngon-ava2.jpg,https://congaiba.com/wp-content/uploads/2015/07/cach-nau-dau-phu-dau-hu-xao-hoa-lo.jpg,https://media.vneconomy.vn/w900/images/upload/2021/04/21/xao2-15526264001581354436124.jpg',
                 'price' => 30000,
                 'name' => 'Đậu hũ xào súp lơ',
+
                 'description' => '<p>C&aacute;ch nấu đậu phụ (đậu hũ) x&agrave;o hoa lơ thơm ngon lạ miệng: D&ugrave; th&agrave;nh phần ch&iacute;nh của m&oacute;n ăn chỉ gồm to&agrave;n rau v&agrave; đậu, song m&oacute;n đậu phụ x&agrave;o hoa lơ n&agrave;y lại mang hương vị đậm đ&agrave; rất đặc biệt nhờ phần nước sốt kh&aacute; lạ miệng. Sự g&oacute;p mặt của bơ đậu phộng v&agrave; dầu m&egrave; khiến cho từng miếng đậu phụ kh&ocirc;ng chỉ thơm dậy m&ugrave;i m&agrave; c&ograve;n b&eacute;o ngậy cực hấp dẫn.</p>
 
 <p><strong>&nbsp;đậu phụ (đậu hũ) x&agrave;o hoa lơ thơm ngon lạ miệng</strong>: D&ugrave; th&agrave;nh phần ch&iacute;nh của m&oacute;n ăn chỉ gồm to&agrave;n rau v&agrave; đậu, song m&oacute;n đậu phụ x&agrave;o hoa lơ n&agrave;y lại mang hương vị đậm đ&agrave; rất đặc biệt nhờ phần nước sốt kh&aacute; lạ miệng. Sự g&oacute;p mặt của bơ đậu phộng v&agrave; dầu m&egrave; khiến cho từng miếng đậu phụ kh&ocirc;ng chỉ thơm dậy m&ugrave;i m&agrave; c&ograve;n b&eacute;o ngậy cực hấp dẫn. Ch&uacute;ng m&igrave;nh c&oacute; thể vắt th&ecirc;m một ch&uacute;t nước cốt chanh l&ecirc;n tr&ecirc;n trước khi thưởng thức nh&eacute;!</p>
 
 <p>bạn nghĩ sao về 1 m&oacute;n ăn thơm ngon m&agrave; lại gi&ograve;n của s&uacute;p lơ</p>',
+
                 'category_id' => '1',
                 'created_at' => Carbon::now()
             ],
@@ -382,15 +397,17 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'image' => 'https://toplist.vn/images/800px/dau-phu-cuon-la-lot-387855.jpg,https://www.hoidaubepaau.com/wp-content/uploads/2016/01/cham-dau-hu-cuon-la-lot-cung-nuoc-tuong.jpg,https://www.hoidaubepaau.com/wp-content/uploads/2016/01/dau-hu-cuon-la-lot.jpg,https://img-global.cpcdn.com/recipes/5fe7f2b0c963869c/1200x630cq70/photo.jpg',
                 'price' => 35000,
                 'name' => 'Đậu phụ cuốn lá lốt',
+
                 'description' => '
 <p>Đậu hũ l&agrave; nguy&ecirc;n liệu chế biến m&oacute;n ăn b&igrave;nh d&acirc;n lại bổ dưỡng. H&ocirc;m nay, ch&uacute;ng t&ocirc;i sẽ hướng dẫn bạn th&ecirc;m một m&oacute;n ăn l&agrave;m tự đậu hũ để bạn bổ sung v&agrave;o thực đơn chế biến m&oacute;n ăn cho gia đ&igrave;nh.</p>
 
 <p>M&oacute;n đậu hũ cuốn l&aacute; lốt vị vừa ăn, đậu hũ được nghiền nhuyễn mịn kết hợp h&agrave;i h&ograve;a với c&aacute;c nguy&ecirc;n liệu kh&aacute;c. Hương vị đặc trưng của l&aacute; lốt đ&atilde; tạo n&ecirc;n tạo n&ecirc;n một m&oacute;n ăn thơm ngon, hấp dẫn, lạ miệng. Đậu hũ chi&ecirc;n ch&iacute;n đều, v&agrave;ng gi&ograve;n b&ecirc;n ngo&agrave;i, mềm b&ecirc;n trong kh&ocirc;ng bị kh&ocirc; v&agrave; ngấm qu&aacute; nhiều dầu. Để m&oacute;n đậu hũ cuốn l&aacute; lốt n&agrave;y th&ecirc;m đậm đ&agrave;, bạn c&oacute; thể ăn k&egrave;m với nước tương pha ớt tươi.</p>
 <p>Đậu phụ cuốn l&aacute; lốt rất th&iacute;ch hợp để bạn d&ugrave;ng l&agrave;m m&oacute;n chay đầu th&aacute;ng. Đậu phụ b&eacute;o ngậy, thoang thoảng m&ugrave;i nấm hương v&agrave; mộc nhĩ gi&ograve;n sần sật khiến bạn c&oacute; thể ăn rất nhiều m&agrave; kh&ocirc;ng ch&aacute;n. Theo Y học d&acirc;n tộc, l&aacute; lốt vị cay, m&ugrave;i thơm, t&iacute;nh rất ấm, c&oacute; t&aacute;c dụng trừ thấp, ấm bụng, ti&ecirc;u thực, hạ kh&iacute; trừ h&ocirc;i tanh n&ecirc;n rất tốt cho sứa khỏe. Khi ăn t&ugrave;y sở th&iacute;ch bạn c&oacute; thể d&ugrave;ng k&egrave;m tương ớt hoặc x&igrave; dầu chấm t&ugrave;y khẩu vị. Tuy l&agrave; một m&oacute;n chay nhưng đậu phụ cuốn l&aacute; lốt rất dễ ăn v&agrave; thơm ngon kh&ocirc;ng k&eacute;m g&igrave; chả l&aacute; lốt th&ocirc;ng thường n&ecirc;n bạn h&atilde;y l&agrave;m cho cả gia đ&igrave;nh được thưởng thức m&oacute;n ăn thanh đạm ng&agrave;y đầu th&aacute;ng nh&eacute;.</p>
+
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 19,
                 'image' => 'https://toplist.vn/images/800px/canh-dau-phu-rau-cu-41043.jpg,https://img-global.cpcdn.com/recipes/ae9f169898813d4f/680x482cq70/canh-d%E1%BA%ADu-h%E1%BB%A7-rau-c%E1%BB%A7-recipe-main-photo.jpg,https://ngaymoionline.com.vn/stores/news_dataimages/ngaymoionlinecomvn/062020/03/08/mat-lanh-canh-dau-phu-nau-rau-cu-don-gian-23-.6048.jpg,https://toplist.vn/images/800px/canh-dau-phu-rau-cu-41043.jpg',
                 'price' => 40000,
@@ -401,7 +418,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
  ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 20,
                 'image' => 'https://cdn.daynauan.info.vn/wp-content/uploads/2019/05/sup-chay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2019/05/sup-ga-nam-huong.jpg,https://i-ngoisao.vnecdn.net/2018/12/17/39144034-300833310690456-61909-7223-3606-1545037702.jpg,https://i.ytimg.com/vi/Ld8ruLTVeQc/hqdefault.jpg',
                 'price' => 100000,
@@ -413,7 +430,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 <p>S&uacute;p chay dinh dưỡng c&oacute; nhiều c&aacute;ch nấu kh&aacute;c nhau. C&oacute; thể bạn vẫn chưa biết nhưng s&uacute;p chay cũng đa dạng kh&ocirc;ng k&eacute;m c&aacute;c loại s&uacute;p mặn. Bạn c&oacute; thể sử dụng c&aacute;c nguy&ecirc;n liệu phổ biến để nấu c&aacute;c m&oacute;n ăn chay h&agrave;ng ng&agrave;y như rau, củ, quả, c&aacute;c loại nấm để nấu th&agrave;nh m&oacute;n s&uacute;p.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 21,
                 'image' => 'https://giamcanantoan.com/images/minhquan/thuocgiamcan/11-2013/ha-cao-chay.jpg,https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/ha-cao-chay-thumbnail.jpg,https://tuthuoc24h.net/upload/images/cach-lam-ha-cao-chay.jpg,https://i.ytimg.com/vi/TsggIGacCqA/maxresdefault.jpg',
                 'price' => 100000,
@@ -423,7 +440,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 <p>H&aacute; cảo chay l&agrave; m&oacute;n ngon gi&uacute;p giảm c&acirc;n hiệu quả được chọn cho thực đơn giảm c&acirc;n với c&aacute;c m&oacute;n chay cho bữa xế của gia đ&igrave;nh. Với vị thanh ngọt của rau củ, dai dai của b&aacute;nh h&aacute; cảo n&oacute;ng hổi chấm với nước sốt tương ớt rất hấp dẫn người thưởng thức.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 22,
                 'image' => 'https://product.hstatic.net/1000232601/product/c_ch-l_m-m_n-c_i-th_a-x_o-n_m-d_ng-c_-4_1024x1024.jpg,https://pastaxi-manager.onepas.vn/content/uploads/articles/thanhmai/cai-thia-xao-nam/cai-chip-xao-nam%C4%83%C4%83.jpg,https://yummyday.vn/uploads/images/cai-thia-xao-nam-dong-co-8.jpg,https://www.iunauan.com/images/400x-1/anh1-iunauan.com-465065.jpg',
                 'price' => 120000,
@@ -432,7 +449,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 <p>Sự kết hợp của hai loại nguy&ecirc;n liệu n&agrave;y trong m&oacute;n cải th&igrave;a x&agrave;o nấm đ&ocirc;ng c&ocirc; tạo n&ecirc;n m&oacute;n ăn v&ocirc; c&ugrave;ng tốt cho sức khỏe m&agrave; lại rất ngon miệng. Vị ngon của m&oacute;n ăn c&agrave;ng th&ecirc;m đậm đ&agrave; hơn khi th&ecirc;m nước xốt dầu h&agrave;o v&agrave; một &iacute;t vị mặn từ nước tương. Cải th&igrave;a v&agrave; nấm đ&ocirc;ng c&ocirc; v&ocirc; c&ugrave;ng tốt cho sức khỏe n&ecirc;n c&aacute;c bạn cũng n&ecirc;n bổ sung v&agrave;o thực đơn nấu ăn của m&igrave;nh nh&eacute;!</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 23,
                 'image' => 'https://thucduongbaoan.com.vn/wp-content/uploads/2021/08/Nem-Lui-Chay.jpg,http://baokhanhhoa.vn/dataimages/201803/original/images5326315_Nem.jpg,https://img-global.cpcdn.com/recipes/d0e3b4695b76cc01/1200x630cq70/photo.jpg,https://anchay.vn/media/2021/03/n%E1%BB%81n-4.jpg',
                 'price' => 50000,
@@ -445,7 +462,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 24,
                 'image' => 'https://afamilycdn.com/thumb_w/600/E88MOq9iOdccccccccccccjjVmV53G/Image/2016/09/Dau-hu-non-sot-chua-ngot%20(10)-571a1.jpg,https://sieungon.com/wp-content/uploads/2017/11/dau-phu-xao-nam-ot-review.jpg,https://media.healthplus.vn/thumb_x650x382/Images/Uploaded/Share/2017/06/26/mon-ngon-dau-tuan-dau-phu-chien-xao-ot-chuong11498451515.jpg,https://dichothongminh.com/wp-content/uploads/2020/12/dau-hu-sot-chua-ngot.jpg',
                 'price' => 120000,
@@ -457,7 +474,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 <p>Đậu phụ sốt chua ngọt l&agrave; m&oacute;n ăn hấp dẫn rất nhiều t&iacute;n đồ ẩm thực, nhưng với những người ăn chay hay những ng&agrave;y ăn chay th&igrave; khẩu vị ấy được biến tấu thay thế bằng đậu phụ sốt chua ngọt để gi&uacute;p họ thỏa l&ograve;ng. M&oacute;n ăn chắc chắn sẽ &quot;h&uacute;t mắt&quot; c&aacute;c th&agrave;nh vi&ecirc;n trong nh&agrave; bởi m&agrave;u sắc tươi tắn v&agrave; nước sốt &oacute;ng ả, vị ngon th&igrave; miễn b&agrave;n rồi. Miếng đậu phụ chi&ecirc;n v&agrave;ng gi&ograve;n phủ đều một lớp sốt chua ngọt đẫm mượt tr&ocirc;ng v&ocirc; c&ugrave;ng hấp dẫn, ăn k&egrave;m ớt chu&ocirc;ng, dứa v&agrave; h&agrave;nh t&acirc;y đem đến sự ngon miệng pha ch&uacute;t th&iacute;ch th&uacute;.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 25,
                 'image' => 'https://cdn.tgdd.vn/Files/2018/12/14/1138156/cach-nau-xoi-lac-bang-noi-com-dien-cuc-nhanh-ma-ngon-6.jpg,https://i.ytimg.com/vi/4womCPN-Xvs/maxresdefault.jpg,https://bep360.net/wp-content/uploads/2021/09/cach-nau-xoi-lac.jpg,https://anh.eva.vn/upload/1-2017/images/2017-02-23/1487847277-cach-nau-xoi-dau.jpg',
                 'price' => 1,
@@ -465,7 +482,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Từng hạt x&ocirc;i căng b&oacute;ng, mềm dẻo quyện với lạc mềm, b&ugrave;i b&ugrave;i tạo n&ecirc;n m&oacute;n ăn s&aacute;ng thơm ngon, nhanh ch&oacute;ng trong thời kỳ gi&atilde;n c&aacute;ch.X&ocirc;i dẻo thơm, căng mọng, lạc mềm b&ugrave;i kh&ocirc;ng kh&aacute;c g&igrave; đồ x&ocirc;i bằng ch&otilde;.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 26,
                 'image' => 'https://toinayangi.vn/wp-content/uploads/2015/09/v%C3%A1ng-%C4%91%E1%BA%ADu-cu%E1%BB%99n-c%E1%BB%A7-t%E1%BB%AB.jpg,https://toinayangi.vn/wp-content/uploads/2015/09/v%C3%A1ng-%C4%91%E1%BA%ADu-cu%E1%BB%99n-c%E1%BB%A7-t%E1%BB%AB.jpg,http://imgs.emdep.vn/Share/Image/2019/10/08/page18sd465a-152249085.jpg,https://haithuycatering.com/image/5c3b030651046d57e272f842/original.jpg',
                 'price' => 40000,
@@ -473,7 +490,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Nếu bạn muốn t&igrave;m hiểu một m&oacute;n ăn ngon cho ng&agrave;y rằm chay tịnh h&agrave;ng th&aacute;ng th&igrave; v&aacute;ng đậu cuộn củ từ l&agrave; một gợi &yacute; th&iacute;ch hấp dẫn đấy. V&aacute;ng đậu cuộn củ từ c&oacute; vị dai gi&ograve;n của v&aacute;ng đậu, vị mềm, b&ugrave;i ngậy của củ từ c&ugrave;ng vị chua ngọt k&iacute;ch th&iacute;ch vị gi&aacute;c của nước sốt b&ecirc;n ngo&agrave;i ngon miễn ch&ecirc;.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 27,
                 'image' => 'https://cdn.tuoitre.vn/thumb_w/586/2019/6/12/624279131944661881457794235875808796737536n-1560335838201357024960.jpg,https://cdn.tgdd.vn/2021/02/CookProduct/comhaplasen-1200x676.jpg,https://i-vnexpress.vnecdn.net/2019/10/14/com-la-sen-hue-2-4116-1571047058.jpg,https://haithuycatering.com/image/5c120aae51046d1d88a64914/original.jpg',
                 'price' => 70000,
@@ -481,7 +498,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Trong c&aacute;c loại hoa hiếm c&oacute; loại hoa n&agrave;o được sử dụng được tất cả c&aacute;c bộ phận một c&aacute;ch đa dạng như hoa sen: hoa để c&uacute;ng Phật v&agrave; trang tr&iacute;; l&aacute; để g&oacute;i v&agrave; hấp thực phẩm cho thơm; c&aacute;nh hoa d&ugrave;ng ướp tr&agrave;; hạt sen d&ugrave;ng l&agrave;m mứt, nấu ch&egrave;, trộn với cơm, ng&oacute; sen d&ugrave;ng l&agrave;m gỏi; củ sen để hầm thịt, nhồi t&ocirc;m thịt chi&ecirc;n; hoa sen để ướp tr&agrave;.... Sen cũng được sử dụng để l&agrave;m rất nhiều m&oacute;n trong cung đ&igrave;nh Huế; điển h&igrave;nh l&agrave; m&oacute;n cơm hấp l&aacute; sen m&agrave; ng&agrave;y nay đ&atilde; được phổ biến v&agrave; y&ecirc;u th&iacute;ch ở rất nhiều địa phương v&igrave; sự tinh tế v&agrave; thanh tao của m&oacute;n ăn n&agrave;y</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 28,
                 'image' => 'https://cdn.tgdd.vn/Files/2018/03/21/1076224/cach-lam-com-gao-lut-cuon-rong-bien-don-gian-nhung-giau-dinh-duong4.jpg,https://cdn.tgdd.vn/2020/07/CookProduct/1112-1200x676-2.jpg,https://khaiminh.vn/wp-content/uploads/2016/06/sushi-2-500x500.jpg,https://khaiminh.vn/wp-content/uploads/2016/06/sushi-500x500.jpg',
                 'price' => 40000,
@@ -489,7 +506,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Bạn thường xuy&ecirc;n phải ăn cơm ở văn ph&ograve;ng hay cơm ngo&agrave;i h&agrave;ng v&agrave; nhiều khi bạn cảm gi&aacute;c n&oacute; k&eacute;m vệ sinh v&agrave; thiếu dinh dưỡng. H&atilde;y thưởng thức cơm gạo lứt cuộn rong biển đơn giản nhưng gi&agrave;u dinh dưỡng cho bữa cơm văn ph&ograve;ng của m&igrave;nh nh&eacute;!</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 29,
                 'image' => 'https://cdn.tgdd.vn/Files/2017/03/16/961372/ca-tim-chien-tam-nuoc-tuong-toi-la-mieng-dua-com-7_730x411.jpg,https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/ca-tim-chien-nuoc-mam-thumbnail-1.png,https://i.ytimg.com/vi/4PyE-JVdYoo/maxresdefault.jpg,https://info-imgs.vgcloud.vn/2020/05/27/14/ca-tim-nhoi-thit-chien-xot-toi-doi-mon.jpg',
                 'price' => 35000,
@@ -497,7 +514,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>bạn cảm gi&aacute;c nh&agrave;m ch&aacute;n khi ăn chay h&atilde;y thử ngay c&agrave; t&iacute;m chi&ecirc;n tỏi ớt sẽ cho bạn 1 cảm gi&aacute;c ngon miệng hơn đấy!</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 30,
                 'image' => 'https://atuankhang.vn/wp-content/uploads/2020/05/cach-lam-nam-dui-ga-kho.jpg,https://vcdn-giadinh.vnecdn.net/2020/12/11/nam-1-2264-1607674144.jpg,https://i.ytimg.com/vi/r7EUvJ8xo90/hqdefault.jpg,https://vcdn-ngoisao.vnecdn.net/2019/05/17/60922344-2430669853619354-3283-4482-5403-1558082148.jpg',
                 'price' => 50000,
@@ -506,7 +523,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 31,
                 'image' => 'https://monngonsaigon.net/wp-content/uploads/2018/11/Mi%E1%BA%BFn-x%C3%A0o-%C4%91%E1%BA%ADu-ng%E1%BB%B1-th%C6%A1m-ngon-cho-ng%C3%A0y-chay.jpg,https://monngonsaigon.net/wp-content/uploads/2018/11/Mi%E1%BA%BFn-x%C3%A0o-%C4%91%E1%BA%ADu-ng%E1%BB%B1-th%C6%A1m-ngon-cho-ng%C3%A0y-chay.jpg,https://123amthuc.net/wp-content/uploads/2014/10/cach-lam-mon-mien-xao-dau-ngu-hap-dan-thom-ngon-danh-cho-ngay-an-chay-cua-gia-dinh-2.jpg,https://monngonmoingay.com/wp-content/uploads/2015/08/Mien-xao-cua-1.png',
                 'price' => 50000,
@@ -515,7 +532,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 32,
                 'image' => 'https://cdn.tgdd.vn/2020/08/CookRecipe/GalleryStep/tha%CC%80nh-pha%CC%89m-50.jpg,https://yummyday.vn/uploads/images/hoanh-thanh-chay-2.jpg,https://danviet.mediacdn.vn/upload/1-2017/images/2017-02-08/148654833442605-wonton_soup_detail.jpg,https://pastaxi-manager.onepas.vn/content/uploads/articles/hoanh-thanh-chay-chien-gion/hoanh-thanh-chay-chien-gion-9.jpg',
                 'price' => 45000,
@@ -553,7 +570,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Cơm sen cốm l&agrave; m&oacute;n ăn với c&aacute;i t&ecirc;n vừa b&igrave;nh dị, d&acirc;n d&atilde; vừa mang lại sự cao sang, quyền qu&yacute;. Kh&ocirc;ng chỉ l&agrave; m&oacute;n ăn hấp dẫn cho người ăn chay m&agrave; ph&ugrave; hợp với mọi đối tượng muốn thay đổi khẩu vị h&agrave;ng ng&agrave;y. Đặc biệt cơm sen cốm c&ograve;n c&oacute; t&aacute;c dụng thanh nhiệt, giải độc v&agrave; rất tốt cho tim mạch,&hellip;M&oacute;n ăn được kết hợp h&agrave;i h&ograve;a từ hạt sen b&eacute;o ngậy, c&aacute;c loại rau củ thanh m&aacute;t v&agrave; c&oacute; m&ugrave;i hương phảng phất gi&uacute;p bữa cơm của gia đ&igrave;nh bạn tr&agrave;n ngập t&igrave;nh y&ecirc;u thương, sự gắn kết giữa c&aacute;c th&agrave;nh vi&ecirc;n trong gia đ&igrave;nh với nhau.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 36,
                 'image' => 'https://monngonsaigon.net/wp-content/uploads/2018/12/3-3.jpg,https://d1uz88p17r663j.cloudfront.net/original/1149f084911ca6580fb6c6d89c8fa762_Thumb-crop_(1).jpg,https://i.ytimg.com/vi/9AAKAeYO5wA/maxresdefault.jpg,https://ducankitchen.com/wp-content/uploads/2021/06/05_PumpkinSeaweedSoup_Action_Side.jpg',
                 'price' => 55000,
@@ -561,7 +578,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Canh b&iacute; đỏ rong biển l&agrave; m&oacute;n ăn kết hợp h&agrave;i h&ograve;a giữa hai nguy&ecirc;n liệu b&iacute; đỏ v&agrave; rong biển. Trong đ&oacute;, b&iacute; đỏ chứa h&agrave;m lượng vitamin cao, c&oacute; t&aacute;c dụng chữa bệnh n&ecirc;n ph&ugrave; hợp với nhiều người. Rong biển l&agrave; nguy&ecirc;n liệu chứa nhiều dinh dưỡng v&agrave; rất tốt cho sức khỏe n&ecirc;n được nhiều người chế biến th&agrave;nh nhiều m&oacute;n ăn hấp dẫn. Rong biển thường được nấu chung với nhiều loại nguy&ecirc;n liệu bổ dưỡng như: hạt sen, đậu hũ, b&iacute; đỏ, nấm,&hellip;</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 37,
                 'image' => 'https://cdn.daotaobeptruong.vn/wp-content/uploads/2019/12/ha-cao.jpg,https://monngonsaigon.net/wp-content/uploads/2018/12/B%C3%A1nh-h%C3%A1-c%E1%BA%A3o.jpg,https://cachlambanh.vn/wp-content/uploads/2018/07/B%C3%A1nh-H%C3%A1-C%E1%BA%A3o-chay-nh%C3%A2n-rau-3.jpg,https://tuthuoc24h.net/upload/images/ha-cao-chay.jpg',
                 'price' => 70000,
@@ -579,7 +596,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Sushi l&agrave; một trong những m&oacute;n ăn nổi tiếng của nền ẩm thực Nhật Bản được l&agrave;m từ c&aacute;c nguy&ecirc;n liệu tươi ngon, h&igrave;nh thức đẹp mắt v&agrave; hương vị đa dạng phong ph&uacute; khiến nhiều người m&ecirc; mẩn m&oacute;n ăn n&agrave;y. Nếu bạn l&agrave; t&iacute;n đồ của c&aacute;c m&oacute;n ăn chay th&igrave; bạn vẫn c&oacute; thể thưởng thức m&oacute;n sushi chay ngon miệng v&agrave; đầy đủ dinh dưỡng.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 39,
                 'image' => 'https://monngonsaigon.net/wp-content/uploads/2018/12/1-16.jpg,https://fsfamily.vn/wp-content/uploads/2018/12/mon-cu-sen-xao-ngu-vi-2.jpg,http://bestslim.org/wp-content/uploads/2015/05/cu-sen-xao-gion-cho-bua-com-giam-can-them-ngon-mieng-1.jpg',
                 'price' => 90000,
@@ -597,7 +614,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Gỏi cuốn chay l&agrave; m&oacute;n ăn thanh m&aacute;t được rất nhiều người ăn chay ưa chuộng bởi kh&ocirc;ng chỉ được l&agrave;m từ nguy&ecirc;n liệu rau củ tươi sạch, thuần chay đầy đủ chất dinh dưỡng m&agrave; c&ograve;n gi&uacute;p người ăn lu&ocirc;n cảm thấy nhẹ bụng, ăn ngon miệng kh&ocirc;ng k&eacute;m g&igrave; so với c&aacute;c loại gỏi cuốn mặn.Thay v&igrave; ăn cuốn từ c&aacute;c loại thịt, hải sản th&igrave; bạn h&atilde;y thử qua m&oacute;n cuốn rau đậu hũ để thay đổi khẩu vị v&agrave; thanh lọc cơ thể v&agrave; cải thiện sức khỏe tốt hơn.</p>',
                 'category_id' => '1',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 41,
                 'image' => 'https://cdnmedia.thethaovanhoa.vn/Upload/tyTrfgkgEUQwPYuvZ4Kn1g/files/2020/03/2403/5ryuy.jpg,https://meta.vn/Data/image/2020/01/30/tet-han-thuc-banh-troi-banh-chay-3.jpg,http://media.kinhtedothi.vn//2021/04/13/bannhtroichay.jpg,https://cdnmedia.thethaovanhoa.vn/Upload/tyTrfgkgEUQwPYuvZ4Kn1g/files/2020/03/2403/5ryuy.jpg',
                 'price' => 20000,
@@ -610,7 +627,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 <p>Chắc chắn bạn sẽ cần một đĩa b&aacute;nh tr&ocirc;i chay v&agrave;o ng&agrave;y tết H&agrave;n thực</p>',
                 'category_id' => '2',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 42,
                 'image' => 'https://banhchungngon.vn/wp-content/uploads/2015/09/banh-chung-chay.jpg,https://wna.cdnxbvn.com/wp-content/uploads/2018/11/Cach-lam-nhan-dau-banh-chung.jpg,https://yummyday.vn/uploads/images/banh-chung-chay-7.jpg,https://allimages.sgp1.digitaloceanspaces.com/vaobepkhogivn/2020/08/1596961335_213_Cach-lam-banh-chung-chay-nep-lut-nhan-nam-dau.jpg',
                 'price' => 20000,
@@ -619,7 +636,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '2',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 43,
                 'image' => 'https://thucthan.com/media/2018/05/banh-bao-chay/banh-bao-chay.jpg,https://cdn.tgdd.vn/Files/2020/04/21/1250758/cach-lam-banh-bao-chay-co-nhan-thom-ngon-don-gian--19.jpg,https://cdn.huongnghiepaau.com/wp-content/uploads/2019/04/banh-bao-chay-ngon.jpg,http://product.hstatic.net/200000278005/product/bbchay_30061cfc2a974d5a89da9dfa73b10475_grande.jpg',
                 'price' => 10000,
@@ -757,7 +774,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '2',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 57,
                 'image' => 'https://tinlogi.com/wp-content/uploads/2020/03/cach-lam-banh-troi-banh-chay-ngu-sac-03-24-tinlogi.jpg,https://cdn.vietnammoi.vn/stores/news_dataimages/trangctm/042018/18/16/3331_3.jpg,https://lh3.googleusercontent.com/proxy/nqqjIP9jxiM-2EsDiOj1-BsNOWOOIaxfbze1c0Kvpai27mvScq3RrRUQbZjzSFVY-bzRwbnz1Rym-prVBOh4IRVltoJSYvgKpP1UTlj9YVsD5JAUL0J2yaHslAvjyDAfagVki1VQpGBC6VZaMnwgBggOkr_Lwt5Og526uOf3eis,https://healthplus.vn/Images/Uploaded/Share/2015/04/21/lam-banh-troi-banh-chay-ngu-sac-4-buoc-trong-30-phut-2.jpg',
                 'price' => 1,
@@ -766,7 +783,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
  ',
                 'category_id' => '2',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 58,
                 'image' => 'https://minhhouseware.com.vn/wp-content/uploads/2020/12/kho-qua-xao-dau-hu-ca-rot-chay-recipe-main-photo.jpg,https://media.cooky.vn/recipe/g2/11288/s320x320/recipe11288-635711671133085161.jpg,https://cdn.tgdd.vn/2021/01/CookRecipe/Avatar/kho-qua-nhoi-dau-hu-kho-chay-thumbnail.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0NbWatBTfgvkVn_Vfl-jJnxjEoaRbCt26Q&usqp=CAU',
                 'price' => 45000,
@@ -774,7 +791,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Rau củ l&agrave; m&oacute;n thường nhật c&oacute; mặt trong m&oacute;n chay, kết hợp c&agrave; rốt, bắp, khổ qua tạo một m&oacute;n rau củ cho bữa chay đủ chất. Bổ sung vitamin A, chất sắt từ c&agrave; rốt th&ecirc;m nguồn vitamin C dồi d&agrave;o, nguồn Protein thay thế thịt từ khổ qua sẽ gi&uacute;p người ăn chay c&oacute; một hệ miễn dịch tốt nhất.</p>',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 59,
                 'image' => 'https://minhhouseware.com.vn/wp-content/uploads/2020/12/dua-chuot-muoi-chay.jpg,https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/dua-leo-dua-chuot-muoi-man-nguyen-qua-thumbnail.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26C-1ZG5BVFAIbK6z1bpFGwJ6OcOQLLgyLg&usqp=CAU,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq5g1FpqknWXd-lcC2Z6lY5zs4fE-1uJxVOg&usqp=CAU',
                 'price' => 70000,
@@ -782,7 +799,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Lượng nước chứa đến 90%, ngo&agrave;i ra l&agrave; h&agrave;ng loạt c&aacute;c kho&aacute;ng chất, vitamin cần bổ sung v&agrave;o cơ thể mỗi ng&agrave;y m&agrave; ăn chay cần c&oacute; như: &ndash; Chất xơ, vitamin C, vitamin B1, B2, B5, B6, vitamin V3, &ndash; Folic acid, magie, canxi, kali, sắt, kẽm&hellip;</p>',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 60,
                 'image' => 'https://minhhouseware.com.vn/wp-content/uploads/2020/12/bap-cai-cuon-chay.jpg,https://i.ytimg.com/vi/SiSAl-mJ26o/maxresdefault.jpg,http://baokhanhhoa.vn/dataimages/201509/original/images1097270_3.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTwDKARWbsy1D6Ds8qXQoTP9jZ5yzRi1Ot7A&usqp=CAU',
                 'price' => 30000,
@@ -791,7 +808,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 61,
                 'image' => 'https://minhhouseware.com.vn/wp-content/uploads/2020/12/khoai-tay-xao.jpg,https://cdn.tgdd.vn/2020/09/CookProduct/thumbcn-1200x676-12.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjjMU2vrs01g1aRS7TqBhYjF6YlD3uhnjZjA&usqp=CAU,https://i.ytimg.com/vi/tL-TvLisglc/maxresdefault.jpg',
                 'price' => 35000,
@@ -830,7 +847,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 65,
                 'image' => 'https://minhhouseware.com.vn/wp-content/uploads/2020/12/canh-bi-do-nuoc-cot-dua.jpg,https://img.vuinauan.net/images/wna/cach-nau-canh-bi-do-chay/cach-nau-canh-bi-do-chay_cach-nau-canh-bi-do-nuoc-cot-dua.jpg,https://anh.24h.com.vn/upload/1-2015/images/2015-01-07/1420606232-bihamdua.jpg,http://2.bp.blogspot.com/-PyMWBIbk_HI/VPaKjJzIlGI/AAAAAAAASwE/jjQ5FDcrOF0/s280/bi%2Bh%C3%A2m%2Bd%E1%BB%ABa.JPG',
                 'price' => 90000,
@@ -849,7 +866,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
  ',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 67,
                 'image' => 'https://img-global.cpcdn.com/recipes/a72a12103f3d6f8a/680x482cq70/mi-xao-n%E1%BA%A5m-h%C6%B0%C6%A1ng-rau-c%E1%BB%A7-chay-recipe-main-photo.webp,https://img-global.cpcdn.com/recipes/a72a12103f3d6f8a/680x482cq70/mi-xao-n%E1%BA%A5m-h%C6%B0%C6%A1ng-rau-c%E1%BB%A7-chay-recipe-main-photo.jpg,https://afamilycdn.com/2018/9/22/4-1537588231598859416815.jpg,https://www.hoidaubepaau.com/wp-content/uploads/2018/05/mi-xao-chow-mein.jpg',
                 'price' => 50000,
@@ -858,7 +875,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 68,
                 'image' => 'https://hapivegan.com/wp-content/uploads/2021/04/2-xao-300x199.jpg.webp,https://cdn.bepcuoi.com/media/650-425-rau-cu-xao-thap-cam-kieu-thai-bepcuoi-114.jpg,https://lh3.googleusercontent.com/proxy/VMW1JKGHB0NAi7ooO8l8J4SnbW9Uy4ESKtruZpNbhvDiAe-6oSUb7eAOIoXaYfKWq4hpaGq9evF8P-54t6oMWCisEfncaVtmG4De9CJk-eIY7C_RIfrEJcnRBn_H,https://cdn.beptruong.edu.vn/wp-content/uploads/2013/05/thit-xao-rau-cu.jpg',
                 'price' => 60000,
@@ -867,7 +884,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 69,
                 'image' => 'https://hapivegan.com/wp-content/uploads/2021/04/3-chien-300x223.jpg.webp,https://i.ytimg.com/vi/fKiJyXnVJ9Y/hqdefault.jpg,https://i.ytimg.com/vi/OVDpj-KwIb4/hqdefault.jpg,https://cdn-gd-v1.webbnc.net/useruploads/userfiles//508613/images/nam_bao_ngu_chien_gion_grande.jpg',
                 'price' => 120.00,
@@ -886,7 +903,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 71,
                 'image' => 'https://media.cooky.vn/recipe/g6/51467/s320x320/cooky-recipe-637127054246059487.JPG,https://static.kenhphatphap.com/photos/11/2019/06/thumb2/5d0e66fdcb330.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFJCBN1KJ-7zbMcdELJepWFxOqwh84m2wrjuSZj3eYSVc-hCtk8QhTEeaZYn7dUBaAeG0&usqp=CAU,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9z6xisjStjF8IxDd7STXclTX2KHzPpWP59eJZ_O1H6IObrqZoQ4wiuO2f8hHW27BuutU&usqp=CAU',
                 'price' => 45000,
@@ -905,7 +922,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '3',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 73,
                 'image' => 'https://img-global.cpcdn.com/recipes/5f2d0e28d865d2c1/680x482cq70/cleaneating-v%E1%BB%9Bi-rau-c%E1%BB%A7-lu%E1%BB%99c-recipe-main-photo.jpg,https://hoiquanamthuc.com/wp-content/uploads/2015/04/giu-rau-cu-co-mau-sac-tuoi-dep-mat.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnA8KoS-eh78CIdGd3fG9P1IGgPP4che13Er2Ml1KlZWfaAQ9cukdMddPKLZVRi82tFpc&usqp=CAU,http://product.hstatic.net/1000355079/product/rau_2523dfb4a1dc426da576ae78182b93d1_grande.jpg',
                 'price' => 40000,
@@ -1223,7 +1240,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'category_id' => '6',
                 'created_at' => Carbon::now()
             ], [
-                'id' =>108,
+                'id' => 108,
                 'image' => 'https://khds.1cdn.vn/thumbs/562x331/2021/04/28/chao-hoa-cuc-muop-dang-tri-kiet-ly.jpg,https://stc.bindo.vn//files/ch%C3%A1o%20hoa.jpg,https://image-us.24h.com.vn/upload/4-2019/images/2019-12-14/1576292431-811ddf88594b58756fe137d636fa742e.jpg,https://phongkhamdakhoathegioi.vn/upload/hinhanh/HINHBAIVIET/cach-chua-di-tieu-ra-mau-hieu-qua-tai-nha.jpg',
                 'price' => 30000,
                 'name' => 'cháo hoa cúc',
@@ -1342,7 +1359,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '6',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 120,
                 'image' => 'http://dauanchotre.com.vn/wp-content/uploads/2016/02/chao_nam_cho_be1.jpg,https://bizweb.dktcdn.net/thumb/large/100/042/260/files/chao-bao-ngu-1292da15-59a6-47c7-9548-0bbc9a8f6241.jpg?v=1606556782517,https://mynuong.com/giachanh/?qa=blob&qa_blobid=3424113680583693106,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkljUMbSVibIj1-O8ILcRECXQIorx79o2D7Q&usqp=CAU',
                 'price' => 70000,
@@ -1351,7 +1368,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '6',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 121,
                 'image' => 'https://monngonmoingay.com/wp-content/uploads/2021/01/goi-cuon-chay-cham-xot-dau-phong-500.jpg,https://tuthuoc24h.net/upload/images/cach-lam-goi-cuon.jpg,https://i.ytimg.com/vi/d_bznxbRfMk/maxresdefault.jpg,https://nuocmamquochai.vn/uploads/details/2019/08/images/news-46.jpg',
                 'price' => 30000,
@@ -1360,7 +1377,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 122,
                 'image' => 'https://media.cooky.vn/images/blog-2016/cach-lam-goi-cuon-chay-cho-ngay-ram-7.JPG,https://monngonmoingay.com/wp-content/uploads/2015/08/banh-cuon-chay_CQC8751.png,https://monchay.net/app_images/news/2019/9/26/cach-lam-banh-cuon-nong-chay-1-800-93433.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWctmar6-MgNN5kaCIyIC_lA4Tx4a-Oz21Lg&usqp=CAU',
                 'price' => 25000,
@@ -1369,7 +1386,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 123,
                 'image' => 'https://cdn.24h.com.vn/upload/3-2018/images/2018-08-21/Bi-quyet-lam-goi-cuon-chay-thanh-mat-cho-bua-toi-la-mieng-1-1534842005-227-width500height332.jpg,https://gotrangtri.vn/wp-content/uploads/2018/03/mon-ngon-moi-ngay5-1.jpg,https://cf.shopee.vn/file/0db17f9cc8d20a9110dcf291394ef081,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3CTUxdnTSCsPKz4ewco6hFs8RFBRCFUq4tA&usqp=CAU',
                 'price' => 50000,
@@ -1447,7 +1464,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 131,
                 'image' => 'https://cdn.beptruong.edu.vn/wp-content/uploads/2018/05/goi-du-du-chay.jpg,https://amthucnamchau.org/wp-content/uploads/2018/12/cach-lam-goi-du-du-thai-som-tum-thai-chua-gion-thanh-mat.jpg,https://media.cooky.vn/recipe/g2/16513/s800x500/recipe16513-635887994876513694.jpg,https://www.unileverfoodsolutions.com.vn/dam/global-ufs/mcos/phvn/vietnam/calcmenu/recipes/VN-recipes/salads/papaya-salad/main-header.jpg',
                 'price' => 50000,
@@ -1456,7 +1473,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 132,
                 'image' => 'https://i.pinimg.com/originals/88/9c/c5/889cc5499b1d91ee7e23628bda98d500.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrQxN1zjk09iCBPw-7wsKW8UZcFkE_FZTji0KojWGn82Z-gTfGQ08V3zpzxEK2oj-LbCQ&usqp=CAU,https://images.squarespace-cdn.com/content/v1/574bdd288259b5de67365fe5/1469093343430-52EN4HNEJNAT9E6U8J6M/image-asset.png,https://media.cooky.vn/recipe/g1/5209/s320x320/recipe5209-636403123817277873.jpg',
                 'price' => 60000,
@@ -1464,7 +1481,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>thay v&igrave; d&ugrave;ng c&aacute;c loại thịt th&ocirc;ng thường chung t&ocirc;i thay v&agrave;o đ&oacute; l&agrave; c&aacute;c loại nấm kh&aacute;c nhau để tạo ra m&ugrave;i huongw ri&ecirc;ng biệt</p>',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 133,
                 'image' => 'https://lacongaithattuyet.vn/wp-content/uploads/2019/07/cach-lam-nom-hoa-chuoi-chay-ngon-1.jpg,https://cdn.beptruong.edu.vn/wp-content/uploads/2020/03/nom-hoa-chuoi.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmEiQdT16n18v0QopWcHlfFexBGZTj-WbNYJWzQRjcrOCpzi0yhnKsabSVxSoUEns5gQQ&usqp=CAU,https://hitasanti.com/wp-content/uploads/2020/05/hita-chay-nom-hoa-chuoi-4.jpg',
                 'price' => 60000,
@@ -1532,7 +1549,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 139,
                 'image' => 'https://monngonmoingay.tv/wp-content/uploads/2019/01/cach-lam-mon-nem-cuon-chay-ngon-khong-an-mot-lan-se-hoi-han.jpg,https://img-global.cpcdn.com/recipes/bee6376aeba9c7fd/1200x630cq70/photo.jpg,https://bizweb.dktcdn.net/thumb/1024x1024/100/385/875/products/d5c1aae3180fff51a61e.jpg?v=1589511660177,https://cdn1.ngonbonmua.com/wp-content/uploads/2016/12/cuon-chay-1-2.jpg',
                 'price' => 60000,
@@ -1541,7 +1558,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
  ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 140,
                 'image' => 'https://hapivegan.com/wp-content/uploads/2021/04/batch20180722173550-1536309838680804711868.jpg.webp,https://img-global.cpcdn.com/recipes/82ae137829303898/1200x630cq70/photo.jpg,https://media.cooky.vn/recipe/g1/194/s800x500/Recipe194-635365405119606094.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR84RCNSM1mmo73UpMU3SJM92eBjo7IXKgMdx3kcPH7BtJvmaYVui7k8PveszGJAQncH1E&usqp=CAU',
                 'price' => 70000,
@@ -1550,7 +1567,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 141,
                 'image' => 'https://hapivegan.com/wp-content/uploads/2021/04/nom-rau-muong-recipe-main-photo.jpg,https://www.iunauan.com/images/650x385/anh1-iunauan.com-wjwbui149065000.jpg?1528167017885,https://giadinh.mediacdn.vn/2018/7/11/photo-0-1531274432842331419332.jpg,https://i.ytimg.com/vi/CmK3xz_VB5s/hqdefault.jpg',
                 'price' => 40000,
@@ -1559,7 +1576,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '7',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 142,
                 'image' => 'https://hapivegan.com/wp-content/uploads/2021/04/nom-xoai-kho.jpg.webp,https://www.lauductroc.com/Upload/image/product/450x450/nom-xoai-nom-xoai-min_10-01-2018-01-57-39.jpg,https://yt.cdnxbvn.com/medias/uploads/156/156332-cach-lam-nom-xoai.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO6EF9QMk6H58NuZwlb6I_tXsCdBg_ALK5lw&usqp=CAU',
                 'price' => 60000,
@@ -1629,7 +1646,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p><strong>C&aacute;ch nấu canh rong biển chay</strong>&nbsp;hấp dẫn, lạ miệng c&oacute; vị ngọt thanh tự nhi&ecirc;n đem lại cho người d&ugrave;ng cảm gi&aacute;c tươi m&aacute;t m&agrave; kh&ocirc;ng k&eacute;m phần thanh đạm. Canh rong biển chay bổ sung rất nhiều chất dinh dưỡng, Vitamin c&oacute; lợi cho sức khỏe, th&iacute;ch hợp cho những người ăn chay trường, b&agrave; bầu v&agrave; sản phụ mới sinh muốn bồi bổ cơ thể.</p>
 ',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 149,
                 'image' => 'https://cdn.tgdd.vn/2020/09/CookRecipe/Avatar/sup-cua-chay-thumbnail.jpg,https://i.ytimg.com/vi/DGUkvzR3yU4/maxresdefault.jpg,https://tutrithuc.com/upload/img/post_content_avata/16262.jpg,https://i.ytimg.com/vi/AwWiaPeUm0w/maxresdefault.jpg',
                 'price' => 100000,
@@ -1638,7 +1655,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '9',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 150,
                 'image' => 'https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/sup-chay-thap-cam-thumbnail.jpg,https://vcdn-ngoisao.vnecdn.net/2018/08/24/39211598-235919470394994-54217-3114-1340-1535085327.jpg,https://img-global.cpcdn.com/recipes/19f434095c6abf37/1200x630cq70/photo.jpg,https://photo-2-baomoi.zadn.vn/w700_r1/2018_10_21_251_28248817/a974ba02f043191d4052.jpg',
                 'price' => 90000,
@@ -1647,7 +1664,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '9',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 151,
                 'image' => 'https://cdn.tgdd.vn/2020/06/CookRecipe/Avatar/sup-bi-do-thumbnail-1.jpg,https://6monngonmoingay.com/wp-content/uploads/2015/07/cach-nau-sup-khoai-tay-cho-tre-em-den-tuoi-an-dam1.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXKbhLByrlBM16dWPVMbkgIBld-t_oZtQU6MNP2XSF49M6IuO0LK_GOgA7mWFZKvSLG_Q&usqp=CAU,https://cdn.bepcuoi.com/media/720-sup-khoai-tay-nghien-bepcuoi-484.jpg',
                 'price' => 70000,
@@ -1656,7 +1673,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '9',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 152,
                 'image' => 'https://cdn.tgdd.vn/2020/06/CookRecipe/Avatar/sup-ca-rot-thumbnail-1.jpg,https://cdn.bepcuoi.com/media/720-sup-ca-rot-bo-duong-bepcuoi-403.jpg,https://lh3.googleusercontent.com/proxy/dVlt2YligZbnaCDOJw5PATKNbb-Pc3dM3uLBmnz9yy0p2NnScga1poCe5UzUsH5ef9BImapzHcMsHiGVWF8O7dhcQDYFCuOPJYxP-zPyMov6t9ERyV9TGzpzYZj5_pj8XgQ,https://www.kidsplaza.vn/blog/wp-content/uploads/2019/07/sup-ca-rot-cu-cai-duong.jpg',
                 'price' => 90000,
@@ -1723,7 +1740,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Đ&atilde;i cả nh&agrave; một m&oacute;n s&uacute;p ho&agrave;nh th&aacute;nh nh&acirc;n rau củ chay v&agrave;o dịp cuối tuần, để gi&uacute;p mọi người vừa ăn ngon, vừa tốt cho sức khoẻ nh&eacute;! Lớp ho&agrave;nh th&aacute;nh b&ecirc;n ngo&agrave;i c&oacute; độ gi&ograve;n nhẹ, hơi c&oacute; vị b&eacute;o thơm đặc trưng của ho&agrave;nh th&aacute;nh. B&ecirc;n trong nh&acirc;n rau củ được n&ecirc;m nếm vừa ăn, ăn c&ugrave;ng với nước d&ugrave;ng ngọt thanh v&ocirc; c&ugrave;ng ngon.</p>',
                 'category_id' => '9',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 158,
                 'image' => 'https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/sup-mang-chay-thumbnail.jpg',
                 'price' => 75000,
@@ -1732,7 +1749,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '9',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 159,
                 'image' => 'https://cdn.tgdd.vn/2020/07/CookRecipe/Avatar/sup-mai-tuyet-bao-ngu-chay-thumbnail.jpg,https://static.kenhphatphap.com/photos/editors/2020/03/16/cach-lam-mon-sup-mai-tuyet-nhi-bao-ngu-giai-nhiet-cho-nhung-ngay-nang-nong-5e6f1b217139f.jpg,https://static.kenhphatphap.com/photos/15/2020/09/C__ch_l__m_m__n_s__p_n___m_h___t_sen_chay_thanh______m_v___b____d_____ng.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXLDskVmYgTXQWsuYK6oCRtT95dI5BLulXN2aFVcvWGzcQIcT07_f2TwnUNLsmt0DBmQs&usqp=CAU',
                 'price' => 300000,
@@ -1741,7 +1758,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '9',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 160,
                 'image' => 'https://ameovat.com/wp-content/uploads/2018/10/cach-lam-soup-chay-thap-cam-01-1.jpg,https://yummyday.vn/uploads/images/sup-chay.jpg,https://i.vietgiaitri.com/2020/4/4/cach-lam-sup-chay-ngon-mieng-cho-ngay-cuoi-tuan-444-4818439.jpg,https://cachnaumonngon.com/uploads/images/news/1482117295_news_1483.jpg',
                 'price' => 100000,
@@ -1750,7 +1767,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '9',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 161,
                 'image' => 'https://i.pinimg.com/564x/17/6f/21/176f2152a190ba1bce328486f7cf55e6.jpg,https://29foods.com/media/news/111_sup_rong_bien_hao_san.jpghttp://rongbiendaiduong.com/wp-content/uploads/2018/08/sup-rong-bien-3.jpg,http://yeunoitro.net/wp-content/uploads/2015/01/So-che-rong-bien.jpg',
                 'price' => 190000,
@@ -1819,7 +1836,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '6',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 171,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/09/nui-xao-bo-sot-ca-chua-2-cach-lam-cuc-nhanh-cho-bua-sang-dinh-duong_nui-xao-bo-sot-ca-chua-pho-mai.jpg,https://cdn.cet.edu.vn/wp-content/uploads/2018/05/nui-xao.jpg,https://nauankhongkho.com/wp-content/uploads/2016/12/rrrf.png',
                 'price' => 200000,
@@ -1828,7 +1845,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 172,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/09/nui-xao-nam-chay2.jpg,https://cdn.tgdd.vn/2021/01/CookRecipe/Avatar/nui-xao-chay-sot-cay-thumbnail.jpg,http://4.bp.blogspot.com/-0TNNMoljdvo/Vhck4JqJsGI/AAAAAAAABKo/5zaExOBxU0w/s1600/nui-xao-bo-imonanngon.jpg,https://img-global.cpcdn.com/recipes/88e8b790eb243a0f/680x482cq70/nui-xao-n%E1%BA%A5m-m%E1%BB%91i-recipe-main-photo.jpg',
                 'price' => 250000,
@@ -1836,7 +1853,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
                 'description' => '<p>Đổi vị cho bữa cơm chay gia đ&igrave;nh với nguy&ecirc;n liệu mới l&agrave; &ldquo;nui&rdquo; . M&oacute;n nay x&agrave;o với c&aacute;c loại rau củ cũng rất ngon. Ăn gi&ograve;n gi&ograve;n th&ecirc;m t&iacute; rau củ thanh thanh. L&agrave;m m&acirc;m cơm c&agrave;ng th&ecirc;m thanh đạm. C&ugrave;ng với ẩm thực đồ chay l&agrave;m qua c&aacute;c m&oacute;n nui x&agrave;o chay ngon dưới đ&acirc;y nh&eacute;. Từ nui x&agrave;o nấm, nui x&agrave;o c&agrave; chua, nui x&agrave;o b&ograve; cho đến..nui x&agrave;o thập cẩm.</p>',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 173,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/09/dau-phu-sot-chua-ngot11504841142.jpg,https://ameovat.com/wp-content/uploads/2019/06/cach-lam-mon-dau-phu-sot-chua-ngot-6-600x375.jpg,https://anh.eva.vn/upload/4-2017/images/2017-11-14/chi-20-nghin-dong-co-ngay-mon-dau-phu-sot-chua-ngot-vua-ngon-lai-re-tien-5-1510664257-234-width650height433.jpg,https://www.iunauan.com/images/500x-1/anh1-iunauan.com-phjfof866983750.jpg',
                 'price' => 90000,
@@ -1845,7 +1862,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 174,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/09/117059886-3450730661613264-665-4114-1512-1596627907.jpg,https://cachlam9.com/wp-content/uploads/2015/05/Cach-lam-dau-phu-xao-nam.jpg,https://thegioiamthuc.com/wp-content/uploads/2017/12/dau-xao-gia-do.jpg,https://amthucviet18.com/wp-content/uploads/2020/11/1-62.jpg',
                 'price' => 60000,
@@ -1912,7 +1929,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 182,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/08/photo-1576136852847-15761368528491314630370.jpg,https://media.cooky.vn/recipe/g5/45025/s320x320/cooky-recipe-cover-r45025.jpg,https://img-global.cpcdn.com/005_steps/8ef0390cd7d3a4e4/480x360cq70/photo.jpg,https://media.cooky.vn/recipe/g2/13491/s320x320/cooky-recipe-cover-r13491.jpg',
                 'price' => 30000,
@@ -1921,7 +1938,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 .',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 183,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/05/su-hao-xao-trung.jpg,https://cdn.tgdd.vn/2021/02/CookProduct/CachLamRauSuHaoXaosNgonNhatRauSuHaoTap19-3screenshot-1200x675.jpg,https://2monngonmoingay.com/wp-content/uploads/2017/03/su-hao-xao-chay.jpg,https://daubepgiadinh.vn/wp-content/uploads/2019/01/su-hao-xao-trung.jpg',
                 'price' => 20000,
@@ -1930,7 +1947,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 184,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/08/maxresdefault-4-1.jpg,https://cdn.bepcuoi.com/media/720-hu-tieu-xao-thit-bo-rau-cu-bepcuoi-498.png,https://monngondongian.com/wp-content/uploads/2019/07/M%C3%AC-x%C3%A0o-h%E1%BA%A3i-s%E1%BA%A3n.jpg,https://tuthuoc24h.net/upload/images/hu-tieu-xao-chay.jpg,https://cdn.daynauan.info.vn/wp-content/uploads/2019/01/hu-tieu-xao-gia-he-thanh-dam.jpg',
                 'price' => 35000,
@@ -1939,7 +1956,7 @@ Ng&agrave;y nay, ăn chay đang l&agrave; một xu hướng được đ&ocirc;ng
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 185,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/05/151348-rau-den-xao-toi.jpg,https://yt.cdnxbvn.com/medias/uploads/159/159004-rau-muong-xao-toi-500x340.jpg,https://img.websosanh.vn/v2/users/review/images/d0u5sk0ge54q0.jpg?compress=85,https://cdn.tgdd.vn/2021/03/CookRecipe/GalleryStep/xao-mon-an-14.jpg',
                 'price' => 20000,
@@ -2009,7 +2026,7 @@ Image',
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 192,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/05/mien-xao-chay-kieu-han-quoc-2-1.jpg,https://hocnauan.edu.vn/wp-content/uploads/2018/11/Mon-mien-xao-chay.jpg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavvEJwRp0DR6Vod54gTq5cp-zikmTLOn3uT1ur1bqqmdC4nnzB3_9U4za976b2-Mes6M&usqp=CAU,https://img.chebienmonngon.net/2017/04/mien-xao-chay-4.jpg',
                 'price' => 70000,
@@ -2018,7 +2035,7 @@ Image',
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 193,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/08/photo-7-1.jpg,https://atuankhang.vn/wp-content/uploads/2020/05/nam-dong-co-xao-sup-lo.jpg,https://cdn.bepcuoi.com/media/720-nam-dong-co-xao-bong-cai-dau-hao-bepcuoi-84.jpeg,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfkK3H41sF42DxVsJrrdD2nqxawY13EcdSMnFNqSCqzh4X1v_CCI3uNlQtsfkgDgBlE9c&usqp=CAU',
                 'price' => 60000,
@@ -2027,7 +2044,7 @@ Image',
 ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 194,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/08/maxresdefault-27.jpg,https://img-global.cpcdn.com/recipes/67e8518293be5348/1200x630cq70/photo.jpg,https://i.ytimg.com/vi/VFggbsS4iEI/maxresdefault.jpg,https://i.ytimg.com/vi/s5OXy52NNuE/maxresdefault.jpg',
                 'price' => 70000,
@@ -2036,7 +2053,7 @@ Image',
  ',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
-            ],[
+            ], [
                 'id' => 195,
                 'image' => 'https://amthucdochay.com/wp-content/uploads/2021/08/photo-4-1.jpg,https://toinayangi.vn/wp-content/uploads/2015/01/cu-dau-xao-tom-1-180x155.jpg,https://img-global.cpcdn.com/recipes/b7069be8f6dbae07/1200x630cq70/photo.jpg,https://2monngonmoingay.com/wp-content/uploads/2017/03/rau-cu-qua-kho-chay-thap-cam-ngon.jpg',
                 'price' => 50000,
@@ -2095,7 +2112,6 @@ Image',
                 'category_id' => '10',
                 'created_at' => Carbon::now()
             ]
-
 
 
         ]);

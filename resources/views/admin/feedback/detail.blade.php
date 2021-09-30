@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Admin | chi tiết phản hồi
+    Admin | Chi tiết liên hệ
 @endsection
 @section('custom_css')
     <style>

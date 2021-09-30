@@ -77,7 +77,9 @@ Route::get('mail',[MailController::class,'send_mail']);
 Route::get('mail-design',function (){
     return view('mails.mail');
 });
+Route::get('/pay_success', function () {
+    return view('clients.thank');
+})->name('pay_success');
 Route::post('/paypal/create-payment', [PaypalController::class, 'createPayment']);
 Route::post('/paypal/execute-payment', [PaypalController::class, 'executePayment']);
-
 

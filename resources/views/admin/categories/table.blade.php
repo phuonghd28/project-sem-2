@@ -49,7 +49,7 @@
                         <th style="width: 50px">Id</th>
                         <th>Tên</th>
                         <th>Ảnh</th>
-                        <th style="width: 174px;">Sửa, Xoá</th>
+                        <th style="width: 174px;">Thao tác</th>
                     </tr>
                     </thead>
                     <tbody>
