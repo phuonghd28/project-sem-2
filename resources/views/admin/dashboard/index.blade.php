@@ -1,5 +1,5 @@
 @extends('admin.master')
-@section('title','Admin | biểu đồ')
+@section('title','Admin | Biểu đồ')
 @section('content')
     <div class="row">
         <div class="col-md-12">

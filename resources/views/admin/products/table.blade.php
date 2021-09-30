@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Admin | sản phẩm
+    Admin | Món ăn
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">
@@ -8,7 +8,7 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-4">
-                        <h2 class="">Danh sách sản phẩm</h2>
+                        <h2 class="">Danh sách món ăn</h2>
                     </div>
                     <div class="col-8">
                         <form id="filterForm">
@@ -22,7 +22,7 @@
                                 </div>
                                 <div class="col-4 form-group">
                                     <select name="category" class="custom-select" id="category">
-                                        <option hidden selected disabled>Tất cả sản phẩm</option>
+                                        <option hidden selected disabled>Tất cả món ăn</option>
                                         @foreach(\App\Models\Category::all() as $category)
                                             <option
                                                 value="{{$category->id}}" {{$category->id == $categories ? 'selected' : ''}}>

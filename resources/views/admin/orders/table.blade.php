@@ -1,6 +1,6 @@
 @extends('admin.master')
 @section('title')
-    Admin | danh sách đơn hàng
+    Admin | Danh sách đơn hàng
 @endsection
 @section('content')
     <div class="row main-card mb-3 card">
@@ -58,6 +58,7 @@
                         <th>Giá đơn hàng</th>
                         <th>Ngày đặt</th>
                         <th>Trạng thái</th>
+                        <th>Thanh toán</th>
                         <th>Actions</th>
                     </tr>
 
@@ -88,7 +89,14 @@
                                     @case(4)
                                     Hoàn thành
                                     @break
-                                @endswitch</td>
+                                @endswitch
+                            </td>
+                            <td>
+                                @if($order->is_checkout)
+                                    Đã thanh toán
+                                @else
+                                    Chờ xử lý
+                                   @endif</td>
                             <td>
                                 <a href="{{route('showOrder', $order->id)}}"><button class="btn btn-primary"><i class="fa fa-info-circle"></i></button></a>
                                 <a onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này ?')"
