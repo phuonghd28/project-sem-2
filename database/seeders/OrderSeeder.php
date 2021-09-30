@@ -28,7 +28,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Đối diện Trường Tiểu Học, THCS & THPT Nguyễn Siêu',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-07-02',
+                'created_at' => '2021-08-02',
             ],
             [
                 'districtId' => 5,
@@ -256,7 +256,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Nhà Hạ 152/322',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-08-05',
+                'created_at' => '2021-09-05',
             ],
             [
                 'districtId' => 269,
@@ -268,7 +268,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Đài Phát Thanh Đông Dương VN1',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-06-19',
+                'created_at' => '2021-07-19',
             ],
             [
                 'districtId' => 269,
@@ -364,7 +364,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Trường THCS Tả Thanh Oai',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-06-08',
+                'created_at' => '2021-07-08',
             ],
             [
                 'districtId' => 19,
@@ -424,7 +424,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'B15 Lô 5 Đô Thị Định Công Hà Nội',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-06-03',
+                'created_at' => '2021-07-03',
             ],
             [
                 'districtId' => 8,
@@ -436,7 +436,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'B15 Lô 5 Đô Thị Định Công Hà Nội',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-06-01',
+                'created_at' => '2021-07-01',
             ],
             [
                 'districtId' => 8,
@@ -508,7 +508,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-06-16',
+                'created_at' => '2021-07-16',
             ],
             [
                 'districtId' => 250,
@@ -520,7 +520,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-08-18',
+                'created_at' => '2021-09-18',
             ],
             [
                 'districtId' => 250,
@@ -556,7 +556,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-08-19',
+                'created_at' => '2021-09-19',
             ],
             [
                 'districtId' => 250,
@@ -580,7 +580,7 @@ class OrderSeeder extends Seeder
                 'shipAddress' => 'Ngõ 88/54',
                 'note' => 'Không có ghi chú',
                 'status' => 4,
-                'created_at' => '2021-08-08',
+                'created_at' => '2021-09-08',
             ],
             [
                 'districtId' => 7,
