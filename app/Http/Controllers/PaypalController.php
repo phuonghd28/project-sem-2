@@ -6,6 +6,8 @@ use App\Enums\Status;
 use App\Models\Order;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use PayPal\Api\Amount;
 use PayPal\Api\Details;
 use PayPal\Api\Item;
@@ -116,6 +118,9 @@ class PaypalController extends Controller
                         $order->status = Status::PAID;
                         $order->is_checkout = 1;
                         $order->save();
+                        if (Auth::check()) {
+                            $this->send_mail($order);
+                        }
                     }
                 }
             } catch (\PayPal\Exception\PayPalConnectionException $ex) {
@@ -129,5 +134,18 @@ class PaypalController extends Controller
             die($ex);
         }
         return $payment;
+    }
+
+    public function send_mail($order)
+    {
+        $data = [
+            'order' => $order,
+            'user' => Auth::user(),
+        ];
+        Mail::send('mails.mail', $data, function ($message) {
+            $message->from(env('MAIL_USERNAME'), 'Cơm chay');
+            $message->to(Auth::user()->email, 'Phuong');
+            $message->subject('Cơm chay - Đơn hàng mới');
+        });
     }
 }
