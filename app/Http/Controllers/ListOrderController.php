@@ -44,7 +44,7 @@ class ListOrderController extends Controller
         if ($date == 3) {
             $queryBuilder = $queryBuilder->whereYear('created_at', Carbon::now()->year);
         }
-        $order = $queryBuilder->orderBy('created_at', 'DESC')->paginate(5)->appends(['search' => $search, 'status' => $status, 'date' => $date]);
+        $order = $queryBuilder->orderBy('created_at', 'DESC')->paginate(10)->appends(['search' => $search, 'status' => $status, 'date' => $date]);
         return view('admin/orders/table', [
             'orders' => $order,
             'status' => $status,
@@ -74,7 +74,12 @@ class ListOrderController extends Controller
                 $order->save();
             }
             else {
-                $order->status = $request->desire;
+                if($request->desire == 1){
+                    $order->status = $request->desire;
+                }else{
+                    $order->status = $request->desire;
+                    $order->is_checkout = true;
+                }
                 $order->save();
                 array_push($id, $order->id);
             }

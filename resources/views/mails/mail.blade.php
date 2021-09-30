@@ -99,36 +99,6 @@
             </div>
             @switch($order->status)
                 @case(1)
-{{--                <div class="row" style="margin-left: 10px">--}}
-
-                    {{--                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>--}}
-                    {{--                    <p>Cảm ơn bạn đã quan tâm sản phẩm của Cơm chay. Đơn hàng của bạn đã được nhận và sẽ được xử lý ngay--}}
-                    {{--                        khi--}}
-                    {{--                        bạn xác nhận thanh toán.</p>--}}
-                    {{--                    <p>Để xem chi tiết đơn hàng của mình tại web, bạn có thể nhấn vào nút bên dưới</p>--}}
-                    {{--                </div>--}}
-                    {{--                <div class="row justify-content-center" style="margin: 20px">--}}
-                    {{--                    <div class="col-5">--}}
-                    {{--                        <a href="{{route('detailOrder',$order->id)}}" class="btn btn-primary" style="width:100%;color: #fff;--}}
-                    {{--    background-color: #0d6efd;--}}
-                    {{--    border-color: #0d6efd;--}}
-                    {{--display: inline-block;--}}
-                    {{--    font-weight: 400;--}}
-                    {{--    line-height: 1.5;--}}
-                    {{--    text-align: center;--}}
-                    {{--    text-decoration: none;--}}
-                    {{--    vertical-align: middle;--}}
-                    {{--    cursor: pointer;--}}
-                    {{--    -webkit-user-select: none;--}}
-                    {{--    -moz-user-select: none;--}}
-                    {{--    user-select: none;--}}
-                    {{--    padding: .375rem .75rem;--}}
-                    {{--    font-size: 1rem;--}}
-                    {{--    border-radius: .25rem;">Xem đơn hàng</a>--}}
-                    {{--                    </div>--}}
-                    {{--                </div>--}}
-
-
                     <div class="row" style="margin-left: 10px">
 
                         <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
@@ -142,7 +112,6 @@
                             <p>Cảm ơn bạn đã quan tâm sản phẩm của Cơm chay.</p>
                             <p>Đơn hàng của bạn đã được nhận và sẽ được xử lý ngay khi bạn xác nhận thanh toán.</p>
                         </div>
-                        {{--    <p>Để xem chi tiết đơn hàng của mình tại web, bạn có thể nhấn vào nút bên dưới</p>--}}
                     </div>
                     <div class="row" style="margin: 20px;justify-content: center">
                         <div class="btn-detail-order" style="width: 30%;margin:0 auto">
@@ -151,10 +120,6 @@
                     </div>
                     @break
                     @case(2)
-                    {{--                <div class="row" style="margin-left: 10px">--}}
-                    {{--                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>--}}
-                    {{--                    <p>Đơn hàng của bạn đã được thanh toán</p>--}}
-                    {{--                </div>--}}
                     <div class="row" style="margin-left: 10px">
                         <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
                         <div class="wrap-icon my-3">
@@ -164,15 +129,12 @@
                         </div>
                         <h4 style="text-align: center;margin: 20px 0;color: #4CBB17;">Thanh toán thành công</h4>
                         <div class="text-bicon" style="width: 70%;margin: 0 auto">
-                            <p>Đơn hàng của bạn đã được thanh toán thành công.</p>
+                            <p>Đơn hàng của bạn đã được thanh toán thành công và đang được xử lý . Đơn hàng của bạn sẽ được gửi về trong vài ngày tới</p>
+                            <p>Để biết thêm thông tin chi tiết về đơn hàng vui lòng liên hệ số điện thoại: 034930480</p>
                         </div>
                     </div>
                     @break
                     @case(3)
-                    {{--                <div class="row" style="margin-left: 10px">--}}
-                    {{--                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>--}}
-                    {{--                    <p>Đơn hàng của bạn đang được giao hàng</p>--}}
-                    {{--                </div>--}}
                     <div class="row" style="margin-left: 10px">
                         <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
                         <div class="wrap-icon my-3">
@@ -183,14 +145,11 @@
                         <h4 style="text-align: center;margin: 20px 0;color: #00c6d7;">Đang vận chuyển</h4>
                         <div class="text-bicon" style="width: 70%;margin: 0 auto">
                             <p>Đơn hàng của quý khách đang được vận chuyển.</p>
+                            <p>Để biết thêm thông tin chi tiết về đơn hàng vui lòng liên hệ số điện thoại: 034930480</p>
                         </div>
                     </div>
                     @break
                     @case(4)
-                    {{--                <div class="row" style="margin-left: 10px">--}}
-                    {{--                    <p>Xin chào {{$user->first_name.' '.$user->last_name}} </p>--}}
-                    {{--                    <p>Đơn hàng của bạn đã hoàn thành</p>--}}
-                    {{--                </div>--}}
                     <div class="row" style="margin-left: 10px">
                         <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
                         <div class="wrap-icon my-3">

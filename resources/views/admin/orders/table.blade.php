@@ -95,7 +95,7 @@
                                 @if($order->is_checkout)
                                     Đã thanh toán
                                 @else
-                                    Chờ xử lý
+                                    Chờ thanh toán
                                    @endif</td>
                             <td>
                                 <a href="{{route('showOrder', $order->id)}}"><button class="btn btn-primary"><i class="fa fa-info-circle"></i></button></a>
