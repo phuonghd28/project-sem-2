@@ -66,8 +66,8 @@
                                                        value="{{$data->qty}}">
                                             </div>
                                         </td>
-                                        <td>
-                                            <button class="btn btn-primary btn-update-qty">Cập nhật</button>
+                                        <td style="width: 125px">
+                                            <button class="btn-update-qty">Cập nhật</button>
                                         </td>
                                         <td class="cart__close">
                                                 <span>

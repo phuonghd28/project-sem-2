@@ -28,14 +28,27 @@
         }
 
         @media (max-width: 575.98px) {
-        }
-
-        /* Small devices (landscape phones, 576px and up) */
-        @media (min-width: 576px) and (max-width: 767.98px) {
+            div#text-dicon h4 {
+                margin: 20px 0;
+                color: #4CBB17;
+                font-size: 20px;
+            }
+            div.logo-email {
+                width: 40%;
+            }
+            div.btn-detail-order a {
+                border-radius: 10px;
+            }
+            div.btn-detail-order {
+                width: 90%;
+            }
+            div.text-bicon {
+                width: 100%;
+            }
         }
 
         /* Medium devices (tablets, 768px and up) */
-        @media (min-width: 768px) and (max-width: 991.98px) {
+        @media (max-width: 768px) {
         }
 
         /* Large devices (desktops, 992px and up) */
@@ -45,6 +58,10 @@
 
         /* Extra large devices (large desktops, 1200px and up) */
         @media (min-width: 1200px) {
+        }
+        .btn-detail-order {
+            width: 30%;
+            margin: 0 auto;
         }
 
         .back-home a {
@@ -63,6 +80,8 @@
             text-align: center;
             font-weight: 500;
             font-size: 16px;
+            width: 70%;
+            margin: 0 auto
         }
 
         .btn-detail-order a {
@@ -84,87 +103,115 @@
             font-size: 1rem;
             border-radius: 20px;
         }
+
+        .wrap-img-email {
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        .logo-email {
+            width: 20%;
+            margin: 0 auto
+        }
+
+        .logo-email img {
+            width: 100%;
+        }
+
+        #text-dicon h4 {
+            text-align: center;
+            margin: 20px 0;
+            color: #4CBB17;
+            font-size: 30px;
+        }
     </style>
 </head>
 <body style="background-color: #f2f2f2">
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col-sm-12 col-xs-12 col-lg-6 col-md-6" style="background-color: #FFFFFF">
-            <div class="row" style="margin: 20px 0 20px 20px">
-                <img src="http://res.cloudinary.com/dn3bmj5ex/image/upload/v1631980859/yhvawbt54jlxzddzmmmf.png" alt=""
-                     style="width: 40%;height: 100px">
+            <div class="row">
+                <div class="logo-email">
+                    <img src="http://res.cloudinary.com/dn3bmj5ex/image/upload/v1631980859/yhvawbt54jlxzddzmmmf.png"
+                         alt="">
+                </div>
             </div>
             <div class="row">
                 <hr>
             </div>
             @switch($order->status)
                 @case(1)
-                    <div class="row" style="margin-left: 10px">
+                <div id="text-dicon" class="row" style="margin-left: 10px">
 
-                        <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
-                        <div class="wrap-icon my-3">
-                            <div class="wrap-thank text-center">
-                                <i class="fas fa-check-circle" style="font-size: 65px;color: #4CBB17;"></i>
-                            </div>
-                        </div>
-                        <h4 style="text-align: center;margin: 20px 0;color: #4CBB17;">Đã nhận đơn hàng</h4>
-                        <div class="text-bicon" style="width: 70%;margin: 0 auto">
-                            <p>Cảm ơn bạn đã quan tâm sản phẩm của Cơm chay.</p>
-                            <p>Đơn hàng của bạn đã được nhận và sẽ được xử lý ngay khi bạn xác nhận thanh toán.</p>
+                    <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
+                    <div class="wrap-icon">
+                        <div class="wrap-img-email">
+                            <img style="width: 100%"
+                                 src="https://res.cloudinary.com/dn3bmj5ex/image/upload/v1633005089/wjsfk7c7dg2a2gw9x8ua.png"
+                                 alt="">
                         </div>
                     </div>
-                    <div class="row" style="margin: 20px;justify-content: center">
-                        <div class="btn-detail-order" style="width: 30%;margin:0 auto">
-                            <a href="{{route('detailOrder',$order->id)}}">Xem đơn hàng</a>
+                    <h4>Đã nhận đơn hàng</h4>
+                    <div class="text-bicon">
+                        <p>Cảm ơn bạn đã quan tâm sản phẩm của Cơm chay.</p>
+                        <p>Đơn hàng của bạn đã được nhận và sẽ được xử lý ngay khi bạn xác nhận thanh toán.</p>
+                    </div>
+                </div>
+                <div class="row" style="margin: 20px;justify-content: center">
+                    <div class="btn-detail-order">
+                        <a href="{{route('detailOrder',$order->id)}}">Xem đơn hàng</a>
+                    </div>
+                </div>
+                @break
+                @case(2)
+                <div class="row" style="margin-left: 10px">
+                    <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
+                    <div class="wrap-icon">
+                        <div class="wrap-img-email">
+                            <img style="width: 100%"
+                                 src="https://res.cloudinary.com/dn3bmj5ex/image/upload/v1633005089/wjsfk7c7dg2a2gw9x8ua.png"
+                                 alt="">
                         </div>
                     </div>
-                    @break
-                    @case(2)
-                    <div class="row" style="margin-left: 10px">
-                        <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
-                        <div class="wrap-icon my-3">
-                            <div class="wrap-thank text-center">
-                                <i class="fas fa-check-circle" style="font-size: 65px;color: #4CBB17;"></i>
-                            </div>
-                        </div>
-                        <h4 style="text-align: center;margin: 20px 0;color: #4CBB17;">Thanh toán thành công</h4>
-                        <div class="text-bicon" style="width: 70%;margin: 0 auto">
-                            <p>Đơn hàng của bạn đã được thanh toán thành công và đang được xử lý . Đơn hàng của bạn sẽ được gửi về trong vài ngày tới</p>
-                            <p>Để biết thêm thông tin chi tiết về đơn hàng vui lòng liên hệ số điện thoại: 034930480</p>
+                    <h4>Thanh toán thành công</h4>
+                    <div class="text-bicon">
+                        <p>Đơn hàng của bạn đã được thanh toán thành công.</p>
+                    </div>
+                </div>
+                @break
+                @case(3)
+                <div class="row" style="margin-left: 10px">
+                    <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
+                    <div class="wrap-icon">
+                        <div class="wrap-img-email">
+                            <img style="width: 100%"
+                                 src="https://res.cloudinary.com/dn3bmj5ex/image/upload/v1633007840/gr3f9kng8nnn7ltokmiq.jpg"
+                                 alt="">
                         </div>
                     </div>
-                    @break
-                    @case(3)
-                    <div class="row" style="margin-left: 10px">
-                        <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
-                        <div class="wrap-icon my-3">
-                            <div class="wrap-thank text-center">
-                                <i class="fas fa-shipping-fast" style="font-size: 65px;color: #00c6d7;"></i>
-                            </div>
-                        </div>
-                        <h4 style="text-align: center;margin: 20px 0;color: #00c6d7;">Đang vận chuyển</h4>
-                        <div class="text-bicon" style="width: 70%;margin: 0 auto">
-                            <p>Đơn hàng của quý khách đang được vận chuyển.</p>
-                            <p>Để biết thêm thông tin chi tiết về đơn hàng vui lòng liên hệ số điện thoại: 034930480</p>
+                    <h4>Đang vận chuyển</h4>
+                    <div class="text-bicon">
+                        <p>Đơn hàng của quý khách đang được vận chuyển.</p>
+                    </div>
+                </div>
+                @break
+                @case(4)
+                <div class="row" style="margin-left: 10px">
+                    <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
+                    <div class="wrap-icon">
+                        <div class="wrap-img-email">
+                            <img style="width: 100%"
+                                 src="https://res.cloudinary.com/dn3bmj5ex/image/upload/v1633005089/wjsfk7c7dg2a2gw9x8ua.png"
+                                 alt="">
                         </div>
                     </div>
-                    @break
-                    @case(4)
-                    <div class="row" style="margin-left: 10px">
-                        <p style="font-size: 22px;">Xin chào {{$user->first_name.' '.$user->last_name}}!</p>
-                        <div class="wrap-icon my-3">
-                            <div class="wrap-thank text-center">
-                                <i class="fas fa-check-circle" style="font-size: 65px;color: #4CBB17;"></i>
-                            </div>
-                        </div>
-                        <h4 style="text-align: center;margin: 20px 0;color: #4CBB17;">Đã nhận hàng</h4>
-                        <div class="text-bicon" style="width: 70%;margin: 0 auto">
-                            {{--        <p style="text-align:center;font-size: 20px;font-weight: 500;">Đơn hàng của bạn đã được giao.</p>--}}
-                            <p>Cảm ơn quý khách đã mua món ăn của chúng tôi.</p>
-                            <p>Chúc quý khách có một bữa ăn vui vẻ.</p>
-                        </div>
+                    <h4>Đã nhận hàng</h4>
+                    <div class="text-bicon">
+                        <p>Cảm ơn quý khách đã mua món ăn của chúng tôi.</p>
+                        <p>Chúc quý khách ngon miệng.</p>
                     </div>
-                    @break
+                </div>
+                @break
             @endswitch
         </div>
     </div>

@@ -54,12 +54,12 @@
                         <th>Chọn</th>
                         <th>Id</th>
                         <th>Tên người nhận</th>
-                        <th>Địa chỉ</th>
+                        <th style="width: 215px;">Địa chỉ</th>
                         <th>Giá đơn hàng</th>
                         <th>Ngày đặt</th>
                         <th>Trạng thái</th>
                         <th>Thanh toán</th>
-                        <th>Actions</th>
+                        <th style="width: 101px">Actions</th>
                     </tr>
 
 
