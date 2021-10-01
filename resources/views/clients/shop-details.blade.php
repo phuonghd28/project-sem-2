@@ -56,7 +56,7 @@
                            <p class="product-description">{!! html_entity_decode($product->description) !!}</p>
                            <h4 class="price">Giá: {{number_format($product->price)}} đ</h4>
                            <div class="action"><a href="{{route('addCart',$product->id)}}">
-                                   <button class="add-to-cart btn btn-default" type="button">add to cart <i class="fas fa-cart-arrow-down"></i></button>
+                                   <button class="add-to-cart btn btn-default" type="button">Thêm vào giỏ hàng <i class="fas fa-cart-arrow-down"></i></button>
                                </a>
                        </div>
                     </div>
